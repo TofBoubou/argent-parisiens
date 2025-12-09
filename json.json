@@ -1,0 +1,550 @@
+{
+  "fichier_source": "CA_CG_2024__Expos__des_motifs_BG.pdf",
+  "reference_deliberation": "2025 DFA 25",
+  "objet": "États financiers et compte de gestion 2024 du budget général de la Ville de Paris",
+  "direction": "Direction des Finances et des Achats",
+  "sous_direction": "Sous-Direction de la Comptabilité",
+  "service": "Service de l'Expertise Comptable",
+  "unite": "€",
+
+  "cadre_reglementaire": {
+    "base_legale": "Code Général des Collectivités Territoriales",
+    "comptable_public": "Directeur Régional des Finances Publiques d'Île-de-France et de Paris (DRFiP)",
+    "referentiel_comptable": "M57",
+    "composantes_etats_financiers": ["Bilan", "Compte de résultat", "Annexe"],
+    "certification": {
+      "phase_experimentation": {"debut": 2017, "fin": 2023},
+      "demarche_volontariste": true,
+      "loi_reference": {
+        "numero": "2015-991",
+        "date": "2015-08-07",
+        "intitule": "Nouvelle organisation territoriale de la République"
+      },
+      "resultat_certification_2024": {
+        "type": "Certification avec réserves",
+        "nombre_reserves": 5,
+        "reserves_exogenes": 2,
+        "reserves_necessitant_actes_reglementaires_etat": 2,
+        "opinion": "Les comptes présentent sincèrement, dans tous leurs aspects significatifs, au regard de l'instruction budgétaire et comptable M57 ainsi que des autres instructions comptables applicables aux budgets annexes, le patrimoine et la situation financière de la Ville de Paris au 31 décembre 2024, ainsi que le résultat de ses opérations pour l'exercice écoulé."
+      }
+    }
+  },
+
+  "synthese_realisations_exercice_2024": {
+    "section_investissement": {
+      "recettes_nettes": 2520717108.81,
+      "depenses_nettes": 2257455561.55,
+      "resultat_exercice": 263261547.26
+    },
+    "section_fonctionnement": {
+      "recettes_nettes": 9710634607.08,
+      "depenses_nettes": 9941773827.57,
+      "resultat_exercice": -231139220.49
+    },
+    "total": {
+      "recettes_nettes": 12231351715.89,
+      "depenses_nettes": 12199229389.12,
+      "resultat_exercice": 32122326.77
+    }
+  },
+
+  "balance_entree_2023": {
+    "section_fonctionnement": {
+      "resultat_anterieur": 149034405.47,
+      "resultat_fonctionnement_2023": 325273622.59,
+      "sous_total": 474308028.06,
+      "affectation_section_investissement": 363827230.93
+    },
+    "section_investissement": {
+      "resultat": -330504944.59
+    },
+    "resultat_budgetaire_cumule_2023": 143803083.47
+  },
+
+  "mouvements_budgetaires_2024": {
+    "section_fonctionnement": -231139220.49,
+    "section_investissement": 263261547.26,
+    "resultat_budgetaire_propre_2024": 32122326.77
+  },
+
+  "resultat_execution_budgetaire_cloture_2024": {
+    "section_fonctionnement": {
+      "type": "déficit",
+      "montant": -120658423.36
+    },
+    "section_investissement": {
+      "type": "déficit",
+      "montant": -67243397.33
+    }
+  },
+
+  "operations_ordre_non_budgetaires": {
+    "description": "Opérations constatées par le comptable public au vu des informations transmises par l'ordonnateur au moyen d'un certificat administratif",
+    
+    "compte_1021_dotations": {
+      "intitule": "Dotations",
+      
+      "operations_debit": [
+        {
+          "numero_ca": 3,
+          "typologie": "Complément de prix",
+          "objet": "Immeuble 17 boulevard Morland, Paris 4e",
+          "date": "2024-03-07",
+          "montant": 39690.00
+        },
+        {
+          "numero_ca": 4,
+          "typologie": "Complément de prix",
+          "objet": "Immeuble 17 boulevard Morland, Paris 4e",
+          "date": "2024-03-07",
+          "montant": 1608202.00
+        },
+        {
+          "numero_ca": 20,
+          "typologie": "Complément de prix",
+          "objet": "Immeuble, 21-23 rue Albert Bayet, Paris 13e",
+          "date": "2024-05-29",
+          "montant": 12307.27
+        },
+        {
+          "numero_ca": 25,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Concessions et droits similaires ; Autres immobilisations incorporelles",
+          "date": "2024-08-12",
+          "montant": 18628716.52
+        },
+        {
+          "numero_ca": 27,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Ajustement des certificats 62,64, 78,79 de 2019, 47 de 2021 et 59 de 2022 – terrains, constructions et mises en affectation",
+          "date": "2024-08-26",
+          "montant": 12308693.50
+        },
+        {
+          "numero_ca": 28,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Régularisation des actifs cédés (mise en cohérence des inventaires physiques et comptables)",
+          "date": "2024-08-28",
+          "montant": 486809.69
+        },
+        {
+          "numero_ca": 37,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Ajustement des valeurs d'actif immobilier. Caserne de la Nouvelle France et l'Université de la Sorbonne",
+          "date": "2024-10-10",
+          "montant": 213859856.76
+        },
+        {
+          "numero_ca": 43,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Régularisation de l'actif Participations au fonds Paris Fonds Vert",
+          "date": "2024-11-19",
+          "montant": 853000.00
+        },
+        {
+          "numero_ca": 5,
+          "typologie": "Sortie de bilan",
+          "objet": "Equipements des terrains d'éducation physique Baudricourt (13e)",
+          "date": "2024-03-22",
+          "montant": 1134176.07
+        }
+      ],
+      "total_debit": 248931451.81,
+
+      "operations_credit": [
+        {
+          "numero_ca": 8,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Volume d'air pour la création d'une résidence étudiante au-dessus du Centre Paris Anim' Mercoeur, Paris 11e",
+          "date": "2024-03-26",
+          "montant": 248629.77
+        },
+        {
+          "numero_ca": 15,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Terrains et bâtiments, Route de Charmentray, Trilbardou (77450)",
+          "date": "2024-05-15",
+          "montant": 36127.02
+        },
+        {
+          "numero_ca": 31,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Locaux techniques et divers locaux, 61/69 rue de Bercy, Paris 12e",
+          "date": "2024-09-16",
+          "montant": 14359.28
+        },
+        {
+          "numero_ca": 32,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Parcelle de terrain constructible, 4 rue des Camélias, Paris 14e",
+          "date": "2024-09-18",
+          "montant": 246661.04
+        },
+        {
+          "numero_ca": 42,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Terrains Parcelles situées au 60-62 quai de la Marne, site Halle du Rouvray, Paris 19e",
+          "date": "2024-10-29",
+          "montant": 856276.26
+        },
+        {
+          "numero_ca": 46,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Volume pour la création d'une résidence étudiante sur le site de la crèche Mac Orlan, Paris 18e",
+          "date": "2024-11-26",
+          "montant": 433859.70
+        },
+        {
+          "numero_ca": 47,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Volumes 9-35 avenue Pierre de Coubertin, Paris 16e",
+          "date": "2024-11-27",
+          "montant": 30017.54
+        },
+        {
+          "numero_ca": 48,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Lots en copropriété 16 rue Visconti, Paris 6e",
+          "date": "2024-11-28",
+          "montant": 41304.13
+        },
+        {
+          "numero_ca": 49,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Lots en copropriété 4-12 avenue de la Porte de Vanves, Paris 14e",
+          "date": "2024-11-29",
+          "montant": 116299.37
+        },
+        {
+          "numero_ca": 51,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Volume, ZAC Clichy Batignolles, 32-58 avenue de la Porte de Clichy, Paris 17e",
+          "date": "2024-12-06",
+          "montant": 150.00
+        },
+        {
+          "numero_ca": 2,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Terrain et bien historique et culturel 254 rue du Faubourg Saint-Antoine, Paris 12e et mise en affectation au profit de la Fondation Eugène Napoléon",
+          "date": "2024-03-05",
+          "montant": 2.00
+        }
+      ],
+      "total_credit": 2023686.11,
+
+      "operations_debit_credit": [
+        {
+          "numero_ca": 30,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Parcelles de terrains dans le secteur dit de la Boucle de Chanteloup (78) sur les communes de Carrières-sous-Poissy, Chanteloup-les-Vignes et de Triel-sur-Seine",
+          "date": "2024-09-09",
+          "debit": 11223700.83,
+          "credit": 5899.12
+        },
+        {
+          "numero_ca": 33,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Biens historiques et culturels immobiliers vers Biens historiques et culturels mobiliers",
+          "date": "2024-09-24",
+          "debit": 1500.00,
+          "credit": 1500.00
+        },
+        {
+          "numero_ca": 34,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Projet de supervision des centres thermiques",
+          "date": "2024-10-09",
+          "debit": 2584099.89,
+          "credit": 2584099.89
+        },
+        {
+          "numero_ca": 36,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Terrains mis en affectation au SYCTOM - Parcelles situées à Ivry-sur-Seine (94) et à Romainville (93)",
+          "date": "2024-10-14",
+          "debit": 4026339.60,
+          "credit": 8052679.20
+        },
+        {
+          "numero_ca": 14,
+          "typologie": "Fiabilisation d'actif avant cession",
+          "objet": "Local commercial et parking en sous-sol, 159 rue Nationale, Paris 13e - Réintégration de biens mis en affectation et mis à la réforme",
+          "date": "2024-05-03",
+          "debit": 2.22,
+          "credit": 808318.37
+        },
+        {
+          "numero_ca": 10,
+          "typologie": "Transfert entre catégories d'actif",
+          "objet": "Restauration de fontaines ornementales et églises - Constructions en cours vers Restauration en cours de biens historiques et culturels",
+          "date": "2024-04-08",
+          "debit": 6591415.49,
+          "credit": 6591415.49
+        },
+        {
+          "numero_ca": 12,
+          "typologie": "Transfert entre catégories d'actif",
+          "objet": "Archivage numérique - Immobilisations incorporelles en cours vers Biens historiques et culturels en cours",
+          "date": "2024-04-25",
+          "debit": 625559.75,
+          "credit": 625559.75
+        },
+        {
+          "numero_ca": 24,
+          "typologie": "Transfert entre catégories d'actif",
+          "objet": "Installations générales vers Matériels techniques",
+          "date": "2024-08-08",
+          "debit": 121452.64,
+          "credit": 121452.64
+        },
+        {
+          "numero_ca": 40,
+          "typologie": "Transfert entre catégories d'actif",
+          "objet": "Intégration à l'actif immobilisé et mis en affectation de places de parking situées au 126 quai de Jemmapes, à Paris 10e",
+          "date": "2024-10-14",
+          "debit": 688296.40,
+          "credit": 688296.40
+        }
+      ],
+      "total_operations_mixtes": {
+        "debit": 25862366.82,
+        "credit": 19479220.86
+      },
+
+      "solde_annuel": {
+        "type": "débiteur",
+        "montant": 253290911.66
+      }
+    },
+
+    "compte_1068_excedents_fonctionnement_capitalises": {
+      "intitule": "Excédents de fonctionnement capitalisés",
+      
+      "operations": [
+        {
+          "numero_ca": 25,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Concessions et droits similaires ; Autres immobilisations incorporelles",
+          "date": "2024-08-12",
+          "debit": 89758.21,
+          "credit": 1652298.83
+        },
+        {
+          "numero_ca": 27,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Ajustement des certificats 62,64, 78,79 de 2019, 47 de 2021 et 59 de 2022 – terrains, constructions et mises en affectation",
+          "date": "2024-08-26",
+          "debit": 0,
+          "credit": 168101.54
+        },
+        {
+          "numero_ca": 29,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Sortie de l'inventaire comptable de valeurs d'actif immobilier suite à des fins de baux",
+          "date": "2024-09-02",
+          "debit": 645544.08,
+          "credit": 0
+        },
+        {
+          "numero_ca": 53,
+          "typologie": "Fiabilisation de l'actif",
+          "objet": "Réintégration d'actifs de Concession à Bâtiments - Régularisation des amortissements antérieurs comptabilisés",
+          "date": "2024-12-16",
+          "debit": 0,
+          "credit": 47722.00
+        },
+        {
+          "numero_ca": 24,
+          "typologie": "Transfert entre catégories d'actif",
+          "objet": "Installations générales vers Matériels techniques",
+          "date": "2024-08-08",
+          "debit": 60730.00,
+          "credit": 0
+        }
+      ],
+      "total_debit": 796032.29,
+      "total_credit": 1868122.37,
+      
+      "solde_annuel": {
+        "type": "créditeur",
+        "montant": 1072090.08
+      }
+    }
+  },
+
+  "travaux_fiabilisation_actif": {
+    "debut_demarche": 2019,
+    "perimetre": [
+      "Recensement physique des terrains",
+      "Ensembles immobiliers (immeubles, locaux administratifs, équipements)",
+      "Contrôle de l'évaluation dans le bilan",
+      "Ajustement des valeurs comptables"
+    ],
+    "controles_2024": [
+      "Caractéristiques des biens",
+      "Surfaces",
+      "Date d'acquisition ou de construction"
+    ],
+    "postes_2024_supplementaires": [
+      "Comptes de biens historiques et culturels",
+      "Concessions et droits similaires",
+      "Autres immobilisations incorporelles"
+    ],
+    "validation_commissaire_aux_comptes": true,
+    "travaux_en_cours": true,
+    "reserves_maintenues": true
+  },
+
+  "budgetisation_cessions_immobilisations": {
+    "base_reglementaire": {
+      "reforme": "Instruction budgétaire et comptable M14",
+      "date_entree_vigueur": "2006-01-01",
+      "instruction_actuelle": "M57"
+    },
+    "chapitre_previsionnel": {
+      "numero": 954,
+      "intitule": "Produits des cessions d'immobilisations",
+      "nature": "Recettes section investissement uniquement",
+      "emission_titres_mandats": false
+    },
+    
+    "execution_2024": {
+      "section_fonctionnement": {
+        "depenses": {
+          "chapitre": 946,
+          "detail": {
+            "valeur_nette_comptable_cessions": {
+              "nature": 675,
+              "montant_me": 14.57
+            },
+            "plus_values_realisees": {
+              "nature": 6761,
+              "montant_me": 20.65
+            }
+          },
+          "total_me": 35.22
+        },
+        "recettes": {
+          "chapitres": [930, 935, 937, 938, 946],
+          "detail": {
+            "produit_cessions": {
+              "nature": 775,
+              "montant_me": 28.56
+            },
+            "moins_values_realisees": {
+              "nature": 7761,
+              "montant_me": 6.66
+            }
+          },
+          "total_me": 35.22
+        }
+      },
+      "section_investissement": {
+        "recettes": {
+          "chapitre": 926,
+          "detail": {
+            "valeur_nette_comptable_cessions": {
+              "comptes": "classe 2 hors dotation aux amortissements",
+              "montant_me": 14.57
+            },
+            "neutralisation_plus_values": {
+              "nature": 192,
+              "montant_me": 20.65
+            }
+          },
+          "total_me": 35.22
+        },
+        "depenses": {
+          "chapitre": 926,
+          "detail": {
+            "neutralisation_moins_values": {
+              "nature": 192,
+              "montant_me": 6.66
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "tableau_correspondance_ca_cg_2024": {
+    "section_investissement": {
+      "recettes": {
+        "produits_cessions_actifs": {
+          "chapitre": 954,
+          "compte_administratif": 168110000.00,
+          "compte_gestion": 139549742.00,
+          "ecart": -28560258.00
+        },
+        "transferts_entre_sections": {
+          "chapitre": 926,
+          "compte_administratif": 532488443.00,
+          "compte_gestion": 567712895.43,
+          "ecart": 35224452.43
+        }
+      },
+      "depenses": {
+        "transferts_entre_sections": {
+          "chapitre": 926,
+          "compte_administratif": 45655427.00,
+          "compte_gestion": 52319621.43,
+          "ecart": 6664194.43
+        }
+      }
+    },
+    "section_fonctionnement": {
+      "depenses": {
+        "transferts_entre_sections": {
+          "chapitre": 946,
+          "compte_administratif": 532488443.00,
+          "compte_gestion": 567712895.43,
+          "ecart": 35224452.43
+        }
+      },
+      "recettes": {
+        "services_generaux": {
+          "chapitre": 930,
+          "compte_administratif": 227005137.07,
+          "compte_gestion": 228702377.07,
+          "ecart": 1697240.00
+        },
+        "culture_vie_sociale_jeunesse_sports_loisirs": {
+          "chapitre": 933,
+          "compte_administratif": 132861720.00,
+          "compte_gestion": 132861720.00,
+          "ecart": 0.00
+        },
+        "amenagement_territoires_habitat": {
+          "chapitre": 935,
+          "compte_administratif": 68537016.00,
+          "compte_gestion": 95317434.00,
+          "ecart": 26780418.00
+        },
+        "environnement": {
+          "chapitre": 937,
+          "compte_administratif": 821218701.00,
+          "compte_gestion": 821301301.00,
+          "ecart": 82600.00
+        },
+        "transferts_entre_sections": {
+          "chapitre": 946,
+          "compte_administratif": 45655427.00,
+          "compte_gestion": 52319621.43,
+          "ecart": 6664194.43
+        }
+      }
+    },
+    "note": "Les écarts correspondent aux cessions d'immobilisations et n'affectent pas le résultat de l'exercice 2024"
+  },
+
+  "annexe_etats_financiers_m57": {
+    "description": "Partie intégrante des états financiers en M57",
+    "contenu": [
+      "Éléments de compréhension complémentaires aux données chiffrées du bilan et du compte de résultat",
+      "Engagements donnés par la collectivité",
+      "Engagements reçus"
+    ],
+    "format": "Notes (nombre variable selon les informations significatives de l'exercice)",
+    "conformite": "Tome IV de l'instruction M57"
+  }
+}

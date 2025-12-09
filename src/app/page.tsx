@@ -48,6 +48,11 @@ const politiques = [
 
 const alertes = [
   {
+    titre: 'Déficit 2024',
+    description: 'En 2024, Paris a dépensé 231 M€ de plus que ses recettes en fonctionnement.',
+    lien: '/depenses',
+  },
+  {
     titre: 'Dette en hausse',
     description: 'La dette atteindra 9,4 Md€ fin 2025, soit +682 M€ en un an.',
     lien: '/dette',
@@ -194,7 +199,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {alertes.map((alerte, index) => (
               <motion.div
                 key={alerte.titre}
