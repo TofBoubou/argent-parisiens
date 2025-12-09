@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { DonutChart, BarChartHorizontal, ChiffreCard } from '@/components/charts';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import Link from 'next/link';
 import InfoTooltip from '@/components/InfoTooltip';
 
@@ -428,7 +428,6 @@ export default function RecettesPage() {
                     formatter={(value: number) => [`${value.toFixed(1)} M€`, 'DMTO']}
                     contentStyle={{ borderRadius: '8px' }}
                   />
-                  <ReferenceLine y={1500} stroke="#E30613" strokeDasharray="5 5" />
                   <Line
                     type="monotone"
                     dataKey="montant"
