@@ -604,7 +604,7 @@ export default function DettePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold mb-6">
-              Comprendre les autres aspects du budget
+              Explorer les autres aspects du budget
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -618,6 +618,12 @@ export default function DettePage() {
                 className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors"
               >
                 Les dépenses
+              </Link>
+              <Link
+                href="/investissements"
+                className="bg-white/10 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/20 transition-colors border border-white/30"
+              >
+                Les investissements
               </Link>
               <Link
                 href="/politiques"

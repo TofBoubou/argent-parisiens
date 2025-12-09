@@ -711,6 +711,36 @@ export default function RecettesPage() {
                 </div>
               </div>
             </div>
+
+            <h2 className="text-2xl font-bold mb-6 mt-12">
+              Explorer les autres aspects du budget
+            </h2>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/depenses"
+                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+              >
+                Les dépenses
+              </Link>
+              <Link
+                href="/dette"
+                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors"
+              >
+                La dette
+              </Link>
+              <Link
+                href="/investissements"
+                className="bg-white/10 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/20 transition-colors border border-white/30"
+              >
+                Les investissements
+              </Link>
+              <Link
+                href="/politiques"
+                className="bg-white/10 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/20 transition-colors border border-white/30"
+              >
+                Les 9 politiques
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
