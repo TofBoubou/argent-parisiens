@@ -1,0 +1,63 @@
+{
+  "fichier_source": "00 Sommaire du Budget Primitif 2025 de la Ville de Paris.pdf",
+  "metadata": {
+    "titre": "Projet de Budget Primitif",
+    "exercice": 2025,
+    "date_publication": "Décembre 2024",
+    "entite": "Ville de Paris"
+  },
+  "sommaire": {
+    "sections": [
+      {
+        "numero": 1,
+        "titre": "Présentation générale de l'équilibre du projet de budget primitif 2025",
+        "page": 5,
+        "sous_sections": [
+          { "titre": "L'équilibre général du projet de BP 2025", "page": 5 },
+          { "titre": "Les chiffres clés présentés par fonction", "page": 7 },
+          { "titre": "Description des grands postes de dépenses et recettes", "page": 8 }
+        ]
+      },
+      {
+        "numero": 2,
+        "titre": "Crédits transverses : fiscalité, dotations, péréquation, et opérations financières",
+        "page": 18
+      },
+      {
+        "numero": 3,
+        "titre": "Présentation par politique publique",
+        "page": 29,
+        "sous_sections": [
+          { "code": "1", "titre": "Sécurité", "page": 33 },
+          { "code": "2", "titre": "Enseignement, formation professionnelle et apprentissage", "page": 37 },
+          { "code": "3", "titre": "Culture, vie sociale, jeunesse, sports et loisirs", "page": 44 },
+          { "code": "4", "titre": "Santé et action sociale", "page": 53 },
+          { "code": "5", "titre": "Aménagement des territoires et habitat", "page": 63 },
+          { "code": "6", "titre": "Action économique", "page": 71 },
+          { "code": "7", "titre": "Environnement", "page": 77 },
+          { "code": "8", "titre": "Transports", "page": 84 },
+          { "code": "0", "titre": "Services généraux", "page": 90 }
+        ]
+      },
+      {
+        "numero": 4,
+        "titre": "Les autorisations de programme",
+        "page": 101,
+        "sous_sections": [
+          { "titre": "Nouvelles autorisations de programme", "page": 101 },
+          { "titre": "Situation des autorisations de programme en cours", "page": 114 }
+        ]
+      },
+      {
+        "numero": 5,
+        "titre": "Les opérations d'ordre",
+        "page": 116
+      },
+      {
+        "numero": 6,
+        "titre": "Récapitulatif par chapitre",
+        "page": 118
+      }
+    ]
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "fichier_source": "03-6 Action économique.pdf",
+  "section": "3 - Présentation par politique publique",
+  "sous_section": "(6) Action économique",
+  "pages": "71-76",
+  "unite": "M€",
+
+  "budget_consolide": {
+    "_source": "Tableau page 1",
+    "depenses_fonctionnement": {"bp_2024": 49.2, "bp_2025": 53.4},
+    "dont_masse_salariale": {"bp_2024": 11.8, "bp_2025": 12.7},
+    "depenses_investissement": {"bp_2024": 32.7, "bp_2025": 23.7},
+    "recettes_fonctionnement": {"bp_2024": 256.8, "bp_2025": 208.9},
+    "recettes_investissement": {"bp_2024": 0.1, "bp_2025": 42.5}
+  },
+
+  "graphique_repartition_budget_total": {
+    "_source": "Graphique page 1 - Camembert budget consolidé",
+    "total_me": 77.1,
+    "repartition": {
+      "actions_sectorielles_pct": 43.6,
+      "insertion_economique_economie_sociale_solidaire_pct": 26.9,
+      "recherche_innovation_pct": 12.1,
+      "autres_actions_pct": 7.6,
+      "services_communs_pct": 4.2,
+      "structures_animation_developpement_economique_pct": 3.3,
+      "rayonnement_attractivite_territoire_pct": 2.3
+    }
+  },
+
+  "depenses_fonctionnement": {
+    "total_me": 53.4,
+    "dont_masse_salariale_me": 12.7,
+    "hors_masse_salariale_me": 40.7,
+    "variation_hors_ms_vs_bp2024_me": 3.2,
+
+    "creations_postes_2025": {
+      "total_creations": 2,
+      "transfert_entrant_services_generaux": 1,
+      "solde_net_fonction": 3,
+      "nouvelles_missions_activites": {
+        "direction_attractivite_emploi": {
+          "total": 2,
+          "type_contrat": "Contrat de projet",
+          "detail": {
+            "mission_resilience": 1,
+            "mission_intelligence_artificielle_esport_bureau_innovation": 1
+          }
+        }
+      }
+    },
+
+    "graphique_repartition_hors_masse_salariale": {
+      "_source": "Graphique page 2 - Dépenses de fonctionnement hors masse salariale",
+      "insertion_economique_economie_sociale_solidaire_pct": 35.0,
+      "recherche_innovation_pct": 17.5,
+      "industrie_commerce_artisanat_pct": 15.3,
+      "developpement_touristique_pct": 10.3,
+      "alimentation_agriculture_pct": 8.2,
+      "autres_actions_pct": 7.4,
+      "structures_animation_developpement_economique_pct": 3.0,
+      "rayonnement_attractivite_territoire_pct": 2.0,
+      "services_communs_pct": 1.4
+    },
+
+    "insertion_economique_economie_sociale_solidaire": {
+      "total_me": 14.2,
+      "variation_vs_bp2024_me": 1.6,
+      "detail": {
+        "insertion_economique": {
+          "montant_me": 11.4,
+          "variation_me": 1.6,
+          "objet": "Soutien aux opérateurs de l'emploi et de la formation",
+          "cause_hausse": "Pallier le désengagement de la Région Ile-de-France et de l'État envers la Mission locale de Paris"
+        },
+        "soutien_economie_sociale_solidaire_me": 2.7,
+        "insertion_agriculture_durable": {
+          "montant_me": 0.2,
+          "objet": "Formations aux métiers de l'agriculture"
+        }
+      }
+    },
+
+    "industrie_commerces_artisanat_tourisme": {
+      "total_me": 13.8,
+      "variation_vs_bp2024_me": 1.0,
+      "detail": {
+        "industrie_commerce_artisanat": {
+          "total_me": 6.2,
+          "operation_vital_quartier_solde_me": 2.2,
+          "animations_commerciales": {
+            "note": "Fête des marchés, festival des cuisines de rue, entretien 10 marchés couverts"
+          },
+          "illuminations_noel_quartiers_populaires_me": 0.8,
+          "aide_kiosquiers": {
+            "montant_me": 1.8,
+            "condition": "Chiffre d'affaires inférieur à 262 K€ sur le volet presse"
+          }
+        },
+        "developpement_touristique": {
+          "montant_me": 4.2,
+          "note": "Principalement subvention à l'Office du tourisme et des congrès de Paris (OTCP)"
+        },
+        "agriculture_urbaine_alimentation_solidaire_ecologique": {
+          "montant_me": 3.3,
+          "variation_me": 0.1,
+          "objets": [
+            "Ferme de Paris",
+            "Lutte contre le gaspillage alimentaire",
+            "Formations agriculture durable École du Breuil",
+            "Subventions et mobilisation acteurs alimentation durable"
+          ]
+        }
+      }
+    },
+
+    "recherche_innovation": {
+      "total_me": 7.1,
+      "variation_vs_bp2024_me": 0.5,
+      "detail": {
+        "ecole_creation_numerique_tumo": {
+          "montant_me": 5.5,
+          "variation_me": 0.5
+        },
+        "institut_etudes_avancees_iea_me": 0.6,
+        "soutien_structures_recherche_innovation_me": 1.0
+      }
+    },
+
+    "autres_actions_subventions_unions_departementales_syndicales": {
+      "montant_me": 3.0,
+      "variation_me": 0.1
+    },
+
+    "structures_animation_developpement_economique": {
+      "montant_me": 1.2,
+      "beneficiaire": "Paris&Co",
+      "description": "Agence d'innovation commune de la métropole du Grand Paris et de la Ville de Paris"
+    },
+
+    "rayonnement_attractivite_territoire": {
+      "montant_me": 0.8,
+      "objets": ["Organisation foire du Trône", "Fête à Neu-Neu"]
+    },
+
+    "services_communs_me": 0.6
+  },
+
+  "recettes_fonctionnement": {
+    "total_me": 208.9,
+    "variation_vs_bp2024_me": -52.9,
+    "note_variation": "Principalement diminution taxe de séjour après JOP 2024",
+
+    "graphique_repartition": {
+      "_source": "Graphique page 3 - Recettes de fonctionnement",
+      "taxe_sejour_pct": 64.6,
+      "industrie_commerce_artisanat_pct": 32.6,
+      "insertion_economique_economie_sociale_solidaire_autres_actions_pct": 1.5,
+      "rayonnement_attractivite_territoire_pct": 1.1,
+      "recherche_innovation_pct": 0.2
+    },
+
+    "detail": {
+      "taxe_sejour": {
+        "montant_me": 135.0,
+        "variation_me": -50.0,
+        "note": "Baisse après année marquée par les JOP 2024"
+      },
+      "industrie_commerce_artisanat": {
+        "total_me": 68.1,
+        "variation_me": 2.1,
+        "detail": {
+          "droits_voirie_me": 46.9,
+          "activites_espace_public": {
+            "montant_me": 13.1,
+            "sources": [
+              "Redevance occupation domaine public et mobiliers publicitaires (Médiakiosk)",
+              "Redevances de concessions",
+              "Produit ventes vide-greniers",
+              "Recettes événements (défilés de mode)"
+            ]
+          },
+          "metiers_art_me": 5.7,
+          "redevances_marches_couverts_decouverts_me": 2.4
+        }
+      },
+      "revenus_immeubles_activite_economique": {
+        "montant_me": 3.0,
+        "variation_me": 0.3
+      },
+      "fetes_foraines_attractions_me": 2.3,
+      "recherche_innovation_me": 0.4
+    }
+  },
+
+  "depenses_investissement": {
+    "total_me": 23.7,
+    "bp_2024_me": 32.7,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 4 - Dépenses d'investissement",
+      "actions_sectorielles_pct": 70.4,
+      "insertion_economique_economie_sociale_solidaire_pct": 16.5,
+      "recherche_innovation_pct": 6.6,
+      "structures_animation_developpement_economique_pct": 5.6,
+      "rayonnement_attractivite_territoire_pct": 0.9
+    },
+
+    "industrie_commerces_artisanat_tourisme": {
+      "total_me": 16.7,
+      "detail": {
+        "compte_foncier_commerces": {
+          "fonction_action_economique_me": 7.0,
+          "operations_financieres_credits_non_ventiles_me": 1.0,
+          "total_me": 8.0,
+          "objet": "Préempter des locaux commerciaux pour redynamisation commerciale"
+        },
+        "alimentation_agriculture_urbaine_durables": {
+          "total_me": 4.0,
+          "commerces_alimentation_durable": {
+            "total_me": 2.0,
+            "restaurants_epiceries_durables_me": 0.9,
+            "lieux_transformation_alimentaire_me": 0.5,
+            "logistique_circuits_courts_me": 0.4
+          },
+          "agriculture_urbaine_durable": {
+            "total_me": 2.0,
+            "subventions_me": 0.9,
+            "sortie_plastique_me": 0.6,
+            "renouveau_ferme_paris_me": 0.2,
+            "actions_agriculture_urbaine_durable_me": 0.2
+          }
+        },
+        "modernisation_developpement_commerces_marches": {
+          "total_me": 3.5,
+          "bp_2024_me": 6.6,
+          "detail": {
+            "kiosques_me": 1.5,
+            "travaux_renovation_marches": {
+              "total_me": 1.0,
+              "marche_fleurs_reine_elizabeth_ii": {"arrondissement": "Paris Centre", "montant_me": 0.9},
+              "marche_livres": {"arrondissement": "15e", "montant_me": 0.1}
+            },
+            "entretien_marches_quartier_me": 0.7,
+            "mise_aux_normes_me": 0.2
+          }
+        },
+        "soutien_industrie_artisanat": {
+          "total_me": 1.5,
+          "travaux_renovation_maison_air": {"arrondissement": "20e", "montant_me": 1.0},
+          "plan_librairies_disquaires_galeries_me": 0.5
+        },
+        "tourisme_transition_durable_me": 0.6
+      }
+    },
+
+    "insertion_economique_economie_sociale_solidaire": {
+      "total_me": 3.9,
+      "bp_2024_me": 4.1,
+      "detail": {
+        "ressourceries_consigne_reemploi_me": 1.7,
+        "modernisation_transition_ecologique_me": 0.3,
+        "programme_fabrique_paris_production_locale_me": 1.0,
+        "entretien_renovation_bourse_travail_me": 0.5,
+        "dispositifs_insertion_formation": {
+          "montant_me": 0.4,
+          "domaines": ["Agriculture durable", "Formation numérique et codage", "Économie circulaire"]
+        },
+        "territoires_zero_chomeurs_longue_duree_me": 0.1
+      }
+    },
+
+    "recherche_innovation": {
+      "total_me": 1.6,
+      "recherche": {
+        "total_me": 1.3,
+        "fonds_soutien_recherche_me": 0.8,
+        "dispositif_emergences_jeunes_chercheurs": {
+          "montant_me": 0.6,
+          "bp_2024_me": 1.3
+        }
+      },
+      "innovation_subventions_tumo_me": 0.2
+    },
+
+    "structures_animation_developpement_economique": {
+      "total_me": 1.3,
+      "projets_innovation_sociale_me": 1.0,
+      "paris_region_innovation_lab_me": 0.2,
+      "projets_collaboratifs_innovation_me": 0.1
+    },
+
+    "rayonnement_attractivite_territoire": {
+      "montant_me": 0.2,
+      "objet": "Illuminations des Champs Elysées",
+      "arrondissement": "8e"
+    }
+  },
+
+  "recettes_investissement": {
+    "total_me": 42.5,
+    "detail": {
+      "remboursement_avances_sem_paris_commerces_vital_quartier_me": 42.4,
+      "frais_enlevement_terrasses_illegales_depose_dispositifs_publicitaires_me": 0.1
+    }
+  }
+}

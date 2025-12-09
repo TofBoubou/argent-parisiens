@@ -1,0 +1,540 @@
+{
+  "fichier_source": "03-3 Culture, vie sociale, jeunesse, sports et loisirs.pdf",
+  "section": "3 - Présentation par politique publique",
+  "sous_section": "(3) Culture, vie sociale, jeunesse, sports et loisirs",
+  "pages": "44-52",
+  "unite": "M€",
+
+  "budget_consolide": {
+    "_source": "Tableau page 1",
+    "depenses_fonctionnement": {"bp_2024": 711.2, "bp_2025": 633.6},
+    "dont_masse_salariale": {"bp_2024": 360.6, "bp_2025": 370.8},
+    "depenses_investissement": {"bp_2024": 194.0, "bp_2025": 157.9},
+    "recettes_fonctionnement": {"bp_2024": 123.1, "bp_2025": 119.3},
+    "recettes_investissement": {"bp_2024": 32.8, "bp_2025": 13.5}
+  },
+
+  "graphique_repartition_budget_total": {
+    "_source": "Graphique page 1 - Camembert budget consolidé",
+    "total_me": 791.5,
+    "repartition": {
+      "culture_pct": 51.6,
+      "sports_pct": 31.7,
+      "services_communs_pct": 7.0,
+      "vie_sociale_citoyenne_pct": 6.7,
+      "jeunesse_loisirs_pct": 3.0
+    }
+  },
+
+  "depenses_fonctionnement": {
+    "total_me": 633.6,
+    "dont_masse_salariale_me": 370.8,
+    "hors_masse_salariale_me": 262.8,
+    "variation_hors_ms_vs_bp2024_me": -88.1,
+
+    "creations_postes_2025": {
+      "total_creations": 70,
+      "nouveaux_equipements": {
+        "total": 35,
+        "direction_affaires_culturelles": {
+          "total": 7,
+          "equipements": [
+            {"nom": "Site Cromot du Bourg", "arrondissement": "9e"},
+            {"nom": "Ateliers de Chapelle-International", "arrondissement": "18e"},
+            {"nom": "Annexe Pivert", "arrondissement": "11e"}
+          ]
+        },
+        "direction_jeunesse_sports": {
+          "total": 28,
+          "detail": {
+            "piscine_rue_belliard_18e": 24,
+            "extension_terrain_education_sportive_amandiers_20e": 4
+          }
+        }
+      },
+      "nouvelles_missions_renforts": {
+        "total": 14,
+        "direction_affaires_culturelles_archeologie_preventive": {"total": 8, "dont_contrats_projet": 3},
+        "direction_jeunesse_sports_grands_evenements_sportifs": 6
+      },
+      "resorption_emploi_precaire": {
+        "total": 21,
+        "direction": "Direction des affaires culturelles",
+        "detail": {
+          "professeurs_enseignement_artistique_temps_non_complet": 12,
+          "assistants_contractuels_temps_non_complet_conservatoires": 9
+        }
+      },
+      "solde_transformations": -2,
+      "redeploiements": 85,
+      "solde_net_fonction": -17
+    },
+
+    "graphique_repartition_hors_masse_salariale": {
+      "_source": "Graphique page 2 - Dépenses de fonctionnement hors masse salariale",
+      "culture_pct": 69.1,
+      "sports_pct": 21.5,
+      "jeunesse_loisirs_pct": 7.0,
+      "vie_sociale_citoyenne_pct": 1.5,
+      "services_communs_pct": 0.8
+    },
+
+    "culture": {
+      "total_me": 181.7,
+      "variation_vs_bp2024_me": 3.3,
+
+      "theatre_expression_musicale": {
+        "total_me": 79.3,
+        "soutien_spectacle_vivant_me": 40.4,
+        "soutien_expression_musicale_me": 38.9
+      },
+
+      "musees": {
+        "total_me": 60.7,
+        "variation_me": 2.3,
+        "paris_musees": {
+          "montant_me": 58.5,
+          "variation_me": 2.3,
+          "cause_hausse": "Compensation perte de recettes prévisionnelle liée à la fermeture pour travaux des Catacombes (14e) en 2025"
+        },
+        "autres_musees_dont_mahj_me": 2.2
+      },
+
+      "activites_artistiques_manifestations_culturelles": {
+        "total_me": 20.6,
+        "variation_me": 1.0,
+        "subventions_enseignement_artistique_pratiques_amateurs_me": 7.8,
+        "subventions_arts_visuels_me": 7.2,
+        "action_culturelle": {
+          "total_me": 2.5,
+          "heritage_jop_2024": {
+            "montant_me": 0.3,
+            "programmes": ["Résidences ArtxSport pour Grandir", "Résidence croisée Paris/Seine-Saint-Denis", "Artistes et sportifs associés", "Paris, sport, vacances + culture"]
+          }
+        },
+        "nuit_blanche": {
+          "montant_me": 1.3,
+          "variation_pct": 69.3,
+          "detail": {
+            "mecenat_me": 0.3,
+            "marche_production_deleguee_me": 1.1
+          }
+        },
+        "conservatoires_ateliers_beaux_arts_me": 1.0,
+        "moyens_transverses_action_culturelle_me": 0.8
+      },
+
+      "diversite_economie_culturelle": {
+        "total_me": 8.8,
+        "theatres_prives_cirque_arts_rue": {
+          "montant_me": 5.0,
+          "variation_me": 0.3,
+          "cause_hausse": "Soutien accru aux arts de la rue et intégration nouveau bâtiment ateliers Médicis"
+        },
+        "musiques_actuelles": {
+          "montant_me": 3.6,
+          "variation_me": 0.4
+        },
+        "etablissements_culturels_solidaires_me": 0.2
+      },
+
+      "conservation_patrimoine_culturel": {
+        "total_me": 5.6,
+        "entretien_valorisation_patrimoine": {"montant_me": 3.4, "variation_me": 0.3},
+        "fontaines_patrimoniales": {
+          "montant_me": 1.2,
+          "variation_me": -0.2,
+          "cause_baisse": "Réduction dépenses électricité grâce aux travaux (fontaines Varsovie et Champs-Élysées)"
+        },
+        "memoire_anciens_combattants_me": 0.6,
+        "politique_memorielle": {
+          "montant_me": 0.3,
+          "note": "Nettoyage de plus de 100 plaques commémoratives de la Seconde Guerre mondiale"
+        },
+        "conservation_patrimoine_culturel_me": 0.1
+      },
+
+      "bibliotheques_mediatheques": {
+        "total_me": 4.4,
+        "soutien_bibliotheques_lecture_me": 2.6,
+        "animation_bibliotheques_me": 1.7
+      },
+
+      "soutien_cinema_me": 2.0,
+      "archives_ville_me": 0.4
+    },
+
+    "sport": {
+      "total_me": 56.6,
+      "variation_vs_bp2024_me": -92.1,
+      "cause_baisse": "Absence de dépenses relatives à l'organisation des JOP (-90,5 M€)",
+
+      "piscines": {
+        "total_me": 25.5,
+        "piscines_externalisees": {
+          "montant_me": 21.5,
+          "variation_me": 2.5,
+          "cause_hausse": "Réouverture piscines après travaux (Georges Vallerey 20e) et inflation"
+        },
+        "piscines_regie": {
+          "montant_me": 3.8,
+          "variation_me": -1.4,
+          "note": "Inclut transfert 0,5 M€ vers dépenses transverses (transport scolaires)"
+        },
+        "location_creneaux_me": 0.3
+      },
+
+      "autres_evenements_dispositifs_sportifs": {
+        "total_me": 18.3,
+        "variation_me": 1.8,
+        "soutien_clubs_haut_niveau_me": 5.9,
+        "dispositifs_sportifs_me": 5.1,
+        "soutien_sport_proximite": {
+          "total_me": 5.0,
+          "heritage_jop": {
+            "montant_me": 0.7,
+            "dispositifs": ["Paris Sportives", "Paris Sport Senior en plein air", "Paris Sport Dimanche", "Forma Sport"]
+          }
+        },
+        "depenses_transverses": {
+          "montant_me": 2.3,
+          "variation_me": -1.8,
+          "transport_scolaires_equipements_sportifs_me": 0.7
+        }
+      },
+
+      "centres_sportifs_stades": {
+        "total_me": 9.8,
+        "equipements_regie": {
+          "montant_me": 7.4,
+          "note": "Inclut transfert 1,0 M€ pour gardiennage vers fonction Sécurité"
+        },
+        "gestion_externalisee_me": 1.8,
+        "locations_creneaux": {
+          "montant_me": 0.7,
+          "variation_me": 0.1,
+          "cause": "Extension des créneaux sur certains sites"
+        }
+      },
+
+      "parcs_interdepartementaux_me": 2.9
+    },
+
+    "jeunesse_loisirs": {
+      "total_me": 18.5,
+      "variation_vs_bp2024_me": 0.7,
+      "centres_loisirs_me": 9.0,
+      "colonies_vacances": {
+        "montant_me": 5.7,
+        "variation_me": 0.5
+      },
+      "soutien_associations_jeunesse": {
+        "montant_me": 2.2,
+        "variation_me": 0.2,
+        "programmes": ["Talents 2024 (héritage JOP)", "Augmentation places foyers jeunes travailleurs"]
+      },
+      "animation_projets_dispositifs_jeunesse": {
+        "total_me": 1.6,
+        "paris_jeunes_vacances_me": 0.1
+      }
+    },
+
+    "vie_sociale_citoyenne": {
+      "total_me": 4.0,
+      "egalite_lutte_discriminations": {
+        "total_me": 2.2,
+        "egalite_femmes_hommes_me": 1.6,
+        "politique_nuit_me": 0.3
+      }
+    },
+
+    "services_communs": {
+      "montant_me": 2.0,
+      "variation_me": -0.2
+    }
+  },
+
+  "recettes_fonctionnement": {
+    "total_me": 119.3,
+    "variation_vs_bp2024_me": -3.7,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 5 - Recettes de fonctionnement",
+      "sports_pct": 52.5,
+      "jeunesse_loisirs_pct": 25.6,
+      "culture_pct": 21.5,
+      "vie_citoyenne_pct": 0.5
+    },
+
+    "sport": {
+      "total_me": 62.6,
+      "variation_me": -14.2,
+      "cause_baisse": "Grands événements sportifs internationaux -19,2 M€ (JOP 2024)",
+
+      "stades": {
+        "total_me": 51.5,
+        "equipements_gestion_externalisee": {
+          "montant_me": 48.8,
+          "variation_me": 5.2,
+          "cause_hausse": "Progression CA concessionnaires et ouverture Arena porte de la Chapelle 18e"
+        },
+        "equipements_regie_me": 2.6
+      },
+      "piscines": {
+        "montant_me": 8.0,
+        "note": "Hausse attendue de la fréquentation"
+      },
+      "dispositifs_sportifs_me": 2.1,
+      "grands_evenements_sportifs_internationaux": {
+        "montant_me": 1.0,
+        "variation_me": -19.2
+      }
+    },
+
+    "jeunesse_loisirs": {
+      "total_me": 30.6,
+      "variation_me": 3.0,
+      "centres_loisirs": {
+        "montant_me": 25.0,
+        "variation_me": 2.8,
+        "sources": ["Participations familiales", "CAF"],
+        "cause_hausse": "Hausse attendue de la fréquentation"
+      },
+      "colonies_vacances_me": 1.3,
+      "projets_animations_dispositifs_jeunesse": {
+        "montant_me": 4.3,
+        "variation_me": 0.2,
+        "note": "Passage en marché public de 6 centres Paris Anim' (effet périmètre 1er septembre 2025)"
+      }
+    },
+
+    "culture": {
+      "total_me": 25.6,
+      "variation_me": 7.6,
+      "enseignement_artistique_me": 12.3,
+      "entretien_valorisation_patrimoine_culturel_fontaines": {
+        "montant_me": 9.3,
+        "variation_me": 5.6,
+        "source": "Redevances bâches publicitaires"
+      },
+      "redevances_tournages_cinema": {
+        "montant_me": 2.5,
+        "variation_me": 1.4,
+        "cause_hausse": "Reprise rythme tournages plus habituel après JOP 2024"
+      },
+      "action_culturelle": {
+        "montant_me": 0.5,
+        "mecenat_nuit_blanche_me": 0.3
+      },
+      "bibliotheques_me": 0.6,
+      "theatre_expression_musicale_me": 0.3
+    },
+
+    "vie_sociale_citoyenne_me": 0.6
+  },
+
+  "depenses_investissement": {
+    "total_me": 157.9,
+    "bp_2024_me": 194.0,
+    "variation_me": -36.1,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 6 - Dépenses d'investissement",
+      "sports_pct": 49.4,
+      "culture_pct": 44.7,
+      "vie_sociale_citoyenne_pct": 4.0,
+      "jeunesse_loisirs_pct": 1.3,
+      "services_communs_pct": 0.6
+    },
+
+    "sport": {
+      "total_me": 78.0,
+      "bp_2024_me": 122.9,
+      "cause_baisse": "Fin des JOP (70,3 M€ au BP 2024), équipements livrés avant été 2024 dont Arena porte de la Chapelle",
+
+      "contribution_solideo": {
+        "montant_me": 27.2,
+        "note": "Solde de la contribution, clôturant les dépenses liées à l'organisation et accueil des Jeux"
+      },
+
+      "piscines_bains_douches": {
+        "total_me": 26.5,
+        "bp_2024_me": 22.4,
+        "baignade_seine": {
+          "montant_me": 7.9,
+          "variation_me": 7.1,
+          "note": "Héritage JOP"
+        },
+        "piscine_rue_belliard_18e_me": 6.0,
+        "piscine_chateau_landon_10e_me": 6.0,
+        "plan_gros_entretien_renovation_piscines": {
+          "bp_2024_me": 3.8,
+          "bp_2025_me": 3.6
+        }
+      },
+
+      "salles_sport_gymnases": {
+        "total_me": 17.8,
+        "bp_2024_me": 21.5,
+        "projets": [
+          {"nom": "Gymnase ZAC porte de Montreuil", "arrondissement": "20e", "montant_me": 3.7},
+          {"nom": "Îlot Saint Germain", "arrondissement": "7e", "montant_me": 2.0},
+          {"nom": "Rénovation centre sportif Suzanne Lenglen", "arrondissement": "15e", "montant_me": 1.1},
+          {"nom": "Réfection vestiaires/pistes centre sportif Poissonniers", "arrondissement": "18e", "montant_me": 1.0},
+          {"nom": "Rénovation centre sportif Max Rousié", "arrondissement": "17e", "montant_me": 0.9}
+        ],
+        "entretien_localise_gymnases_salles_sport_me": 6.6,
+        "entretien_equipements_sportifs_me": 0.8,
+        "couverture_terrains_tennis_terrains_education_physique_me": 0.5,
+        "renovation_eclairages_equipements_sportifs_me": 0.5,
+        "petits_travaux_me": 0.2
+      },
+
+      "autres_equipements_sportifs_loisirs": {
+        "total_me": 3.6,
+        "schema_directeur_bois_vincennes_12e_me": 2.5,
+        "travaux_parcs_interdepartementaux_me": 0.7,
+        "parcours_sportif_playground_sport_dans_la_rue_me": 0.4
+      },
+
+      "stades": {
+        "total_me": 3.0,
+        "variation_me": -2.2,
+        "stade_jean_bouin_16e_me": 0.9,
+        "gazons_synthetiques_me": 0.5,
+        "renovation_pistes_athletisme_me": 0.5,
+        "parc_bobigny_me": 0.5,
+        "stade_charlety_renovation_me": 0.3
+      }
+    },
+
+    "culture": {
+      "total_me": 70.7,
+      "bp_2024_me": 59.1,
+
+      "edifices_cultuels": {
+        "total_me": 30.5,
+        "bp_2024_me": 19.7,
+        "travaux_renovation_eglises": [
+          {"nom": "Abords Notre-Dame", "arrondissement": "Paris Centre", "montant_me": 7.3},
+          {"nom": "Restauration église de la Trinité", "arrondissement": "9e", "montant_me": 3.4},
+          {"nom": "Consolidation église Sainte-Anne-de-la-Butte-aux-Cailles", "arrondissement": "13e", "montant_me": 2.6},
+          {"nom": "Restauration église Sainte-Marie-Madeleine", "arrondissement": "8e", "montant_me": 1.7},
+          {"nom": "Restauration église Saint-Augustin", "arrondissement": "8e", "montant_me": 1.5},
+          {"nom": "Parements extérieurs église Notre-Dame-de-Lorette", "arrondissement": "9e", "montant_me": 1.5}
+        ],
+        "entretien_etudes_me": 6.6,
+        "operations_mecenees_me": 2.4,
+        "peintures_murales_edifices_religieux_me": 2.1
+      },
+
+      "musees": {
+        "total_me": 11.6,
+        "variation_me": 2.2,
+        "subvention_investissement_paris_musees": {"montant_me": 4.5, "variation_me": 0.1},
+        "amelioration_parcours_visite_catacombes_14e_me": 2.6,
+        "musee_art_moderne_16e_climatisation_me": 1.3,
+        "reamenagement_musee_art_histoire_judaisme_paris_centre_me": 0.9,
+        "restauration_isolation_petit_palais_8e_me": 0.8,
+        "enrichissement_collections_paris_musees_me": 0.8,
+        "renovation_parcours_visite_musee_vie_romantique_9e_me": 0.6
+      },
+
+      "bibliotheques": {
+        "total_me": 7.2,
+        "bp_2024_me": 6.7,
+        "acquisitions_collections_nouvelles_bibliotheques": {"bp_2024_me": 2.0, "bp_2025_me": 3.5},
+        "investissements_localises_bibliotheques_me": 1.8,
+        "mediatheque_virginia_woolf_zac_paul_bourget_13e_me": 0.7,
+        "materiel_mobilier_me": 0.6
+      },
+
+      "histoire_memoire_anciens_combattants": {
+        "total_me": 5.7,
+        "memorial_place_saint_gervais_paris_centre_me": 5.3,
+        "plaques_commemoratives_me": 0.2
+      },
+
+      "soutien_actions_culturelles": {
+        "total_me": 5.3,
+        "variation_me": 0.8,
+        "subventions_equipement_action_culturelle": {"montant_me": 3.0, "variation_me": 1.0},
+        "travaux_entretien_grands_equipements_culturels": {"montant_me": 0.7, "variation_me": 0.1},
+        "rehabilitation_pole_culturel_106_rue_brancion_15e_me": 0.5
+      },
+
+      "enseignement_artistique_pratiques_amateurs": {
+        "total_me": 4.3,
+        "entretien_conservatoires_credits_localises_me": 2.1,
+        "conservatoire_zac_ordener_poissonniers_18e_me": 1.0,
+        "acquisitions_materiel_mobilier_conservatoires_me": 0.7,
+        "projet_grandes_rigoles_20e_me": 0.4
+      },
+
+      "conservation_patrimoine_culturel_archives": {
+        "total_me": 3.2,
+        "bp_2024_me": 4.4,
+        "entretien_fontaines_patrimoniales_me": 1.4,
+        "numerisation_collections_me": 0.6,
+        "fouilles_archeologiques_hotel_dieu_paris_centre_me": 0.5,
+        "archives_me": 0.4,
+        "entretien_oeuvres_art_espace_public_me": 0.2
+      },
+
+      "theatres_salles_spectacles_cinemas": {
+        "total_me": 2.9,
+        "note": "Après achèvement travaux rénovation théâtre Sarah Bernhardt",
+        "reparations_travaux_urgents_me": 1.2,
+        "renovation_cartoucherie_12e_me": 1.0,
+        "subvention_equipement_cinema_me": 0.7
+      }
+    },
+
+    "vie_sociale_citoyenne": {
+      "total_me": 6.4,
+      "entretien_mairies_arrondissement": {
+        "total_me": 5.5,
+        "travaux_modernisation_iil_me": 2.0,
+        "restauration_facades_mairie_10e_rues_bullet_hittorff_me": 0.9,
+        "modernisation_salle_sedaine_mairie_11e_me": 0.5,
+        "restructuration_partielle_mairie_18e_me": 0.4
+      },
+      "subvention_equipement_centre_national_musique_me": 0.7
+    },
+
+    "jeunesse": {
+      "total_me": 2.0,
+      "entretien_localise_centres_animation_me": 1.0,
+      "renovation_centre_animation_mercoeur_11e_me": 0.7
+    },
+
+    "services_communs": {
+      "montant_me": 0.9,
+      "objet": "Remplacement matériels et mobiliers, études et petits travaux"
+    }
+  },
+
+  "recettes_investissement": {
+    "total_me": 13.5,
+    "variation_vs_bp2024_me": -19.3,
+    "cause_baisse": "Fin des participations de la Solideo (17,4 M€ au BP 2024)",
+
+    "sport": {
+      "total_me": 5.1,
+      "piscines": {
+        "total_me": 3.1,
+        "cofinancement_renovation_piscine_chateau_landon_10e_me": 2.4,
+        "contrats_performance_energetique_me": 0.7
+      }
+    },
+
+    "culture": {
+      "total_me": 8.4,
+      "plan_edifices_cultuels": {
+        "montant_me": 7.0,
+        "sources": ["Subventions DRAC IDF", "Mécénats", "Redevances bâches publicitaires"]
+      },
+      "dsil_renovation_thermique_mediatheque_james_baldwin_19e_me": 0.9
+    }
+  }
+}

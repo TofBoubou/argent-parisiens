@@ -1,0 +1,307 @@
+{
+  "fichier_source": "06 Récapitulatif par chapitre.pdf",
+  "section": "6 - Récapitulatif par chapitre",
+  "pages": "118-125",
+  "unite": "M€",
+  "editeur": "VILLE DE PARIS – Direction des finances et des achats",
+  "date_publication": "Décembre 2024",
+
+  "note_methodologique": "Les tableaux décomposent le passage du périmètre de l'analyse financière à celui des documents budgétaires. Ils présentent les flux neutralisés en analyse financière car équilibrés en dépenses et en recettes.",
+
+  "depenses_fonctionnement": {
+    "_source": "Tableau page 1",
+    "vision_analyse_financiere_par_fonction": {
+      "securite": 482.1,
+      "enseignement_formation_professionnelle_apprentissage": 874.1,
+      "culture_vie_sociale_jeunesse_sports_loisirs": 633.6,
+      "sante_action_sociale": 2650.6,
+      "amenagement_territoires_habitat": 288.4,
+      "action_economique": 53.4,
+      "environnement": 806.3,
+      "transports": 724.4,
+      "services_generaux": 922.6,
+      "operations_non_ventilees": 1832.7,
+      "total_depenses_reelles_fonctionnement_a": 9268.2
+    },
+    "neutralisations_b": {
+      "total": 637.5,
+      "depenses_ordre_transfert_sections_chapitre_946": 498.1,
+      "virement_section_investissement_chapitre_953": 127.7,
+      "operation_porte_versailles": 11.7
+    },
+    "total_budgetaire_a_plus_b": 9905.7
+  },
+
+  "recettes_fonctionnement": {
+    "_source": "Tableau page 2",
+    "vision_analyse_financiere_par_fonction": {
+      "securite": 1.3,
+      "enseignement_formation_professionnelle_apprentissage": 70.5,
+      "culture_vie_sociale_jeunesse_sports_loisirs": 119.3,
+      "sante_action_sociale": 632.8,
+      "amenagement_territoires_habitat": 60.2,
+      "action_economique": 208.9,
+      "environnement": 831.9,
+      "transports": 472.7,
+      "services_generaux": 232.2,
+      "operations_non_ventilees": 7209.7,
+      "total_recettes_reelles_fonctionnement_a": 9839.5
+    },
+    "neutralisations_b": {
+      "total": 66.2,
+      "recettes_ordre_transfert_sections_chapitre_946": 50.4,
+      "complement_prix_cession": 4.1,
+      "operation_porte_versailles": 11.7
+    },
+    "total_budgetaire_a_plus_b": 9905.7
+  },
+
+  "depenses_investissement": {
+    "_source": "Tableaux pages 2-3",
+    "vision_analyse_financiere_par_fonction": {
+      "securite": 23.0,
+      "enseignement_formation_professionnelle_apprentissage": 102.4,
+      "culture_vie_sociale_jeunesse_sports_loisirs": 157.9,
+      "sante_action_sociale": 71.3,
+      "amenagement_territoires_habitat": 764.0,
+      "action_economique": 23.7,
+      "environnement": 110.2,
+      "transports": 143.9,
+      "services_generaux": 184.2,
+      "operations_non_ventilees": 133.3,
+      "total_depenses_reelles_investissement_a": 1713.9
+    },
+    "neutralisations_b": {
+      "total": 676.5,
+      "depenses_ordre_transfert_sections": 50.4,
+      "operations_patrimoniales_chapitre_925": 187.9,
+      "operations_equilibrees_neutralisees": 130.2,
+      "remboursements_emprunt": 308.1
+    },
+    "total_budgetaire_a_plus_b": 2390.3
+  },
+
+  "recettes_investissement": {
+    "_source": "Tableau page 3",
+    "vision_analyse_financiere_par_fonction": {
+      "securite": 1.0,
+      "enseignement_formation_professionnelle_apprentissage": 5.8,
+      "culture_vie_sociale_jeunesse_sports_loisirs": 13.5,
+      "sante_action_sociale": 5.5,
+      "amenagement_territoires_habitat": 165.6,
+      "action_economique": 42.5,
+      "environnement": 2.0,
+      "transports": 19.6,
+      "services_generaux": 0.9,
+      "operations_non_ventilees": 200.5,
+      "total_recettes_reelles_investissement_a": 456.9
+    },
+    "neutralisations_b": {
+      "total": 1933.5,
+      "recettes_ordre_transfert_sections": 498.1,
+      "operations_patrimoniales_chapitre_925": 187.9,
+      "operations_equilibrees_neutralisees": 130.2,
+      "complement_prix_cession": -4.1,
+      "nouveaux_emprunts_natures_16311_1641": 993.8,
+      "virement_depuis_section_fonctionnement": 127.7
+    },
+    "total_budgetaire_a_plus_b": 2390.3
+  },
+
+  "section_fonctionnement_par_nature": {
+    "_source": "Pages 3-5",
+    "total_me": 9905.7,
+    "variation_vs_bp2024_pct": 0.1,
+    "composition_recettes": {
+      "credits_reels_me": 9855.3,
+      "credits_ordre_me": 50.4
+    },
+    "composition_depenses": {
+      "credits_reels_me": 9279.9,
+      "credits_ordre_me": 498.1,
+      "virement_section_investissement_me": 127.7
+    },
+
+    "recettes_par_chapitre": {
+      "_source": "Tableau page 4",
+      "chapitre_73_731_fiscalite_compensations": {
+        "bp_2024": 7988.7,
+        "bp_2025": 7950.2,
+        "variation_pct": -0.5,
+        "compensations_transferts_metropole_grand_paris": {
+          "bp_2024": 1354.1,
+          "bp_2025": 1367.1,
+          "variation_pct": 1.0,
+          "dont_part_fiscalite": {"bp_2024": 901.0, "bp_2025": 914.0, "variation_pct": 1.4},
+          "dont_part_cps_dgf": {"bp_2024": 453.1, "bp_2025": 453.1, "variation_pct": 0.0}
+        }
+      },
+      "chapitre_74_dotations_participations": {
+        "bp_2024": 356.5,
+        "bp_2025": 372.0,
+        "variation_pct": 4.3,
+        "concours_etat": {"bp_2024": 50.2, "bp_2025": 46.3, "variation_pct": -7.7},
+        "autres_participations": {"bp_2024": 306.3, "bp_2025": 325.7, "variation_pct": 6.3}
+      },
+      "chapitre_016_autonomie": {"bp_2024": 26.6, "bp_2025": 26.7, "variation_pct": 0.5},
+      "chapitre_017_insertion": {"bp_2024": 265.7, "bp_2025": 266.6, "variation_pct": 0.3},
+      "chapitre_70_75_produits_exploitation": {"bp_2024": 1194.0, "bp_2025": 1220.5, "variation_pct": 2.2},
+      "chapitre_76_produits_financiers": {"bp_2024": 25.0, "bp_2025": 13.9, "variation_pct": -44.2},
+      "chapitre_77_produits_specifiques": {"bp_2024": 1.0, "bp_2025": 0.5, "variation_pct": -50.0},
+      "chapitre_013_attenuation_charges": {"bp_2024": 4.6, "bp_2025": 4.8, "variation_pct": 3.3},
+      "chapitre_042_reprise_amortissements_provisions": {"bp_2024": 36.6, "bp_2025": 50.4, "variation_pct": 37.7},
+      "total": {"bp_2024": 9898.6, "bp_2025": 9905.7, "variation_pct": 0.1}
+    },
+
+    "depenses_par_chapitre": {
+      "_source": "Tableau page 5",
+      "chapitre_012_6586_masse_salariale": {
+        "bp_2024": 2784.5,
+        "bp_2025": 2853.1,
+        "variation_pct": 2.5,
+        "note": "dont collaborateurs des groupes d'élus"
+      },
+      "chapitre_011_65_depenses_gestion": {
+        "bp_2024": 2128.9,
+        "bp_2025": 2113.1,
+        "variation_pct": -0.7,
+        "note": "hors chapitres individualisés et participations à d'autres budgets",
+        "chapitre_011_charges_caractere_general": {"bp_2024": 977.5, "bp_2025": 929.1, "variation_pct": -4.9},
+        "chapitre_65_autres_charges_gestion_courante": {
+          "bp_2024": 1151.4,
+          "bp_2025": 1184.0,
+          "variation_pct": 2.8,
+          "aides_sociales": {"bp_2024": 745.4, "bp_2025": 824.4, "variation_pct": 10.6},
+          "subventions_fonctionnement_hors_aides_sociales": {"bp_2024": 244.0, "bp_2025": 207.8, "variation_pct": -14.8},
+          "autres_charges": {"bp_2024": 162.1, "bp_2025": 151.8, "variation_pct": -6.3}
+        }
+      },
+      "chapitre_016_allocation_personnalisee_autonomie": {"bp_2024": 137.6, "bp_2025": 145.1, "variation_pct": 5.4},
+      "chapitre_017_revenu_solidarite_active": {
+        "bp_2024": 468.1,
+        "bp_2025": 475.2,
+        "variation_pct": 1.5,
+        "part_allocation_rsa": {"bp_2024": 413.4, "bp_2025": 420.8, "variation_pct": 1.8},
+        "plan_parisien_insertion_emploi_ppie": {"bp_2024": 24.0, "bp_2025": 23.9, "variation_pct": -0.5},
+        "contrats_avenir": {"bp_2024": 3.0, "bp_2025": 3.0, "variation_pct": 0.0},
+        "remises_gracieuses_rsa": {"bp_2024": 0.3, "bp_2025": 0.3, "variation_pct": 0.0},
+        "autres_charges": {"bp_2024": 27.4, "bp_2025": 27.2, "variation_pct": -0.6}
+      },
+      "chapitre_65_participations_autres_budgets": {
+        "bp_2024": 1626.5,
+        "bp_2025": 1682.0,
+        "variation_pct": 3.4,
+        "detail": {
+          "casvp": {"bp_2024": 430.1, "bp_2025": 419.6, "variation_pct": -2.5},
+          "prefecture_police": {"bp_2024": 252.4, "bp_2025": 256.4, "variation_pct": 1.6},
+          "idfm": {"bp_2024": 441.4, "bp_2025": 472.2, "variation_pct": 7.0},
+          "syctom": {"bp_2024": 114.8, "bp_2025": 119.0, "variation_pct": 3.7},
+          "paris_musees": {"bp_2024": 56.2, "bp_2025": 58.5, "variation_pct": 4.1},
+          "creches_associatives": {"bp_2024": 65.0, "bp_2025": 72.0, "variation_pct": 10.8},
+          "caisses_ecoles": {"bp_2024": 112.0, "bp_2025": 132.4, "variation_pct": 18.2},
+          "enseignement_prive": {"bp_2024": 35.8, "bp_2025": 34.5, "variation_pct": -3.8},
+          "dotation_fonctionnement_colleges": {"bp_2024": 37.7, "bp_2025": 38.1, "variation_pct": 1.2},
+          "aide_transports": {"bp_2024": 21.5, "bp_2025": 21.9, "variation_pct": 2.0},
+          "fonds_solidarite_logement": {"bp_2024": 32.9, "bp_2025": 31.2, "variation_pct": -5.2},
+          "budget_annexe_assainissement": {"bp_2024": 18.2, "bp_2025": 18.2, "variation_pct": 0.0},
+          "eptb_seine_grands_lacs": {"bp_2024": 4.6, "bp_2025": 4.3, "variation_pct": -8.3},
+          "parcs_interdepartementaux": {"bp_2024": 2.9, "bp_2025": 2.9, "variation_pct": -1.9},
+          "cnracl": {"bp_2024": 1.0, "bp_2025": 1.0, "variation_pct": 0.0}
+        }
+      },
+      "chapitre_66_charges_financieres": {"bp_2024": 213.0, "bp_2025": 224.5, "variation_pct": 5.4},
+      "chapitre_67_charges_specifiques": {"bp_2024": 15.1, "bp_2025": 15.1, "variation_pct": -0.4},
+      "chapitre_014_attenuation_produits": {"bp_2024": 1919.6, "bp_2025": 1771.8, "variation_pct": -7.7},
+      "chapitre_042_023_operations_ordre": {
+        "bp_2024": 605.3,
+        "bp_2025": 625.8,
+        "variation_pct": 3.4,
+        "amortissements_provisions": {"bp_2024": 526.3, "bp_2025": 498.1, "variation_pct": -5.4},
+        "autofinancement": {"bp_2024": 79.0, "bp_2025": 127.7, "variation_pct": 61.7}
+      },
+      "total": {"bp_2024": 9898.6, "bp_2025": 9905.7, "variation_pct": 0.1}
+    }
+  },
+
+  "section_investissement_par_nature": {
+    "_source": "Pages 5-6",
+    "total_me": 2390.3,
+    "bp_2024_me": 2416.5,
+    "composition_depenses": {
+      "operations_reelles_me": 2152.1,
+      "operations_ordre_me": 238.2
+    },
+    "composition_recettes": {
+      "operations_reelles_me": 1576.7,
+      "operations_ordre_me": 686.0,
+      "virement_section_fonctionnement_me": 127.7
+    },
+
+    "ventilation_par_chapitre_comptable": {
+      "_source": "Tableau page 6",
+      "depenses": {
+        "operations_reelles": {"bp_2024": 2193.4, "bp_2025": 2152.1},
+        "dont_emprunt_court_long_terme": {"bp_2024": 308.1, "bp_2025": 308.1},
+        "hors_emprunt_court_long_terme": {"bp_2024": 1885.4, "bp_2025": 1844.0},
+        "credits_equipement": {"bp_2024": 1650.3, "bp_2025": 1588.7},
+        "chapitre_204_2324_subventions_equipement_versees": {"bp_2024": 394.4, "bp_2025": 395.1},
+        "credits_equipement_hors_subventions": {"bp_2024": 1255.9, "bp_2025": 1193.6},
+        "chapitre_018_rsa_programme_equipement": {"bp_2024": 0.5, "bp_2025": 0.2},
+        "chapitre_20_immobilisations_incorporelles": {"bp_2024": 86.0, "bp_2025": 134.1},
+        "chapitre_21_immobilisations_corporelles": {"bp_2024": 450.1, "bp_2025": 398.1},
+        "chapitre_22_immobilisations_affectation": {"bp_2024": 0.5, "bp_2025": 0.5},
+        "chapitre_23_immobilisations_en_cours": {"bp_2024": 718.8, "bp_2025": 660.8},
+        "operations_financieres": {"bp_2024": 539.5, "bp_2025": 556.4},
+        "chapitre_10_dotations_fonds_reserves": {"bp_2024": 0.4, "bp_2025": 0.5},
+        "chapitre_16_emprunts_dettes": {"bp_2024": 329.8, "bp_2025": 332.3},
+        "chapitre_26_participations_creances": {"bp_2024": 85.7, "bp_2025": 65.0},
+        "chapitre_27_autres_immobilisations_financieres": {"bp_2024": 123.6, "bp_2025": 158.6},
+        "operations_compte_tiers": {"bp_2024": 3.6, "bp_2025": 7.0},
+        "chapitre_45_operations_comptes_tiers": {"bp_2024": 3.6, "bp_2025": 7.0},
+        "operations_ordre": {"bp_2024": 223.1, "bp_2025": 238.2},
+        "chapitre_040_transferts_sections": {"bp_2024": 36.6, "bp_2025": 50.4},
+        "chapitre_041_operations_patrimoniales": {"bp_2024": 186.5, "bp_2025": 187.9},
+        "total_general": {"bp_2024": 2416.5, "bp_2025": 2390.3}
+      },
+      "recettes": {
+        "operations_reelles": {"bp_2024": 1624.7, "bp_2025": 1576.7},
+        "dont_emprunt_court_long_terme": {"bp_2024": 961.7, "bp_2025": 993.8},
+        "hors_emprunt_court_long_terme": {"bp_2024": 663.0, "bp_2025": 582.9},
+        "credits_equipement": {"bp_2024": 1306.6, "bp_2025": 1260.4},
+        "chapitre_204_2324_subventions_equipement_versees": {"bp_2024": 1.6, "bp_2025": 42.4},
+        "credits_equipement_hors_subventions": {"bp_2024": 1305.0, "bp_2025": 1218.0},
+        "chapitre_13_subventions_investissement_recues": {"bp_2024": 140.1, "bp_2025": 119.9},
+        "chapitre_16_emprunts_dettes": {"bp_2024": 1164.8, "bp_2025": 1097.8},
+        "chapitre_20_immobilisations_incorporelles": {"bp_2024": 0.0, "bp_2025": 0.2},
+        "chapitre_23_immobilisations_en_cours": {"bp_2024": 0.1, "bp_2025": 0.1},
+        "operations_financieres": {"bp_2024": 312.6, "bp_2025": 311.2},
+        "chapitre_10_dotations_fonds_reserves": {"bp_2024": 114.0, "bp_2025": 104.0},
+        "chapitre_27_autres_immobilisations_financieres": {"bp_2024": 28.2, "bp_2025": 58.2},
+        "chapitre_024_produit_cessions_immobilisations": {"bp_2024": 170.4, "bp_2025": 149.0},
+        "operations_compte_tiers": {"bp_2024": 5.5, "bp_2025": 5.2},
+        "chapitre_45_operations_comptes_tiers": {"bp_2024": 5.5, "bp_2025": 5.2},
+        "operations_ordre": {"bp_2024": 791.8, "bp_2025": 813.6},
+        "chapitre_040_transferts_sections": {"bp_2024": 526.3, "bp_2025": 498.1},
+        "chapitre_041_operations_patrimoniales": {"bp_2024": 186.5, "bp_2025": 187.9},
+        "chapitre_021_virement_section_fonctionnement": {"bp_2024": 79.0, "bp_2025": 127.7},
+        "total_general": {"bp_2024": 2416.5, "bp_2025": 2390.3}
+      }
+    }
+  },
+
+  "besoin_financement": {
+    "_source": "Tableau page 6",
+    "operations_reelles_hors_autorisation_emprunt": {"bp_2024": 1530.4, "bp_2025": 1569.2},
+    "dont_mouvements_non_financiers": {"bp_2024": 1303.5, "bp_2025": 1324.0},
+    "dont_mouvements_financiers": {"bp_2024": 226.9, "bp_2025": 245.2},
+    "operations_ordre_hors_virement_fonctionnement": {"bp_2024": -489.7, "bp_2025": -447.7},
+    "total": {"bp_2024": 1040.7, "bp_2025": 1121.5}
+  },
+
+  "moyens_financement": {
+    "_source": "Tableau page 7",
+    "virement_section_fonctionnement": {"bp_2024": 79.0, "bp_2025": 127.7},
+    "autorisation_emprunt": {"bp_2024": 961.7, "bp_2025": 993.8},
+    "total": {"bp_2024": 1040.7, "bp_2025": 1121.5}
+  }
+}

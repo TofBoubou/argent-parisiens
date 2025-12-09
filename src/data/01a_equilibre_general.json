@@ -1,0 +1,97 @@
+{
+  "fichier_source": "01a L'équilibre général du projet de BP 2025.pdf",
+  "note": "Ce fichier est un extrait du PDF 01 (pages 5-6). Données identiques.",
+  "section": "1 - L'équilibre général du projet de BP 2025",
+
+  "objectifs_bp_2025": [
+    "Continuer d'assurer un haut niveau de services publics pour les Parisiennes et les Parisiens",
+    "Poursuivre les investissements en faveur de la transition écologique et du logement",
+    "Mettre en œuvre des mesures ambitieuses en faveur de la solidarité pour protéger les plus fragiles"
+  ],
+
+  "contexte": [
+    "Effets de l'inflation",
+    "Désengagement de l'État qui se confirme d'année en année"
+  ],
+
+  "synthese_chiffres": {
+    "recettes_reelles_fonctionnement": {
+      "montant_me": 9839.5,
+      "variation_vs_bp2024_me": 16.1,
+      "variation_vs_bp2024_pct": 0.2,
+      "facteurs_hausse": [
+        {"libelle": "Indexation légale des bases fiscales", "montant_me": 33.6},
+        {"libelle": "Augmentation redevances des concessions", "montant_me": 40.6}
+      ],
+      "facteurs_baisse": [
+        {"libelle": "Baisse taxe de séjour post-JOP 2024", "montant_me": -50.0}
+      ]
+    },
+    "depenses_reelles_fonctionnement": {
+      "montant_me": 9268.2,
+      "variation_vs_bp2024_me": 11.8,
+      "variation_vs_bp2024_pct": 0.1
+    },
+    "epargne_brute": {
+      "montant_me": 571.3,
+      "variation_vs_bp2024_me": 4.3
+    },
+    "depenses_reelles_investissement": {
+      "montant_hors_remboursement_emprunt_me": 1713.9,
+      "bp2024_me": 1789.7,
+      "variation_me": -75.8
+    },
+    "recettes_reelles_investissement": {
+      "montant_me": 456.9,
+      "variation_vs_bp2024_me": -112.1,
+      "cause_principale": "Baisse des loyers capitalisés",
+      "baisse_loyers_capitalises_me": -99.0
+    },
+    "capacite_financement_investissements": {
+      "montant_me": 1028.1,
+      "composition": "RRI + épargne brute",
+      "couverture_dri_pct": 60.0,
+      "part_epargne_brute_pct": 33.3
+    },
+    "autorisation_emprunt_me": 993.8,
+    "dette": {
+      "dette_bancaire_obligataire_01_01_2025_me": 8733.1,
+      "dette_totale_prevue_31_12_2025_me": 9356.8,
+      "hypothese": "Saturation de l'autorisation d'emprunt en 2025"
+    }
+  },
+
+  "schema_equilibre_bp2025": {
+    "_source": "Graphique page 2 - Schéma visuel de l'équilibre budgétaire",
+    "fonctionnement": {
+      "depenses": {
+        "depenses_courantes_fonctionnement_me": 9043.7,
+        "charges_financieres_me": 224.5,
+        "total_depenses_fonctionnement_me": 9268.2
+      },
+      "recettes": {
+        "recettes_courantes_fonctionnement_me": 9825.5,
+        "produits_financiers_me": 13.9,
+        "total_recettes_fonctionnement_me": 9839.4
+      }
+    },
+    "epargne_brute_me": 571.3,
+    "investissement": {
+      "depenses": {
+        "depenses_investissement_me": 1713.9,
+        "remboursement_emprunts_me": 308.1,
+        "total_depenses_investissement_me": 2022.0
+      },
+      "recettes": {
+        "recettes_investissement_me": 456.9,
+        "nouveaux_emprunts_me": 993.8,
+        "total_recettes_investissement_me": 1450.7
+      }
+    },
+    "equilibre": {
+      "total_depenses_me": 11290.2,
+      "total_recettes_avec_emprunt_me": 11290.1,
+      "commentaire": "Budget équilibré avec recours à l'emprunt"
+    }
+  }
+}

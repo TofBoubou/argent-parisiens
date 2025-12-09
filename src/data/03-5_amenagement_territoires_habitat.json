@@ -1,0 +1,479 @@
+{
+  "fichier_source": "03-5 Aménagement des territoires et habitat.pdf",
+  "section": "3 - Présentation par politique publique",
+  "sous_section": "(5) Aménagement des territoires et habitat",
+  "pages": "63-70",
+  "unite": "M€",
+
+  "budget_consolide": {
+    "_source": "Tableau page 1",
+    "depenses_fonctionnement": {"bp_2024": 300.3, "bp_2025": 288.4},
+    "dont_masse_salariale": {"bp_2024": 187.1, "bp_2025": 192.2},
+    "depenses_investissement": {"bp_2024": 806.6, "bp_2025": 764.0},
+    "recettes_fonctionnement": {"bp_2024": 64.5, "bp_2025": 60.2},
+    "recettes_investissement": {"bp_2024": 182.8, "bp_2025": 165.6}
+  },
+
+  "graphique_repartition_budget_total": {
+    "_source": "Graphique page 1 - Camembert budget consolidé",
+    "total_me": 1052.4,
+    "repartition": {
+      "amenagement_services_urbains_pct": 44.7,
+      "habitat_logement_pct": 29.1,
+      "autres_actions_pct": 22.4,
+      "services_communs_pct": 2.9,
+      "politique_ville_pct": 0.9,
+      "technologie_information_communication_pct": 0.1
+    }
+  },
+
+  "depenses_fonctionnement": {
+    "total_me": 288.4,
+    "dont_masse_salariale_me": 192.2,
+    "hors_masse_salariale_me": 96.2,
+    "variation_hors_ms_vs_bp2024_me": -16.9,
+
+    "creations_postes_2025": {
+      "total_creations": 37,
+      "solde_transformations": -3,
+      "redeploiements": 5,
+      "solde_net_fonction": 29,
+
+      "nouveaux_equipements": {
+        "total": 30,
+        "direction_espaces_verts": {
+          "nombre": 30,
+          "motif": "Entretien de nouveaux espaces verts et des jardinières"
+        }
+      },
+
+      "renforts": {
+        "total": 7,
+        "direction_logement_habitat": {
+          "total": 7,
+          "detail": {
+            "encadrement_loyers": 1,
+            "communication_externe_valorisation_dispositifs_ville": 3,
+            "controle_meubles_touristiques": 1,
+            "charge_prevention": 1,
+            "reforme_attribution_logements_sociaux": 1
+          }
+        }
+      }
+    },
+
+    "graphique_repartition_hors_masse_salariale": {
+      "_source": "Graphique page 2 - Dépenses de fonctionnement hors masse salariale",
+      "eclairage_public_pct": 33.9,
+      "operation_amenagement_pct": 18.6,
+      "espaces_verts_pct": 18.6,
+      "habitat_logement_pct": 16.4,
+      "services_communs_pct": 7.1,
+      "politique_ville_pct": 5.1,
+      "technologie_information_communication_pct": 0.4
+    },
+
+    "amenagement_territoires": {
+      "total_me": 73.3,
+      "variation_vs_bp2024_me": -3.8,
+
+      "eclairage_public": {
+        "total_me": 32.6,
+        "variation_me": -6.4,
+        "detail": {
+          "depense_energie": {
+            "montant_me": 12.7,
+            "variation_me": -6.6,
+            "reduction_pct": 34.1,
+            "note": "Démarche de sobriété énergétique"
+          },
+          "entretien_lampadaires_marche_global_performance": {
+            "montant_me": 19.9,
+            "variation_me": 0.2,
+            "note": "Révision des tarifs du marché"
+          }
+        }
+      },
+
+      "espaces_verts_urbains": {
+        "total_me": 17.9,
+        "variation_me": 1.5,
+        "detail": {
+          "depenses_entretien": {
+            "total_me": 15.0,
+            "variation_me": 1.3,
+            "parcs_jardins_me": 5.2,
+            "arbres_bois_me": 4.6,
+            "note": "Entretien patrimoine arboricole croissant"
+          },
+          "depenses_arrosage": {
+            "montant_me": 2.8,
+            "variation_me": 0.3
+          }
+        }
+      },
+
+      "operations_amenagement_urbain": {
+        "total_me": 17.9,
+        "variation_me": 0.5,
+        "detail": {
+          "entretien_equipements_publics_forum_halles_me": 9.1,
+          "subventions_organismes_urbanisme": {
+            "total_me": 7.9,
+            "variation_me": 0.6,
+            "atelier_parisien_urbanisme_apur_me": 5.0,
+            "pavillon_arsenal_me": 2.1,
+            "caue_me": 0.3
+          },
+          "frais_etudes_appels_projets_urbains_me": 0.6,
+          "acquisition_fonciere_logement_frais_avocats_huissiers_me": 0.2
+        }
+      },
+
+      "politique_ville": {
+        "montant_me": 4.9,
+        "variation_me": 0.5,
+        "objet": "Subventions aux associations et acteurs de terrain dans les quartiers prioritaires"
+      }
+    },
+
+    "politiques_habitat": {
+      "total_me": 15.7,
+      "variation_vs_bp2024_me": -13.3,
+      "cause_baisse": "Non-reconduction des indemnités aux bailleurs sociaux pour conventionnement logements existants (saturation des opportunités)",
+
+      "detail": {
+        "gestion_parc_prive_collectivite": {
+          "montant_me": 6.8,
+          "objet": "Taxes locales, fluides et entretien"
+        },
+        "aide_verdissement_parc_residentiel_eco_renovons_paris": {
+          "montant_me": 3.9,
+          "variation_me": 0.9,
+          "description": "Accompagnement et subventionnement des copropriétés pour rénovation énergétique et environnementale"
+        },
+        "aides_secteur_locatif": {
+          "total_me": 3.2,
+          "subventions_associations_secteur_me": 1.9,
+          "amelioration_habitat_coproprietes_fragiles_me": 1.1,
+          "dispositifs_multiloc_louez_solidaire_me": 0.3
+        },
+        "aires_accueil_gens_voyage": {
+          "montant_me": 0.5,
+          "localisation": ["Bois de Vincennes", "Bois de Boulogne"],
+          "objet": "Accompagnement social et gestion des deux aires"
+        },
+        "aide_accession_propriete_me": 0.3,
+        "logement_social": {
+          "montant_me": 0.1,
+          "objet": "Études et maîtrise d'œuvre urbaine et sociale (Mous)"
+        }
+      }
+    },
+
+    "equipements_information_communication_voie_publique": {
+      "montant_me": 0.4,
+      "objet": "Fonctionnement des journaux électroniques d'information (JEI)"
+    },
+
+    "services_communs": {
+      "montant_me": 6.8,
+      "variation_vs_bp2024_me": 0.2
+    }
+  },
+
+  "recettes_fonctionnement": {
+    "total_me": 60.2,
+    "variation_vs_bp2024_me": -4.3,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 4 - Recettes de fonctionnement",
+      "habitat_logement_pct": 89.7,
+      "operations_amenagement_pct": 6.3,
+      "espaces_verts_pct": 3.8,
+      "eclairage_public_pct": 0.1,
+      "politique_ville_pct": 0.1
+    },
+
+    "detail": {
+      "habitat_logement": {
+        "total_me": 54.0,
+        "variation_me": -0.9,
+        "recettes_loyers": {
+          "montant_me": 53.3,
+          "variation_me": -0.8,
+          "nouveaux_baux_me": 1.6,
+          "loyers_capitalises_conventionnements_2024": {
+            "montant_me": 1.1,
+            "variation_me": -2.3
+          }
+        },
+        "autres_recettes_habitat_logement": {
+          "montant_me": 0.7,
+          "source": "Recettes d'ingénierie Anah pour opérations d'amélioration de l'habitat"
+        }
+      },
+      "amenagement_territoires": {
+        "total_me": 6.2,
+        "operations_amenagement": {
+          "total_me": 3.0,
+          "variation_me": -3.5,
+          "taxes_amenagement_me": 2.0,
+          "excedents_operations_amenagement_me": 1.0,
+          "note": "Baisse liée au calendrier d'achèvement des opérations"
+        },
+        "espaces_verts_urbains_me": 2.3,
+        "autres_recettes_amenagement": {
+          "montant_me": 0.9,
+          "source": "Remboursement société civile forum des Halles (quote-part canopée)"
+        }
+      }
+    }
+  },
+
+  "depenses_investissement": {
+    "total_me": 764.0,
+    "bp_2024_me": 806.6,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 5 - Dépenses d'investissement",
+      "habitat_logement_pct": 36.4,
+      "amenagement_services_urbains_pct": 34.9,
+      "autres_actions_pct": 28.4,
+      "services_communs_pct": 0.2,
+      "politique_ville_pct": 0.1
+    },
+
+    "habitat_logement": {
+      "total_me": 278.4,
+      "bp_2024_me": 305.2,
+
+      "logement_social": {
+        "total_me": 228.6,
+        "detail": {
+          "subventions_bailleurs_sociaux_me": 150.0,
+          "credits_delegues_etat_me": 63.3,
+          "rachat_cours_bail_constructions_bailleurs": {
+            "montant_me": 15.3,
+            "variation_me": -46.1,
+            "note": "Saturation des opportunités de rachats"
+          }
+        }
+      },
+
+      "acquisitions_foncieres_logement_social": {
+        "total_2025_me": 200.0,
+        "repartition": {
+          "fonction_amenagement_me": 185.2,
+          "fonction_services_generaux_operations_non_ventilees_me": 14.8
+        }
+      },
+
+      "budget_total_logement_social_2025_me": 428.6,
+
+      "aide_habitat_prive": {
+        "total_me": 41.4,
+        "variation_me": 15.2,
+        "bp_2024_me": 26.2,
+        "renovation_energetique_habitat_prive": {
+          "total_me": 28.4,
+          "bp_2024_me": 13.8,
+          "credits_delegues_etat_me": 18.4,
+          "eco_renovons_paris_me": 10.0
+        },
+        "aide_amelioration_habitat_prive": {
+          "total_me": 13.0,
+          "subventions_soreqa_eradication_habitat_insalubre_me": 10.0,
+          "transformation_1000_chambres_service_me": 0.2,
+          "subventions_travaux_coproprietes_ohad_me": 2.9
+        }
+      },
+
+      "entretien_parc_prive_collectivite": {
+        "total_me": 8.3,
+        "variation_me": 3.1,
+        "detail": {
+          "travaux_immeubles_communaux_coproprietes_me": 3.7,
+          "renovation_locaux_associatifs_rue_vignoles": {
+            "montant_me": 2.3,
+            "arrondissement": "20e"
+          },
+          "travaux_presbyteres_me": 2.0
+        }
+      }
+    },
+
+    "amenagement_services_urbains": {
+      "total_me": 266.6,
+      "variation_vs_bp2024_me": 25.3,
+
+      "operations_urbanisme_participations_zac": {
+        "total_me": 109.4,
+        "variation_me": 34.3,
+
+        "participations_grands_projets_subventions_urbanisme": {
+          "total_me": 62.0,
+          "variation_me": 19.7,
+          "acquisition_emprises_publiques_zac_me": 59.5,
+          "zac_concernees": [
+            {"nom": "Paris rive gauche", "arrondissement": "13e"},
+            {"nom": "Porte de Montreuil", "arrondissement": "20e"},
+            {"nom": "Paul Bourget", "arrondissement": "13e"}
+          ],
+          "etudes_frais_honoraires": {
+            "total_me": 2.0,
+            "etudes_urbanisme_quartiers_populaires_me": 0.6
+          },
+          "reinventer_montparnasse": {"arrondissement": "14e", "montant_me": 0.3},
+          "quartier_goutte_or": {"arrondissement": "18e", "montant_me": 0.3}
+        },
+
+        "participations_bilans_voirie_operations_amenagement": {
+          "total_me": 47.4,
+          "variation_me": 14.6,
+          "zac": [
+            {"nom": "Paris rive gauche", "arrondissement": "13e", "montant_me": 27.2},
+            {"nom": "Gare des Mines-Fillettes", "arrondissement": "18e", "montant_me": 4.8},
+            {"nom": "Clichy-Batignolles", "arrondissement": "17e", "montant_me": 4.0},
+            {"nom": "Porte de Vincennes", "arrondissement": "12e", "montant_me": 3.7},
+            {"nom": "Porte de la Chapelle", "arrondissement": "18e", "montant_me": 3.6},
+            {"nom": "Orgues de Flandres", "arrondissement": "19e", "montant_me": 2.5},
+            {"nom": "Python-Duvernois", "arrondissement": "20e", "montant_me": 1.7}
+          ]
+        }
+      },
+
+      "operations_amenagement_voirie": {
+        "total_me": 77.8,
+        "bp_2024_me": 76.8,
+
+        "amenagement_portes_paris": {
+          "total_me": 19.2,
+          "portes": [
+            {"nom": "Porte de Montreuil", "arrondissement": "20e", "montant_me": 7.2},
+            {"nom": "Porte de la Chapelle", "arrondissement": "18e", "montant_me": 6.0},
+            {"nom": "Porte Maillot", "arrondissement": "17e", "montant_me": 6.0}
+          ]
+        },
+        "programme_embellir_votre_quartier_me": 15.0,
+        "rues_aux_ecoles_me": 10.0,
+        "forets_urbaines": {
+          "montant_me": 6.0,
+          "sites": [
+            {"nom": "Place de l'Hôtel de Ville", "arrondissement": "Paris Centre"},
+            {"nom": "Place du Colonel Fabien", "arrondissement": "10e et 19e"}
+          ]
+        },
+        "autres_amenagements": [
+          {"projet": "Appel à projets urbains innovants (Apui) Invalides", "arrondissement": "7e", "montant_me": 4.6},
+          {"projet": "Réaménagement place Félix Eboué", "arrondissement": "12e", "montant_me": 3.5},
+          {"projet": "Secteur Armand Carrel", "arrondissement": "19e", "montant_me": 2.5},
+          {"projet": "Rue du Faubourg Saint-Honoré", "arrondissement": "8e", "montant_me": 2.1},
+          {"projet": "Rue Boissy d'Anglas", "arrondissement": "8e", "montant_me": 2.0},
+          {"projet": "Place de la Bataille de Stalingrad", "arrondissement": "19e", "montant_me": 1.8},
+          {"projet": "Carrefour et boulevard de la Chapelle", "arrondissement": "18e", "montant_me": 1.5},
+          {"projet": "Promenade boulevards Richard Lenoir et Jules Ferry", "arrondissement": "11e", "montant_me": 1.0}
+        ]
+      },
+
+      "espaces_verts_parcs_jardins": {
+        "total_me": 50.1,
+        "bp_2024_me": 48.4,
+        "projets": [
+          {"projet": "Végétalisation des quartiers", "montant_me": 12.0},
+          {"projet": "Jardin du Val de Grâce ouverture public", "arrondissement": "5e", "montant_me": 6.4},
+          {"projet": "Travaux continuité JOP dont Champs-Elysées", "arrondissement": "8e", "montant_me": 5.3, "champs_elysees_me": 1.3},
+          {"projet": "Espaces verts ZAC Python-Duvernois", "arrondissement": "20e", "montant_me": 4.8},
+          {"projet": "Square Marie Curie", "arrondissement": "13e", "montant_me": 2.5},
+          {"projet": "Jardin îlot Riquet Orgues de Flandres", "arrondissement": "19e", "montant_me": 2.2},
+          {"projet": "Parc des Buttes-Chaumont", "arrondissement": "19e", "montant_me": 2.1},
+          {"projet": "Agrandissement parc Suzanne Lenglen sur héliport", "arrondissement": "15e", "montant_me": 1.1},
+          {"projet": "Végétalisation petite ceinture", "montant_me": 1.0},
+          {"projet": "Entretien ouvrages d'art", "montant_me": 1.0}
+        ],
+        "entretien_equipement": {
+          "total_me": 7.8,
+          "espaces_verts_proximite_me": 6.2,
+          "equipements_mecaniques_me": 0.6,
+          "centres_production_horticoles_me": 0.6,
+          "installations_techniques_me": 0.4
+        }
+      },
+
+      "entretien_eclairage_public_me": 21.4,
+
+      "entretien_arbres_bois": {
+        "total_me": 4.2,
+        "remplacement_plantation_nouveaux_arbres_me": 2.5,
+        "renaturation_30_hectares_bois_vincennes_boulogne_me": 0.3,
+        "entretien_bois_vincennes_me": 0.6,
+        "entretien_bois_boulogne_me": 0.6
+      },
+
+      "services_communs": {
+        "total_me": 3.8,
+        "renovation_creation_locaux_professionnels": {
+          "total_me": 2.7,
+          "atelier_zac_chapelle_charbon": {"arrondissement": "18e", "montant_me": 0.7}
+        }
+      }
+    },
+
+    "acquisitions_foncieres_autres_actions": {
+      "total_me": 217.3,
+      "acquisitions_foncieres_logement_social": {
+        "total_me": 200.0,
+        "fonction_amenagement_me": 185.2,
+        "fonction_services_generaux_me": 14.8
+      },
+      "operations_foncieres_me": 28.4,
+      "entretien_halles_me": 3.7
+    },
+
+    "autres": {
+      "services_communs_me": 1.2,
+      "politique_ville_me": 0.5,
+      "journaux_electroniques_information_me": 0.1,
+      "total_me": 1.7,
+      "objet": "Élaboration documents d'urbanisme (1,0 M€) et subventions politique de la Ville (0,4 M€)"
+    }
+  },
+
+  "recettes_investissement": {
+    "total_me": 165.6,
+
+    "detail": {
+      "recettes_foncieres": {
+        "montant_me": 88.9,
+        "fonction": "Services généraux (opérations non ventilées)",
+        "cessions": [
+          {"secteur": "Porte de Clignancourt", "arrondissement": "18e", "cadre": "Apui Inventons la métropole du Grand Paris"},
+          {"secteur": "Projet Aquaboulevard", "arrondissement": "15e"},
+          {"secteur": "ZAC Gare des Mines-Fillettes", "arrondissement": "18e"}
+        ]
+      },
+      "politique_logement": {
+        "total_me": 60.8,
+        "logement_social_versements_etat_aides_pierre": {
+          "montant_me": 42.2,
+          "variation_me": -17.0
+        },
+        "renovation_energetique_habitat_prive": {
+          "montant_me": 18.4,
+          "variation_me": 13.0
+        },
+        "travaux_immeubles_municipaux_me": 0.2
+      },
+      "operations_urbanisme_amenagement_espaces_verts_voirie": {
+        "total_me": 15.9,
+        "cofinancements": [
+          {"projet": "Réaménagement porte de la Chapelle", "arrondissement": "18e", "source": "Fonds Snef", "montant_me": 4.0},
+          {"projet": "Végétalisation petite ceinture", "source": "Fonds vert", "montant_me": 2.9},
+          {"projet": "Rénovation rue Boissy d'Anglas", "arrondissement": "8e", "source": "Ambassade des Etats-Unis", "montant_me": 2.1},
+          {"projet": "Forêts urbaines", "source": "Fonds vert et DSIL", "montant_me": 1.7},
+          {"projet": "Réaménagement abords tour Montparnasse", "arrondissement": "14e", "source": "Syndicat des copropriétaires", "montant_me": 1.6}
+        ]
+      }
+    }
+  }
+}

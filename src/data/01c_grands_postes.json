@@ -1,0 +1,498 @@
+{
+  "fichier_source": "01c Description des grands postes de dépenses et recettes.pdf",
+  "section": "1 - Description des grands postes de dépenses et recettes",
+  "unite": "M€",
+
+  "section_fonctionnement": {
+    "epargne_brute_degagee_me": 571.3
+  },
+
+  "recettes_fonctionnement": {
+    "total_me": 9839.5,
+    "variation_vs_bp2024_me": 16.1,
+    "variation_vs_bp2024_pct": 0.2,
+
+    "graphique_evolution": {
+      "_source": "Graphique page 1 - Evolution des recettes réelles de fonctionnement",
+      "donnees": [
+        {"annee": "CA 2022", "fiscalite": 5460.6, "dotations_compensations": 1944.7, "recettes_gestion": 1043.1, "produits_financiers": null},
+        {"annee": "CA 2023", "fiscalite": 6020.8, "dotations_compensations": 1979.4, "recettes_gestion": 1466.9, "produits_financiers": null},
+        {"annee": "BP 2024", "fiscalite": 6013.7, "dotations_compensations": 2319.5, "recettes_gestion": 1465.2, "produits_financiers": null},
+        {"annee": "BP 2025", "fiscalite": 5987.2, "dotations_compensations": 2334.3, "recettes_gestion": 1504.1, "produits_financiers": null}
+      ]
+    },
+
+    "decomposition_hausse": {
+      "recettes_gestion_variation_me": 38.9,
+      "compensations_transferts_fiscalite_variation_me": 14.8,
+      "produits_fiscalite_variation_me": -26.5,
+      "produits_financiers_variation_me": -11.0
+    },
+
+    "fiscalite": {
+      "total_me": 5987.2,
+      "evolution_pct": -0.4,
+      "fiscalite_directe": {
+        "taxes_foncieres_me": 1851.2,
+        "taxes_foncieres_variation_me": 14.6,
+        "taxe_habitation_me": 335.5,
+        "taxe_habitation_variation_me": 11.8,
+        "indexation_bases_fiscales_pct": 1.5,
+        "note": "Indexation = inflation nov 2023 à nov 2024"
+      },
+      "taxe_sejour": {
+        "montant_me": 135.0,
+        "commentaire": "Baisse post-JOP 2024"
+      },
+      "fiscalite_indirecte": {
+        "total_me": 1606.7,
+        "variation_me": -3.5,
+        "accise_electricite_2025_me": 90.5,
+        "accise_electricite_2024_me": 94.2
+      }
+    },
+
+    "dotations_compensations_me": 2334.3,
+    "dotations_compensations_variation_me": 14.8,
+
+    "recettes_gestion": {
+      "total_me": 1504.1,
+      "variation_me": 38.9,
+      "evolutions_par_fonction": [
+        {
+          "fonction": "Services généraux",
+          "montant_me": 232.2,
+          "variation_me": 31.0,
+          "detail": "Hausse recettes concessions (+26,7 M€)"
+        },
+        {
+          "fonction": "Environnement",
+          "montant_me": 152.6,
+          "variation_me": 17.0,
+          "detail": "Redevances concessions gaz/électricité, réseaux chaleur/froid",
+          "note": "Hors TEOM et taxe de balayage"
+        },
+        {
+          "fonction": "Santé et action sociale",
+          "montant_me": 321.4,
+          "variation_me": -4.0,
+          "detail": "Diminution recettes petite enfance",
+          "note": "Hors compensation allocations solidarité"
+        },
+        {
+          "fonction": "Aménagement territoires et habitat",
+          "montant_me": 60.2,
+          "variation_me": -4.3,
+          "detail": "Évolution excédents ZAC (-3,5 M€)"
+        }
+      ]
+    },
+
+    "tarifs_services_publics": {
+      "taux_revalorisation_max_2025_pct": 5.0,
+      "perimetre": "Droits, redevances et produits d'exploitation",
+      "exclusions": "Tarifs avec modalités d'indexation particulières"
+    }
+  },
+
+  "depenses_fonctionnement": {
+    "total_me": 9268.2,
+    "variation_vs_bp2024_me": 11.8,
+    "variation_vs_bp2024_pct": 0.1,
+
+    "graphique_evolution": {
+      "_source": "Graphique page 2 - Evolution des dépenses réelles de fonctionnement",
+      "donnees": [
+        {"annee": "CA 2022", "charges_personnel": 2543.8, "depenses_gestion": 4123.0, "perequation": 1081.1, "charges_financieres": 142.1},
+        {"annee": "CA 2023", "charges_personnel": 2637.3, "depenses_gestion": 4302.5, "perequation": 1644.8, "charges_financieres": 171.0},
+        {"annee": "BP 2024", "charges_personnel": 2817.7, "depenses_gestion": 4497.6, "perequation": 1729.1, "charges_financieres": 213.0},
+        {"annee": "BP 2025", "charges_personnel": 2885.0, "depenses_gestion": 4554.0, "perequation": 1604.7, "charges_financieres": 224.5}
+      ]
+    },
+
+    "decomposition_hausse_me": {
+      "charges_personnel": 67.3,
+      "depenses_gestion": 56.5,
+      "perequation_reversements_fiscaux": -123.5,
+      "charges_financieres": 11.5
+    },
+
+    "masse_salariale": {
+      "montant_2025_me": 2885.0,
+      "progression_pct": 2.4,
+      "graphique_evolution": {
+        "_source": "Graphique page 3 - Evolution de la masse salariale",
+        "donnees": [
+          {"annee": "CA 2018", "montant_me": 2395.7},
+          {"annee": "CA 2019", "montant_me": 2423.5},
+          {"annee": "CA 2020", "montant_me": 2452.2},
+          {"annee": "CA 2021", "montant_me": 2479.5},
+          {"annee": "CA 2022", "montant_me": 2543.8},
+          {"annee": "CA 2023", "montant_me": 2637.2},
+          {"annee": "BP 2024", "montant_me": 2817.7},
+          {"annee": "BP 2025", "montant_me": 2885.0}
+        ]
+      },
+      "facteurs_progression": {
+        "mesures_exogenes": [
+          "Hausse Smic au 1er novembre 2024",
+          "Revalorisation des dimanches travaillés"
+        ],
+        "mesures_endogenes": [
+          "Revalorisations catégorielles propreté",
+          "Revalorisations petite enfance",
+          "Revalorisations personnel scolaire",
+          "Revalorisations protection de l'enfance",
+          "Forfait mobilité durable",
+          "Revalorisation IFSE tous agents"
+        ],
+        "autres": ["Hausse cotisations employeurs CNRACL 2024"]
+      }
+    },
+
+    "emplois_2025": {
+      "creations_postes": 950,
+      "changements_perimetre": -9,
+      "transformations_transferts": 12.5,
+      "redeploiements": 609,
+      "solde_net": 344.5,
+      "impact_masse_salariale_total_me": 16.6,
+      "impact_masse_salariale_2025_me": 6.8,
+      "priorites": [
+        "Montée en puissance police municipale parisienne",
+        "Déprécarisation des agents (priorité sociale)",
+        "Solidarité envers populations fragiles",
+        "Qualité et entretien espace public",
+        "Développement service public aux Parisiens"
+      ]
+    },
+
+    "depenses_gestion": {
+      "total_me": 4554.0,
+      "variation_me": 56.5,
+      "variation_pct": 1.3,
+      "evolutions_par_fonction": [
+        {
+          "fonction": "Santé et action sociale",
+          "montant_me": 2051.2,
+          "variation_me": 86.5,
+          "detail": {
+            "aide_sociale_enfance_me": 46.0,
+            "personnes_handicap_me": 20.4
+          }
+        },
+        {
+          "fonction": "Transports",
+          "montant_me": 644.6,
+          "variation_me": 34.7,
+          "detail": {"contribution_idfm_variation_me": 30.8}
+        },
+        {
+          "fonction": "Enseignement, formation, apprentissage",
+          "montant_me": 286.9,
+          "variation_me": 23.9,
+          "detail": {
+            "subventions_caisses_ecoles_variation_me": 20.4,
+            "causes": ["Prix matières premières (énergie, denrées)", "Plan alimentation durable", "Dépenses de personnel"]
+          }
+        },
+        {
+          "fonction": "Culture, vie sociale, jeunesse, sports, loisirs",
+          "montant_me": 262.8,
+          "variation_me": -88.1,
+          "detail": "Baisse post-JOP 2024"
+        }
+      ]
+    },
+
+    "jeux_olympiques_paralympiques_2024": {
+      "periode": "2018-2025",
+      "fonctionnement": {
+        "total_me": 94.8,
+        "livraison_jeux": {
+          "total_me": 61.6,
+          "celebrations_me": 33.6,
+          "gestion_abords_sites_me": 7.3,
+          "centre_medias_non_accredites_me": 6.7,
+          "habillage_ville_me": 6.4,
+          "configuration_sites_officiels_me": 3.7,
+          "dispositifs_transverses_me": 2.2,
+          "securite_me": 1.1,
+          "delegations_etrangeres_me": 0.7
+        },
+        "contribution_cojop_paralympiques_me": 15.6,
+        "programme_heritage": {
+          "total_me": 10.1,
+          "volontaires_me": 5.4,
+          "olympiade_culturelle_me": 4.7
+        },
+        "preparation_accueil_me": 7.5,
+        "recettes_hors_heritage_me": 20.0
+      },
+      "heritage_2018_2024_hors_olympiade_me": 11.4,
+      "heritage_2025": {
+        "total_me": 4.8,
+        "baignade_seine_me": 2.7,
+        "paris_sportives_me": 0.3,
+        "education_sport_me": 0.3,
+        "impact_2024_me": 0.3,
+        "talents_2024_me": 0.2,
+        "sport_seniors_plein_air_me": 0.2,
+        "paris_sport_sante_me": 0.1,
+        "clubs_paraccueillants_me": 0.1
+      },
+      "investissement": {
+        "contribution_solideo_total_me": 165.0,
+        "contribution_solideo_2025_me": 27.2,
+        "depenses_ville_hors_solideo_me": 234.5,
+        "sites_olympiques_officiels_me": 189.6,
+        "dont_arena_chapelle_me": 142.3,
+        "sites_entrainement_me": 26.4,
+        "sites_temporaires_me": 14.8,
+        "etudes_me": 3.7,
+        "reversement_solideo_me": 109.7
+      }
+    },
+
+    "perequation_reversements_fiscaux": {
+      "total_me": 1604.7,
+      "graphique_evolution": {
+        "_source": "Graphique page 5 - Evolution péréquation et dotations",
+        "donnees": [
+          {"annee": "CA 2010", "perequation_me": 86.0, "dotations_me": 1335.0},
+          {"annee": "CA 2015", "perequation_me": 1263.0, "dotations_me": 968.0},
+          {"annee": "CA 2020", "perequation_me": 668.0, "dotations_me": 531.3},
+          {"annee": "CA 2022", "perequation_me": 697.1, "dotations_me": 538.7},
+          {"annee": "CA 2023", "perequation_me": 777.4, "dotations_me": 547.2},
+          {"annee": "BP 2024", "perequation_me": 651.9, "dotations_me": 546.8},
+          {"annee": "BP 2025", "perequation_me": 651.9, "dotations_me": 546.8}
+        ]
+      },
+      "position_paris": {
+        "part_perequation_nationale_pct": 20,
+        "commentaire_nationale": "Plus d'un cinquième",
+        "part_perequation_regionale_idf_pct": 50,
+        "commentaire_regionale": "Plus de la moitié"
+      },
+      "relations_etat": {
+        "dotations_etat_me": 546.8,
+        "dont_cps_via_mgp_me": 453.1,
+        "depenses_perequation_me": 651.9,
+        "solde_me": -104.9,
+        "commentaire": "Effet ciseau qui dégrade l'équilibre et obère les marges d'autofinancement"
+      }
+    },
+
+    "charges_financieres": {
+      "montant_me": 224.5,
+      "variation_me": 11.5,
+      "hypothese": "Maintien des taux d'intérêt à niveau élevé"
+    }
+  },
+
+  "epargne_brute": {
+    "montant_me": 571.3,
+    "variation_me": 4.3,
+    "graphique_evolution": {
+      "_source": "Graphique page 6 - Evolution de l'épargne brute",
+      "donnees": [
+        {"annee": "CA 2018", "montant_me": 631.1},
+        {"annee": "CA 2019", "montant_me": 670.7},
+        {"annee": "CA 2020", "montant_me": 20.1},
+        {"annee": "CA 2021", "montant_me": 458.4},
+        {"annee": "CA 2022", "montant_me": 581.7},
+        {"annee": "CA 2023", "montant_me": 758.4},
+        {"annee": "BP 2024", "montant_me": 567.0},
+        {"annee": "BP 2025", "montant_me": 571.3}
+      ]
+    }
+  },
+
+  "recettes_investissement": {
+    "total_me": 456.9,
+    "financement_par_ressources_propres_pct": 60.0,
+
+    "graphique_evolution": {
+      "_source": "Graphique page 7 - Evolution des recettes réelles d'investissement",
+      "donnees": [
+        {"annee": "CA 2022", "fctva": 58.1, "autres_subventions": 168.1, "recettes_foncieres": 83.1, "loyers_capitalises": 74.5, "remboursements_prets": 198.7, "autres": 23.4},
+        {"annee": "CA 2023", "fctva": 98.0, "autres_subventions": 160.1, "recettes_foncieres": 65.5, "loyers_capitalises": 110.0, "remboursements_prets": 285.2, "autres": 10.8},
+        {"annee": "BP 2024", "fctva": 110.0, "autres_subventions": 144.1, "recettes_foncieres": 110.0, "loyers_capitalises": 193.0, "autres": 93.1},
+        {"annee": "BP 2025", "fctva": 100.0, "autres_subventions": 123.9, "recettes_foncieres": 88.9, "loyers_capitalises": 94.0, "autres": 49.2}
+      ]
+    },
+
+    "detail": {
+      "subventions_dotations": {
+        "total_me": 223.9,
+        "subventions_me": 123.9,
+        "dont_aides_pierre_me": 60.6,
+        "fctva_me": 100.0
+      },
+      "loyers_capitalises_me": 94.0,
+      "recettes_foncieres": {
+        "total_me": 88.9,
+        "cessions_prevues": [
+          "Porte de Clignancourt (18e) - APUI Inventons MGP",
+          "Projet Aquaboulevard (15e)",
+          "ZAC Gare des Mines-Fillettes (18e)"
+        ]
+      },
+      "autres_recettes": {
+        "total_me": 49.2,
+        "vital_quartier_sem_paris_commerces_me": 42.4,
+        "operations_compte_tiers_me": 5.0
+      },
+      "remboursements_prets_me": 0.9
+    }
+  },
+
+  "depenses_investissement": {
+    "total_hors_emprunt_me": 1713.9,
+    "variation_me": -75.8,
+    "bp_2024_me": 1789.7,
+
+    "transition_ecologique": {
+      "contexte": {
+        "rapport_pisani_ferry_mahfouz_2023": {
+          "investissement_supplementaire_france_mde_an": 66
+        },
+        "etude_ofce_paris_2024": {
+          "besoin_2030_mde_an": 2.1,
+          "besoin_2030_2050_mde_an": 1.5,
+          "secteur_transport_2030_me_an": 800,
+          "secteur_batiment_2030_2050_mde": 1.5
+        }
+      },
+      "investissements_ville_depuis_2021_mde": 1.3,
+      "dont_2023_2024_me": 800,
+      "bp_2025": {
+        "cp_me": 396.1,
+        "ap_me": 428.1,
+        "fonctionnement_hors_masse_salariale_me": 935.1
+      },
+      "axes": {
+        "espaces_verts_vegetation": {
+          "cp_me": 114.6,
+          "ap_me": 102.5,
+          "fonctionnement_me": 27.8,
+          "projets": [
+            {"nom": "Forêts urbaines (Fabien 10e/19e, Hôtel de Ville)", "montant_me": 6.0, "echeance": 2026},
+            {"nom": "Parc ZAC Python-Duvernois (20e)", "montant_me": 4.8},
+            {"nom": "Cours oasis écoles/collèges", "montant_me": 7.0},
+            {"nom": "Rues aux écoles", "montant_me": 10.0},
+            {"nom": "Programme Embellir votre quartier", "montant_me": 22.4},
+            {"nom": "Murs et toitures végétalisées", "montant_me": 0.5},
+            {"nom": "Entretien parcs, jardins, bois (fonct.)", "montant_me": 27.8}
+          ],
+          "note": "Après place de Catalogne (14e)"
+        },
+        "mobilites_decarbonees": {
+          "cp_me": 89.4,
+          "ap_me": 26.9,
+          "fonctionnement_me": 529.5,
+          "projets": [
+            {"nom": "Extensions lignes transport commun", "montant_me": 50.5},
+            {"nom": "Plan vélo 2025", "montant_me": 25.0},
+            {"nom": "Contribution IDFM", "montant_me": 472.2, "variation_me": 31.0},
+            {"nom": "Syndicat Vélib Métropole", "montant_me": 22.5},
+            {"nom": "Remboursement Imagin'R", "montant_me": 21.9},
+            {"nom": "Aides éco-mobilité (vélos, véhicules propres)", "montant_me": 2.8}
+          ],
+          "bilan_plan_velo": {
+            "depenses_depuis_debut_mandature_me": 200,
+            "kms_livres": 100
+          },
+          "note": "Passage étape Crit'Air 3 ZFE francilienne"
+        },
+        "energie_batiment_ressources": {
+          "cp_me": 169.4,
+          "ap_me": 256.8,
+          "fonctionnement_me": 335.3,
+          "projets": [
+            {"nom": "Rénovation énergétique écoles/collèges", "montant_me": 11.5},
+            {"nom": "Restructuration crèches collectives", "montant_me": 4.2},
+            {"nom": "Subventions copropriétés (Éco-rénovons Paris, Slime)", "montant_me": 76.6},
+            {"nom": "Performance énergétique piscines", "montant_me": 6.2},
+            {"nom": "Projets énergies renouvelables (Halles, Parc floral)", "montant_me": 9.0},
+            {"nom": "Amélioration tri/collecte/réduction déchets", "montant_me": 128.1},
+            {"nom": "Électricité verte éclairage/bâtiments", "montant_me": 62.1}
+          ],
+          "enveloppe_renovation_creches_ecoles_colleges_bp2024_me": 100.0,
+          "programme_energiculteurs": {
+            "toitures_equipees_depuis_2023": 50,
+            "production_actuelle_gwh_an": 3,
+            "objectif_2030_gwh_supplementaires": 5
+          },
+          "geothermie": "4 projets pilotes en crèches"
+        },
+        "adaptation_climatique": {
+          "cp_me": 22.7,
+          "ap_me": 3.9,
+          "fonctionnement_me": 42.5,
+          "projets": [
+            {"nom": "Pérennisation baignade Seine", "montant_me": 7.9},
+            {"nom": "Ombrières et brumisateurs", "montant_me": 3.0},
+            {"nom": "EPTB Seine Grands Lacs (sécheresse/crues)", "montant_me": 4.4}
+          ]
+        }
+      }
+    },
+
+    "depenses_equipement": {
+      "total_me": 1178.6,
+      "bp_2024_me": 1240.9,
+      "variation_me": -62.3,
+      "part_investissement_pct": 68.8,
+      "detail": {
+        "travaux_me": 661.4,
+        "travaux_variation_me": -58.4,
+        "acquisitions_me": 383.1,
+        "acquisitions_variation_me": -52.0,
+        "immobilisations_incorporelles_me": 134.1,
+        "immobilisations_incorporelles_variation_me": 48.1
+      },
+      "acquisitions_foncieres_me": 211.2,
+      "bp_2024_acquisitions_foncieres_me": 257.0,
+      "compte_foncier_logement": {
+        "total_me": 200.0,
+        "acquisitions_stricto_sensu_me": 185.2,
+        "operations_financieres_me": 14.8
+      }
+    },
+
+    "embellir_votre_quartier": {
+      "ap_nouvelles_2025_me": 22.4,
+      "description": "Territorialisation des politiques, transformation et végétalisation espace public après concertation habitants",
+      "integration": "Investissements localisés (IL) des mairies d'arrondissement"
+    },
+
+    "subventions_equipement": {
+      "total_me": 394.9,
+      "logement_habitat_me": 254.7,
+      "dont_logement_social_me": 213.3,
+      "transports_me": 41.1
+    },
+
+    "autres_depenses": {
+      "total_me": 140.3,
+      "bp_2024_me": 155.1,
+      "autres_depenses_reelles_me": 133.3,
+      "variation_me": -17.0,
+      "contenu": ["Provisions indemnisation", "Provisions recapitalisation", "Consignations logement social", "Remboursement emprunt Philharmonie"],
+      "operations_compte_tiers_me": 7.0
+    }
+  },
+
+  "financement_et_dette": {
+    "besoin_financement_investissements_me": 993.8,
+    "dette_31_12_2025": {
+      "dette_bancaire_obligataire_me": 9292.0,
+      "autres_dettes": {
+        "contrat_performance_energetique_me": 14.6,
+        "echeancier_philharmonie_me": 41.8
+      },
+      "dette_totale_me": 9356.8
+    }
+  }
+}

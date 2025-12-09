@@ -1,0 +1,215 @@
+{
+  "fichier_source": "04b Situation des autorisations de programme en cours.pdf",
+  "section": "4 - Autorisations de programme",
+  "sous_section": "(b) Situation des autorisations de programme en cours",
+  "pages": "114-115",
+  "unite": "M€",
+
+  "recettes_services_generaux": {
+    "_source": "Tableau page 1",
+    "total_me": 295.8,
+    "par_direction": {
+      "urbanisme": 100.3,
+      "gestion_financiere": 100.0,
+      "logement_et_habitat": 95.0,
+      "constructions_publiques_et_architecture": 0.5
+    },
+
+    "detail_urbanisme": {
+      "operations_techniques_equilibrees_acquisitions_echeanciers_me": 10.0,
+      "credits_paiement_ventes_echeanciers_echanges_fonciers_me": 120.0,
+      "cessions_foncieres": {
+        "total_me": 88.9,
+        "cessions_au_comptant_me": 29.0,
+        "part_annuelle_ventes_echeanciers_me": 55.8,
+        "complements_prix_credits_paiement_me": 4.1
+      },
+      "taxe_amenagement_part_communale_me": 4.0,
+      "operations_financieres_comptes_fonciers_deconsignations_me": 1.5
+    },
+
+    "detail_gestion_financiere": {
+      "fctva_fonds_compensation_tva_me": 100.0
+    },
+
+    "detail_logement_habitat": {
+      "loyers_capitalises_me": 94.0,
+      "autres_me": 1.0
+    },
+
+    "detail_constructions_publiques_architecture": {
+      "cofinancements_pavillon_arsenal_paris_centre_me": 0.5
+    }
+  },
+
+  "situation_stock_ap": {
+    "_source": "Texte page 1",
+    "stock_net_apres_bp2024_et_dm2024_execution_22_10_2024_me": 6735.8,
+    "stock_net_avant_bp2025_execution_18_11_2024_me": 6574.5,
+    "mouvements_bp2025_me": 2047.1,
+    "stock_net_apres_bp2025_me": 8621.6
+  },
+
+  "tableau_situation_ap_par_fonction": {
+    "_source": "Tableau page 2",
+    "_colonnes": [
+      "stock_brut_31_12_2023_a",
+      "ca2023_mandate_apres_regularisation_b",
+      "ca2023_solde_ap_terminees_c",
+      "stock_net_31_12_2023_reporte_2024_d",
+      "bp_2024_e",
+      "dm1_bs_dm2_2024_f",
+      "stock_brut_2024_avant_bp2025_i",
+      "liquide_18_11_2024_j",
+      "stock_net_avant_bp2025_18_11_2024_k",
+      "bp_2025_l",
+      "stock_net_apres_bp2025_m"
+    ],
+    "_formules": {
+      "d": "a - b - c",
+      "i": "d + e + f",
+      "k": "i - j",
+      "m": "k + l"
+    },
+
+    "services_generaux": {
+      "stock_brut_31_12_2023": 1134.7,
+      "ca2023_mandate_apres_regularisation": 192.0,
+      "ca2023_solde_ap_terminees": 47.8,
+      "stock_net_31_12_2023_reporte_2024": 894.8,
+      "bp_2024": 336.4,
+      "dm1_bs_dm2_2024": -21.2,
+      "stock_brut_2024_avant_bp2025": 1210.0,
+      "liquide_18_11_2024": 183.1,
+      "stock_net_avant_bp2025_18_11_2024": 1026.9,
+      "bp_2025": 408.3,
+      "stock_net_apres_bp2025": 1435.2
+    },
+
+    "securite": {
+      "stock_brut_31_12_2023": 48.5,
+      "ca2023_mandate_apres_regularisation": 29.5,
+      "ca2023_solde_ap_terminees": 2.1,
+      "stock_net_31_12_2023_reporte_2024": 16.9,
+      "bp_2024": 25.7,
+      "dm1_bs_dm2_2024": 6.8,
+      "stock_brut_2024_avant_bp2025": 49.4,
+      "liquide_18_11_2024": 23.2,
+      "stock_net_avant_bp2025_18_11_2024": 26.2,
+      "bp_2025": 17.6,
+      "stock_net_apres_bp2025": 43.8
+    },
+
+    "enseignement_formation_professionnelle_apprentissage": {
+      "stock_brut_31_12_2023": 496.0,
+      "ca2023_mandate_apres_regularisation": 98.3,
+      "ca2023_solde_ap_terminees": 4.6,
+      "stock_net_31_12_2023_reporte_2024": 393.1,
+      "bp_2024": 200.8,
+      "dm1_bs_dm2_2024": 7.7,
+      "stock_brut_2024_avant_bp2025": 601.6,
+      "liquide_18_11_2024": 69.5,
+      "stock_net_avant_bp2025_18_11_2024": 532.0,
+      "bp_2025": 117.9,
+      "stock_net_apres_bp2025": 649.9
+    },
+
+    "culture_vie_sociale_jeunesse_sports_loisirs": {
+      "stock_brut_31_12_2023": 825.1,
+      "ca2023_mandate_apres_regularisation": 257.8,
+      "ca2023_solde_ap_terminees": 4.4,
+      "stock_net_31_12_2023_reporte_2024": 562.9,
+      "bp_2024": 309.5,
+      "dm1_bs_dm2_2024": 16.2,
+      "stock_brut_2024_avant_bp2025": 888.6,
+      "liquide_18_11_2024": 160.8,
+      "stock_net_avant_bp2025_18_11_2024": 727.8,
+      "bp_2025": 183.9,
+      "stock_net_apres_bp2025": 911.7
+    },
+
+    "sante_action_sociale_dont_apa_rsa_regularisation_rmi": {
+      "stock_brut_31_12_2023": 329.2,
+      "ca2023_mandate_apres_regularisation": 56.2,
+      "ca2023_solde_ap_terminees": 6.2,
+      "stock_net_31_12_2023_reporte_2024": 266.8,
+      "bp_2024": 87.8,
+      "dm1_bs_dm2_2024": -5.8,
+      "stock_brut_2024_avant_bp2025": 348.9,
+      "liquide_18_11_2024": 58.0,
+      "stock_net_avant_bp2025_18_11_2024": 290.8,
+      "bp_2025": 48.6,
+      "stock_net_apres_bp2025": 339.4
+    },
+
+    "amenagement_territoires_habitat": {
+      "stock_brut_31_12_2023": 3727.6,
+      "ca2023_mandate_apres_regularisation": 773.2,
+      "ca2023_solde_ap_terminees": 109.5,
+      "stock_net_31_12_2023_reporte_2024": 2844.9,
+      "bp_2024": 1041.5,
+      "dm1_bs_dm2_2024": -152.2,
+      "stock_brut_2024_avant_bp2025": 3734.3,
+      "liquide_18_11_2024": 613.3,
+      "stock_net_avant_bp2025_18_11_2024": 3121.0,
+      "bp_2025": 1133.7,
+      "stock_net_apres_bp2025": 4254.7
+    },
+
+    "action_economique": {
+      "stock_brut_31_12_2023": 196.6,
+      "ca2023_mandate_apres_regularisation": 19.7,
+      "ca2023_solde_ap_terminees": 66.9,
+      "stock_net_31_12_2023_reporte_2024": 110.0,
+      "bp_2024": 37.5,
+      "dm1_bs_dm2_2024": -4.9,
+      "stock_brut_2024_avant_bp2025": 142.5,
+      "liquide_18_11_2024": 7.9,
+      "stock_net_avant_bp2025_18_11_2024": 134.6,
+      "bp_2025": 6.2,
+      "stock_net_apres_bp2025": 140.8
+    },
+
+    "environnement": {
+      "stock_brut_31_12_2023": 275.0,
+      "ca2023_mandate_apres_regularisation": 63.2,
+      "ca2023_solde_ap_terminees": 1.1,
+      "stock_net_31_12_2023_reporte_2024": 210.7,
+      "bp_2024": 238.0,
+      "dm1_bs_dm2_2024": -14.1,
+      "stock_brut_2024_avant_bp2025": 434.5,
+      "liquide_18_11_2024": 85.7,
+      "stock_net_avant_bp2025_18_11_2024": 348.8,
+      "bp_2025": 71.1,
+      "stock_net_apres_bp2025": 419.9
+    },
+
+    "transports": {
+      "stock_brut_31_12_2023": 743.6,
+      "ca2023_mandate_apres_regularisation": 269.1,
+      "ca2023_solde_ap_terminees": 8.6,
+      "stock_net_31_12_2023_reporte_2024": 465.9,
+      "bp_2024": 116.5,
+      "dm1_bs_dm2_2024": -15.7,
+      "stock_brut_2024_avant_bp2025": 566.8,
+      "liquide_18_11_2024": 200.3,
+      "stock_net_avant_bp2025_18_11_2024": 366.4,
+      "bp_2025": 59.7,
+      "stock_net_apres_bp2025": 426.2
+    },
+
+    "total_general": {
+      "stock_brut_31_12_2023": 7776.2,
+      "ca2023_mandate_apres_regularisation": 1759.1,
+      "ca2023_solde_ap_terminees": 251.2,
+      "stock_net_31_12_2023_reporte_2024": 5765.9,
+      "bp_2024": 2393.8,
+      "dm1_bs_dm2_2024": -183.3,
+      "stock_brut_2024_avant_bp2025": 7976.4,
+      "liquide_18_11_2024": 1401.9,
+      "stock_net_avant_bp2025_18_11_2024": 6574.5,
+      "bp_2025": 2047.1,
+      "stock_net_apres_bp2025": 8621.6
+    }
+  }
+}

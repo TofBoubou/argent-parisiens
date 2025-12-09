@@ -1,0 +1,608 @@
+{
+  "fichier_source": "04a Nouvelles autorisations de programme.pdf",
+  "section": "4 - Les autorisations de programme",
+  "sous_section": "Nouvelles autorisations de programme",
+  "pages": "101-113",
+  "unite": "M€",
+
+  "synthese_ap_nouvelles": {
+    "total_depenses_me": 2047.1,
+    "total_recettes_me": 462.5,
+    "credits_paiement_uniquement_me": 120.0,
+    "detail": {
+      "operations_reelles": {"depenses_me": 1917.0, "recettes_me": 452.4},
+      "operations_neutralisees": {"depenses_me": 130.2, "recettes_me": 10.2}
+    }
+  },
+
+  "repartition_par_type_ap": {
+    "_source": "Tableau page 1",
+    "ap_plan": {"montant_me": 1437.9, "pct": 70.2},
+    "ap_projet": {"montant_me": 418.6, "pct": 20.4},
+    "investissement_interet_local_localise_il_iil": {"montant_me": 106.8, "pct": 5.2},
+    "budget_participatif": {"montant_me": 83.8, "pct": 4.1}
+  },
+
+  "repartition_par_localisation": {
+    "_source": "Graphique page 2",
+    "investissements_non_localises": {"montant_me": 1192.3, "pct": 58.2},
+    "investissements_localisables": {"montant_me": 615.3, "pct": 30.1},
+    "investissements_localises_17_arrondissements": {"montant_me": 239.5, "pct": 11.7}
+  },
+
+  "repartition_par_fonction": {
+    "_source": "Tableau page 2",
+    "fonctions": [
+      {"code": 0, "libelle": "Services généraux", "depenses_me": 408.3, "recettes_me": 295.8},
+      {"code": 1, "libelle": "Sécurité", "depenses_me": 17.6, "recettes_me": 1.0},
+      {"code": 2, "libelle": "Enseignement, formation professionnelle et apprentissage", "depenses_me": 117.9, "recettes_me": 5.8},
+      {"code": 3, "libelle": "Culture, vie sociale, jeunesse, sports et loisirs", "depenses_me": 183.9, "recettes_me": 13.7},
+      {"code": 4, "libelle": "Santé, action sociale et RSA", "depenses_me": 48.6, "recettes_me": 5.5},
+      {"code": 5, "libelle": "Aménagement des territoires et habitat", "depenses_me": 1133.7, "recettes_me": 76.7},
+      {"code": 6, "libelle": "Action économique", "depenses_me": 6.2, "recettes_me": 42.5},
+      {"code": 7, "libelle": "Environnement", "depenses_me": 71.1, "recettes_me": 2.0},
+      {"code": 8, "libelle": "Transports", "depenses_me": 59.7, "recettes_me": 19.6}
+    ]
+  },
+
+  "depenses_par_fonction": {
+    "securite": {
+      "total_me": 17.6,
+      "par_direction": {
+        "gestion_financiere_prefecture_police_me": 13.4,
+        "proprete_eau_me": 2.7,
+        "logement_habitat_me": 1.0,
+        "police_municipale_prevention_me": 0.6
+      },
+      "detail": {
+        "subvention_prefecture_police_me": 13.4,
+        "defense_exterieure_contre_incendie_deci_me": 2.7,
+        "travaux_office_immeubles_peril_me": 1.0,
+        "prevention_securite_protection": {
+          "total_me": 0.6,
+          "acquisition_mobilier_travaux_sites_police_municipale_me": 0.4,
+          "materiel_anti_intrusion_surveillance_me": 0.2
+        }
+      }
+    },
+
+    "enseignement_formation_apprentissage": {
+      "total_me": 117.9,
+      "par_direction": {
+        "affaires_scolaires_me": 114.4,
+        "attractivite_emploi_me": 3.3,
+        "espaces_verts_environnement_me": 0.2
+      },
+      "detail": {
+        "enseignement_premier_degre": {
+          "total_me": 60.4,
+          "entretien_ecoles_me": 26.5,
+          "travaux_securite_incendie_me": 16.3,
+          "renovation_sanitaires_ecoles_me": 5.5,
+          "travaux_logements_fonction_me": 5.0,
+          "equipements_informatiques_me": 2.9,
+          "materiel_mobilier_me": 2.5
+        },
+        "enseignement_second_degre": {
+          "total_me": 34.3,
+          "entretien_ensembles_imbriques_colleges_lycees_me": 8.0,
+          "travaux_securite_me": 7.2,
+          "subventions_equipement_colleges_autonomes_me": 5.6,
+          "cours_oasis_colleges_me": 5.0,
+          "restructuration_cite_mixte_paul_valery": {"arrondissement": "12e", "montant_me": 5.0},
+          "renovation_sanitaires_colleges_me": 1.5,
+          "travaux_logements_fonction_me": 1.0
+        },
+        "activites_periscolaires_annexes": {
+          "total_me": 16.4,
+          "restructuration_cuisine_centrale_72_rue_riquet": {"arrondissement": "18e", "montant_me": 9.7},
+          "creation_cuisine_centrale_paris_centre_me": 3.1,
+          "travaux_securite_cuisines_scolaires_me": 3.1
+        },
+        "services_communs": {"total_me": 3.2, "amelioration_locaux_personnel_me": 2.5},
+        "enseignement_superieur": {
+          "total_me": 3.3,
+          "subvention_equipement_espci_me": 1.6,
+          "subventions_ecoles_art_me": 1.2
+        },
+        "subvention_ecole_du_breuil_me": 0.2
+      }
+    },
+
+    "culture_vie_sociale_jeunesse_sports_loisirs": {
+      "total_me": 183.9,
+      "par_direction": {
+        "affaires_culturelles_me": 52.6,
+        "jeunesse_sports_me": 48.4,
+        "constructions_publiques_architecture_me": 44.2,
+        "jeux_olympiques_paralympiques_grands_evenements_me": 30.2,
+        "democratie_citoyens_territoires_me": 8.5
+      },
+      "detail": {
+        "affaires_culturelles": {
+          "total_me": 52.6,
+          "edifices_cultuels": {
+            "total_me": 23.5,
+            "restauration_chevet_saint_severin": {"arrondissement": "5e", "montant_me": 8.4},
+            "restauration_facade_saint_leu_saint_gilles": {"arrondissement": "Paris Centre", "montant_me": 2.5},
+            "grosses_reparations_me": 2.5,
+            "travaux_securisation_me": 2.0,
+            "restauration_orgue_saint_merri": {"arrondissement": "Paris Centre", "montant_me": 2.3},
+            "restauration_galerie_oratoire_louvre": {"arrondissement": "Paris Centre", "montant_me": 1.5},
+            "entretien_restauration_peintures_murales_me": 1.5
+          },
+          "musees": {
+            "total_me": 10.0,
+            "subvention_paris_musees": {"total_me": 5.4, "travaux_me": 4.7, "acquisition_oeuvres_art_me": 0.8},
+            "renovation_musee_art_histoire_judaisme_mahj_me": 4.6
+          },
+          "bibliotheques_mediatheques": {
+            "total_me": 7.2,
+            "acquisition_collections_me": 4.1,
+            "entretien_equipement_me": 3.1
+          },
+          "action_culturelle": {
+            "total_me": 4.9,
+            "subventions_equipement_me": 3.0,
+            "entretien_equipements_culturels_me": 0.9,
+            "projet_station_gare_mines": {"arrondissement": "18e", "montant_me": 0.6}
+          },
+          "enseignement_artistique_pratiques_amateurs": {
+            "total_me": 2.8,
+            "entretien_lieux_enseignement_artistique_me": 1.7,
+            "acquisition_instruments_musique_conservatoires_me": 0.7
+          },
+          "conservation_patrimoine_culturel_me": 1.7,
+          "theatre_spectacle_vivant_me": 1.0,
+          "cinema_me": 0.6
+        },
+        "jeunesse_sports": {
+          "total_me": 48.4,
+          "salles_sports_gymnases": {
+            "total_me": 31.4,
+            "entretien_equipements_sportifs_me": 10.7,
+            "construction_gymnase_portes_vincennes_montreuil": {"arrondissements": "12e et 20e", "montant_me": 9.4},
+            "restructuration_centre_sportif_suzanne_lenglen": {"arrondissement": "15e", "montant_me": 7.7}
+          },
+          "piscines_bassins_ecoles": {
+            "montant_me": 6.2,
+            "objet": "Contrats de performance énergétique",
+            "piscines": ["Didot (14e)", "Drigny (9e)", "Dunois (13e)", "La Plaine (15e)", "Mathis (19e)", "Rouvet (19e)"]
+          },
+          "stades": {
+            "total_me": 3.5,
+            "grosses_reparations_parc_princes_me": 1.6,
+            "stade_jean_bouin_me": 1.1,
+            "gazons_eclairages_me": 0.4,
+            "pistes_athletisme_me": 0.4
+          },
+          "equipements_jeunesse": {
+            "total_me": 2.6,
+            "entretien_centres_paris_anim_me": 1.2,
+            "demolition_reconstruction_paris_anim_clavel": {"arrondissement": "19e", "montant_me": 0.9},
+            "autres_equipements_jeunesse_me": 0.5
+          },
+          "bains_douches_renovation_me": 2.4,
+          "subvention_syndicat_mixte_parcs_sportifs_choisy_tremblay_me": 1.4,
+          "services_communs_me": 0.8
+        },
+        "constructions_publiques_architecture": {
+          "total_me": 44.2,
+          "travaux_esplanade_abords_notre_dame": {"arrondissement": "Paris Centre", "montant_me": 42.2},
+          "entretien_fontaines_patrimoniales_me": 1.9
+        },
+        "jop_contribution_solideo_me": 30.2,
+        "vie_citoyenne_renovation_mairies_arrondissement_me": 7.4
+      }
+    },
+
+    "sante_action_sociale": {
+      "total_me": 48.6,
+      "par_direction": {
+        "familles_petite_enfance_me": 26.2,
+        "sante_publique_me": 8.2,
+        "affaires_scolaires_me": 8.1,
+        "solidarites_me": 4.9,
+        "affaires_culturelles_me": 1.1,
+        "immobilier_logistique_transport_me": 0.1
+      },
+      "detail": {
+        "politique_accessibilite": {
+          "total_me": 11.6,
+          "equipements_scolaires_me": 8.1,
+          "creches_garderies_me": 2.0,
+          "equipements_cultuels_culturels_me": 1.1,
+          "etablissements_sante_me": 0.3,
+          "batiments_administratifs_me": 0.1
+        },
+        "familles_petite_enfance": {
+          "total_me": 26.2,
+          "entretien_renovation_travaux_securite_creches_me": 14.0,
+          "subventions_secteur_associatif_prive_me": 4.3,
+          "acquisition_mobilier_me": 2.0,
+          "travaux_logements_fonction_me": 2.0,
+          "travaux_accessibilite_me": 2.0,
+          "vegetalisation_espaces_exterieurs_me": 1.0,
+          "mise_normes_plan_climat_me": 0.8
+        },
+        "sante_publique": {
+          "total_me": 8.2,
+          "creation_centre_sante": {"arrondissement": "18e", "montant_me": 2.8},
+          "subventions_me": 2.0,
+          "maisons_sport_sante": {"montant_me": 1.2, "arrondissements": ["15e", "17e", "19e", "20e"]},
+          "travaux_etablissements_sante_municipaux_me": 0.9,
+          "materiel_mobilier_laboratoires_me": 0.5
+        },
+        "solidarites": {
+          "total_me": 4.9,
+          "subventions_humanisation_usld_me": 1.6,
+          "humanisation_foyers_personnes_handicapees_me": 0.9,
+          "etablissement_accueil_enfants_victimes_inceste_me": 0.8,
+          "travaux_etablissements_ase_me": 0.7,
+          "subventions_insertion_me": 0.6
+        }
+      }
+    },
+
+    "amenagement_territoires_habitat": {
+      "total_me": 1133.7,
+      "par_direction": {
+        "logement_habitat_me": 665.6,
+        "urbanisme_me": 294.8,
+        "voirie_deplacements_me": 89.3,
+        "espaces_verts_environnement_me": 83.6,
+        "democratie_citoyens_territoires_me": 0.4
+      },
+      "detail": {
+        "logement_habitat": {
+          "total_me": 665.6,
+          "subventions_logement_social_ville_me": 500.0,
+          "credits_delegues_etat_me": 59.0,
+          "rachat_actifs_fonciers_bailleurs_sociaux_me": 14.2,
+          "renovation_energetique_habitat_prive_me": 71.8,
+          "subventions_habitat_degrade_insalubre_me": 14.7,
+          "travaux_domaine_prive_collectivite_me": 5.1
+        },
+        "urbanisme": {
+          "total_me": 294.8,
+          "mouvements_techniques_operations_foncieres_equilibres_recettes_me": 15.0,
+          "compte_foncier_logement": {"total_me": 200.0, "fonction_amenagement_me": 185.2, "fonction_services_generaux_me": 14.8},
+          "operations_urbanisme_acquisition_foncier_zac_me": 61.4,
+          "compte_foncier_equipements": {"total_me": 21.0, "fonction_amenagement_me": 19.0, "fonction_services_generaux_me": 2.0},
+          "depenses_operationnelles_comptes_fonciers_me": 9.5,
+          "travaux_forum_halles": {"arrondissement": "Paris Centre", "montant_me": 3.7}
+        },
+        "voirie_deplacements": {
+          "total_me": 89.3,
+          "participations_voirie_bilan_zac": {
+            "total_me": 27.0,
+            "zac_paris_rive_gauche": {"arrondissement": "13e", "montant_me": 23.5},
+            "zac_clichy_batignolles": {"arrondissement": "17e", "montant_me": 3.0},
+            "zac_bargue_procession": {"arrondissement": "15e", "montant_me": 0.5}
+          },
+          "operations_embellir_vos_quartiers_me": 22.4,
+          "eclairage_public_me": 15.2,
+          "travaux_rue_commandant_mouchotte": {"arrondissement": "14e", "montant_me": 10.0},
+          "reamenagement_place_concorde": {"arrondissement": "8e", "montant_me": 5.4},
+          "rue_louis_vicat": {"arrondissement": "15e", "montant_me": 5.2},
+          "rue_nationale": {"arrondissement": "13e", "montant_me": 1.3},
+          "porte_chapelle": {"arrondissement": "18e", "montant_me": 1.0}
+        },
+        "espaces_verts": {
+          "total_me": 83.6,
+          "travaux_securite_consolidation_buttes_chaumont": {"arrondissement": "19e", "montant_me": 50.0},
+          "extension_parc_suzanne_lenglen": {"arrondissement": "15e", "montant_me": 4.1},
+          "parc_zac_python_duvernois": {"arrondissement": "20e", "montant_me": 3.4},
+          "extension_square_clara_zetkin_zac_bedier_oudine": {"arrondissement": "13e", "montant_me": 1.3},
+          "vegetalisation_espace_public_hors_embellir_quartiers_me": 8.3,
+          "entretien_espaces_verts_me": 6.7,
+          "entretien_aires_jeu_me": 2.2,
+          "renovation_installations_techniques_me": 3.4,
+          "creation_local_services_espaces_verts": {"arrondissement": "13e", "montant_me": 1.0}
+        },
+        "politique_ville_me": 0.4
+      }
+    },
+
+    "action_economique": {
+      "total_me": 6.2,
+      "par_direction": {
+        "attractivite_emploi_me": 3.3,
+        "urbanisme_me": 2.6,
+        "espaces_verts_environnement_me": 0.3
+      },
+      "detail": {
+        "attractivite_emploi": {
+          "total_me": 3.3,
+          "soutien_recherche_innovation": {"total_me": 1.0, "fonds_soutien_recherche_me": 0.8, "ecole_tumo_me": 0.2},
+          "structures_animation_developpement_economique": {"total_me": 0.8, "fonds_soutien_entreprises_innovantes_me": 0.7, "projets_collaboratifs_innovation_me": 0.1},
+          "actions_sectorielles": {"total_me": 0.7, "alimentation_durable_me": 0.5, "halles_marche_me": 0.2},
+          "insertion_economique_ess": {"total_me": 0.6, "filiere_reemploi_me": 0.4, "boost_emploi_agriculture_me": 0.2},
+          "illuminations_champs_elysees_me": 0.2
+        },
+        "urbanisme_compte_foncier_commerces": {"total_me": 3.0, "fonction_action_economique_me": 2.5, "fonction_services_generaux_me": 0.5},
+        "enlevement_terrasses_depose_dispositifs_publicitaires_me": 0.1,
+        "ferme_paris_me": 0.3
+      }
+    },
+
+    "environnement": {
+      "total_me": 71.1,
+      "par_direction": {
+        "constructions_publiques_architecture_me": 42.3,
+        "proprete_eau_me": 23.2,
+        "voirie_deplacements_me": 3.0,
+        "immobilier_logistique_transport_me": 2.3,
+        "espaces_verts_environnement_me": 0.2
+      },
+      "detail": {
+        "constructions_publiques_architecture_plan_climat": {
+          "total_me": 42.3,
+          "centres_thermiques_installations_ventilation": {"total_me": 27.0, "centres_thermiques_me": 14.0, "ventilation_me": 12.5, "transverses_me": 0.5},
+          "amelioration_enveloppe_exterieure_performance_energetique_me": 9.5,
+          "production_energie_durable_me": 5.8
+        },
+        "proprete_eau": {
+          "total_me": 23.2,
+          "achat_vehicules_collecte_proprete_me": 12.3,
+          "creation_atelier_proprete": {"arrondissement": "18e", "montant_me": 2.5},
+          "travaux_amelioration_renovation_locaux_me": 2.0,
+          "travaux_garages_me": 1.5,
+          "renovation_reseau_eau_non_potable_me": 2.0,
+          "receptacles_proprete_me": 0.8,
+          "suivi_numerique_collecte_dechets_me": 0.5,
+          "dispositifs_securite_anti_angles_morts_me": 0.5,
+          "bornes_recharge_electriques_ateliers_me": 0.4
+        },
+        "voirie_deplacements": {
+          "total_me": 3.0,
+          "consolidation_carrieres_souterraines_me": 2.0,
+          "aides_vehicules_propres_particuliers_me": 1.0
+        },
+        "renovation_batiments_administratifs_pcaet_me": 2.3,
+        "entretien_reseaux_arrosage_espaces_verts_me": 0.2
+      }
+    },
+
+    "transports": {
+      "total_me": 59.7,
+      "par_direction": {
+        "voirie_deplacements_me": 59.7
+      },
+      "detail": {
+        "voirie": {
+          "total_me": 35.7,
+          "entretien_developpement_patrimoine_voirie": {"total_me": 23.6, "investissements_localises_me": 18.1},
+          "entretien_exploitation_boulevard_peripherique_me": 5.0,
+          "ouvrages_art_tunnels_me": 3.6,
+          "refection_pieds_arbres_me": 2.5
+        },
+        "circulations_douces": {
+          "total_me": 10.2,
+          "pistes_cyclables_me": 10.0,
+          "points_stationnement_velos_me": 0.2
+        },
+        "canaux": {
+          "total_me": 7.2,
+          "entretien_canaux_mise_normes_ouvrages_me": 4.8,
+          "entretien_renovation_pont_bernadette_lafont": {"arrondissement": "10e", "montant_me": 2.0},
+          "parvis_connexions_gares_nord_est_me": 0.4
+        },
+        "transports_commun": {
+          "total_me": 4.0,
+          "adaptation_stations_metro_ligne_11_me": 3.8,
+          "solde_prolongement_tramway_t9_me": 0.2
+        },
+        "services_communs": {
+          "total_me": 2.7,
+          "remise_etat_site_logistique_bonneuil_sur_marne_me": 2.0,
+          "travaux_locaux_me": 0.5,
+          "acquisition_sanisettes_me": 0.2
+        }
+      }
+    },
+
+    "services_generaux": {
+      "total_me": 408.3,
+      "services_generaux_hors_budget_participatif_me": 324.5,
+      "budget_participatif_me": 83.8,
+
+      "services_generaux_detail": {
+        "par_direction": {
+          "urbanisme_me": 132.7,
+          "systemes_information_numerique_me": 65.2,
+          "gestion_financiere_me": 37.4,
+          "constructions_publiques_architecture_me": 28.8,
+          "logement_habitat_me": 25.0,
+          "immobilier_logistique_transports_me": 18.2,
+          "espaces_verts_environnement_me": 5.4,
+          "democratie_citoyens_territoires_me": 3.2,
+          "affaires_scolaires_me": 2.2,
+          "secretariat_general_me": 2.2,
+          "ressources_humaines_me": 1.7,
+          "delegation_generale_relations_internationales_me": 1.1,
+          "autres_me": 1.4
+        },
+        "detail": {
+          "urbanisme": {
+            "total_me": 132.7,
+            "inscriptions_techniques_ventes_echeanciers_equilibrees_recettes_me": 115.0,
+            "operations_financieres_comptes_fonciers_me": 17.3,
+            "regularisations_taxe_amenagement_me": 0.4
+          },
+          "systemes_information_numerique": {
+            "total_me": 65.2,
+            "projets_informatiques": {
+              "total_me": 26.3,
+              "refonte_si_financier_me": 8.5,
+              "projets_applicatifs_espace_public_me": 6.7,
+              "si_gestion_immobiliere_batimentaire_me": 3.5,
+              "si_gestion_rh_me": 3.0,
+              "si_geographique_me": 2.0,
+              "evolutions_outils_gestion_financiere_me": 1.1,
+              "developpement_relation_usagers_me": 1.0,
+              "integration_si_casvp_me": 0.5
+            },
+            "tierce_maintenance_applicative": {
+              "total_me": 15.1,
+              "si_rh_me": 4.8,
+              "applications_usagers_me": 4.7,
+              "si_cadre_vie_me": 4.2,
+              "si_financier_me": 1.4
+            },
+            "equipements_proximite_postes_travail_me": 7.1,
+            "securite_operationnelle_outils_numeriques_me": 1.6,
+            "serveurs_stockage_me": 6.5,
+            "integration_applicative_me": 2.3,
+            "entretien_reseaux_informatiques_telephoniques_me": 4.5,
+            "copieurs_impression_badge_me": 1.1
+          },
+          "marches_assistance_maitrise_ouvrage_si_me": 2.2,
+          "gestion_financiere": {
+            "total_me": 37.4,
+            "depenses_imprevues_me": 24.0,
+            "remboursement_partiel_avance_dmto_2020_me": 7.7,
+            "dotation_investissement_arrondissements_me": 5.6,
+            "remboursement_fctva_actifs_cedes_me": 0.1
+          },
+          "constructions_publiques_architecture": {
+            "total_me": 28.8,
+            "travaux_pavillon_arsenal": {"arrondissement": "Paris Centre", "montant_me": 10.2},
+            "mise_normes_entretien_ascenseurs_me": 4.4,
+            "modernisation_securite_incendie_me": 3.8,
+            "modernisation_installations_electriques_me": 3.0,
+            "operations_ravalement_me": 3.0,
+            "travaux_toitures_me": 1.5,
+            "fournitures_materiel_travaux_regie_me": 1.2
+          },
+          "logement_habitat_capitalisation_fonciere_logement_abordable_me": 25.0,
+          "gestion_immobiliere_logistique": {
+            "total_me": 18.2,
+            "entretien_reamenagement_batiments_administratifs": {
+              "total_me": 16.9,
+              "relogement_services": {"arrondissement": "12e", "montant_me": 7.2},
+              "centre_administratif_axiom": {"arrondissement": "13e", "montant_me": 3.0},
+              "renforcement_securite_incendie_227_rue_bercy": {"arrondissement": "12e", "montant_me": 1.7},
+              "autres_travaux_batiments_administratifs_hotel_ville_me": 5.0
+            },
+            "acquisition_materiel_electoral_me": 0.7
+          },
+          "cimetieres_equipements_funeraires": {
+            "total_me": 5.4,
+            "amenagement_vegetalisation_me": 2.7,
+            "renovation_columbarium_pere_lachaise": {"arrondissement": "20e", "montant_me": 2.0}
+          },
+          "democratie_citoyens_territoires": {
+            "total_me": 3.2,
+            "theatre_concorde_me": 2.0,
+            "mise_normes_bureaux_hotel_ville_me": 1.1
+          },
+          "contrat_performance_energetique_ecoles_me": 2.2,
+          "ressources_humaines": {"total_me": 1.7, "renovation_construction_centres_restauration_me": 1.3, "equipement_agents_handicap_me": 0.3},
+          "relations_internationales_me": 1.1
+        }
+      },
+
+      "budget_participatif": {
+        "total_me": 83.8,
+        "campagne_2024": {
+          "montant_total_me": 79.6,
+          "projets_retenus": 121,
+          "projets_tout_paris": 3,
+          "projets_arrondissements": 118
+        },
+        "budget_participatif_ecoles_colleges_me": 4.2,
+        "par_direction": {
+          "affaires_scolaires_me": 19.7,
+          "jeunesse_sports_me": 17.1,
+          "affaires_culturelles_me": 14.6,
+          "espaces_verts_environnement_me": 13.0,
+          "familles_petite_enfance_me": 5.3,
+          "voirie_deplacements_me": 4.0,
+          "democratie_citoyens_territoires_me": 3.4,
+          "solidarites_me": 2.7,
+          "constructions_publiques_architecture_me": 1.6,
+          "attractivite_emploi_me": 1.3,
+          "transition_ecologique_climat_me": 0.8,
+          "sante_publique_me": 0.1,
+          "proprete_eau_me": 0.1,
+          "immobilier_logistique_transports_me": 0.1
+        }
+      }
+    }
+  },
+
+  "recettes_par_fonction": {
+    "securite": {
+      "total_me": 1.0,
+      "remboursements_tiers_travaux_office_immeubles_peril_me": 1.0
+    },
+    "enseignement": {
+      "total_me": 5.8,
+      "dotation_departementale_equipement_colleges_etat_me": 5.8
+    },
+    "culture_vie_sociale_jeunesse_sports_loisirs": {
+      "total_me": 13.7,
+      "affaires_culturelles": {
+        "total_me": 8.4,
+        "cofinancements_plan_edifices_cultuels_mecenat_me": 7.0,
+        "bibliotheques_archivage_dont_mediatheque_james_baldwin_19e_me": 1.3
+      },
+      "sport": {
+        "total_me": 5.1,
+        "renovation_piscine_chateau_landon": {"arrondissement": "10e", "montant_me": 2.4},
+        "terrain_education_physique_baudricourt": {"arrondissement": "13e", "montant_me": 2.0},
+        "performance_energetique_piscines_me": 0.7
+      },
+      "remboursement_paris_musees_me": 0.2
+    },
+    "sante_action_sociale": {
+      "total_me": 5.5,
+      "subventions_caf_renovation_creches_me": 3.3,
+      "travaux_accessibilite_lignes_bus_me": 2.1
+    },
+    "amenagement_territoires_habitat": {
+      "total_me": 76.7,
+      "logement_habitat_delegation_etat_aides_pierre": {
+        "total_me": 60.6,
+        "logement_social_me": 42.2,
+        "renovation_energetique_habitat_prive_me": 18.4
+      },
+      "travaux_immeubles_municipaux_me": 0.2,
+      "cofinancements_amenagement_voirie": {
+        "total_me": 11.5,
+        "travaux_porte_chapelle": {"arrondissement": "18e", "montant_me": 4.1},
+        "abords_tour_montparnasse": {"arrondissement": "14e", "montant_me": 2.3},
+        "rue_boissy_anglas": {"arrondissement": "8e", "montant_me": 2.1},
+        "forets_urbaines_me": 1.7
+      },
+      "espaces_verts_environnement": {
+        "total_me": 4.4,
+        "vegetalisation_petite_ceinture_me": 2.9,
+        "parc_zac_python_duvernois": {"arrondissement": "20e", "montant_me": 0.7},
+        "agrandissement_parc_suzanne_lenglen": {"arrondissement": "15e", "montant_me": 0.4}
+      }
+    },
+    "action_economique": {
+      "total_me": 42.5,
+      "remboursement_avances_sem_paris_commerces_vital_quartier_me": 42.4,
+      "refacturation_enlevement_terrasses_illegales_me": 0.1
+    },
+    "environnement": {
+      "total_me": 2.0,
+      "collecte_dechets_alimentaires_me": 1.1,
+      "deploiement_stations_trilib_me": 0.9
+    },
+    "transports": {
+      "total_me": 19.6,
+      "cofinancements_prolongement_tramway_t3_porte_maillot_me": 8.6,
+      "subventions_pistes_cyclables_me": 5.0,
+      "remboursements_travaux_compte_tiers_me": 4.0,
+      "travaux_ponts_ouvrages_art_me": 1.9
+    },
+    "services_generaux": {
+      "total_me": 295.8,
+      "note": "Recettes équilibrées avec les dépenses d'urbanisme (ventes avec échéanciers)"
+    }
+  }
+}

@@ -1,0 +1,609 @@
+{
+  "fichier_source": "03-0 Services généraux.pdf",
+  "section": "3 - Présentation par politique publique",
+  "sous_section": "(0) Services généraux",
+  "pages": "90-100",
+  "unite": "M€",
+
+  "precision_methodologique": {
+    "description": "La présente fiche retrace les crédits de la fonction « Services généraux » ventilés par politique publique qui, outre ceux destinés à l'assemblée délibérante, à l'action internationale et aux états spéciaux d'arrondissements, favorisent au quotidien la meilleure allocation des moyens humains et matériels directement nécessaires au bon fonctionnement d'un service public de qualité.",
+    "domaines_couverts": [
+      "Immobilier et logistique",
+      "Construction",
+      "Ressources humaines",
+      "Communication",
+      "Affaires juridiques",
+      "Systèmes d'information"
+    ],
+    "note": "Les crédits non ventilables, relatifs à la fiscalité et aux opérations financières, sont décrits dans la partie 2 du rapport."
+  },
+
+  "budget_consolide": {
+    "_source": "Tableau page 1",
+    "depenses_fonctionnement": {"bp_2024": 886.9, "bp_2025": 922.6},
+    "dont_masse_salariale": {"bp_2024": 436.1, "bp_2025": 456.0},
+    "depenses_investissement": {"bp_2024": 151.8, "bp_2025": 184.2},
+    "recettes_fonctionnement": {"bp_2024": 201.2, "bp_2025": 232.2},
+    "recettes_investissement": {"bp_2024": 0.0, "bp_2025": 0.9}
+  },
+
+  "graphique_repartition_budget_total": {
+    "_source": "Graphique page 1 - Camembert budget consolidé",
+    "total_me": 1106.8,
+    "repartition": {
+      "administration_generale_conseil_paris_pct": 79.6,
+      "etats_speciaux_arrondissement_pct": 15.6,
+      "budget_participatif_pct": 4.1,
+      "actions_internationales_interregionales_europeennes_pct": 0.7
+    }
+  },
+
+  "depenses_fonctionnement": {
+    "total_me": 922.6,
+    "dont_masse_salariale_me": 456.0,
+    "hors_masse_salariale_me": 466.5,
+    "variation_vs_bp2024_me": 35.7,
+
+    "repartition_hors_masse_salariale": {
+      "depenses_generales_administration_me": 295.1,
+      "etats_speciaux_arrondissement_me": 167.2,
+      "action_internationale_interregionale_me": 4.2
+    },
+
+    "graphique_repartition_hors_masse_salariale": {
+      "_source": "Graphique page 2 - Dépenses de fonctionnement hors masse salariale",
+      "etats_speciaux_arrondissement_pct": 63.3,
+      "administration_generale_conseil_paris_pct": 35.8,
+      "actions_internationales_interregionales_europeennes_pct": 0.9
+    },
+
+    "creations_postes_2025": {
+      "total_creations": 26,
+      "detail": [
+        {
+          "direction": "Direction des affaires juridiques",
+          "postes": 1,
+          "motif": "Renforcer le bureau du droit de l'urbanisme"
+        },
+        {
+          "direction": "Direction de la construction publique et de l'architecture",
+          "postes": 4,
+          "detail": {
+            "contrats_projet_performance_energetique_enedis": 3,
+            "amelioration_locaux_travail": 1
+          }
+        },
+        {
+          "direction": "Direction de la démocratie, des citoyens et des territoires",
+          "postes": 9,
+          "detail": {
+            "accueil_maisons_vie_associative_citoyenne": 4,
+            "territorialisation_urgence_sociale": 3,
+            "relation_usager": 2
+          }
+        },
+        {
+          "direction": "Direction des finances et des achats",
+          "postes": 3,
+          "detail": {
+            "collecte_part_regionale_taxe_sejour": 2,
+            "refonte_si_financier_contrat_projet": 1
+          }
+        },
+        {
+          "direction": "Direction de l'immobilier, de la logistique et des transports",
+          "postes": 1,
+          "motif": "Obligations réglementaires en matière de formation incendie"
+        },
+        {
+          "direction": "Direction des ressources humaines",
+          "postes": 4,
+          "detail": {
+            "service_accompagnement_mediation": 1,
+            "sirh": 1,
+            "plan_egalite": 2
+          }
+        },
+        {
+          "direction": "Direction des systèmes d'information et du numérique",
+          "postes": 4,
+          "detail": {
+            "assistance_maitrise_ouvrage_transverse": 3,
+            "cyber_securite": 1
+          }
+        }
+      ],
+      "solde_transformations": 4,
+      "transferts_autres_fonctions": -2,
+      "fonctions_destination_transferts": ["Sécurité", "Action économique"],
+      "redeploiements": 45,
+      "solde_net_fonction": -17
+    },
+
+    "depenses_generales_administration": {
+      "total_me": 295.1,
+      "graphique_repartition": {
+        "_source": "Graphique page 3 - Principaux postes de dépenses d'administration générale",
+        "logistique_gestion_immobiliere_pct": 35.0,
+        "autres_moyens_generaux_dont_admin_etat_cimetieres_pct": 19.9,
+        "gestion_ressources_humaines_pct": 17.3,
+        "informatique_telecommunications_pct": 12.1,
+        "constructions_publiques_architecture_pct": 5.4,
+        "communication_relation_usagers_pct": 4.8,
+        "affaires_juridiques_financieres_pct": 4.2,
+        "assemblee_deliberante_pct": 1.3
+      },
+
+      "logistique_gestion_immobiliere": {
+        "total_me": 103.2,
+        "variation_vs_bp2024_me": 1.6,
+        "detail": {
+          "gestion_immobiliere_loyers_charges_baux_me": 70.9,
+          "nettoyage_locaux_administratifs_me": 11.0,
+          "nettoyage_variation_me": -0.5,
+          "habillement_agents_me": 9.5,
+          "transports_automobiles_municipaux_me": 4.5,
+          "entretien_batiments_securite_me": 4.0,
+          "affranchissement_me": 2.3,
+          "reprographie_elections_me": 0.8,
+          "amenagement_locaux_me": 0.3
+        }
+      },
+
+      "gestion_ressources_humaines": {
+        "total_me": 51.1,
+        "variation_vs_bp2024_me": 1.3,
+        "detail": {
+          "oeuvres_sociales": {
+            "total_me": 21.0,
+            "subvention_aspp_restauration_collective_me": 12.4,
+            "subvention_agospap_me": 7.0,
+            "prestations_sociales_agents_me": 1.6
+          },
+          "formation_reconversion_professionnelle_me": 15.5,
+          "conges_bonifies": {
+            "montant_me": 5.6,
+            "variation_me": 0.6,
+            "cause_hausse": "Augmentation du nombre de bénéficiaires et évolution tarifs aériens Air France"
+          },
+          "accidents_travail_maladies_professionnelles_me": 3.6,
+          "pensions_rentes_me": 3.4,
+          "autres_depenses": {
+            "montant_me": 2.0,
+            "detail": ["Services support", "Organisation concours et recrutements", "Frais gestion convention Pôle emploi assurance chômage"]
+          }
+        }
+      },
+
+      "informatique_telecommunications": {
+        "total_me": 35.8,
+        "variation_vs_bp2024_me": 4.3,
+        "detail": {
+          "infrastructures_informatiques": {
+            "montant_me": 19.5,
+            "variation_me": 3.6,
+            "contenu": "Entretien et maintenance des réseaux, matériels et postes de travail"
+          },
+          "maintenance_applicative": {
+            "montant_me": 9.1,
+            "variation_me": 0.6
+          },
+          "telecommunications": {
+            "montant_me": 7.2,
+            "variation_me": 0.1
+          }
+        }
+      },
+
+      "entretien_maintenance_constructions_publiques": {
+        "total_me": 16.0,
+        "contenu": [
+          "Maintenance préventive et curative des installations techniques et centres thermiques",
+          "Contrôles réglementaires des installations des locaux de travail et équipements recevant du public",
+          "Fournitures des ateliers pour interventions en régie",
+          "Moyens de déplacements"
+        ]
+      },
+
+      "affaires_juridiques_financieres": {
+        "total_me": 12.3,
+        "detail": {
+          "frais_actes_contentieux": {
+            "montant_me": 3.6,
+            "variation_me": 0.1
+          },
+          "acces_droit_me": 2.4,
+          "frais_assurance_me": 2.3,
+          "concessions_me": 1.6,
+          "certification_comptes_me": 1.0,
+          "autres_etudes_documentations_impressions_taxes_me": 1.3
+        }
+      },
+
+      "communication": {
+        "total_me": 6.3,
+        "variation_vs_bp2024_me": -0.1,
+        "detail": {
+          "information_campagnes_communication_me": 2.5,
+          "evenementiel": {
+            "montant_me": 2.3,
+            "evenements": ["Paris Plages", "Feu d'artifice 14 Juillet", "Commémoration de la Libération", "Animations de fin d'année"]
+          },
+          "protocole_me": 0.7
+        }
+      },
+
+      "gestion_cimetieres": {
+        "total_me": 5.6,
+        "variation_vs_bp2024_me": 0.3,
+        "detail": {
+          "entretien_courant_me": 3.2,
+          "suivi_delegations_funeraires_me": 2.3,
+          "delegations_funeraires_detail": ["Service extérieur des pompes funèbres", "Crématorium du Père Lachaise"]
+        }
+      },
+
+      "conseil_de_paris": {
+        "total_me": 3.8,
+        "variation_vs_bp2024_me": -0.3,
+        "detail": {
+          "groupes_elus": {
+            "montant_me": 3.5,
+            "contenu": ["Subvention caisse de retraite des élus", "Transports en commun (pass Navigo)", "Frais de formation"]
+          },
+          "fonctionnement_conseil_paris_me": 0.3
+        }
+      },
+
+      "relations_usager_associations": {
+        "total_me": 7.8,
+        "variation_vs_bp2024_me": 1.8,
+        "detail": {
+          "theatre_concorde_8e": {
+            "montant_me": 2.7,
+            "description": "Nouveau lieu démocratique et culturel pour tous"
+          },
+          "vie_associative_me": 2.3,
+          "mediateur_paris_accueil_usagers_me": 0.5,
+          "ville_quart_heure_me": 0.1,
+          "fonds_animation_locale": {
+            "montant_me": 0.3,
+            "variation_me": -0.3,
+            "note": "Le fonds 2024 avait été abondé de 0,3 M€ au titre de l'animation des sites de festivités JOP"
+          }
+        }
+      },
+
+      "autres_moyens_generaux": {
+        "total_me": 53.2,
+        "detail": {
+          "operations_comptables_regularisation_recettes_me": 27.6,
+          "frais_bancaires_emprunts_moyens_paiement_me": 4.0,
+          "contribution_cnracl_pensions_ex_agents_prefecture_seine_me": 1.0,
+          "etat_civil_elections": {
+            "montant_me": 0.7,
+            "variation_me": -0.6,
+            "note": "Baisse car pas d'élections prévues en 2025"
+          }
+        }
+      }
+    },
+
+    "etats_speciaux_arrondissement": {
+      "total_me": 172.8,
+      "bp_2024_me": 171.8,
+
+      "dotation_gestion_locale_dgl": {
+        "bp_2024_me": 152.1,
+        "bp_2025_me": 152.9,
+        "variation_me": 0.8,
+        "description": "Finance le fonctionnement des équipements de proximité fréquentés principalement par les habitants de l'arrondissement",
+        "equipements": ["Crèches", "Écoles", "Bibliothèques", "Piscines", "Conservatoires", "Espaces verts"],
+        "facteurs_hausse": [
+          {"poste": "Espaces verts", "variation_me": 1.8, "cause": "Entretien nouveaux espaces et surfaces végétalisées issus de la démarche Embellir votre quartier"},
+          {"poste": "Fonctionnement crèches", "variation_me": 0.6, "cause": "Évolution des coûts incluant passage au 100% bio dans l'alimentation"}
+        ],
+        "facteurs_baisse": ["Modération des dépenses de fluides énergétiques en raison de tarifs attendus à la baisse"]
+      },
+
+      "dotation_animation_locale_dal": {
+        "bp_2024_me": 14.2,
+        "bp_2025_me": 14.3,
+        "variation_me": 0.1,
+        "cause_variation": "Revalorisation des crédits consacrés aux travaux urgents des équipements de proximité"
+      },
+
+      "graphique_repartition_depenses_esa": {
+        "_source": "Graphique page 6 - Répartition des dépenses de fonctionnement des ESA",
+        "equipements_jeunesse_pct": 24.0,
+        "etablissements_accueil_jeune_enfant_pct": 21.8,
+        "ecoles_pct": 19.7,
+        "equipements_sportifs_pct": 7.0,
+        "administration_generale_pct": 6.7,
+        "espaces_verts_pct": 6.4,
+        "equipements_culturels_pct": 4.6,
+        "animation_locale_pct": 4.3,
+        "travaux_urgents_pct": 4.0,
+        "equipements_associatifs_vie_citoyenne_pct": 1.7
+      }
+    },
+
+    "actions_internationales_interregionales_europeennes": {
+      "total_me": 4.3,
+      "detail": {
+        "aide_publique_developpement_me": 1.6,
+        "autres_depenses_action_internationale_me": 2.1,
+        "action_metropolitaine_me": 0.4,
+        "delegation_outre_mer_me": 0.2
+      }
+    }
+  },
+
+  "recettes_fonctionnement": {
+    "total_me": 232.2,
+    "variation_vs_bp2024_me": 31.0,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 7 - Recettes de fonctionnement",
+      "concessions_pct": 79.6,
+      "affaires_juridiques_comptables_financieres_pct": 5.3,
+      "cimetieres_pompes_funebres_pct": 5.0,
+      "gestion_ressources_humaines_pct": 4.1,
+      "logistique_informatique_gestion_immobiliere_pct": 2.8,
+      "autres_recettes_services_generaux_pct": 2.1,
+      "gestion_fonds_europeens_pct": 1.1
+    },
+
+    "administration_generale": {
+      "total_me": 229.7,
+      "variation_vs_bp2024_me": 31.0,
+
+      "concessions": {
+        "montant_me": 184.8,
+        "variation_me": 26.7,
+        "types": ["Établissements concédés", "Affichage public", "Réseaux de télécommunications", "Stationnement des taxis"]
+      },
+
+      "activites_juridiques_financieres_comptables": {
+        "total_me": 12.2,
+        "variation_me": -0.6,
+        "detail": {
+          "activites_comptables_financieres": {
+            "montant_me": 9.2,
+            "contenu": ["Annulations de mandats", "Contribution DRFIP au fonctionnement du centre facturier", "Régularisations comptables"]
+          },
+          "affaires_juridiques_decisions_justice_me": 3.1
+        }
+      },
+
+      "cimetieres_concessions_pompes_funebres": {
+        "total_me": 11.7,
+        "detail": {
+          "redevances_funeraires_cimetieres_me": 9.6,
+          "redevances_pompes_funebres_crematorium_pere_lachaise_me": 2.0
+        }
+      },
+
+      "ressources_humaines": {
+        "total_me": 9.5,
+        "variation_me": 1.2,
+        "detail": {
+          "remboursement_frais_personnel_mis_disposition_detaches_me": 6.1,
+          "fiphfp_me": 2.2,
+          "remboursement_idfm_versement_transport_agents_loges_me": 1.1,
+          "remboursements_divers_me": 0.2
+        }
+      },
+
+      "logistique_informatique_gestion_immobiliere": {
+        "total_me": 6.4,
+        "variation_me": 2.7,
+        "detail": {
+          "informatique_telecommunications_refacturations_me": 5.7,
+          "remboursement_frais_affranchissement_dotation_vestimentaire_me": 0.4,
+          "redevance_photocopieurs_cabines_photos_mairies_me": 0.2
+        }
+      },
+
+      "autres_recettes_administration_generale": {
+        "total_me": 4.9,
+        "variation_me": 1.0,
+        "detail": {
+          "communication_fetes_ceremonies_location_salons_hotel_ville_partenariats_marques_me": 1.5,
+          "gestion_batimentaire_certificats_economie_energie_me": 2.2,
+          "fonds_maires_quetes_mariage_locations_salles_tournages_me": 0.8,
+          "participations_dotations_etat_insee_recensement_me": 0.4
+        }
+      }
+    },
+
+    "gestion_fonds_europeens": {
+      "subvention_globale_fse_me": 2.5,
+      "note": "Versée à la Ville en tant qu'organisme intermédiaire chargé de l'attribution de cette subvention aux porteurs de projets"
+    }
+  },
+
+  "depenses_investissement": {
+    "total_me": 184.2,
+    "variation_vs_bp2024_me": 32.4,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 8 - Dépenses d'investissement",
+      "administration_generale_conseil_paris_pct": 71.8,
+      "budget_participatif_pct": 24.4,
+      "etats_speciaux_arrondissement_pct": 3.0,
+      "actions_internationales_interregionales_europeennes_pct": 0.7
+    },
+
+    "budget_participatif": {
+      "campagne_2024": {
+        "projets_retenus_total": 121,
+        "projets_parisiens": 3,
+        "projets_arrondissement": 118,
+        "montant_total_me": 79.6,
+        "repartition": {
+          "autorisations_programme_budget_participatif_parisien": {
+            "montant_me": 6.0,
+            "thematiques_principales": [
+              {"nom": "Créer des jeux gratuits et en plein air pour les enfants", "montant_me": 3.0},
+              {"nom": "Adapter les bâtiments, toits, et bois au dérèglement climatique", "montant_me": 2.5}
+            ]
+          },
+          "budget_participatif_arrondissement": {
+            "montant_me": 73.6,
+            "repartition_thematique": {
+              "education_pct": 29.6,
+              "cadre_vie_pct": 19.9,
+              "culture_pct": 18.9
+            }
+          }
+        },
+        "credits_quartiers_populaires": {
+          "montant_me": 41.8,
+          "part_enveloppe_pct": 52.5,
+          "projets_exemples": [
+            {"arrondissement": "11e", "projet": "Améliorer le patrimoine associatif de Belleville", "montant_me": 1.2},
+            {"arrondissement": "12e", "projet": "Pour un quartier porte de Vincennes toujours plus dynamique", "montant_me": 1.1},
+            {"arrondissement": "13e", "projet": "Toujours plus de sport", "montant_me": 2.8},
+            {"arrondissement": "14e", "projet": "Ouvrir le stade Didot sur le quartier", "montant_me": 1.5},
+            {"arrondissement": "15e", "projet": "Poursuivre la modernisation des infrastructures de grands jeux", "montant_me": 2.5},
+            {"arrondissement": "17e", "projet": "Couverture du court de tennis Marguerite-Broquedis (ex-Reims)", "montant_me": 1.5},
+            {"arrondissement": "18e", "projet": "Adapter 32 crèches aux fortes chaleurs", "montant_me": 3.6},
+            {"arrondissement": "19e", "projet": "De nouveaux espaces de sports et de loisirs", "montant_me": 2.8},
+            {"arrondissement": "19e", "projet": "Nos écoles se protègent du réchauffement climatique", "montant_me": 2.6},
+            {"arrondissement": "20e", "projet": "Culture et animation dans les quartiers populaires", "montant_me": 2.4},
+            {"arrondissement": "20e", "projet": "Développer des cours oasis dans les quartiers populaires", "montant_me": 1.6}
+          ]
+        }
+      },
+      "part_budget_investissement_decide_par_parisiens_pct": 25
+    },
+
+    "administration_generale": {
+      "total_me": 177.3,
+      "bp_2024_me": 144.8,
+
+      "materiels_applications_informatiques": {
+        "total_me": 50.0,
+        "bp_2024_me": 53.0,
+        "detail": {
+          "projets_informatiques": {
+            "total_me": 15.2,
+            "variation_me": -3.6,
+            "detail": {
+              "espace_public_me": 3.4,
+              "sig_immobilier_logement_me": 2.8,
+              "ressources_humaines_efficacite_financiere_me": 2.8,
+              "relation_usagers_me": 2.4,
+              "refonte_portail_facil_familles_me": 1.6,
+              "cybersecurite_me": 0.8,
+              "nouveaux_outils_collaboratifs_me": 0.5,
+              "systeme_informatique_police_municipale_me": 0.5,
+              "acces_offre_sociale_me": 0.3
+            }
+          },
+          "tierce_maintenance_applicative": {
+            "total_me": 11.7,
+            "variation_me": 1.2,
+            "detail": {
+              "applications_usagers_me": 3.7,
+              "cadre_vie_me": 3.2,
+              "si_ressources_humaines_me": 3.7,
+              "si_financier_me": 1.1
+            }
+          },
+          "serveurs_me": 6.0,
+          "integration_applicative_me": 3.6,
+          "equipements_informatiques_telephoniques": {
+            "total_me": 5.7,
+            "contenu": "Remplacement postes de travail obsolètes et besoins nouveaux"
+          },
+          "environnement_utilisateur_outils_numeriques_securite_me": 2.1,
+          "equipement_nomade_agents_terrain_police_municipale_me": 0.4,
+          "entretien_reseau_informatique_telephonique": {
+            "total_me": 4.6,
+            "dont_raccordement_sites_haut_debit_me": 0.5
+          },
+          "parc_copieurs_impression_badge_me": 0.9,
+          "marches_assistance_maitrise_ouvrage_si_me": 2.2
+        }
+      },
+
+      "entretien_batiments_administratifs_modernisation": {
+        "total_me": 34.0,
+        "variation_vs_bp2024_me": 5.9,
+        "detail": {
+          "modernisation_installations_batiments_administratifs": {
+            "total_me": 10.5,
+            "detail": {
+              "ascenseurs_me": 4.2,
+              "securite_incendie_me": 3.0,
+              "installations_electriques_me": 3.0,
+              "installations_techniques_me": 0.3
+            }
+          },
+          "schema_directeur_implantations_administratives_sdia": {
+            "montant_me": 8.9,
+            "operations": [
+              {"nom": "Travaux aménagement nouveau centre administratif Axiom", "arrondissement": "13e"},
+              {"nom": "Nouveau schéma occupation 2 et 4 rue Lobau", "arrondissement": "Paris Centre"},
+              {"nom": "Relogement du centre de formation de la Ville de Paris"}
+            ]
+          },
+          "ravalement_facades_me": 2.4,
+          "refection_toitures_batiments_equipements_me": 1.6,
+          "bornes_recharge_electrique_flotte_municipale_me": 2.0,
+          "renovation_pavillon_arsenal_paris_centre_me": 3.5,
+          "entretien_travaux_autres_batiments_administratifs_me": 2.2,
+          "fournitures_materiel_mobilier_me": 1.5,
+          "prevention_conditions_travail_me": 0.7,
+          "etudes_frais_insertion_me": 0.7
+        }
+      },
+
+      "reamenagement_site_tour_eiffel_7e": {
+        "montant_me": 18.0
+      },
+
+      "equipements_funeraires": {
+        "total_me": 3.9,
+        "detail": {
+          "travaux_cimetieres_parisiens_me": 2.6,
+          "mise_conformite_columbarium_pere_lachaise_20e_me": 1.3
+        }
+      },
+
+      "gestion_ressources_humaines": {
+        "total_me": 1.7,
+        "detail": {
+          "travaux_restaurants_administratifs_me": 1.3,
+          "materiel_agents_situation_handicap_me": 0.3
+        }
+      },
+
+      "participation_citoyenne_aide_associations": {
+        "total_me": 1.7,
+        "detail": {
+          "theatre_concorde_8e_me": 1.5
+        }
+      }
+    },
+
+    "dotation_investissement_esa": {
+      "montant_me": 5.6,
+      "objet": "Financer les dépenses d'investissement des mairies d'arrondissement au titre de leurs équipements de proximité et des conseils de quartier"
+    },
+
+    "cooperation_decentralisee_actions_internationales_europeennes": {
+      "montant_me": 1.3
+    }
+  },
+
+  "recettes_investissement": {
+    "total_me": 0.9,
+    "sources": [
+      "Cofinancements dans le cadre de la rénovation du Pavillon de l'Arsenal (Paris Centre)",
+      "Projet issu du budget participatif"
+    ]
+  }
+}

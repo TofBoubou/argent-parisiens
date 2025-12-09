@@ -1,0 +1,134 @@
+{
+  "fichier_source": "01b Les chiffres clés présentés par fonction.pdf",
+  "section": "1 - Les chiffres clés présentés par fonction",
+  "unite": "M€",
+
+  "resume": {
+    "depenses_reelles_fonctionnement_me": 9268.2,
+    "depenses_reelles_investissement_hors_emprunt_me": 1713.9,
+    "autorisations_programme_nouvelles_me": 2047.1,
+    "note": "Depuis 2019, budget réparti selon 9 fonctions (politiques publiques)"
+  },
+
+  "tableau_chiffres_cles": {
+    "recettes_reelles_fonctionnement": {
+      "total": {"bp_2024": 9823.4, "bp_2025": 9839.5, "variation": 16.1, "evolution_pct": 0.2},
+
+      "fiscalite": {
+        "total": {"bp_2024": 6013.7, "bp_2025": 5987.2, "variation": -26.5, "evolution_pct": -0.4},
+        "detail": {
+          "fiscalite_directe_locale": {"bp_2024": 2164.2, "bp_2025": 2191.0, "variation": 26.8, "evolution_pct": 1.2},
+          "fraction_fiscalite_nationale": {"bp_2024": 1381.7, "bp_2025": 1375.1, "variation": -6.6, "evolution_pct": -0.5},
+          "fiscalite_indirecte": {"bp_2024": 1610.2, "bp_2025": 1606.7, "variation": -3.5, "evolution_pct": -0.2},
+          "taxes_affectees": {"bp_2024": 857.6, "bp_2025": 814.3, "variation": -43.2, "evolution_pct": -5.0}
+        }
+      },
+
+      "dotations_compensations": {
+        "total": {"bp_2024": 2319.5, "bp_2025": 2334.3, "variation": 14.8, "evolution_pct": 0.6},
+        "detail": {
+          "dotations_concours": {"bp_2024": 50.2, "bp_2025": 46.3, "variation": -3.8, "evolution_pct": -7.7},
+          "compensation_transferts_fiscalite": {"bp_2024": 1829.4, "bp_2025": 1842.4, "variation": 13.0, "evolution_pct": 0.7},
+          "compensation_transferts_competences": {"bp_2024": 123.1, "bp_2025": 123.4, "variation": 0.3, "evolution_pct": 0.2},
+          "compensation_allocations_individuelles_solidarite": {"bp_2024": 316.9, "bp_2025": 322.2, "variation": 5.3, "evolution_pct": 1.7}
+        }
+      },
+
+      "recettes_gestion": {
+        "total": {"bp_2024": 1465.2, "bp_2025": 1504.1, "variation": 38.9, "evolution_pct": 2.7},
+        "par_fonction": {
+          "securite": {"bp_2024": 1.3, "bp_2025": 1.3, "variation": 0.0, "evolution_pct": 0.0},
+          "enseignement_formation_apprentissage": {"bp_2024": 69.5, "bp_2025": 70.5, "variation": 0.9, "evolution_pct": 1.3},
+          "culture_vie_sociale_jeunesse_sports_loisirs": {"bp_2024": 123.1, "bp_2025": 119.3, "variation": -3.7, "evolution_pct": -3.0},
+          "sante_action_sociale": {"bp_2024": 325.4, "bp_2025": 321.4, "variation": -4.0, "evolution_pct": -1.2},
+          "amenagement_territoires_habitat": {"bp_2024": 64.5, "bp_2025": 60.2, "variation": -4.3, "evolution_pct": -6.7},
+          "action_economique": {"bp_2024": 71.8, "bp_2025": 73.9, "variation": 2.1, "evolution_pct": 2.9},
+          "environnement": {"bp_2024": 135.6, "bp_2025": 152.6, "variation": 17.0, "evolution_pct": 12.6},
+          "transports": {"bp_2024": 472.8, "bp_2025": 472.7, "variation": -0.1, "evolution_pct": 0.0},
+          "services_generaux": {"bp_2024": 201.2, "bp_2025": 232.2, "variation": 31.0, "evolution_pct": 15.4}
+        }
+      },
+
+      "produits_financiers": {
+        "total": {"bp_2024": 25.0, "bp_2025": 13.9, "variation": -11.0, "evolution_pct": -44.2},
+        "detail": {
+          "gestion_dette_tresorerie": {"bp_2024": 19.5, "bp_2025": 10.0, "variation": -9.5, "evolution_pct": -48.7},
+          "autres_produits_financiers": {"bp_2024": 5.5, "bp_2025": 3.9, "variation": -1.5, "evolution_pct": -28.2}
+        }
+      }
+    },
+
+    "depenses_reelles_fonctionnement": {
+      "total": {"bp_2024": 9256.4, "bp_2025": 9268.2, "variation": 11.8, "evolution_pct": 0.1},
+
+      "charges_personnel": {"bp_2024": 2817.7, "bp_2025": 2885.0, "variation": 67.3, "evolution_pct": 2.4},
+
+      "depenses_gestion_hors_personnel": {
+        "total": {"bp_2024": 4497.6, "bp_2025": 4554.0, "variation": 56.5, "evolution_pct": 1.3},
+        "par_fonction": {
+          "securite": {"bp_2024": 273.0, "bp_2025": 280.4, "variation": 7.5, "evolution_pct": 2.7},
+          "enseignement_formation_apprentissage": {"bp_2024": 263.0, "bp_2025": 286.9, "variation": 23.9, "evolution_pct": 9.1},
+          "culture_vie_sociale_jeunesse_sports_loisirs": {"bp_2024": 350.9, "bp_2025": 262.8, "variation": -88.1, "evolution_pct": -25.1},
+          "sante_action_sociale": {"bp_2024": 1964.6, "bp_2025": 2051.2, "variation": 86.5, "evolution_pct": 4.4},
+          "amenagement_territoires_habitat": {"bp_2024": 113.1, "bp_2025": 96.2, "variation": -16.9, "evolution_pct": -14.9},
+          "action_economique": {"bp_2024": 37.5, "bp_2025": 40.7, "variation": 3.2, "evolution_pct": 8.5},
+          "environnement": {"bp_2024": 434.8, "bp_2025": 424.7, "variation": -10.1, "evolution_pct": -2.3},
+          "transports": {"bp_2024": 609.9, "bp_2025": 644.6, "variation": 34.7, "evolution_pct": 5.7},
+          "services_generaux": {"bp_2024": 450.8, "bp_2025": 466.5, "variation": 15.7, "evolution_pct": 3.5}
+        }
+      },
+
+      "perequation_reversements_fiscaux": {"bp_2024": 1728.1, "bp_2025": 1604.7, "variation": -123.5, "evolution_pct": -7.1},
+      "charges_financieres": {"bp_2024": 213.0, "bp_2025": 224.5, "variation": 11.5, "evolution_pct": 5.4}
+    },
+
+    "epargne_brute": {
+      "libelle": "Capacité d'autofinancement brute",
+      "bp_2024": 567.0,
+      "bp_2025": 571.3,
+      "variation": 4.3,
+      "evolution_pct": 0.8
+    },
+
+    "recettes_reelles_investissement": {
+      "total": {"bp_2024": 569.0, "bp_2025": 456.9, "variation": -112.1, "evolution_pct": -19.7},
+      "detail": {
+        "produits_cession": {"bp_2024": 110.0, "bp_2025": 88.9, "variation": -21.1, "evolution_pct": -19.2},
+        "dotations_fiscalite_fctva": {"bp_2024": 110.0, "bp_2025": 100.0, "variation": -10.0, "evolution_pct": -9.1},
+        "loyers_capitalises": {"bp_2024": 193.0, "bp_2025": 94.0, "variation": -99.0, "evolution_pct": -51.3},
+        "recettes_operationnelles": {"bp_2024": 156.0, "bp_2025": 174.0, "variation": 18.0, "evolution_pct": 11.5}
+      }
+    },
+
+    "depenses_reelles_investissement": {
+      "total": {"bp_2024": 2097.7, "bp_2025": 2021.9, "variation": -75.8, "evolution_pct": -3.6},
+      "detail": {
+        "remboursement_emprunt": {"bp_2024": 308.1, "bp_2025": 308.1, "variation": 0.0, "evolution_pct": 0.0},
+        "depenses_operationnelles": {"bp_2024": 1789.7, "bp_2025": 1713.9, "variation": -75.8, "evolution_pct": -4.2}
+      }
+    },
+
+    "autorisation_emprunt": {"bp_2024": 961.7, "bp_2025": 993.8, "variation": 32.1, "evolution_pct": 3.3},
+
+    "dette": {
+      "dette_bancaire_obligataire_01_01": {"bp_2024": 7933.5, "bp_2025": 8606.3, "variation": 672.8, "evolution_pct": 8.5},
+      "encours_total_dette_01_01": {"bp_2024": 8043.0, "bp_2025": 8693.7, "variation": 650.7, "evolution_pct": 8.1},
+      "dette_bancaire_obligataire_31_12": {"bp_2024": 8587.1, "bp_2025": 9292.0, "variation": 704.9, "evolution_pct": 8.2},
+      "autres_dettes_31_12": {"bp_2024": 87.4, "bp_2025": 64.8, "variation": -22.6, "evolution_pct": -25.8},
+      "encours_total_dette_31_12": {"bp_2024": 8674.6, "bp_2025": 9356.8, "variation": 682.3, "evolution_pct": 7.9},
+      "duree_desendettement_annees": {"bp_2024": 15.3, "bp_2025": 16.4, "variation": 1.1}
+    }
+  },
+
+  "fonctions_politiques_publiques": [
+    {"code": "0", "nom": "Services généraux"},
+    {"code": "1", "nom": "Sécurité"},
+    {"code": "2", "nom": "Enseignement, formation professionnelle et apprentissage"},
+    {"code": "3", "nom": "Culture, vie sociale, jeunesse, sports et loisirs"},
+    {"code": "4", "nom": "Santé et action sociale"},
+    {"code": "5", "nom": "Aménagement des territoires et habitat"},
+    {"code": "6", "nom": "Action économique"},
+    {"code": "7", "nom": "Environnement"},
+    {"code": "8", "nom": "Transports"}
+  ]
+}

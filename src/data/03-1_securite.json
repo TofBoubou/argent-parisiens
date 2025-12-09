@@ -1,0 +1,227 @@
+{
+  "fichier_source": "03-1 Sécurité.pdf",
+  "section": "3 - Présentation par politique publique",
+  "sous_section": "(1) Sécurité",
+  "pages": "33-36",
+  "unite": "M€",
+
+  "budget_consolide": {
+    "_source": "Tableau page 1",
+    "depenses_fonctionnement": {"bp_2024": 467.0, "bp_2025": 482.1},
+    "dont_masse_salariale": {"bp_2024": 194.1, "bp_2025": 201.6},
+    "depenses_investissement": {"bp_2024": 22.4, "bp_2025": 23.0},
+    "recettes_fonctionnement": {"bp_2024": 1.3, "bp_2025": 1.3},
+    "recettes_investissement": {"bp_2024": 0.8, "bp_2025": 1.0}
+  },
+
+  "graphique_repartition_budget_total": {
+    "_source": "Graphique page 1 - Camembert budget consolidé",
+    "total_me": 505.0,
+    "repartition": {
+      "police_securite_justice_pct": 40.0,
+      "prefecture_police_administrations_parisiennes_pct": 29.9,
+      "brigade_sapeurs_pompiers_bspp_secours_pct": 24.7,
+      "services_communs_pct": 4.1,
+      "hygiene_salubrite_publique_pct": 1.4
+    }
+  },
+
+  "depenses_fonctionnement": {
+    "total_me": 482.1,
+    "dont_masse_salariale_me": 201.6,
+    "hors_masse_salariale_me": 280.4,
+    "variation_hors_ms_vs_bp2024_me": 7.5,
+
+    "creations_postes_2025": {
+      "total_creations": 454,
+      "renforts": {
+        "total": 404,
+        "direction_police_municipale_prevention": {
+          "total": 398,
+          "detail": {
+            "agents_police_municipale": 120,
+            "chefs_service_police_municipale": 55,
+            "agents_accueil_surveillance_ville_paris": 220,
+            "intervenants_sociaux_commissariat": 3
+          }
+        },
+        "fonctions_support_direction_police_municipale": 5,
+        "direction_logement_habitat_securite_batimentaire": 1
+      },
+      "resorption_emploi_precaire": {
+        "total": 50,
+        "motif": "Déprécariser les agents des points écoles",
+        "direction": "Direction de la police municipale et de la prévention"
+      },
+      "transferts_entrants": {
+        "nombre": 1,
+        "provenance": "Services généraux"
+      },
+      "solde_net_fonction": 455
+    },
+
+    "graphique_repartition_hors_masse_salariale": {
+      "_source": "Graphique page 2 - Dépenses de fonctionnement hors masse salariale",
+      "prefecture_police_administrations_parisiennes_pct": 52.6,
+      "brigade_sapeurs_pompiers_bspp_secours_pct": 40.0,
+      "police_securite_justice_pct": 5.3,
+      "services_communs_pct": 2.1,
+      "hygiene_salubrite_publique_pct": 0.1
+    },
+
+    "budget_special_prefecture_police": {
+      "montant_me": 147.5,
+      "variation_vs_bp2024_me": 3.9,
+      "objet": "Services administratifs assurés au titre de ses fonctions d'autorité municipale",
+      "facteurs_hausse": ["Impact des revalorisations salariales", "Glissement vieillesse technicité (GVT) sur la masse salariale"]
+    },
+
+    "contribution_bspp": {
+      "montant_me": 109.0,
+      "objet": "Contribution de la Ville à la brigade des sapeurs-pompiers de Paris",
+      "note": "Permet la poursuite du plan de modernisation 2020-2029"
+    },
+
+    "depenses_hors_contributions_prefecture_police": {
+      "total_me": 24.0,
+      "variation_vs_bp2024_me": 3.5,
+
+      "soutien_police_municipale": {
+        "total_me": 20.7,
+        "missions": [
+          "Sécuriser les Parisiennes et les Parisiens",
+          "Protéger les piétons et les usagers de la route les plus vulnérables",
+          "Veiller à la propreté de l'espace public",
+          "Apaiser la ville le soir et la nuit"
+        ],
+        "detail": {
+          "protection_surveillance_espaces_publics": {
+            "montant_me": 13.5,
+            "variation_me": 3.9,
+            "cause_hausse": "Transferts depuis d'autres fonctions au titre du gardiennage"
+          },
+          "services_communs": {
+            "montant_me": 5.8,
+            "variation_me": -0.3,
+            "objet": "Financer le plan d'équipement de la police municipale"
+          },
+          "prevention_delinquance_aide_victimes_me": 1.4
+        }
+      },
+
+      "ssiap": {
+        "montant_me": 1.9,
+        "variation_me": -0.2,
+        "libelle": "Services de sécurité incendie et d'assistance aux personnes",
+        "sites_couverts": ["Hôtel de Ville", "103 avenue de France", "Pavillon de l'Arsenal", "Bédier Ouest"]
+      },
+
+      "defense_exterieure_contre_incendie_deci": {
+        "montant_me": 1.2,
+        "variation_me": 0.0,
+        "objet": "Entretien, maintenance et sécurisation des points d'eau incendies parisiens connectés au réseau d'eau potable de la Ville"
+      },
+
+      "controle_reglementaire_salubrite": {
+        "montant_me": 0.3,
+        "variation_me": 0.0,
+        "objet": "Travaux pour la sécurisation et la consolidation provisoire de bâtiments présentant un risque imminent pour la sécurité de leurs occupants"
+      }
+    }
+  },
+
+  "recettes_fonctionnement": {
+    "total_me": 1.3,
+    "variation_vs_bp2024_me": 0.0,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 3 - Recettes de fonctionnement",
+      "hygiene_salubrite_publique_pct": 74.1,
+      "police_securite_justice_pct": 25.9
+    },
+
+    "detail": {
+      "hygiene_salubrite_publique": {
+        "montant_me": 1.0,
+        "source": "Agence régionale de santé (ARS)",
+        "objet": "Mise en œuvre de la police spéciale de l'insalubrité dans le cadre de la convention de contrôle des règles d'hygiène et d'habitat"
+      },
+      "prevention_delinquance_aide_victimes": {
+        "montant_me": 0.3,
+        "source": "Fonds interdépartemental de prévention de la délinquance (FIPD)",
+        "objet": "Prise en charge d'une part de la masse salariale des intervenants sociaux en commissariat (ISC) et du poste de chargé de l'animation du schéma départemental d'aide aux victimes"
+      }
+    }
+  },
+
+  "depenses_investissement": {
+    "total_me": 23.0,
+    "bp_2024_me": 22.4,
+    "variation_me": 0.6,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 4 - Dépenses d'investissement",
+      "brigade_sapeurs_pompiers_bspp_secours_pct": 55.4,
+      "police_securite_justice_pct": 24.7,
+      "prefecture_police_administrations_parisiennes_pct": 14.5,
+      "hygiene_salubrite_publique_pct": 4.4,
+      "services_communs_pct": 1.0
+    },
+
+    "prefecture_police": {
+      "total_me": 13.4,
+      "variation_vs_bp2024_me": -3.5,
+      "note": "Baisse conformément à la programmation des investissements sur le périmètre financé par la Ville",
+      "detail": {
+        "contribution_bspp": {
+          "montant_me": 10.0,
+          "variation_me": 0.0,
+          "centres_secours_finances": ["Colombes", "Noisy-le-Grand", "Chaligny"]
+        },
+        "subvention_equipement_services_administratifs": {
+          "montant_me": 3.3,
+          "objet": "Poursuite des opérations immobilières et des travaux de mise en sécurité des sites"
+        }
+      }
+    },
+
+    "defense_exterieure_contre_incendie_deci": {
+      "montant_me": 2.7
+    },
+
+    "securisation": {
+      "total_me": 5.7,
+      "variation_vs_bp2024_me": 4.3,
+      "detail": {
+        "deploiement_sites_police_municipale": {
+          "bp_2024_me": 0.5,
+          "bp_2025_me": 3.1
+        },
+        "contribution_plan_videoprotection": {
+          "bp_2024_me": 0.3,
+          "bp_2025_me": 2.2
+        },
+        "securisation_hotel_ville_me": 0.2,
+        "acquisition_materiels_anti_intrusion_surveillance_me": 0.2
+      }
+    },
+
+    "hygiene_salubrite_publique": {
+      "montant_me": 1.0,
+      "bp_2024_me": 0.8,
+      "objet": "Travaux d'office dans les immeubles en péril"
+    },
+
+    "services_communs": {
+      "montant_me": 0.2,
+      "variation_vs_bp2024_me": -0.4,
+      "objet": "Dépenses d'entretien des locaux et d'équipement en matériel et en mobilier"
+    }
+  },
+
+  "recettes_investissement": {
+    "total_me": 1.0,
+    "variation_vs_bp2024_me": 0.2,
+    "source": "Remboursements versés par des tiers pour des travaux réalisés d'office par la Ville sur des immeubles en péril"
+  }
+}

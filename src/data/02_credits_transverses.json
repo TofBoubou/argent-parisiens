@@ -1,0 +1,526 @@
+{
+  "fichier_source": "02 Crédits transverses - fiscalité, dotations, péréquation, et opérations financières.pdf",
+  "section": "2 - Crédits transverses : fiscalité, dotations, péréquation, et opérations financières",
+  "unite": "M€",
+
+  "precision_methodologique": {
+    "fonction": "Services généraux",
+    "sous_fonction": "01 - Opérations non ventilables",
+    "contenu": ["Recettes de fiscalité", "Dépenses de péréquation"],
+    "autres_credits_services_generaux": "Voir fiche Services généraux - opérations ventilables (partie 3)"
+  },
+
+  "budget_consolide_operations_non_ventilables": {
+    "depenses_fonctionnement": {"bp_2024": 1944.6, "bp_2025": 1832.7},
+    "dont_masse_salariale": {"bp_2024": 3.5, "bp_2025": 3.5},
+    "depenses_investissement": {"bp_2024": 151.5, "bp_2025": 133.3},
+    "recettes_fonctionnement": {"bp_2024": 7194.6, "bp_2025": 7209.7},
+    "recettes_investissement": {"bp_2024": 312.4, "bp_2025": 200.5}
+  },
+
+  "depenses_fonctionnement": {
+    "total_me": 1829.2,
+    "variation_vs_bp2024_me": -111.9,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 2 - Dépenses de fonctionnement BP 2025",
+      "fngir_pct": 49.0,
+      "fonds_perequation_pct": 35.6,
+      "charges_financieres_pct": 12.2,
+      "prelevements_restitutions_fiscalite_pct": 3.0,
+      "collaborateurs_groupes_elus_pct": 0.2
+    },
+
+    "fngir": {
+      "montant_me": 898.2,
+      "creation": 2011,
+      "contexte": "Réforme taxe professionnelle",
+      "note": "Montant figé depuis 2011"
+    },
+
+    "perequation": {
+      "total_me": 651.9,
+      "position_paris": {
+        "part_perequation_nationale_pct": 20,
+        "commentaire_nationale": "Plus d'un cinquième",
+        "part_perequation_regionale_idf_pct": 50,
+        "commentaire_regionale": "Plus de la moitié"
+      },
+      "fonds_dmto": {
+        "montant_me": 214.2,
+        "variation_me": -11.8,
+        "variation_pct": -5.2,
+        "note": "Dépend des recettes de taxe départementale de publicité foncière année précédente"
+      },
+      "fpic": {
+        "montant_me": 199.6,
+        "variation_vs_execution_2023_me": 14.6,
+        "note": "Fonds national de péréquation des ressources intercommunales et communales"
+      },
+      "fsrif": {
+        "montant_me": 208.1,
+        "execution_2023_me": 207.1,
+        "note": "Fonds de solidarité des communes de la région d'Île-de-France"
+      },
+      "fsdrif": {
+        "montant_total_fonds_me": 60.0,
+        "contribution_ville_me": 30.0,
+        "creation": 2014,
+        "note": "Plafond légal (moitié du fonds) atteint depuis 2019"
+      },
+      "graphique_evolution": {
+        "_source": "Graphique page 3 - Evolution des dépenses de péréquation CA 2018-BP 2025",
+        "note": "Graphique empilé montrant FPIC, FSRIF, Fonds DMTO, FSDRIF, Fonds CVAE"
+      }
+    },
+
+    "charges_financieres": {
+      "total_me": 224.5,
+      "variation_me": 11.5,
+      "detail": {
+        "service_dette_bancaire_obligataire_tresorerie": {
+          "montant_me": 223.7,
+          "variation_me": 11.4,
+          "hypothese": "Maintien des taux d'intérêt à un niveau relativement élevé"
+        },
+        "contrat_partenariat_performance_energetique_ecoles": {
+          "montant_me": 0.8,
+          "variation_me": 0.1
+        }
+      }
+    },
+
+    "prelevements_restitutions_fiscalite": {
+      "total_me": 54.6,
+      "variation_me": 1.7,
+      "detail": {
+        "cas_amendes": {
+          "montant_me": 20.6,
+          "bp_2024_me": 23.4,
+          "montants_fixes_verses": {
+            "idfm_me": 138.8,
+            "region_idf_me": 69.4
+          },
+          "note": "Baisse due à l'augmentation du nombre d'amendes établies"
+        },
+        "recentralisation_sanitaire": {
+          "montant_me": 9.2,
+          "detail": {
+            "maladies_sexuellement_transmissibles_me": 1.8,
+            "tuberculose_me": 7.5
+          },
+          "note": "Participation ARS perçue: 2,5 M€ (3 fois moindre que prélèvement)"
+        },
+        "remboursement_trop_percu_tva": {
+          "montant_me": 10.5,
+          "contexte": "Fractions TVA compensation THRP et CVAE - prévisions État trop optimistes"
+        },
+        "restitutions_dmto": {
+          "montant_me": 9.0,
+          "bp_2024_me": 13.0
+        },
+        "autres_restitutions_fiscalite_directe": {
+          "montant_me": 5.2,
+          "variation_me": -2.1,
+          "note": "Dégrèvements THRS part majorée - fiabilisation GMBI"
+        }
+      }
+    },
+
+    "masse_salariale_collaborateurs_groupes_elus": {
+      "montant_me": 3.5
+    }
+  },
+
+  "recettes_fonctionnement": {
+    "total_me": 7209.7,
+    "variation_vs_bp2024_me": 15.1,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 4 - Recettes de fonctionnement BP 2025",
+      "fiscalite_directe_locale_pct": 30.4,
+      "fiscalite_reversee_mgp_region_pct": 25.6,
+      "fiscalite_indirecte_immobiliere_dmto_pct": 20.8,
+      "fractions_tva_nationale_pct": 19.1,
+      "compensation_transferts_competences_hors_ais_pct": 1.7,
+      "fiscalite_indirecte_hors_immobiliere_pct": 1.5,
+      "dotations_concours_pct": 0.8,
+      "gestion_dette_produits_financiers_pct": 0.2
+    },
+
+    "fiscalite_directe": {
+      "total_me": 2191.0,
+      "variation_me": 26.8,
+      "variation_pct": 1.2,
+      "composantes": ["THRS", "TFPB", "TFPNB", "IFER"],
+
+      "taxe_fonciere": {
+        "total_me": 1851.2,
+        "bp_2024_me": 1836.6,
+        "detail": {
+          "roles_general_complementaire_me": 1850.3,
+          "roles_general_complementaire_bp2024_me": 1835.5,
+          "role_supplementaire_me": 0.9,
+          "role_supplementaire_bp2024_me": 1.1
+        },
+        "facteurs_hausse": {
+          "inflation_nov2023_nov2024_pct": 1.5,
+          "evolution_physique_bases_habitation_pct": 0.1,
+          "evolution_physique_bases_professionnels_pct": 1.2
+        }
+      },
+
+      "taxe_habitation_residences_secondaires": {
+        "total_me": 335.5,
+        "bp_2024_me": 323.8,
+        "detail": {
+          "roles_general_complementaire_me": 325.0,
+          "roles_general_complementaire_bp2024_me": 321.3,
+          "role_supplementaire_me": 10.5,
+          "role_supplementaire_bp2024_me": 2.4
+        },
+        "hausse_hors_majoration_me": 8.5,
+        "note": "Érosion tendancielle des bases THRS majorables, effet GMBI ambivalent"
+      },
+
+      "ifer": {
+        "montant_me": 4.3,
+        "variation_pct": 12.4,
+        "variation_me": 0.5,
+        "types": [
+          "Transformateurs électriques",
+          "Stations radio et télécommunications",
+          "Installations gazières",
+          "Canalisations transport gaz naturel, hydrocarbures, produits chimiques"
+        ]
+      },
+
+      "cfe": {
+        "montant_me": 0,
+        "note": "Transfert à la MGP prévu au 1er janvier 2025 (différé depuis 2021)"
+      }
+    },
+
+    "comparaison_taux_fiscaux": {
+      "_source": "Tableau page 5 - Comparaison des taux parisiens aux taux nationaux",
+      "annee_reference": 2024,
+      "taux": {
+        "thrs": {
+          "paris_pct": 20.32,
+          "bordeaux_pct": 32.35,
+          "toulouse_pct": 34.75,
+          "marseille_pct": 40.95,
+          "national_pct": 24.45
+        },
+        "tfpb": {
+          "paris_pct": 20.50,
+          "bordeaux_pct": 48.48,
+          "toulouse_pct": 48.55,
+          "marseille_pct": 47.13,
+          "national_pct": 39.42
+        },
+        "tfpnb": {
+          "paris_pct": 25.31,
+          "bordeaux_pct": 93.24,
+          "toulouse_pct": 93.49,
+          "marseille_pct": 27.77,
+          "national_pct": 50.82
+        },
+        "cfe": {
+          "paris_pct": 16.52,
+          "bordeaux_pct": 35.06,
+          "toulouse_pct": 36.58,
+          "marseille_pct": 32.87,
+          "national_pct": 26.75
+        },
+        "teom": {
+          "paris_pct": 6.21,
+          "bordeaux_pct": 9.31,
+          "toulouse_pct": 8.10,
+          "marseille_pct": 18.1,
+          "national_pct": 8.25
+        }
+      }
+    },
+
+    "fiscalite_indirecte_et_fractions_tva": {
+      "total_me": 2981.8,
+      "bp_2024_me": 2991.9,
+      "variation_pct": -0.3,
+      "note": "Diminution due aux erreurs de prévision TVA de l'État",
+
+      "graphique_evolution_fiscalite_immobiliere": {
+        "_source": "Graphique page 6 - Evolution des recettes de fiscalité immobilière",
+        "donnees": [
+          {"annee": "2018", "montant_me": 1500, "note": "approximatif"},
+          {"annee": "2019", "montant_me": 1586.8},
+          {"annee": "2020", "montant_me": 1480.1},
+          {"annee": "CA 2021", "montant_me": 1480.1},
+          {"annee": "CA 2022", "montant_me": 1734.0},
+          {"annee": "CA 2023", "montant_me": 1745.6},
+          {"annee": "BP 2024", "montant_me": 1327.8},
+          {"annee": "BP 2025", "montant_me": 1327.8}
+        ]
+      },
+
+      "fiscalite_nationale_transferee": {
+        "total_me": 1375.1,
+        "bp_2024_me": 1381.7,
+        "variation_pct": -0.4,
+        "hypothese_croissance_pib_nominal_2025_pct": 3.1,
+        "dont_inflation_pct": 1.8,
+        "detail": {
+          "fraction_tva_compensation_thrp_me": 795.7,
+          "fraction_tva_compensation_cvae_me": 579.4
+        }
+      },
+
+      "autres_impots_taxes": {
+        "total_me": 106.7,
+        "bp_2024_me": 110.2,
+        "variation_me": -3.5,
+        "detail": {
+          "accise_electricite_me": 90.5,
+          "accise_electricite_bp2024_me": 94.2,
+          "taxe_enseignes_publicite_me": 9.7,
+          "taxe_cercles_jeux_me": 6.1
+        }
+      }
+    },
+
+    "attributions_compensation": {
+      "total_me": 1842.4,
+      "bp_2024_me": 1829.4,
+      "variation_pct": 0.7,
+
+      "tableau_detail": {
+        "_source": "Tableau page 9",
+        "ac_metropole_grand_paris": {
+          "total": {"bp_2024": 1354.1, "bp_2025": 1367.1},
+          "part_fiscalite": {"bp_2024": 902.8, "bp_2025": 915.8},
+          "compensation_part_salaire_cps": {"bp_2024": 453.1, "bp_2025": 453.1},
+          "transfert_charges_attenuation": {"bp_2024": -1.8, "bp_2025": -1.8}
+        },
+        "ac_region_ile_de_france": {
+          "montant": {"bp_2024": 475.3, "bp_2025": 475.3},
+          "note": "Figée au montant CVAE 2016 transféré en 2017"
+        }
+      },
+
+      "cfe_transfert_mgp": {
+        "montant_inclus_me": 388.7,
+        "note": "Produit CFE et compensations d'exonération 2024"
+      }
+    },
+
+    "dotations_compensations_etat": {
+      "total_me": 180.5,
+      "bp_2024_me": 184.0,
+      "detail": {
+        "tsca": {
+          "montant_me": 92.0,
+          "variation_pct": 0.6,
+          "note": "Taxe sur les contrats d'assurance"
+        },
+        "ticpe": {
+          "montant_me": 15.6,
+          "variation_me": -0.3,
+          "note": "Taxe intérieure de consommation des produits énergétiques"
+        },
+        "compensations_exonerations_fiscalite_locale": {
+          "total_me": 34.0,
+          "fiscalite_locale_directe_me": 23.8,
+          "fiscalite_locale_indirecte_me": 10.2,
+          "note_directe": "Essentiellement compensation abattement 50% taxe foncière locaux industriels depuis 2021"
+        },
+        "dgd": {
+          "montant_me": 15.8,
+          "note": "Dotation générale de décentralisation, dont DGD pavé"
+        },
+        "dcp_part_compensation": {
+          "montant_me": 10.8,
+          "note": "Dispositif de compensation péréquée - reste à charge AIS 2016"
+        },
+        "fctva_entretien_voirie_batiments": {
+          "montant_me": 10.0
+        },
+        "dotation_titres_securises": {
+          "montant_me": 2.3,
+          "variation_me": 0.4,
+          "note": "9 000€ par station biométrique + part variable depuis 2023"
+        }
+      }
+    },
+
+    "dgf": {
+      "montant_me": 0,
+      "note": "4e année consécutive sans DGF"
+    },
+
+    "produits_financiers": {
+      "total_me": 13.9,
+      "variation_me": -11.0,
+      "detail": {
+        "gestion_dette_me": 10.0,
+        "gestion_dette_variation_me": -9.5,
+        "gestion_dette_note": "Arrivée à échéance de produits de couverture (swaps)",
+        "dividendes_me": 3.9,
+        "dividendes_variation_me": -1.5
+      }
+    }
+  },
+
+  "reformes_fiscales_et_plf_2025": {
+    "_source": "Encadré pages 7-8",
+    "contexte": {
+      "perte_pouvoir_taux_conseil_paris_me": 2000,
+      "composantes_perdues": ["CFE", "THRP"],
+      "chronologie": [
+        {"annee": 2010, "reforme": "Suppression taxe professionnelle, remplacement par CET (CVAE + CFE)"},
+        {"annee": 2016, "reforme": "Transfert part communale CVAE à la MGP"},
+        {"annee": 2017, "reforme": "Transfert moitié part départementale CVAE à la Région IDF"},
+        {"annee": 2023, "reforme": "Suppression intégrale CVAE, remplacement par fraction TVA"},
+        {"annee": 2025, "reforme": "Transfert CFE à la MGP prévu"}
+      ]
+    },
+
+    "plf_2025_dispositifs": {
+      "fonds_reserve": {
+        "taux_prelevement_max_pct": 2,
+        "seuil_budget_fonctionnement_me": 40,
+        "nombre_collectivites_concernees": 450,
+        "montant_total_mde": 3,
+        "risque_paris_me": 160
+      },
+      "gel_tva_transferees": {
+        "gain_etat_mde": 1.2,
+        "moindre_recette_paris_me": {"min": 40, "max": 50}
+      },
+      "reduction_fctva": {
+        "reduction_enveloppe_me": 800,
+        "risque_paris_me": 20
+      },
+      "relevement_plafond_perequation": {
+        "impact_paris_max_me": 80
+      },
+      "hausse_cnracl": {
+        "hausse_points": 4,
+        "impact_total_mde": 1.8,
+        "impact_paris_me": 45,
+        "fin_compensation_2024_me": 11.4
+      },
+      "impact_total_collectivites_mde": 9,
+      "impact_paris_2025_me": {"min": 300, "max": 350}
+    },
+
+    "amendements_possibles": {
+      "relevement_dmto_departementaux_points": 0.5,
+      "majoration_thrs_residences_secondaires": {
+        "actuel_pct": 60,
+        "propose_pct": 100,
+        "impact_paris_me": 60
+      },
+      "deliaison_thrs_taxe_fonciere": {
+        "impact_par_point_me": 16
+      }
+    }
+  },
+
+  "depenses_investissement": {
+    "total_me": 133.3,
+    "variation_vs_bp2024_me": -18.1,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 10 - Dépenses d'investissement BP 2025",
+      "operations_financieres_logement_pct": 53.1,
+      "operations_financieres_urbanisme_pct": 15.3,
+      "emprunt_philharmonie_pct": 9.5,
+      "fonciere_paris_commerce_pct": 6.8,
+      "remboursement_dmto_pct": 5.8,
+      "provision_indemnisation_pct": 4.5,
+      "autres_operations_pct": 4.3,
+      "participations_recapitalisations_pct": 0.8
+    },
+
+    "operations_financieres_logement": {
+      "total_me": 70.8,
+      "bp_2024_me": 33.0,
+      "detail": {
+        "capitalisation_foncieres_logement": {
+          "total_me": 56.0,
+          "fonciere_logement_abordable_me": 50.0,
+          "fonciere_ville_me": 6.0
+        },
+        "compte_foncier_logement_consignations_me": 14.8
+      }
+    },
+
+    "participations_urbanisme": {
+      "total_me": 20.4,
+      "detail": {
+        "super_equipement_pinard_zac_saint_vincent_de_paul": {
+          "total_me": 12.9,
+          "arrondissement": "14e",
+          "composantes": {
+            "ecole_me": 6.4,
+            "gymnase_me": 4.6,
+            "creche_me": 1.9
+          }
+        },
+        "zac_clichy_batignolles_me": 4.3,
+        "compte_foncier_equipements_me": 3.2
+      }
+    },
+
+    "emprunt_philharmonie": {
+      "montant_me": 12.7,
+      "variation_me": 0.6
+    },
+
+    "fonciere_paris_commerces": {
+      "total_me": 9.0,
+      "augmentation_capital_sem_me": 8.0,
+      "consignations_me": 1.0,
+      "note": "En complément des 7,0 M€ en fonction Action économique"
+    },
+
+    "remboursement_avance_dmto_2020": {
+      "montant_me": 7.7,
+      "contexte": "Avance perçue dans le contexte de la crise sanitaire"
+    },
+
+    "provisions_indemnisation": {
+      "montant_me": 6.0
+    },
+
+    "autres_operations_financieres": {
+      "total_me": 5.6,
+      "detail": {
+        "renovation_energetique_ecoles_me": 2.2,
+        "bail_emphyteotique_ecole_metiers_petite_enfance_me": 1.6,
+        "paris_initiative_entreprise_me": 1.4,
+        "regularisation_taxe_amenagement_me": 0.4
+      }
+    },
+
+    "participations_recapitalisations": {
+      "montant_me": 1.0,
+      "bp_2024_me": 50.8
+    }
+  },
+
+  "recettes_investissement": {
+    "total_me": 200.5,
+    "variation_vs_bp2024_me": -111.9,
+    "cause_principale_baisse": "Diminution des loyers capitalisés (-99,0 M€)",
+
+    "detail": {
+      "fctva_me": 100.0,
+      "loyers_capitalises_me": 94.0,
+      "loyers_capitalises_bp2024_me": 193.0,
+      "taxe_amenagement_part_communale_me": 4.0,
+      "taxe_amenagement_note": "Part fonctionnement: 2,0 M€ (fonction Aménagement), total: 6,0 M€",
+      "operations_financieres_comptes_fonciers_deconsignations_me": 1.5
+    }
+  }
+}

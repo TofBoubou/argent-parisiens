@@ -1,0 +1,402 @@
+{
+  "fichier_source": "03-2 Enseignement, formation professionnelle et apprentissage.pdf",
+  "section": "3 - Présentation par politique publique",
+  "sous_section": "(2) Enseignement, formation professionnelle et apprentissage",
+  "pages": "37-43",
+  "unite": "M€",
+
+  "budget_consolide": {
+    "_source": "Tableau page 1",
+    "depenses_fonctionnement": {"bp_2024": 835.4, "bp_2025": 874.1},
+    "dont_masse_salariale": {"bp_2024": 572.4, "bp_2025": 587.2},
+    "depenses_investissement": {"bp_2024": 94.1, "bp_2025": 102.4},
+    "recettes_fonctionnement": {"bp_2024": 69.5, "bp_2025": 70.5},
+    "recettes_investissement": {"bp_2024": 5.8, "bp_2025": 5.8}
+  },
+
+  "graphique_repartition_budget_total": {
+    "_source": "Graphique page 1 - Camembert budget consolidé",
+    "total_me": 976.5,
+    "repartition": {
+      "enseignement_premier_degre_pct": 56.4,
+      "autres_services_periscolaires_annexes_pct": 17.1,
+      "enseignement_second_degre_pct": 9.7,
+      "services_communs_pct": 8.0,
+      "enseignement_superieur_pct": 4.7,
+      "apprentissage_pct": 1.8,
+      "cites_scolaires_pct": 1.4,
+      "formation_professionnelle_pct": 0.9
+    }
+  },
+
+  "depenses_fonctionnement": {
+    "total_me": 874.1,
+    "dont_masse_salariale_me": 587.2,
+    "hors_masse_salariale_me": 286.9,
+    "variation_hors_ms_vs_bp2024_me": 23.9,
+
+    "creations_postes_2025": {
+      "total_creations": 212,
+      "renforts": {
+        "total": 3,
+        "direction_affaires_scolaires_reseau_ei_fel": 3
+      },
+      "resorption_emploi_precaire": {
+        "total": 209,
+        "direction": "Direction des affaires scolaires",
+        "motif": "Déprécariser les personnels vacataires et renforcer les pools de remplacement des agents techniques",
+        "detail": {
+          "adjoints_animation_action_sportive": 200,
+          "agents_techniques_etablissements_enseignement": 9
+        }
+      },
+      "solde_transformations": 2,
+      "redeploiements": 100,
+      "solde_net_fonction": 114
+    },
+
+    "graphique_repartition_hors_masse_salariale": {
+      "_source": "Graphique page 2 - Dépenses de fonctionnement hors masse salariale",
+      "autres_services_periscolaires_transverses_dont_caisses_ecoles_pct": 54.2,
+      "enseignement_maternel_primaire_pct": 18.0,
+      "enseignement_secondaire_dont_cites_scolaires_pct": 17.6,
+      "enseignement_superieur_pct": 7.8,
+      "formation_professionnelle_apprentissage_pct": 2.4
+    },
+
+    "repartition_budget": {
+      "moyens_transverses_services_annexes_me": 155.5,
+      "etablissements_dispositifs_enseignement_me": 124.4,
+      "formation_professionnelle_apprentissage_me": 6.9
+    },
+
+    "depenses_transverses": {
+      "total_me": 155.5,
+      "variation_vs_bp2024_me": 20.2,
+
+      "caisses_ecoles_restauration_scolaire": {
+        "total_me": 132.8,
+        "subventions_caisses_ecoles": {
+          "bp_2024_me": 112.0,
+          "bp_2025_me": 132.4,
+          "variation_me": 20.4,
+          "note": "Comprend désormais le financement de la restauration de la majorité des collèges",
+          "causes_hausse": [
+            "Effet ciseau entre baisse des recettes propres (démographie scolaire) et hausse des dépenses",
+            "Mesures de soutien au pouvoir d'achat des personnels",
+            "Augmentation du coût des denrées",
+            "Poursuite du plan pour l'alimentation durable"
+          ]
+        },
+        "restauration_colleges_cites_mixtes_me": 0.3,
+        "note": "Reprise restauration collèges autonomes par caisses des écoles achevée rentrée 2025"
+      },
+
+      "services_annexes_enseignement": {
+        "total_me": 11.2,
+        "temps_activites_periscolaires_me": 8.4,
+        "academie_climat_me": 1.7,
+        "soutien_activites_educatives": {
+          "montant_me": 0.6,
+          "variation_me": 0.1,
+          "note": "Fonctionnement de l'Académie des langues"
+        },
+        "transports_scolaires_me": 0.5
+      },
+
+      "classes_decouverte": {
+        "montant_me": 9.4,
+        "variation_me": 0.3,
+        "cause": "Hausse du coût des marchés des séjours scolaires"
+      },
+
+      "services_communs_enseignement_formation": {
+        "montant_me": 2.1,
+        "variation_me": 0.3,
+        "cause": "Déploiement de mesures nouvelles concernant l'informatique dans les écoles, notamment Paris Familles"
+      }
+    },
+
+    "enseignement_maternel_primaire": {
+      "total_me": 51.5,
+      "variation_vs_bp2024_me": 1.4,
+
+      "depenses_transverses_enseignement_primaire": {
+        "total_me": 36.8,
+        "variation_me": -1.3,
+        "subvention_etablissements_prives_premier_degre": {
+          "bp_2024_me": 35.8,
+          "bp_2025_me": 34.5
+        },
+        "contrats_partenariat_performance_energetique": {
+          "montant_me": 1.7,
+          "variation_me": 0.1
+        },
+        "vie_scolaire_subventions_associations_me": 0.6
+      },
+
+      "fonctionnement_courant_ecoles": {
+        "total_me": 14.7,
+        "variation_me": 2.7,
+        "objet": "Travaux d'entretien et de maintenance courants dans les écoles publiques, notamment sécurité incendie",
+        "repartition": {
+          "ecoles_primaires": {"montant_me": 5.3, "variation_me": 1.0},
+          "ecoles_polyvalentes": {"montant_me": 5.3, "variation_me": 0.4},
+          "ecoles_maternelles": {"montant_me": 4.2, "variation_me": 1.3}
+        }
+      }
+    },
+
+    "enseignement_secondaire": {
+      "total_me": 50.4,
+      "variation_vs_bp2024_me": 1.9,
+
+      "colleges": {
+        "total_me": 42.5,
+        "colleges_prives": {
+          "montant_me": 21.7,
+          "variation_me": -0.2,
+          "note": "Baisse en cohérence avec la démographie scolaire"
+        },
+        "colleges_publics_hors_masse_salariale": {
+          "montant_me": 19.2,
+          "variation_me": 1.3,
+          "objet": "Travaux d'entretien et de maintenance courants"
+        },
+        "actions_educatives_action_collegiens_me": 1.6
+      },
+
+      "ecole_du_breuil": {
+        "montant_me": 5.2,
+        "variation_me": 0.6,
+        "type": "Subvention de fonctionnement à la régie personnalisée"
+      },
+
+      "cites_scolaires": {
+        "montant_me": 2.7,
+        "variation_me": 0.3,
+        "description": "Remboursement à la Région IDF des dépenses de fonctionnement des collèges (fluides, maintenance, restauration, rémunération)"
+      }
+    },
+
+    "enseignement_superieur": {
+      "total_me": 22.5,
+      "variation_vs_bp2024_me": -0.1,
+
+      "etablissements_enseignement_superieur": {
+        "total_me": 20.3,
+        "variation_me": 0.0,
+        "detail": {
+          "espci_me": 12.8,
+          "eivp_me": 4.8,
+          "ecoles_art_me": 2.5
+        }
+      },
+      "soutien_vie_etudiante_me": 2.1,
+      "soutien_etudiants_situation_handicap_me": 0.1
+    },
+
+    "formation_professionnelle_apprentissage": {
+      "total_me": 6.9,
+      "bp_2024_me": 6.5,
+
+      "apprentissage": {
+        "bp_2024_me": 6.0,
+        "bp_2025_me": 6.4,
+        "effectif_apprentis_2024": 690,
+        "effectif_apprentis_2025": 738
+      },
+      "formation_professionnelle_cours_adultes_paris_me": 0.5
+    }
+  },
+
+  "recettes_fonctionnement": {
+    "total_me": 70.5,
+    "variation_vs_bp2024_me": 0.9,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 4 - Recettes de fonctionnement",
+      "autres_services_periscolaires_transverses_pct": 69.2,
+      "enseignement_maternel_primaire_pct": 22.9,
+      "formation_professionnelle_apprentissage_pct": 6.9,
+      "enseignement_superieur_pct": 0.9,
+      "enseignement_secondaire_dont_cites_scolaires_pct": 0.1
+    },
+
+    "services_annexes_enseignement": {
+      "total_me": 48.8,
+      "variation_me": 0.4,
+      "caf_financement_dispositifs_extra_periscolaires": {
+        "montant_me": 38.2,
+        "variation_me": 0.9
+      },
+      "autres_recettes_services_annexes": {
+        "total_me": 10.6,
+        "temps_activites_periscolaires": {
+          "montant_me": 8.7,
+          "variation_me": -0.9,
+          "causes_baisse": [
+            "Suppression à la rentrée septembre 2025 du fonds versé par l'État pour les TAP",
+            "Diminution de la participation des familles (évolution démographie scolaire)"
+          ]
+        },
+        "restauration_colleges_me": 1.1,
+        "classes_decouvertes": {
+          "montant_me": 0.7,
+          "variation_me": 0.2,
+          "cause": "Hausse du nombre de séjours scolaires organisés"
+        },
+        "academie_climat_me": 0.1
+      }
+    },
+
+    "enseignement_premier_second_degres": {
+      "total_me": 16.2,
+      "variation_me": 0.2,
+      "compensation_etat_instruction_obligatoire_3_ans": {
+        "montant_me": 11.9,
+        "note": "Loi Blanquer 2019 - prise en charge dépenses fonctionnement écoles maternelles privées"
+      },
+      "redevances_occupation_remboursements_charges_coproprietes_logements_fonction": {
+        "montant_me": 4.2,
+        "variation_me": 0.1,
+        "cause": "Indexation des loyers"
+      }
+    },
+
+    "formation_professionnelle": {
+      "montant_me": 4.8,
+      "variation_me": 0.4,
+      "source": "Droits d'inscription pour la formation continue dispensée au sein des cours d'adultes de Paris"
+    },
+
+    "enseignement_superieur": {
+      "montant_me": 0.6,
+      "variation_me": -0.1,
+      "source": "Principalement des loyers"
+    }
+  },
+
+  "depenses_investissement": {
+    "total_me": 102.4,
+    "bp_2024_me": 94.1,
+    "variation_me": 8.3,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 5 - Dépenses d'investissement",
+      "enseignement_primaire_pct": 53.9,
+      "enseignement_secondaire_dont_cites_scolaires_pct": 21.3,
+      "enseignement_superieur_pct": 18.2,
+      "autres_services_periscolaires_transverses_pct": 5.2,
+      "services_communs_pct": 0.8,
+      "formation_professionnelle_pct": 0.6
+    },
+
+    "enseignement_premier_degre": {
+      "total_me": 55.2,
+      "bp_2024_me": 56.0,
+
+      "constructions_ecoles": [
+        {"projet": "ZAC Chapelle-Charbon", "arrondissement": "18e", "montant_me": 6.5},
+        {"projet": "Opération Gare de Lyon-Daumesnil", "arrondissement": "12e", "montant_me": 5.3},
+        {"projet": "ZAC Bédier-Oudiné", "arrondissement": "13e", "montant_me": 1.9},
+        {"projet": "ZAC Ordener-Poissonniers", "arrondissement": "18e", "montant_me": 1.6}
+      ],
+
+      "reconstructions": [
+        {"projet": "Groupe scolaire Romainville", "arrondissement": "19e", "montant_me": 1.0},
+        {"projet": "École élémentaire du Clos rue Saint-Blaise", "arrondissement": "20e", "montant_me": 1.6},
+        {"projet": "Groupe scolaire Reisz Perrin", "arrondissement": "20e", "montant_me": 1.6}
+      ],
+
+      "travaux_renovation_securisation_ecoles_me": 10.3,
+      "entretien_etablissements_scolaires_me": 19.9,
+      "cours_oasis_ecoles_colleges_me": 7.0,
+      "acquisitions_equipements_informatiques": {
+        "bp_2024_me": 0.7,
+        "bp_2025_me": 0.8
+      },
+      "materiel_mobilier_me": 0.5
+    },
+
+    "enseignement_second_degre": {
+      "total_me": 21.8,
+      "bp_2024_me": 19.7,
+
+      "colleges_autonomes": {
+        "total_me": 14.5,
+        "operations": [
+          {"projet": "Restructuration collège Paul Valéry", "arrondissement": "12e", "bp_2024_me": 1.8, "bp_2025_me": 3.5},
+          {"projet": "Restructuration et extension collège Maurice Utrillo", "arrondissement": "18e", "montant_me": 0.2}
+        ],
+        "travaux_securite_desamiantage_deplombage_renovation_sanitaires_equipements_info_me": 7.3,
+        "entretien_courant_colleges_me": 0.5
+      },
+
+      "cites_mixtes_scolaires": {
+        "total_me": 7.0,
+        "bp_2024_me": 4.8,
+        "depenses_entretien_me": 6.0,
+        "etudes_travaux_renovation_cite_mixte_jacques_decour_9e_me": 0.5,
+        "cite_scolaire_gabriel_faure_13e_me": 0.5
+      },
+
+      "ecole_du_breuil_subvention_me": 0.2
+    },
+
+    "enseignement_superieur": {
+      "total_me": 18.6,
+      "bp_2024_me": 9.4,
+
+      "ecoles_ingenieurs_universites": {
+        "total_me": 16.0,
+        "bp_2024_me": 6.1,
+        "detail": {
+          "espci_renovation_locaux": {"montant_me": 7.6, "variation_me": 6.0},
+          "campus_condorcet_me": 6.5,
+          "securisation_universites_sorbonne_5e_descartes_6e_me": 0.5,
+          "institut_sante_femmes_6e_me": 0.5,
+          "travaux_entretien_structures_enseignement_superieur_me": 0.3,
+          "travaux_renovation_energetique_me": 0.2
+        }
+      },
+
+      "ecoles_art": {
+        "total_me": 2.5,
+        "bp_2024_me": 2.0,
+        "subventions_equipement_travaux_entretien_me": 1.8,
+        "renovation_conformite_ecole_arts_appliques_duperre_paris_centre_me": 0.7,
+        "accessibilite_ecole_estienne_13e_me": 0.1
+      }
+    },
+
+    "services_periscolaires_annexes": {
+      "total_me": 5.3,
+      "bp_2024_me": 7.7,
+
+      "travaux_cuisines_scolaires": {
+        "securisation": {"bp_2024_me": 1.5, "bp_2025_me": 3.1},
+        "creations_cuisines_remunicipalisation_18e": {"bp_2024_me": 1.2, "bp_2025_me": 1.0},
+        "cuisine_college_mallarme_17e": {"bp_2024_me": 0.2, "bp_2025_me": 0.4},
+        "restructuration_cuisines_college_flaubert_13e_me": 0.2
+      }
+    },
+
+    "services_communs_enseignement": {
+      "montant_me": 0.8,
+      "objet": "Hygiène, santé et locaux du personnel"
+    },
+
+    "formation_professionnelle": {
+      "total_me": 0.6,
+      "hangar_lissac_me": 0.4,
+      "academie_climat_paris_centre_me": 0.2
+    }
+  },
+
+  "recettes_investissement": {
+    "total_me": 5.8,
+    "variation_vs_bp2024_me": 0.0,
+    "source": "Dotation départementale des collèges"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "fichier_source": "05 Les opérations d'ordre.pdf",
+  "section": "5 - Les opérations d'ordre",
+  "pages": "116-117",
+  "unite": "M€",
+
+  "introduction": {
+    "types_operations": [
+      {
+        "type": "Opérations d'ordre de transfert entre sections",
+        "chapitres": ["946", "926"],
+        "description": "Mouvements équilibrés entre fonctionnement et investissement"
+      },
+      {
+        "type": "Virement de la section de fonctionnement à la section d'investissement",
+        "chapitres": ["953", "951"],
+        "description": "Virement équilibré entre fonctionnement et investissement"
+      },
+      {
+        "type": "Opérations d'ordre patrimoniales",
+        "chapitres": ["925"],
+        "description": "Mouvements équilibrés à l'intérieur de la section d'investissement"
+      }
+    ]
+  },
+
+  "mouvements_entre_sections": {
+    "_source": "Tableau page 1",
+    "transferts_chapitres_926_946": {
+      "investissement_depenses_me": 50.4,
+      "investissement_recettes_me": 498.1,
+      "fonctionnement_depenses_me": 498.1,
+      "fonctionnement_recettes_me": 50.4
+    },
+    "virement_chapitres_951_953": {
+      "investissement_recettes_me": 127.7,
+      "fonctionnement_depenses_me": 127.7
+    }
+  },
+
+  "ecritures_depenses_fonctionnement_recettes_investissement": {
+    "_source": "Pages 1-2",
+    "total_me": 498.1,
+    "detail": {
+      "amortissements_immobilisations_me": 463.0,
+      "dotations_provisions_risques_charges_contentieux_me": 19.0,
+      "dotations_provisions_depreciations_actifs_creances_douteuses_me": 8.0,
+      "complement_prix_bascule_investissement_me": 4.1,
+      "amortissement_primes_remboursement_obligations_me": 3.5,
+      "dotations_provisions_participations_me": 0.5
+    }
+  },
+
+  "ecritures_recettes_fonctionnement_depenses_investissement": {
+    "_source": "Page 2",
+    "total_me": 50.4,
+    "detail": {
+      "quote_part_subventions_transferables_me": 21.0,
+      "reprises_provisions_risques_charges_me": 14.0,
+      "reintegration_annuites_loyers_capitalises_me": 11.0,
+      "travaux_en_regie_production_immobilisations_me": 3.2,
+      "reprises_amortissements_immobilisations_me": 0.7,
+      "reprises_amortissement_primes_remboursement_obligations_me": 0.4,
+      "reprises_provisions_participations_me": 0.1
+    }
+  },
+
+  "virement_fonctionnement_vers_investissement": {
+    "_source": "Page 2",
+    "chapitres": ["951", "953"],
+    "montant_2025_me": 127.7,
+    "variation_vs_bp2024_me": 48.7,
+    "description": "Épargne volontaire dégagée en 2025",
+    "objet": "S'ajoute à l'épargne réglementaire pour permettre le remboursement des annuités de la dette en capital et l'autofinancement d'une partie des investissements",
+    "note": "Ces inscriptions budgétaires ne font l'objet d'aucune exécution"
+  },
+
+  "operations_patrimoniales_interieur_investissement": {
+    "_source": "Page 2",
+    "chapitre": "925",
+    "investissement_depenses_me": 187.9,
+    "investissement_recettes_me": 187.9,
+    "detail": {
+      "reintegration_avances_acomptes_verses_transferts_etudes_me": 109.9,
+      "note_avances": "Notamment dans le cadre des délégations de maîtrise d'ouvrage et des transferts liés aux études effectuées par des tiers en vue de la réalisation d'investissement",
+      "integration_patrimoniale_biens_immobiliers_gratuits_euro_symbolique_me": 40.0,
+      "note_biens_gratuits": "Dans le cadre des opérations d'urbanisme",
+      "reintegration_annuites_loyers_capitalises_me": 25.0,
+      "integration_primes_emission_montant_dette_me": 7.0,
+      "reintegration_investissements_etats_speciaux_arrondissement_dotation_investissement_me": 6.0
+    }
+  }
+}

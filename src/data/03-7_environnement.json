@@ -1,0 +1,410 @@
+{
+  "fichier_source": "03-7 Environnement.pdf",
+  "section": "3 - Présentation par politique publique",
+  "sous_section": "(7) Environnement",
+  "pages": "77-83",
+  "unite": "M€",
+
+  "budget_consolide": {
+    "_source": "Tableau page 1",
+    "depenses_fonctionnement": {"bp_2024": 810.6, "bp_2025": 806.3},
+    "dont_masse_salariale": {"bp_2024": 375.8, "bp_2025": 381.6},
+    "depenses_investissement": {"bp_2024": 109.0, "bp_2025": 110.2},
+    "recettes_fonctionnement": {"bp_2024": 808.1, "bp_2025": 831.9},
+    "recettes_investissement": {"bp_2024": 2.5, "bp_2025": 2.0}
+  },
+
+  "graphique_repartition_budget_total": {
+    "_source": "Graphique page 1 - Camembert budget consolidé",
+    "total_me": 916.5,
+    "repartition": {
+      "dechets_proprete_urbaine_pct": 75.2,
+      "services_communs_pct": 12.2,
+      "actions_transversales_pct": 7.7,
+      "gestion_eaux_pct": 3.1,
+      "politique_energie_pct": 1.0,
+      "preservation_patrimoine_naturel_carrieres_pct": 0.5,
+      "politique_air_pct": 0.3
+    }
+  },
+
+  "depenses_fonctionnement": {
+    "total_me": 806.3,
+    "dont_masse_salariale_me": 381.6,
+    "hors_masse_salariale_me": 424.7,
+    "variation_hors_ms_vs_bp2024_me": -10.1,
+    "note_variation": "Effet de périmètre : la Ville ne loue plus les sanitaires mais en est propriétaire",
+
+    "creations_postes_2025": {
+      "total_creations": 35,
+      "solde_transformations": 6,
+      "transfert_entrant_budget_annexe_assainissement": 1,
+      "redeploiements": 284,
+      "solde_net_fonction": -242,
+
+      "nouvelles_missions_renforts": {
+        "direction_eau_proprete": {
+          "total": 33,
+          "detail": {
+            "equipes_urgence_proprete_terrain": 18,
+            "equipes_apres_midi": 12,
+            "ateliers_maintenance": 2,
+            "valorisation_dechets": 1
+          }
+        },
+        "direction_transition_ecologique_climat": {
+          "total": 2,
+          "type_contrat": "Contrat de projet",
+          "detail": {
+            "projet_horizon_europe_p2green": 1,
+            "pole_climat": 1
+          }
+        }
+      }
+    },
+
+    "graphique_repartition_hors_masse_salariale": {
+      "_source": "Graphique page 2 - Dépenses de fonctionnement hors masse salariale",
+      "tri_valorisation_traitement_dechets_pct": 32.0,
+      "collecte_dechets_pct": 25.8,
+      "services_communs_pct": 19.2,
+      "proprete_urbaine_nettoiement_actions_prevention_pct": 16.3,
+      "politique_eau_pct": 5.3,
+      "actions_transversales_pct": 1.1,
+      "politique_air_energie_carrieres_pct": 0.3
+    },
+
+    "dechets_proprete_urbaine": {
+      "total_me": 314.9,
+      "variation_vs_bp2024_me": -1.5,
+
+      "tri_valorisation_traitement_dechets": {
+        "total_me": 135.8,
+        "variation_me": 8.6,
+        "detail": {
+          "contribution_syctom": {
+            "montant_me": 119.0,
+            "variation_me": 4.2,
+            "objet": "Traitement et valorisation des déchets collectés à Paris"
+          },
+          "stations_tri_trilib": {
+            "montant_me": 10.3,
+            "variation_me": 4.0,
+            "variation_pct": 63.5,
+            "cause_hausse": "Mise en place progressive de la collecte des déchets alimentaires"
+          },
+          "espaces_tri": {
+            "montant_me": 6.5,
+            "variation_me": 0.4
+          }
+        }
+      },
+
+      "collecte_dechets": {
+        "total_me": 109.8,
+        "variation_me": 3.4,
+        "variation_pct": 3.2,
+        "detail": {
+          "collecte_ordures_menageres_multi_materiaux": {
+            "montant_me": 74.2,
+            "variation_me": 2.4,
+            "note": "Revalorisations tarifaires contractuelles"
+          },
+          "collecte_corbeilles_rue": {
+            "montant_me": 16.8,
+            "variation_me": 1.5
+          },
+          "collecte_verre_me": 11.1,
+          "mise_disposition_bacs_collecte_me": 5.4,
+          "collecte_biodechets_marches_sites": {
+            "montant_me": 2.3,
+            "note": "Marchés alimentaires, restaurants administratifs, écoles, crèches"
+          }
+        }
+      },
+
+      "actions_proprete": {
+        "total_me": 50.4,
+        "variation_me": -14.4,
+        "note_variation": "Effet de périmètre : Ville propriétaire des sanitaires",
+        "detail": {
+          "nettoiement_mecanique_chaussees_trottoirs": {
+            "montant_me": 15.9,
+            "variation_me": -4.0,
+            "note": "Baisse après prestations renforcées JOP 2024"
+          },
+          "sanitaires_publics": {
+            "montant_me": 13.0,
+            "variation_me": -10.6,
+            "note": "Ville propriétaire des sanisettes"
+          },
+          "autres_prestations_proprete_urbaine": {
+            "montant_me": 10.6,
+            "variation_me": 0.2
+          },
+          "enlevement_graffitis_remise_peinture_mobilier_urbain_me": 6.4,
+          "nettoiement_berges_seine_me": 2.0,
+          "eau_non_potable_nettoiement_voirie_me": 1.3,
+          "marches_nettoiement_entreprises_insertion_arrondissements_me": 1.1,
+          "actions_sensibilisation_proprete_me": 0.1
+        }
+      },
+
+      "missions_collecte_proprete_regie": {
+        "total_me": 19.0,
+        "variation_me": 0.9,
+        "entretien_fonctionnement_vehicules_me": 12.5,
+        "outillage_equipements_locaux_terrains_me": 6.5
+      }
+    },
+
+    "etat_special_teom": {
+      "_source": "Texte page 3",
+      "description": "État spécial sur la taxe d'enlèvement des ordures ménagères annexé au BP 2025",
+      "contenu": [
+        "Dépenses de fonctionnement et masse salariale du service collecte et traitement des déchets",
+        "Dépenses de prévention des déchets",
+        "Dépenses balayage des voies non couvertes par taxe de balayage",
+        "Quote-part des dépenses des directions transversales (DRH, DFA, DILT, DCPA)"
+      ]
+    },
+
+    "services_communs": {
+      "total_me": 81.3,
+      "variation_vs_bp2024_me": -9.2,
+      "cause_baisse": "Maîtrise dépense fluides (plan de sobriété énergétique et nouveaux marchés)",
+      "fluides_batiments_administratifs": {
+        "montant_me": 80.0,
+        "variation_me": -9.5,
+        "variation_pct": -10.6,
+        "note": "Poursuite baisse amorcée en 2023"
+      },
+      "autres_depenses_services_support_me": 1.3
+    },
+
+    "gestion_eaux": {
+      "total_me": 22.5,
+      "detail": {
+        "contribution_budget_annexe_assainissement": {
+          "montant_me": 18.2,
+          "objet": "Gestion des eaux pluviales"
+        },
+        "contribution_metropole_grand_paris_gemapi": {
+          "montant_me": 2.3,
+          "objet": "Gestion des milieux aquatiques et prévention des inondations"
+        },
+        "contribution_seine_grands_lacs": {
+          "montant_me": 2.0,
+          "variation_me": -0.4
+        }
+      }
+    },
+
+    "actions_transverses": {
+      "total_me": 4.6,
+      "detail": {
+        "ombrières_subventions_acteurs_environnement_etudes": {
+          "montant_me": 2.7,
+          "variation_me": 0.1,
+          "beneficiaires": ["AirParif", "BruitParif", "Agence parisienne du Climat"],
+          "inclut": "Diagnostics de performance énergétique"
+        },
+        "plan_local_prevention_dechets_plpdma": {
+          "montant_me": 1.5,
+          "variation_me": 0.2,
+          "objet": "Sensibilisation recyclage, tri et valorisation des déchets"
+        },
+        "sortie_plastique_usage_unique": {
+          "montant_me": 0.4,
+          "objet": "Courses sur route zéro plastique",
+          "note": "Obligation depuis 1er septembre 2024 : plus d'emballages PUU aux points de ravitaillement"
+        }
+      }
+    }
+  },
+
+  "recettes_fonctionnement": {
+    "total_me": 831.9,
+    "variation_vs_bp2024_me": 23.8,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 4 - Recettes de fonctionnement",
+      "collecte_dechets_pct": 71.3,
+      "proprete_urbaine_nettoiement_pct": 12.9,
+      "politique_energie_pct": 5.6,
+      "services_communs_pct": 5.8,
+      "tri_valorisation_traitement_dechets_pct": 2.2,
+      "politique_eau_pct": 2.1,
+      "actions_transversales_pct": 0.1
+    },
+
+    "dechets_proprete": {
+      "total_me": 718.8,
+      "variation_me": 7.6,
+
+      "collecte_dechets": {
+        "total_me": 593.0,
+        "taxe_enlevement_ordures_menageres_teom": {
+          "montant_me": 573.3,
+          "variation_me": 6.8,
+          "note": "Taux inchangé, produit en hausse"
+        },
+        "redevance_dechets_non_menagers_rdnm_me": 19.5,
+        "autres_prestations_collecte_me": 0.3
+      },
+
+      "proprete_urbaine_nettoiement": {
+        "total_me": 107.0,
+        "taxe_balayage_me": 106.0,
+        "autres_prestations_proprete_urbaine": {
+          "montant_me": 1.0,
+          "note": "Frais de nettoyage facturés aux entreprises affichage publicitaire illégal"
+        }
+      },
+
+      "tri_valorisation_dechets": {
+        "montant_me": 18.5,
+        "note": "Reversement éco-contributions des éco-organismes"
+      },
+
+      "revenus_immeubles_locaux_terrains_me": 0.2
+    },
+
+    "services_communs": {
+      "total_me": 47.0,
+      "variation_me": 9.1,
+      "fluides_batiments_remboursement_etats_speciaux_arrondissement_me": 46.4
+    },
+
+    "politique_energie": {
+      "total_me": 46.7,
+      "variation_me": 7.4,
+      "redevances_concessions_gaz_electricite_me": 34.3,
+      "redevances_reseau_chaleur_froid_me": 12.4
+    },
+
+    "gestion_eaux": {
+      "total_me": 17.6,
+      "remboursements_frais_budgets_annexes_assainissement_eau_me": 7.7,
+      "redevances_eau_de_paris_me": 5.6,
+      "remboursement_personnel_mis_disposition_siaap_me": 4.1
+    },
+
+    "carrieres": {
+      "montant_me": 1.5,
+      "variation_me": -0.4,
+      "sources": "Participations communes et départements, facturation cartes et renseignements"
+    },
+
+    "cofinancements_pcaet": {
+      "montant_me": 0.4,
+      "sources": [
+        "Financements européens programme décarbonation marchés publics",
+        "Programme Quartiers populaires en transition"
+      ]
+    }
+  },
+
+  "depenses_investissement": {
+    "total_me": 110.2,
+    "bp_2024_me": 109.0,
+    "variation_me": 1.2,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 5 - Dépenses d'investissement",
+      "actions_transversales_plan_climat_pct": 52.4,
+      "dechets_proprete_urbaine_pct": 34.4,
+      "politique_energie_pct": 6.4,
+      "politique_air_pct": 2.5,
+      "gestion_eaux_pct": 2.0,
+      "preservation_patrimoine_naturel_carrieres_pct": 1.8,
+      "services_communs_pct": 0.5
+    },
+
+    "actions_transversales": {
+      "total_me": 57.8,
+      "variation_vs_bp2024_me": 1.3,
+      "detail": {
+        "modernisation_centres_thermiques_ventilations_me": 24.4,
+        "contrats_performance_energetique_ecoles_colleges_piscines_me": 11.2,
+        "remplacement_portes_fenetres_me": 8.0,
+        "amelioration_performance_energetique": {
+          "total_me": 5.9,
+          "renovation_thermique_ecoles_creches_me": 1.4
+        },
+        "projet_paris_frais_ilots_chaleur_me": 3.0,
+        "renovation_energetique_batiments_administratifs_me": 2.3,
+        "production_energie_renouvelable_me": 2.0,
+        "plan_volets_bailleurs_sociaux_equipements_publics_me": 0.6
+      }
+    },
+
+    "dechets_proprete_urbaine": {
+      "total_me": 37.9,
+      "detail": {
+        "acquisition_nouvelles_sanisettes": {
+          "montant_me": 21.0,
+          "bp_2024_me": 25.0
+        },
+        "acquisition_vehicules_collecte_proprete": {
+          "montant_me": 9.8,
+          "variation_me": 0.9
+        },
+        "plan_garages": {
+          "montant_me": 1.9,
+          "variation_me": 0.8,
+          "garage_romainville_me": 1.0
+        },
+        "tri_valorisation_traitement_dechets": {
+          "total_me": 1.8,
+          "reamenagement_site_invalides": {"arrondissement": "7e", "montant_me": 1.0, "variation_me": 0.9},
+          "deploiement_stations_trilib": {"montant_me": 0.6, "variation_me": -1.4, "note": "Calendrier déploiement arrive à terme"}
+        },
+        "renovation_locaux_me": 1.2,
+        "entretien_securisation_batiments_techniques_me": 0.5,
+        "rehabilitation_installations_me": 0.4,
+        "poubelles_tri_selectif_corbeilles_rue_me": 0.5,
+        "dispositifs_securite_vehicules_proprete_me": 0.5
+      }
+    },
+
+    "politique_energie": {
+      "total_me": 7.0,
+      "variation_vs_bp2024_me": 1.3,
+      "objet": "Expérimentation et développement production énergie renouvelable",
+      "projets": ["Boucles d'eau chaude", "Études récupération chaleur", "Stockage carbone", "Géothermie"]
+    },
+
+    "politique_air": {
+      "total_me": 2.8,
+      "variation_me": 0.3,
+      "objet": "Aides développement véhicules propres (PCAET et plan qualité de l'air)"
+    },
+
+    "gestion_eau": {
+      "total_me": 2.2,
+      "renovation_reseau_eau_non_potable_me": 2.0,
+      "conversion_arrosage_jardins_eau_non_potable_me": 0.2
+    },
+
+    "preservation_patrimoine_naturel_carrieres": {
+      "montant_me": 2.0,
+      "variation_me": 1.0,
+      "objet": "Entretien des carrières"
+    },
+
+    "equipement_services_communs_me": 0.6
+  },
+
+  "recettes_investissement": {
+    "total_me": 2.0,
+    "variation_vs_bp2024_me": -0.5,
+    "detail": {
+      "equipements_collecte_dechets_alimentaires": {
+        "montant_me": 1.1,
+        "sources": ["Syctom", "Ademe"]
+      },
+      "subvention_citeo_installation_stations_trilib_me": 0.9
+    }
+  }
+}

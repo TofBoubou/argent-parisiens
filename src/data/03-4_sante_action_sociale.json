@@ -1,0 +1,596 @@
+{
+  "fichier_source": "03-4 Santé et action sociale.pdf",
+  "section": "3 - Présentation par politique publique",
+  "sous_section": "(4) Santé et action sociale",
+  "pages": "53-62",
+  "unite": "M€",
+
+  "budget_consolide": {
+    "_source": "Tableau page 1",
+    "depenses_fonctionnement": {"bp_2024": 2562.6, "bp_2025": 2650.6},
+    "dont_masse_salariale": {"bp_2024": 597.9, "bp_2025": 599.4},
+    "depenses_investissement": {"bp_2024": 68.4, "bp_2025": 71.3},
+    "recettes_fonctionnement": {"bp_2024": 631.4, "bp_2025": 632.8},
+    "recettes_investissement": {"bp_2024": 5.2, "bp_2025": 5.5}
+  },
+
+  "graphique_repartition_budget_total": {
+    "_source": "Graphique page 1 - Camembert budget consolidé",
+    "total_me": 2721.9,
+    "repartition": {
+      "creches_petite_enfance_pct": 17.5,
+      "revenu_solidarite_active_rsa_pct": 18.0,
+      "aide_sociale_enfance_pct": 17.4,
+      "autres_interventions_sociales_dont_casvp_pct": 17.0,
+      "handicap_pct": 11.8,
+      "personnes_agees_pct": 8.9,
+      "sante_prevention_pct": 4.5,
+      "services_communs_pct": 2.6,
+      "personnes_difficulte_pct": 2.2
+    }
+  },
+
+  "depenses_fonctionnement": {
+    "total_me": 2650.6,
+    "dont_masse_salariale_me": 599.4,
+    "hors_masse_salariale_me": 2051.2,
+    "variation_hors_ms_vs_bp2024_me": 86.5,
+
+    "creations_postes_2025": {
+      "total_creations": 102,
+      "solde_transformations": 0.5,
+      "changement_perimetre": -9,
+      "redeploiements": 83,
+      "solde_net_fonction": 10.5,
+
+      "changement_perimetre_detail": {
+        "nombre": 9,
+        "description": "Assistants socio-éducatifs transférés de la direction des solidarités vers le budget annexe de l'aide sociale à l'enfance"
+      },
+
+      "nouveaux_equipements": {
+        "total": 30,
+        "direction_familles_petite_enfance": {
+          "nombre": 30,
+          "motif": "Ouverture de la crèche collective Davout (20e arrondissement)"
+        }
+      },
+
+      "nouvelles_missions_renforts": {
+        "total": 61,
+        "direction_familles_petite_enfance": {
+          "total": 9,
+          "detail": {
+            "agrement_pmi": 2,
+            "si_honorabilite": 2,
+            "pole_controle_gestion_partenariat_caf": 2,
+            "mission_competences_autorites_organisatrices": 3
+          }
+        },
+        "direction_solidarites": {
+          "total": 52,
+          "detail": {
+            "cellule_departementale_recueil_informations_preoccupantes": 38,
+            "mineurs_non_accompagnes": 1,
+            "mission_urgence_sociale": 1,
+            "equipe_mobile_intervention_foyers_ase": 3,
+            "chef_projet_france_travail": 1,
+            "appels_projet_cnsa": 1,
+            "equipe_mobile_prevention_expulsion_drihl": 3,
+            "cellule_suivi_mort_violente_enfant": 4
+          }
+        },
+        "direction_sante_publique": {
+          "total": 11,
+          "detail": {
+            "service_municipal_actions_salubrite_hygiene": 4,
+            "renforcement_offre_soins": 5,
+            "mille_premiers_jours_enfant": 2
+          }
+        }
+      }
+    },
+
+    "graphique_repartition_hors_masse_salariale": {
+      "_source": "Graphique page 2 - Dépenses de fonctionnement hors masse salariale",
+      "revenu_solidarite_active_rsa_pct": 22.5,
+      "autres_interventions_sociales_dont_casvp_pct": 22.2,
+      "aide_sociale_enfance_pct": 18.5,
+      "handicap_pct": 14.6,
+      "personnes_agees_pct": 11.5,
+      "creches_petite_enfance_pct": 6.6,
+      "personnes_difficulte_pct": 2.7,
+      "sante_prevention_pct": 1.3,
+      "services_communs_pct": 0.1
+    },
+
+    "revenu_solidarite_active_rsa": {
+      "total_me": 460.9,
+      "variation_vs_bp2024_me": 6.7,
+      "detail": {
+        "allocations_remises_gracieuses": {
+          "montant_me": 421.1,
+          "variation_me": 7.4,
+          "variation_pct": 1.8,
+          "note": "Tient compte de la revalorisation de 4,6% intervenue en avril 2024"
+        },
+        "actions_accompagnement_retour_emploi": {
+          "montant_me": 39.8,
+          "objet": "Dispositifs d'insertion et subventions aux structures concourant à l'insertion par l'emploi"
+        }
+      }
+    },
+
+    "contribution_casvp": {
+      "montant_me": 419.6,
+      "variation_vs_bp2024_me": -10.6,
+      "missions": [
+        "Lutter contre toutes les formes d'exclusion",
+        "Réduire les inégalités",
+        "Garantir et faciliter l'accès aux droits",
+        "Accompagner personnes âgées, en situation de handicap, familles et personnes en difficulté"
+      ],
+      "causes_baisse": [
+        "Nouvelle convention avec Ile-de-France Mobilités pour le pass Améthyste (base forfaitaire vers trajets réels)",
+        "Économie de loyers par acquisition des locaux rue Bichat (10e arrondissement)"
+      ]
+    },
+
+    "aide_sociale_enfance_ase": {
+      "total_me": 380.0,
+      "variation_vs_bp2024_me": 46.0,
+      "detail": {
+        "frais_accueil_etablissement": {
+          "montant_me": 295.0,
+          "variation_me": 40.5,
+          "nouveaux_dispositifs": [
+            "Mineurs non accompagnés (MNA)",
+            "Enfants victimes d'inceste",
+            "Structures d'accueil d'urgence pour les fratries",
+            "Victimes de prostitution"
+          ],
+          "note": "Hausse des prix de journée des établissements ASE (masse salariale et inflation)"
+        },
+        "prise_charge_hoteliere": {
+          "montant_me": 22.0,
+          "variation_me": 1.0,
+          "cause": "Principalement inflation"
+        },
+        "accompagnement_personnels_specialises": {
+          "montant_me": 3.0,
+          "variation_me": -1.0,
+          "cause": "Meilleure prise en charge dans les autres dispositifs"
+        },
+        "depenses_annexes_transverses": {
+          "montant_me": 15.6,
+          "variation_me": 1.0,
+          "objet": "Allocations journalières, transports, frais scolaires, périscolaires et médicaux"
+        },
+        "actions_educatives": {
+          "montant_me": 43.3,
+          "variation_me": 4.4,
+          "variation_pct": 11.3,
+          "inclut_renforcement_aed_me": 3.0,
+          "enfants_pris_en_charge": 100,
+          "objectif": "Éviter les placements en établissement"
+        },
+        "subventions_participations": {
+          "montant_me": 1.1,
+          "variation_me": 0.0
+        }
+      }
+    },
+
+    "aide_sociale_handicap": {
+      "total_me": 299.3,
+      "variation_vs_bp2024_me": 20.4,
+      "detail": {
+        "frais_hebergement_accueil_jour": {
+          "montant_me": 193.4,
+          "variation_me": 16.0,
+          "inclut": {
+            "appel_manifestation_interet_places": {"montant_me": 8.6, "places": 157},
+            "plan_inclusif_ars_ile_de_france_me": 3.0
+          }
+        },
+        "allocations_pch_actp": {
+          "total_me": 97.7,
+          "prestation_compensation_handicap_pch": {
+            "montant_me": 84.3,
+            "variation_me": 5.1,
+            "hausse_beneficiaires_annuelle_pct": 3.5
+          },
+          "allocation_compensatrice_tierce_personne_actp_me": 13.4
+        },
+        "autres_actions_handicap": {
+          "total_me": 8.2,
+          "detail": {
+            "contribution_mdph_75_me": 4.0,
+            "aide_domicile_me": 2.8,
+            "subventions_associations_me": 1.1,
+            "habitat_inclusif_cnsa_me": 0.3
+          }
+        }
+      }
+    },
+
+    "personnes_agees_apa": {
+      "total_me": 236.3,
+      "variation_vs_bp2024_me": 9.3,
+      "detail": {
+        "allocation_personnalisee_autonomie_apa": {
+          "total_me": 141.4,
+          "bp_2024_me": 133.6,
+          "note": "Prise en compte de la dotation qualité aux services d'aide à domicile (CNSA)",
+          "repartition": {
+            "apa_domicile_me": 96.3,
+            "apa_etablissement_me": 44.5,
+            "frais_cesu_participation_casvp_me": 0.5
+          }
+        },
+        "depenses_hebergement_personnes_agees": {
+          "montant_me": 63.0,
+          "variation_me": -5.3,
+          "cause": "Baisse du nombre de bénéficiaires"
+        },
+        "prevention_accompagnement_perte_autonomie": {
+          "total_me": 32.0,
+          "variation_me": 6.9,
+          "detail": {
+            "accueil_jour_paris_emeraude_alzheimer_me": 22.3,
+            "subvention_budget_annexe_ehpad_casvp": {
+              "montant_me": 5.7,
+              "objectifs": ["Qualité et sécurité prise en charge", "Qualité de vie au travail du personnel"]
+            },
+            "conference_financeurs_me": 6.4,
+            "aide_domicile_me": 2.4,
+            "habitat_inclusif_me": 0.4,
+            "subventions_me": 0.4,
+            "aides_financieres_corollaires_me": 0.2
+          }
+        }
+      }
+    },
+
+    "famille_petite_enfance": {
+      "total_me": 135.3,
+      "variation_vs_bp2024_me": 7.6,
+      "detail": {
+        "creches_haltes_garderies": {
+          "montant_me": 129.2,
+          "bp_2024_me": 121.7,
+          "variation_me": 7.5,
+          "causes_hausse": ["Renforcement soutien associations gestionnaires", "Ouverture nouvelles places"],
+          "reservations_places_hors_parc_municipal_me": 3.7
+        },
+        "dispositifs_familles": {
+          "montant_me": 6.1,
+          "variation_me": 0.1,
+          "dispositifs": ["Ludomouv' citoyennes", "Samedis en familles", "Deuxième festival du jeu"]
+        }
+      }
+    },
+
+    "personnes_difficulte_refugies": {
+      "total_me": 61.6,
+      "variation_vs_bp2024_me": 5.8,
+      "detail": {
+        "aide_personnes_difficulte": {
+          "total_me": 55.2,
+          "variation_me": 5.1,
+          "detail": {
+            "fonds_solidarite_logement_fsl_me": 31.8,
+            "subventions_solidarite_grande_cause_exclusion_me": 10.1,
+            "mise_abri_hotel_personnes_vulnerables_me": 2.1,
+            "restauration_solidaire_me": 1.8,
+            "mesures_accompagnement_social_personnalisees_masp_me": 1.0,
+            "inclusion_numerique_me": 0.5
+          }
+        },
+        "hebergement_urgence_competence_etat": {
+          "montant_me": 8.0,
+          "note": "Pris en charge volontairement par la Ville"
+        },
+        "accueil_refugies": {
+          "montant_me": 6.4,
+          "variation_me": 0.8
+        }
+      }
+    },
+
+    "prevention_specialisee_lien_social": {
+      "total_me": 30.4,
+      "detail": {
+        "clubs_prevention_specialisee_me": 20.7,
+        "financement_centres_sociaux_caf_me": 6.9,
+        "subventions_lien_social_me": 2.0,
+        "fonds_aide_jeunes_faj_me": 0.7,
+        "lutte_contre_rixes_me": 0.2
+      }
+    },
+
+    "sante_prevention": {
+      "total_me": 26.4,
+      "variation_vs_bp2024_me": 1.4,
+      "detail": {
+        "actions_prevention_education_sante_centres_sante": {
+          "total_me": 13.6,
+          "prevention": {
+            "toxicomanies": {"montant_me": 3.5, "variation_me": 1.0},
+            "infections_sexuellement_transmissibles_me": 1.2,
+            "promotion_sante_paris_qui_sauve_me": 1.5,
+            "cancers_me": 0.9,
+            "lutte_anti_tuberculeuse_me": 0.5,
+            "prevention_milieu_scolaire_me": 0.4
+          },
+          "centres_sante": {"montant_me": 1.8, "variation_me": 0.3},
+          "centres_vaccination_me": 1.4,
+          "sante_environnementale": {
+            "montant_me": 1.1,
+            "note": "Suite au vote du deuxième plan parisien de santé environnementale en 2024"
+          },
+          "lutte_rongeurs_insectes_vecteurs_me": 0.7
+        },
+        "protection_maternelle_infantile_pmi_planification_familiale_me": 12.8
+      }
+    },
+
+    "services_communs_sante_petite_enfance_solidarites_me": 1.4
+  },
+
+  "recettes_fonctionnement": {
+    "total_me": 632.8,
+    "variation_vs_bp2024_me": 1.3,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 6 - Recettes de fonctionnement",
+      "revenu_solidarite_active_rsa_pct": 42.1,
+      "creches_petite_enfance_pct": 35.5,
+      "personnes_agees_pct": 10.4,
+      "handicap_pct": 5.2,
+      "sante_prevention_pct": 2.7,
+      "aide_sociale_enfance_pct": 2.6,
+      "personnes_difficulte_pct": 1.6
+    },
+
+    "detail": {
+      "gestion_rsa": {
+        "total_me": 266.6,
+        "variation_me": 0.9,
+        "sources": {
+          "ticpe": {
+            "montant_me": 246.6,
+            "note": "Montant figé, droit à compensation basé sur dépenses RMI au 31/12/2003"
+          },
+          "fonds_mobilisation_departementale_insertion_fmdi_me": 12.0,
+          "recouvrement_indus_remboursements_me": 8.0
+        },
+        "taux_couverture_depenses_rsa": {
+          "bp_2025_pct": 65.2,
+          "bp_2024_pct": 66.9,
+          "note": "Hors majoration DMTO, y compris dotation compensation péréquée"
+        }
+      },
+      "accueil_petite_enfance": {
+        "montant_me": 224.5,
+        "variation_me": -12.2,
+        "sources": "Financements CAF et participations familiales",
+        "cause_baisse": "Instauration des contrats de garde différenciés (facturation horaire adaptée)"
+      },
+      "aide_personnes_agees": {
+        "total_me": 65.8,
+        "variation_me": 2.7,
+        "detail": {
+          "accueil_jour_orientation": {"montant_me": 14.6, "variation_me": 4.4},
+          "cnsa_apa_me": 22.5,
+          "hebergement_personnes_agees": {"montant_me": 18.0, "variation_me": -2.0},
+          "conference_financeurs_forfaits_autonomie_prevention_me": 6.3,
+          "indus_remboursements_cesu": {"montant_me": 4.0, "variation_me": 0.5},
+          "cnsa_habitat_inclusif_me": 0.2
+        },
+        "taux_couverture_apa_cnsa": {"bp_2025_pct": 16.0, "bp_2024_pct": 16.3}
+      },
+      "personnes_situation_handicap": {
+        "total_me": 32.6,
+        "variation_me": 5.3,
+        "detail": {
+          "dotations_cnsa_pch_mdph": {"montant_me": 24.0, "variation_me": 4.8},
+          "hebergement_personnes_handicapees_me": 6.0,
+          "indus_remboursements_cesu_me": 2.5,
+          "cnsa_habitat_inclusif_me": 0.2
+        },
+        "taux_couverture_pch_etat": {"bp_2025_pct": 25.8, "bp_2024_pct": 20.3}
+      },
+      "prevention_education_sante_pmi": {
+        "total_me": 17.0,
+        "variation_me": 0.9,
+        "financement_ars_depistage_tuberculose_me": 2.4,
+        "prelevement_etat_recentralisation_me": -7.5,
+        "autres_recettes": "Remboursements sécurité sociale et participations usagers"
+      },
+      "aide_sociale_enfance": {
+        "montant_me": 16.2,
+        "variation_me": 3.3
+      },
+      "soutien_personnes_difficulte": {
+        "total_me": 10.0,
+        "variation_me": 0.4,
+        "detail": {
+          "recettes_insertion_etat_me": 4.7,
+          "contributions_fsl_me": 4.7,
+          "dotations_logement_abord_me": 0.6
+        }
+      }
+    }
+  },
+
+  "sous_compensation_etat_aides_sociales": {
+    "_source": "Encadré pages 7-8",
+    "contexte": "Depuis 2002, l'État a transféré aux départements les allocations individuelles de solidarité (AIS) avec des compensations moins dynamiques que les dépenses",
+    "reste_charge_ville_paris_2025_me": 177.3,
+    "calcul": {
+      "recettes_flechees_ais_me": 468.6,
+      "detail_recettes": [
+        "Produits fléchés DMTO (hausse taux 3,8% à 4,5% hors péréquation)",
+        "Produits TICPE et FMDI",
+        "Dotations APA et PCH"
+      ],
+      "charges_rsa_apa_pch_me": 645.9
+    },
+    "dette_sociale_etat_cumulee_depuis_2014_me": 1700,
+    "graphique_evolution_dette_sociale": {
+      "_source": "Graphique page 8",
+      "evolution": {
+        "2019": {"dette_sociale_etat_me": 801.5, "reste_charge_annuel_me": 99.3},
+        "2020": {"dette_sociale_etat_me": 900.9, "reste_charge_annuel_me": 127.2},
+        "2021": {"dette_sociale_etat_me": 1028.0, "reste_charge_annuel_me": 108.6},
+        "2022": {"dette_sociale_etat_me": 1136.6, "reste_charge_annuel_me": 103.9},
+        "2023": {"dette_sociale_etat_me": 1240.6, "reste_charge_annuel_me": 164.1},
+        "bp_bs_2024": {"dette_sociale_etat_me": 1404.6, "reste_charge_annuel_me": 176.4},
+        "projet_bp_2025": {"dette_sociale_etat_me": 1581.0, "reste_charge_annuel_me": 177.3}
+      }
+    },
+    "graphique_detail_charges_recettes_2025": {
+      "_source": "Graphique page 7",
+      "charges_me": {
+        "allocation_rsa_me": 420.8,
+        "allocation_apa_me": 140.9,
+        "allocation_pch_me": 84.3
+      },
+      "recettes_me": {
+        "compensations_rsa_ticpe_fmdi_me": 269.4,
+        "differentiel_produit_dmto_net_perequation_me": 155.0,
+        "dotation_apa_me": 22.5,
+        "dotation_pch_me": 21.8
+      }
+    }
+  },
+
+  "depenses_investissement": {
+    "total_me": 71.3,
+    "bp_2024_me": 68.4,
+    "variation_me": 2.9,
+
+    "graphique_repartition": {
+      "_source": "Graphique page 9 - Dépenses d'investissement",
+      "creches_petite_enfance_pct": 43.5,
+      "handicap_pct": 29.2,
+      "sante_prevention_pct": 10.5,
+      "autres_interventions_sociales_dont_casvp_pct": 8.3,
+      "personnes_agees_pct": 3.0,
+      "aide_sociale_enfance_pct": 2.2,
+      "services_communs_pct": 1.6,
+      "personnes_difficulte_pct": 1.5,
+      "revenu_solidarite_active_rsa_pct": 0.3
+    },
+
+    "creches_haltes_garderies_multiaccueil": {
+      "total_me": 31.0,
+      "detail": {
+        "constructions_restructurations_creches": {
+          "total_me": 10.4,
+          "operations": [
+            {"projet": "Construction crèche collective ZAC gare de Lyon-Daumesnil", "arrondissement": "12e", "montant_me": 3.5},
+            {"projet": "Restructuration crèche rue Préault", "arrondissement": "19e", "montant_me": 0.5},
+            {"projet": "Restructuration crèche collective rue Eiders", "arrondissement": "19e", "montant_me": 0.5},
+            {"projet": "Restructuration crèche collective Mac Orlan", "arrondissement": "18e", "montant_me": 0.5},
+            {"projet": "Restructuration crèche collective Glacière", "arrondissement": "13e", "montant_me": 0.5},
+            {"projet": "Restructuration crèche Saint Roch", "arrondissement": "Paris Centre", "montant_me": 0.5},
+            {"projet": "Travaux aménagement école des métiers de la petite enfance", "montant_me": 1.5}
+          ]
+        },
+        "entretien_equipement_creches": {
+          "montant_me": 14.8,
+          "objet": "Travaux urgents, sécurité, mobilier et matériel"
+        },
+        "subventions_equipement_creches_associatives_me": 3.9,
+        "maisons_assistantes_maternelles_mam_me": 0.2
+      }
+    },
+
+    "mise_accessibilite_equipements_espace_public": {
+      "total_me": 19.9,
+      "variation_vs_bp2024_me": 0.5,
+      "repartition": {
+        "equipements_scolaires_me": 9.1,
+        "equipements_sportifs_me": 3.0,
+        "petite_enfance_me": 2.5,
+        "espaces_verts_me": 1.5,
+        "equipements_culturels_me": 1.4,
+        "mairies_arrondissement_me": 1.0,
+        "transports_me": 0.9
+      }
+    },
+
+    "investissements_sante": {
+      "total_me": 7.5,
+      "variation_vs_bp2024_me": 0.3,
+      "detail": {
+        "travaux_entretien_renouvellement_materiel_sante_pmi_me": 1.5,
+        "subventions_investissement_centres_sante_me": 2.0,
+        "construction_reconstruction_centres_sante": {
+          "montant_me": 3.4,
+          "variation_me": 1.8,
+          "centres": ["Charles Hermite", "Tiphaine", "Python-Duvernois"],
+          "note": "Extension offre de soins dans les centres de santé"
+        }
+      }
+    },
+
+    "investissements_personnes_agees": {
+      "total_me": 7.5,
+      "variation_vs_bp2024_me": 3.4,
+      "detail": {
+        "restructuration_ehpad_jardin_plantes": {"arrondissement": "5e", "montant_me": 3.4},
+        "restructuration_residences_autonomie_me": 2.0,
+        "subvention_humanisation_usld_me": 1.6,
+        "amelioration_thermique_residences_autonomie": {
+          "montant_me": 0.4,
+          "residences": [
+            {"nom": "Mouffetard", "arrondissement": "5e"},
+            {"nom": "Madeleine Béjart", "arrondissement": "3e"},
+            {"nom": "Bois-Le-Vent", "arrondissement": "16e"}
+          ]
+        }
+      }
+    },
+
+    "equipements_aide_sociale_enfance": {
+      "montant_me": 1.5,
+      "variation_vs_bp2024_me": 0.4
+    },
+
+    "solidarite_personnes_difficulte_refugies": {
+      "montant_me": 1.5,
+      "variation_vs_bp2024_me": 0.6
+    },
+
+    "services_communs_petite_enfance_action_sociale": {
+      "montant_me": 1.1,
+      "variation_vs_bp2024_me": 0.5,
+      "objet": "Études, matériel de bureau et mobilier pour SAFP et espaces parisiens pour l'insertion"
+    },
+
+    "autonomie_personnes_handicap": {
+      "montant_me": 0.9,
+      "objet": "Schéma directeur pour rénovation et restructuration d'établissements"
+    }
+  },
+
+  "recettes_investissement": {
+    "total_me": 5.5,
+    "variation_vs_bp2024_me": 0.3,
+    "detail": {
+      "financement_travaux_creches_multiaccueil": {
+        "montant_me": 3.3,
+        "sources": "Subventions CAF pour création et rénovation",
+        "fond_modernisation_equipements_caf_me": 2.0
+      },
+      "travaux_accessibilite_lignes_bus": {
+        "montant_me": 2.1,
+        "source": "Subventions Ile-de-France Mobilités (IDFM)",
+        "objet": "Adaptation réseau bus aux personnes en situation de handicap"
+      }
+    }
+  }
+}
