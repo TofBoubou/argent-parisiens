@@ -21,9 +21,8 @@ body {
 }
 
 /* Empêcher tout débordement horizontal */
-section, main, .max-w-7xl {
+section, main {
   overflow-x: hidden;
-  max-width: 100%;
 }
 
 /* Custom scrollbar */
