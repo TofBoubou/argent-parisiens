@@ -463,8 +463,8 @@ export default function InvestissementsPage() {
                   onClick={() => setSelectedArr(selectedArr === arr.arrondissement ? null : arr.arrondissement)}
                   className={`p-3 rounded-lg text-sm font-medium transition-all ${
                     selectedArr === arr.arrondissement
-                      ? 'bg-primary text-white'
-                      : 'bg-white text-primary hover:bg-gray-100 shadow-sm'
+                      ? 'bg-primary text-white shadow-md'
+                      : 'bg-white text-primary hover:bg-gray-100 hover:shadow-md shadow-sm'
                   }`}
                 >
                   {arr.arrondissement}

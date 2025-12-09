@@ -436,7 +436,7 @@ export default function PolitiquesPage() {
                 >
                   <div
                     className={`bg-white rounded-xl shadow-sm border-l-4 overflow-hidden cursor-pointer transition-all ${
-                      expandedPolicy === politique.code ? 'ring-2 ring-primary' : ''
+                      expandedPolicy === politique.code ? 'ring-2 ring-primary' : 'hover:shadow-md hover:bg-gray-50/50'
                     }`}
                     style={{ borderLeftColor: politique.color }}
                     onClick={() => togglePolicy(politique.code)}

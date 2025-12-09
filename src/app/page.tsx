@@ -144,7 +144,7 @@ export default function Home() {
                 transition={{ delay: index * 0.05 }}
               >
                 <Link href="/politiques" className="block">
-                  <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                  <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all border border-gray-100">
                     <div className="flex items-center gap-3">
                       <div className={`w-3 h-12 rounded-full ${politique.color}`} />
                       <div className="flex-1">
@@ -163,10 +163,10 @@ export default function Home() {
           <div className="text-center mt-8">
             <Link
               href="/politiques"
-              className="inline-flex items-center gap-2 text-primary hover:text-primary-light font-medium"
+              className="group inline-flex items-center gap-2 text-primary hover:text-accent font-medium transition-colors"
             >
               Voir le détail de chaque politique
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
@@ -201,7 +201,7 @@ export default function Home() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Link href={alerte.lien} className="block h-full">
-                  <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border-l-4 border-accent h-full">
+                  <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all border-l-4 border-accent h-full">
                     <h3 className="font-bold text-lg text-primary mb-2">{alerte.titre}</h3>
                     <p className="text-gray-600 text-sm">{alerte.description}</p>
                   </div>
