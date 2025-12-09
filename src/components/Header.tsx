@@ -17,24 +17,54 @@ const navigation = [
 
 // Index de recherche avec mots-clés par page
 const searchIndex = [
-  { name: 'Vue d\'ensemble', href: '/', keywords: ['accueil', 'budget', 'synthèse', 'total', 'résumé', 'chiffres clés'] },
-  { name: 'Recettes', href: '/recettes', keywords: ['fiscalité', 'impôts', 'taxes', 'taxe foncière', 'TFPB', 'THRS', 'TVA', 'dotations', 'DGF', 'DMTO', 'PLF'] },
-  { name: 'Dépenses', href: '/depenses', keywords: ['charges', 'personnel', 'masse salariale', 'fonctionnement', 'achats', 'subventions'] },
-  { name: 'Politiques', href: '/politiques', keywords: ['santé', 'social', 'RSA', 'crèches', 'transports', 'IDFM', 'culture', 'sport', 'environnement', 'propreté', 'sécurité', 'police', 'enseignement', 'écoles', 'logement', 'habitat', 'économie', 'tourisme'] },
-  { name: 'Investissements', href: '/investissements', keywords: ['projets', 'AP', 'autorisations', 'ZAC', 'budget participatif', 'logement social', 'foncier', 'arrondissement'] },
-  { name: 'Dette', href: '/dette', keywords: ['emprunt', 'remboursement', 'annuités', 'encours', 'capacité', 'désendettement', 'taux', 'obligataire'] },
-  { name: 'Données techniques', href: '/donnees-techniques', keywords: ['opérations d\'ordre', 'chapitres', 'amortissements', 'provisions', 'participations'] },
-  // Sections spécifiques
-  { name: 'Taxe foncière', href: '/recettes#fiscalite', keywords: ['TFPB', 'impôt foncier', 'propriétaires'] },
-  { name: 'Santé et action sociale', href: '/politiques', keywords: ['RSA', 'crèches', 'petite enfance', 'handicap', 'personnes âgées', 'APA', 'PCH'] },
-  { name: 'Services généraux', href: '/politiques', keywords: ['administration', 'informatique', 'arrondissements', 'ESA'] },
-  { name: 'Transports', href: '/politiques', keywords: ['IDFM', 'vélo', 'métro', 'tramway', 'stationnement'] },
-  { name: 'Environnement', href: '/politiques', keywords: ['déchets', 'propreté', 'SYCTOM', 'TEOM', 'tri'] },
-  { name: 'Culture et sports', href: '/politiques', keywords: ['musées', 'piscines', 'bibliothèques', 'théâtres', 'JO', 'Seine'] },
-  { name: 'Enseignement', href: '/politiques', keywords: ['écoles', 'collèges', 'caisses', 'restauration scolaire', 'animateurs'] },
-  { name: 'Aménagement', href: '/politiques', keywords: ['logement', 'espaces verts', 'éclairage', 'urbanisme'] },
-  { name: 'Sécurité', href: '/politiques', keywords: ['police municipale', 'pompiers', 'BSPP', 'préfecture'] },
-  { name: 'Économie', href: '/politiques', keywords: ['emploi', 'insertion', 'tourisme', 'commerce', 'Tumo'] },
+  // Pages principales
+  { name: 'Vue d\'ensemble', href: '/', keywords: ['accueil', 'budget', 'synthèse', 'total', 'résumé', 'chiffres clés', '9,8 milliards', '10 milliards', 'alertes', 'points d\'attention'] },
+  { name: 'Recettes', href: '/recettes', keywords: ['fiscalité', 'impôts', 'taxes', 'taxe foncière', 'TFPB', 'THRS', 'résidences secondaires', 'TVA', 'dotations', 'DGF', 'DMTO', 'PLF', 'péréquation', 'FPIC', 'FSC', 'CVAE', 'cotisation', 'redevances', 'stationnement', 'concessions', 'recettes fiscales', '7,9 milliards'] },
+  { name: 'Dépenses', href: '/depenses', keywords: ['charges', 'personnel', 'masse salariale', 'fonctionnement', 'achats', 'subventions', 'agents', 'effectifs', 'rémunérations', 'primes', 'GIPA', 'péréquation', 'FPIC', 'reversement', '2,9 milliards', '52 000 agents'] },
+  { name: 'Politiques', href: '/politiques', keywords: ['9 politiques', 'répartition', 'santé', 'social', 'transports', 'culture', 'sport', 'environnement', 'sécurité', 'enseignement', 'économie', 'aménagement', '7,9 milliards'] },
+  { name: 'Investissements', href: '/investissements', keywords: ['projets', 'AP', 'autorisations', 'ZAC', 'budget participatif', 'logement social', 'foncier', 'arrondissement', 'équipements', 'travaux', 'constructions', 'rénovations', '2,54 milliards', 'PPI'] },
+  { name: 'Dette', href: '/dette', keywords: ['emprunt', 'remboursement', 'annuités', 'encours', 'capacité', 'désendettement', 'taux', 'obligataire', 'intérêts', 'charges financières', '9,4 milliards', '16 ans', 'notation', 'agences', 'spread'] },
+  { name: 'Données techniques', href: '/donnees-techniques', keywords: ['opérations d\'ordre', 'amortissements', 'provisions', 'participations', 'virement', 'autofinancement', 'besoin de financement', 'transferts'] },
+
+  // Recettes détaillées
+  { name: 'Taxe foncière (TFPB)', href: '/recettes', keywords: ['TFPB', 'impôt foncier', 'propriétaires', 'foncier bâti', '1,9 milliard', 'taux', '13,5%'] },
+  { name: 'Taxe résidences secondaires', href: '/recettes', keywords: ['THRS', 'résidences secondaires', 'majoration', '60%', '302 millions'] },
+  { name: 'Droits de mutation (DMTO)', href: '/recettes', keywords: ['DMTO', 'mutation', 'notaire', 'immobilier', 'transactions', '1,3 milliard'] },
+  { name: 'Taxe de séjour', href: '/recettes', keywords: ['tourisme', 'hôtels', 'Airbnb', 'hébergement', '135 millions', 'JO'] },
+  { name: 'Dotations de l\'État', href: '/recettes', keywords: ['DGF', 'dotation globale', 'État', 'compensations', 'péréquation'] },
+  { name: 'Péréquation', href: '/recettes', keywords: ['FPIC', 'FSC', 'péréquation', 'reversement', 'solidarité', '1,6 milliard'] },
+
+  // Dépenses détaillées
+  { name: 'Masse salariale', href: '/depenses', keywords: ['personnel', 'agents', 'effectifs', 'rémunérations', 'salaires', '2,9 milliards', '52 000', 'titulaires', 'contractuels'] },
+  { name: 'Créations de postes', href: '/depenses', keywords: ['recrutements', 'postes', 'effectifs', '+950', 'police', 'animateurs', 'crèches'] },
+  { name: 'Charges financières', href: '/depenses', keywords: ['intérêts', 'dette', 'emprunt', '224 millions', 'frais financiers'] },
+
+  // Politiques publiques
+  { name: 'Santé et action sociale', href: '/politiques', keywords: ['RSA', 'crèches', 'petite enfance', 'handicap', 'personnes âgées', 'APA', 'PCH', 'CASVP', 'aide sociale', 'enfance', 'MNA', '2,7 milliards', '34%'] },
+  { name: 'Services généraux', href: '/politiques', keywords: ['administration', 'informatique', 'arrondissements', 'ESA', 'mairies', 'Tour Eiffel', '1,8 milliard', '23%'] },
+  { name: 'Transports', href: '/politiques', keywords: ['IDFM', 'vélo', 'métro', 'tramway', 'stationnement', 'RER', 'ligne 14', 'T3', 'périphérique', 'pistes cyclables', '868 millions', '472 millions'] },
+  { name: 'Environnement', href: '/politiques', keywords: ['déchets', 'propreté', 'SYCTOM', 'TEOM', 'tri', 'collecte', 'sanisettes', 'biodéchets', '635 millions', '573 millions'] },
+  { name: 'Culture, sports, loisirs', href: '/politiques', keywords: ['musées', 'piscines', 'bibliothèques', 'théâtres', 'JO', 'Seine', 'baignade', 'conservatoires', 'Paris Musées', 'églises', 'Notre-Dame', '564 millions'] },
+  { name: 'Enseignement', href: '/politiques', keywords: ['écoles', 'collèges', 'caisses', 'restauration scolaire', 'animateurs', 'ESPCI', 'Oasis', 'périscolaire', '510 millions', '132 millions'] },
+  { name: 'Aménagement et habitat', href: '/politiques', keywords: ['logement', 'logement social', 'espaces verts', 'éclairage', 'urbanisme', 'ZAC', 'bailleurs', 'HLM', 'végétalisation', '391 millions', '429 millions'] },
+  { name: 'Sécurité', href: '/politiques', keywords: ['police municipale', 'pompiers', 'BSPP', 'préfecture', 'vidéoprotection', 'ASVP', '+455 agents', '330 millions', '148 millions'] },
+  { name: 'Action économique', href: '/politiques', keywords: ['emploi', 'insertion', 'tourisme', 'commerce', 'Tumo', 'ESS', 'marchés', 'agriculture urbaine', '112 millions', '135 millions'] },
+
+  // Investissements détaillés
+  { name: 'Logement social', href: '/investissements', keywords: ['HLM', 'bailleurs', 'foncier', 'acquisitions', '429 millions', 'construction', 'réhabilitation'] },
+  { name: 'Budget participatif', href: '/investissements', keywords: ['citoyens', 'votes', 'projets', '80 millions', 'arrondissements'] },
+  { name: 'Voirie et transports', href: '/investissements', keywords: ['routes', 'trottoirs', 'pistes cyclables', 'carrefours', 'entretien'] },
+  { name: 'Bâtiments et équipements', href: '/investissements', keywords: ['rénovation', 'construction', 'écoles', 'crèches', 'piscines', 'gymnases'] },
+
+  // Dette détaillée
+  { name: 'Encours de dette', href: '/dette', keywords: ['stock', 'dette totale', '9,4 milliards', 'évolution', 'historique'] },
+  { name: 'Capacité de désendettement', href: '/dette', keywords: ['16 ans', 'ratio', 'épargne brute', 'remboursement', 'soutenabilité'] },
+  { name: 'Taux d\'intérêt', href: '/dette', keywords: ['taux moyen', '2,4%', 'spread', 'OAT', 'marché', 'émissions'] },
+
+  // Données techniques détaillées
+  { name: 'Participations aux budgets', href: '/donnees-techniques', keywords: ['IDFM', 'CASVP', 'préfecture', 'caisses écoles', 'SYCTOM', 'Paris Musées', '1,68 milliard'] },
+  { name: 'Amortissements et provisions', href: '/donnees-techniques', keywords: ['dotations', 'immobilisations', 'risques', 'contentieux', '498 millions', '463 millions'] },
+  { name: 'Besoin de financement', href: '/donnees-techniques', keywords: ['autofinancement', 'emprunt', '993 millions', 'virement', '127 millions', '89%'] },
 ];
 
 export default function Header() {
