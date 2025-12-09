@@ -460,7 +460,7 @@ export default function DonneesTechniquesPage() {
 
                 <div className="mt-6 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-500">
                   <p className="text-sm text-gray-700">
-                    <span className="font-bold text-amber-600">!</span> 89% du besoin de financement est couvert par l'emprunt.
+                    89% du besoin de financement est couvert par l'emprunt.
                     L'autofinancement (127,7 M€) ne représente que 11% des moyens.
                   </p>
                 </div>
