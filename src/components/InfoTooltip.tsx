@@ -141,17 +141,22 @@ const glossaire: Record<string, string> = {
 interface InfoTooltipProps {
   terme: string;
   children?: React.ReactNode;
+  forcePosition?: 'top' | 'bottom';
 }
 
-export default function InfoTooltip({ terme, children }: InfoTooltipProps) {
+export default function InfoTooltip({ terme, children, forcePosition }: InfoTooltipProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [position, setPosition] = useState<'top' | 'bottom'>('bottom');
+  const [position, setPosition] = useState<'top' | 'bottom'>(forcePosition || 'bottom');
   const tooltipRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   const explication = glossaire[terme.toLowerCase()];
 
   useEffect(() => {
+    if (forcePosition) {
+      setPosition(forcePosition);
+      return;
+    }
     if (isOpen && triggerRef.current) {
       const rect = triggerRef.current.getBoundingClientRect();
       const spaceBelow = window.innerHeight - rect.bottom;
@@ -164,7 +169,7 @@ export default function InfoTooltip({ terme, children }: InfoTooltipProps) {
         setPosition('bottom');
       }
     }
-  }, [isOpen]);
+  }, [isOpen, forcePosition]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

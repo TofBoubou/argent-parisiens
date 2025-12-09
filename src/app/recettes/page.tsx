@@ -603,9 +603,9 @@ export default function RecettesPage() {
             <div className="bg-white rounded-xl p-5 shadow-sm">
               <h4 className="font-semibold text-primary mb-2">Santé/Social : 321,4 M€</h4>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li>Compensations <InfoTooltip terme="RSA">RSA</InfoTooltip> (<InfoTooltip terme="TICPE">TICPE</InfoTooltip>, FMDI) : 266,6 M€</li>
+                <li>Compensations <InfoTooltip terme="RSA" forcePosition="top">RSA</InfoTooltip> (<InfoTooltip terme="TICPE" forcePosition="top">TICPE</InfoTooltip>, FMDI) : 266,6 M€</li>
                 <li>Participations petite enfance : 224,5 M€</li>
-                <li>Dotations <InfoTooltip terme="APA">APA</InfoTooltip>/<InfoTooltip terme="PCH">PCH</InfoTooltip> : 46,5 M€</li>
+                <li>Dotations <InfoTooltip terme="APA" forcePosition="top">APA</InfoTooltip>/<InfoTooltip terme="PCH" forcePosition="top">PCH</InfoTooltip> : 46,5 M€</li>
               </ul>
             </div>
           </motion.div>
