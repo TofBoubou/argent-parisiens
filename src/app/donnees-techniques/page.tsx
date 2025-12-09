@@ -16,26 +16,26 @@ const participations = [
   { name: 'Dotation collèges', value: 38.1, bp2024: 37.7, color: '#fbbf24' },
 ];
 
-// Recettes de fonctionnement par chapitre
-const recettesChapitres = [
-  { chapitre: '73/731', label: 'Fiscalité et compensations', bp2024: 7988.7, bp2025: 7950.2 },
-  { chapitre: '70/75', label: 'Produits d\'exploitation', bp2024: 1194.0, bp2025: 1220.5 },
-  { chapitre: '74', label: 'Dotations et participations', bp2024: 356.5, bp2025: 372.0 },
-  { chapitre: '017', label: 'Insertion (RSA)', bp2024: 265.7, bp2025: 266.6 },
-  { chapitre: '042', label: 'Reprises provisions', bp2024: 36.6, bp2025: 50.4 },
-  { chapitre: '016', label: 'Autonomie (APA)', bp2024: 26.6, bp2025: 26.7 },
-  { chapitre: '76', label: 'Produits financiers', bp2024: 25.0, bp2025: 13.9 },
+// Recettes de fonctionnement
+const recettesCategories = [
+  { label: 'Fiscalité et compensations', bp2024: 7988.7, bp2025: 7950.2 },
+  { label: 'Produits d\'exploitation', bp2024: 1194.0, bp2025: 1220.5 },
+  { label: 'Dotations et participations', bp2024: 356.5, bp2025: 372.0 },
+  { label: 'Insertion (RSA)', bp2024: 265.7, bp2025: 266.6 },
+  { label: 'Reprises provisions', bp2024: 36.6, bp2025: 50.4 },
+  { label: 'Autonomie (APA)', bp2024: 26.6, bp2025: 26.7 },
+  { label: 'Produits financiers', bp2024: 25.0, bp2025: 13.9 },
 ];
 
-// Dépenses de fonctionnement par chapitre
-const depensesChapitres = [
-  { chapitre: '012', label: 'Masse salariale', bp2024: 2784.5, bp2025: 2853.1 },
-  { chapitre: '011/65', label: 'Dépenses de gestion', bp2024: 2128.9, bp2025: 2113.1 },
-  { chapitre: '014', label: 'Atténuation de produits', bp2024: 1919.6, bp2025: 1771.8 },
-  { chapitre: '65', label: 'Participations autres budgets', bp2024: 1626.5, bp2025: 1682.0 },
-  { chapitre: '017', label: 'RSA', bp2024: 468.1, bp2025: 475.2 },
-  { chapitre: '66', label: 'Charges financières', bp2024: 213.0, bp2025: 224.5 },
-  { chapitre: '016', label: 'APA', bp2024: 137.6, bp2025: 145.1 },
+// Dépenses de fonctionnement
+const depensesCategories = [
+  { label: 'Masse salariale', bp2024: 2784.5, bp2025: 2853.1 },
+  { label: 'Dépenses de gestion', bp2024: 2128.9, bp2025: 2113.1 },
+  { label: 'Atténuation de produits', bp2024: 1919.6, bp2025: 1771.8 },
+  { label: 'Participations autres budgets', bp2024: 1626.5, bp2025: 1682.0 },
+  { label: 'RSA', bp2024: 468.1, bp2025: 475.2 },
+  { label: 'Charges financières', bp2024: 213.0, bp2025: 224.5 },
+  { label: 'APA', bp2024: 137.6, bp2025: 145.1 },
 ];
 
 // Opérations d'ordre
@@ -172,7 +172,7 @@ export default function DonneesTechniquesPage() {
         </div>
       </section>
 
-      {/* Récapitulatif par chapitre - Recettes */}
+      {/* Récapitulatif - Recettes */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -181,30 +181,28 @@ export default function DonneesTechniquesPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Recettes de fonctionnement par chapitre
+              Recettes de fonctionnement par catégorie
             </h2>
             <p className="text-gray-600 mb-8">
-              Ventilation comptable des 9,9 Md€ de recettes
+              Ventilation des 9,9 Md€ de recettes
             </p>
 
             <div className="bg-white rounded-xl shadow-sm overflow-hidden">
               <table className="w-full">
                 <thead className="bg-primary text-white">
                   <tr>
-                    <th className="px-4 py-3 text-left">Chapitre</th>
-                    <th className="px-4 py-3 text-left">Libellé</th>
+                    <th className="px-4 py-3 text-left">Catégorie</th>
                     <th className="px-4 py-3 text-right">BP 2024</th>
                     <th className="px-4 py-3 text-right">BP 2025</th>
                     <th className="px-4 py-3 text-right">Variation</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {recettesChapitres.map((row, index) => {
+                  {recettesCategories.map((row, index) => {
                     const variation = ((row.bp2025 - row.bp2024) / row.bp2024 * 100).toFixed(1);
                     const isPositive = row.bp2025 > row.bp2024;
                     return (
-                      <tr key={row.chapitre} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
-                        <td className="px-4 py-3 font-mono text-sm">{row.chapitre}</td>
+                      <tr key={row.label} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
                         <td className="px-4 py-3">{row.label}</td>
                         <td className="px-4 py-3 text-right font-medium">{row.bp2024.toFixed(1)} M€</td>
                         <td className="px-4 py-3 text-right font-bold text-primary">{row.bp2025.toFixed(1)} M€</td>
@@ -217,7 +215,7 @@ export default function DonneesTechniquesPage() {
                 </tbody>
                 <tfoot className="bg-gray-100 font-bold">
                   <tr>
-                    <td className="px-4 py-3" colSpan={2}>Total recettes fonctionnement</td>
+                    <td className="px-4 py-3">Total recettes fonctionnement</td>
                     <td className="px-4 py-3 text-right">9 898,6 M€</td>
                     <td className="px-4 py-3 text-right text-primary">9 905,7 M€</td>
                     <td className="px-4 py-3 text-right text-green-600">+0,1%</td>
@@ -229,7 +227,7 @@ export default function DonneesTechniquesPage() {
         </div>
       </section>
 
-      {/* Récapitulatif par chapitre - Dépenses */}
+      {/* Récapitulatif - Dépenses */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -238,30 +236,28 @@ export default function DonneesTechniquesPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Dépenses de fonctionnement par chapitre
+              Dépenses de fonctionnement par catégorie
             </h2>
             <p className="text-gray-600 mb-8">
-              Ventilation comptable des 9,9 Md€ de dépenses
+              Ventilation des 9,9 Md€ de dépenses
             </p>
 
             <div className="bg-white rounded-xl shadow-sm overflow-hidden">
               <table className="w-full">
                 <thead className="bg-primary text-white">
                   <tr>
-                    <th className="px-4 py-3 text-left">Chapitre</th>
-                    <th className="px-4 py-3 text-left">Libellé</th>
+                    <th className="px-4 py-3 text-left">Catégorie</th>
                     <th className="px-4 py-3 text-right">BP 2024</th>
                     <th className="px-4 py-3 text-right">BP 2025</th>
                     <th className="px-4 py-3 text-right">Variation</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {depensesChapitres.map((row, index) => {
+                  {depensesCategories.map((row, index) => {
                     const variation = ((row.bp2025 - row.bp2024) / row.bp2024 * 100).toFixed(1);
                     const isNegative = row.bp2025 < row.bp2024;
                     return (
-                      <tr key={row.chapitre} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
-                        <td className="px-4 py-3 font-mono text-sm">{row.chapitre}</td>
+                      <tr key={row.label} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
                         <td className="px-4 py-3">{row.label}</td>
                         <td className="px-4 py-3 text-right font-medium">{row.bp2024.toFixed(1)} M€</td>
                         <td className="px-4 py-3 text-right font-bold text-primary">{row.bp2025.toFixed(1)} M€</td>
@@ -274,7 +270,7 @@ export default function DonneesTechniquesPage() {
                 </tbody>
                 <tfoot className="bg-gray-100 font-bold">
                   <tr>
-                    <td className="px-4 py-3" colSpan={2}>Total dépenses fonctionnement</td>
+                    <td className="px-4 py-3">Total dépenses fonctionnement</td>
                     <td className="px-4 py-3 text-right">9 898,6 M€</td>
                     <td className="px-4 py-3 text-right text-primary">9 905,7 M€</td>
                     <td className="px-4 py-3 text-right text-red-600">+0,1%</td>
