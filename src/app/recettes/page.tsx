@@ -696,7 +696,7 @@ export default function RecettesPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold mb-6">En résumé</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left max-w-2xl mx-auto">
               <div className="bg-white/10 rounded-xl p-5">
                 <div className="text-accent text-xl font-bold mb-2">-350 M€ de risque</div>
                 <div className="text-sm">
