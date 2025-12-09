@@ -222,18 +222,6 @@ export default function DepensesPage() {
             </div>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-100"
-          >
-            <p className="text-sm text-amber-800">
-              Hausse du SMIC, revalorisation des dimanches
-              travaillés, revalorisations catégorielles (propreté, petite enfance, personnel scolaire),
-              forfait mobilité durable, hausse des cotisations CNRACL.
-            </p>
-          </motion.div>
         </div>
       </section>
 

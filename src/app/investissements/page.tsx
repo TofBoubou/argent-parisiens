@@ -575,12 +575,6 @@ export default function InvestissementsPage() {
               </div>
             </div>
 
-            <div className="mt-6 p-4 bg-blue-50 rounded-xl border-l-4 border-blue-500">
-              <p className="text-sm text-gray-700">
-                Le budget participatif a permis de financer
-                plus de 1 000 projets proposés et votés par les Parisiens, pour un montant cumulé de plus de 700 M€.
-              </p>
-            </div>
           </motion.div>
         </div>
       </section>
