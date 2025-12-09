@@ -491,6 +491,42 @@ export default function DepensesPage() {
         </div>
       </section>
 
+      {/* Bilan réel 2024 */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl font-bold text-primary mb-2">Bilan réel 2024</h2>
+            <p className="text-gray-600 mb-8">
+              Ce que Paris a vraiment dépensé (compte administratif 2024)
+            </p>
+
+            <div className="grid md:grid-cols-4 gap-6">
+              <div className="bg-white rounded-xl p-6 shadow-sm text-center">
+                <div className="text-sm text-gray-500 mb-2">Recettes réelles</div>
+                <div className="text-3xl font-bold text-green-600">9,71 Md€</div>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-sm text-center">
+                <div className="text-sm text-gray-500 mb-2">Dépenses réelles</div>
+                <div className="text-3xl font-bold text-red-600">9,94 Md€</div>
+              </div>
+              <div className="bg-primary text-white rounded-xl p-6 shadow-sm text-center">
+                <div className="text-sm text-gray-300 mb-2">Déficit fonctionnement</div>
+                <div className="text-3xl font-bold text-accent">-231 M€</div>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-sm text-center border-2 border-amber-400">
+                <div className="text-sm text-gray-500 mb-2">Certification des comptes</div>
+                <div className="text-xl font-bold text-amber-600">5 réserves</div>
+                <div className="text-xs text-gray-500 mt-1">Le commissaire aux comptes a émis des doutes</div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Résumé */}
       <section className="py-12 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
