@@ -175,7 +175,7 @@ export default function DepensesPage() {
             <BarChartHorizontal
               data={evolutionMasseSalariale}
               title="Évolution 2018-2025"
-              subtitle="En millions d'euros"
+              subtitle="En M€"
               maxValue={3000}
             />
 
@@ -234,7 +234,7 @@ export default function DepensesPage() {
             <BarChartHorizontal
               data={perequation}
               title="Détail de la péréquation"
-              subtitle="En millions d'euros"
+              subtitle="En M€"
               maxValue={1000}
             />
 
@@ -314,7 +314,7 @@ export default function DepensesPage() {
           <BarChartHorizontal
             data={depensesGestion}
             title="Par politique publique"
-            subtitle="En millions d'euros (hors masse salariale)"
+            subtitle="En M€ (hors masse salariale)"
           />
 
           <motion.div

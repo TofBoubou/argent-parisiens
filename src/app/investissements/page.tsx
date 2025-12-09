@@ -226,7 +226,7 @@ export default function InvestissementsPage() {
               Les <span className="text-accent">investissements</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              2 milliards € de nouveaux projets
+              2 Md€ de nouveaux projets
             </p>
           </motion.div>
 
@@ -332,7 +332,7 @@ export default function InvestissementsPage() {
                   color: f.color,
                 }))}
                 title="Par fonction"
-                subtitle="En millions d'euros"
+                subtitle="En M€"
               />
 
               <div className="space-y-3">

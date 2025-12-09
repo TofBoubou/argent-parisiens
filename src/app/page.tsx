@@ -130,7 +130,7 @@ export default function Home() {
               Les 9 politiques publiques
             </h2>
             <p className="text-gray-600">
-              Répartition du budget par domaine d'action (en millions d'euros)
+              Répartition du budget par domaine d'action (en M€)
             </p>
           </motion.div>
 

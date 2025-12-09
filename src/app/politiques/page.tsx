@@ -370,7 +370,7 @@ export default function PolitiquesPage() {
               Les 9 <span className="text-accent">politiques publiques</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Comment les {(totalBudget / 1000).toFixed(1)} milliards € du budget sont répartis entre les domaines d'action
+              Comment les {(totalBudget / 1000).toFixed(1)} Md€ du budget sont répartis entre les domaines d'action
             </p>
           </motion.div>
         </div>
@@ -388,7 +388,7 @@ export default function PolitiquesPage() {
               Vue d'ensemble
             </h2>
             <p className="text-gray-600 mb-8">
-              Répartition du budget consolidé par politique publique (en millions d'euros)
+              Répartition du budget consolidé par politique publique (en M€)
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">

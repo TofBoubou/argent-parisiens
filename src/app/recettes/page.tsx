@@ -278,7 +278,7 @@ export default function RecettesPage() {
             <BarChartHorizontal
               data={fiscaliteDirecte.detail}
               title="Détail de la fiscalité directe"
-              subtitle="En millions d'euros"
+              subtitle="En M€"
               maxValue={2000}
             />
 
@@ -555,7 +555,7 @@ export default function RecettesPage() {
             className="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-100"
           >
             <p className="text-sm text-amber-800">
-              <strong>Perte de pouvoir fiscal :</strong> Depuis 2010, Paris a perdu 2 milliards €
+              <strong>Perte de pouvoir fiscal :</strong> Depuis 2010, Paris a perdu 2 Md€
               de pouvoir de taux (CFE transférée à la MGP en 2025, suppression de la CVAE,
               de la taxe d'habitation sur résidences principales...). Ces recettes sont
               compensées par des fractions de TVA, sur lesquelles la Ville n'a aucun contrôle.
@@ -585,7 +585,7 @@ export default function RecettesPage() {
             <BarChartHorizontal
               data={dotationsCompensations}
               title="Détail des dotations"
-              subtitle="En millions d'euros"
+              subtitle="En M€"
             />
 
             <div className="space-y-4">
@@ -635,7 +635,7 @@ export default function RecettesPage() {
           <BarChartHorizontal
             data={recettesGestion}
             title="Recettes par politique publique"
-            subtitle="En millions d'euros"
+            subtitle="En M€"
           />
 
           <motion.div
@@ -684,7 +684,7 @@ export default function RecettesPage() {
               <div className="bg-white/10 rounded-xl p-5">
                 <div className="text-accent text-xl font-bold mb-2">2 Md€ perdus</div>
                 <div className="text-sm">
-                  Depuis 2010, Paris a perdu 2 milliards de pouvoir fiscal
+                  Depuis 2010, Paris a perdu 2 Md€ de pouvoir fiscal
                   au profit de l'État et des intercommunalités.
                 </div>
               </div>

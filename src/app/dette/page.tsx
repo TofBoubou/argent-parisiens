@@ -146,7 +146,7 @@ export default function DettePage() {
               Une dette qui explose
             </h2>
             <p className="text-gray-600 mb-8">
-              Évolution de l'encours total de la dette depuis 2019 (en millions d'euros)
+              Évolution de l'encours total de la dette depuis 2019 (en M€)
             </p>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -208,7 +208,7 @@ export default function DettePage() {
               Composition de la dette
             </h2>
             <p className="text-gray-600 mb-8">
-              Répartition de l'encours total de 9,36 milliards € fin 2025
+              Répartition de l'encours total de 9,36 Md€ fin 2025
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -347,7 +347,7 @@ export default function DettePage() {
               Le coût de la dette
             </h2>
             <p className="text-gray-600 mb-8">
-              Évolution des intérêts payés chaque année (en millions d'euros)
+              Évolution des intérêts payés chaque année (en M€)
             </p>
 
             <div className="grid lg:grid-cols-3 gap-6">
@@ -441,7 +441,7 @@ export default function DettePage() {
               L'épargne brute : la capacité à investir
             </h2>
             <p className="text-gray-600 mb-8">
-              Différence entre recettes et dépenses de fonctionnement (en millions d'euros)
+              Différence entre recettes et dépenses de fonctionnement (en M€)
             </p>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -568,7 +568,7 @@ export default function DettePage() {
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-accent">
                 <h3 className="font-bold text-primary mb-2">Dette record</h3>
                 <p className="text-sm text-gray-600">
-                  9,4 milliards € fin 2025, un niveau jamais atteint dans l'histoire de Paris.
+                  9,4 Md€ fin 2025, un niveau jamais atteint dans l'histoire de Paris.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-accent">
