@@ -132,7 +132,7 @@ const politiques = [
       { label: 'TEOM perçue', value: '573 M€', detail: 'Taxe d\'enlèvement des ordures ménagères' },
       { label: 'Nouvelles sanisettes', value: '21 M€', detail: 'Acquisition et modernisation' },
     ],
-    alert: 'Collecte des biodéchets en déploiement progressif : 10 M€ pour les stations Trilib',
+    alert: '',
     postes: '+35 créations de postes (équipes urgence propreté)',
     repartition: [
       { name: 'Tri et traitement', value: 32.0, color: '#0D1B4C' },
@@ -169,7 +169,7 @@ const politiques = [
       { label: 'Baignade Seine', value: '8 M€', detail: 'Héritage JO, pérennisation' },
       { label: 'Édifices cultuels', value: '31 M€', detail: 'Restauration églises, Notre-Dame' },
     ],
-    alert: 'Fin des dépenses JO : -92 M€ sur le sport, mais Arena livrée et baignade Seine pérennisée',
+    alert: '',
     postes: '+70 créations de postes en 2025',
     repartition: [
       { name: 'Culture', value: 69.1, color: '#0D1B4C' },
@@ -280,7 +280,7 @@ const politiques = [
       { label: 'Vidéoprotection', value: '2 M€', detail: 'Extension du réseau' },
       { label: 'Agents recrutés', value: '+455', detail: 'Plus forte hausse de toutes les politiques' },
     ],
-    alert: 'Montée en puissance police municipale : +398 agents (120 policiers + 220 ASVP)',
+    alert: '',
     postes: '+454 créations de postes en 2025',
     repartition: [
       { name: 'Préfecture de Police', value: 52.6, color: '#0D1B4C' },
