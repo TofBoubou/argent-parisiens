@@ -10,7 +10,6 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">L'argent des Parisiens</h3>
             <p className="text-gray-400 text-sm">
               Comprendre le budget de la Ville de Paris en toute transparence.
-              Données issues du Budget Primitif 2025.
             </p>
           </div>
 
@@ -46,17 +45,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Source */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Sources</h3>
-            <p className="text-gray-400 text-sm mb-4">
-              Données extraites du Budget Primitif 2025 de la Ville de Paris,
-              publié en décembre 2024.
-            </p>
-            <p className="text-gray-500 text-xs">
-              Site réalisé par l'équipe de Sarah Knafo
-            </p>
-          </div>
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-8 text-gray-500 text-sm">
