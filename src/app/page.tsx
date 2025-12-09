@@ -36,14 +36,14 @@ const chiffresCles = [
 
 const politiques = [
   { code: '4', nom: 'Santé et action sociale', montant: 2722, color: 'bg-[#0D1B4C]' },
-  { code: '0', nom: 'Services généraux', montant: 1833, color: 'bg-[#1e3a8a]' },
-  { code: '8', nom: 'Transports', montant: 868, color: 'bg-[#1d4ed8]' },
-  { code: '7', nom: 'Environnement', montant: 635, color: 'bg-[#2563eb]' },
-  { code: '3', nom: 'Culture, sports, loisirs', montant: 564, color: 'bg-[#3b82f6]' },
-  { code: '2', nom: 'Enseignement', montant: 510, color: 'bg-[#60a5fa]' },
-  { code: '5', nom: 'Aménagement et habitat', montant: 391, color: 'bg-[#93c5fd]' },
-  { code: '1', nom: 'Sécurité', montant: 330, color: 'bg-[#bfdbfe]' },
-  { code: '6', nom: 'Action économique', montant: 112, color: 'bg-[#dbeafe]' },
+  { code: '0', nom: 'Services généraux', montant: 1833, color: 'bg-[#dc2626]' },
+  { code: '8', nom: 'Transports', montant: 868, color: 'bg-[#d97706]' },
+  { code: '7', nom: 'Environnement', montant: 635, color: 'bg-[#1e3a8a]' },
+  { code: '3', nom: 'Culture, sports, loisirs', montant: 564, color: 'bg-[#ef4444]' },
+  { code: '2', nom: 'Enseignement', montant: 510, color: 'bg-[#f59e0b]' },
+  { code: '5', nom: 'Aménagement et habitat', montant: 391, color: 'bg-[#3b82f6]' },
+  { code: '1', nom: 'Sécurité', montant: 330, color: 'bg-[#f87171]' },
+  { code: '6', nom: 'Action économique', montant: 112, color: 'bg-[#fbbf24]' },
 ];
 
 const alertes = [

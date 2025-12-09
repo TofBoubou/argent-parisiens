@@ -35,17 +35,17 @@ const perequation = [
   { label: 'FSDRIF (départemental)', value: 30.0, color: '#fecaca' },
 ];
 
-// Dépenses de gestion par fonction - dégradé de bleu
+// Dépenses de gestion par fonction - dégradé bleu → rouge → jaune
 const depensesGestion = [
   { label: 'Santé et action sociale', value: 2051.2, color: '#0D1B4C' },
-  { label: 'Transports', value: 644.6, color: '#1e3a8a' },
-  { label: 'Services généraux', value: 467.0, color: '#1d4ed8' },
-  { label: 'Environnement', value: 425.3, color: '#2563eb' },
-  { label: 'Enseignement', value: 286.9, color: '#3b82f6' },
-  { label: 'Sécurité', value: 280.0, color: '#60a5fa' },
-  { label: 'Culture et sports', value: 262.8, color: '#93c5fd' },
-  { label: 'Aménagement', value: 89.6, color: '#bfdbfe' },
-  { label: 'Action économique', value: 46.6, color: '#dbeafe' },
+  { label: 'Transports', value: 644.6, color: '#dc2626' },
+  { label: 'Services généraux', value: 467.0, color: '#d97706' },
+  { label: 'Environnement', value: 425.3, color: '#1e3a8a' },
+  { label: 'Enseignement', value: 286.9, color: '#ef4444' },
+  { label: 'Sécurité', value: 280.0, color: '#f59e0b' },
+  { label: 'Culture et sports', value: 262.8, color: '#3b82f6' },
+  { label: 'Aménagement', value: 89.6, color: '#f87171' },
+  { label: 'Action économique', value: 46.6, color: '#fbbf24' },
 ];
 
 // JO 2024
