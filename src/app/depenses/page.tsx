@@ -229,7 +229,7 @@ export default function DepensesPage() {
             className="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-100"
           >
             <p className="text-sm text-amber-800">
-              <strong>Facteurs de hausse :</strong> Hausse du SMIC, revalorisation des dimanches
+              Hausse du SMIC, revalorisation des dimanches
               travaillés, revalorisations catégorielles (propreté, petite enfance, personnel scolaire),
               forfait mobilité durable, hausse des cotisations CNRACL.
             </p>

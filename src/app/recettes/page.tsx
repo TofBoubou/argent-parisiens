@@ -377,7 +377,7 @@ export default function RecettesPage() {
             className="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-100"
           >
             <p className="text-sm text-blue-800">
-              <strong>Paris, les taux les plus bas de France :</strong> Sur les 5 principales taxes locales,
+              Sur les 5 principales taxes locales,
               Paris affiche systématiquement le taux le plus faible parmi les grandes métropoles.
               Cependant, la valeur locative élevée des biens parisiens fait que le montant payé reste conséquent.
             </p>

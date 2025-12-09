@@ -387,7 +387,7 @@ export default function InvestissementsPage() {
 
             <div className="mt-6 p-4 bg-blue-50 rounded-xl border-l-4 border-blue-500">
               <p className="text-sm text-gray-700">
-                <span className="font-bold">Objectif :</span> Maintenir un rythme soutenu de production de logements sociaux
+                Maintenir un rythme soutenu de production de logements sociaux
                 malgré la tension du marché immobilier et la hausse des coûts de construction.
               </p>
             </div>
@@ -577,7 +577,7 @@ export default function InvestissementsPage() {
 
             <div className="mt-6 p-4 bg-blue-50 rounded-xl border-l-4 border-blue-500">
               <p className="text-sm text-gray-700">
-                <span className="font-bold">Depuis 2014 :</span> Le budget participatif a permis de financer
+                Le budget participatif a permis de financer
                 plus de 1 000 projets proposés et votés par les Parisiens, pour un montant cumulé de plus de 700 M€.
               </p>
             </div>
