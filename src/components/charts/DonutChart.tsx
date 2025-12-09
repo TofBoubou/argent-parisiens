@@ -25,7 +25,7 @@ export default function DonutChart({
   title,
   subtitle,
   total,
-  totalLabel = 'Total',
+  totalLabel = 'M€',
   height = 300,
 }: DonutChartProps) {
   const dataSum = data.reduce((sum, item) => sum + item.value, 0);
