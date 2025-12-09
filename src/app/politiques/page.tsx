@@ -483,7 +483,7 @@ export default function PolitiquesPage() {
                               <div>
                                 <h4 className="font-semibold text-primary mb-3">Répartition interne (hors masse salariale)</h4>
                                 <div className="bg-gray-50 rounded-lg p-4">
-                                  <DonutChart data={politique.repartition} height={200} />
+                                  <DonutChart data={politique.repartition} total={politique.budget} totalLabel="M€" height={200} />
                                 </div>
                               </div>
 
