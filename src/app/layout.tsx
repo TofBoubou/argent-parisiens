@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "L'argent des Parisiens | Budget Paris 2025",
   description: "Comprendre le budget de la Ville de Paris en toute transparence. Visualisez où vont vos impôts et comment la Mairie gère l'argent des Parisiens.",
   keywords: "budget Paris, finances Paris, taxe foncière, dette Paris, Sarah Knafo, municipales 2026",
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     title: "L'argent des Parisiens | Budget Paris 2025",
     description: "Comprendre le budget de la Ville de Paris en toute transparence",
