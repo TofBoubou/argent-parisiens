@@ -88,6 +88,9 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-6 pt-6 text-center text-gray-400 text-xs">
+          <p className="mb-2">
+            Source : <a href="https://www.paris.fr/pages/budgets-de-la-ville-retrouvez-toutes-les-infos-27792" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">Budget primitif 2025 - Ville de Paris</a>
+          </p>
           <p>© 2025 - L'argent des Parisiens - Municipales Paris 2026</p>
         </div>
       </div>
