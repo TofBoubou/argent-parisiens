@@ -206,7 +206,7 @@ export default function InfoTooltip({ terme, children }: InfoTooltipProps) {
 
       {isOpen && (
         <div
-          className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-gray-200 rounded-lg shadow-lg ${
+          className={`absolute z-[100] w-72 sm:w-80 p-3 text-sm bg-white border border-gray-200 rounded-lg shadow-lg ${
             position === 'top'
               ? 'bottom-full mb-2'
               : 'top-full mt-2'
