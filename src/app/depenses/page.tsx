@@ -479,7 +479,7 @@ export default function DepensesPage() {
               value="18,7"
               unit="M€/mois"
               label="Coût mensuel de la dette"
-              description="L'équivalent de 2 crèches par mois"
+              description="L'équivalent de 1 000 places de crèche/mois"
             />
             <ChiffreCard
               value="616"

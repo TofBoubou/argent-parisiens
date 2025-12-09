@@ -68,10 +68,10 @@ const chargesFinancieres = [
 
 // Équivalences pour 224.5 M€ d'intérêts
 const equivalences = [
-  { label: 'Écoles rénovées', valeur: '45', unite: 'écoles', description: 'Budget moyen: 5M€/école' },
-  { label: 'Places de crèche', valeur: '4 500', unite: 'places', description: 'Coût annuel: 50K€/place' },
-  { label: 'Km de pistes cyclables', valeur: '225', unite: 'km', description: 'Coût moyen: 1M€/km' },
-  { label: 'Logements sociaux', valeur: '1 500', unite: 'logements', description: 'Subvention: 150K€/logement' },
+  { label: 'Écoles rénovées', valeur: '45', unite: 'écoles', description: 'Budget moyen: 5 M€/école' },
+  { label: 'Places de crèche', valeur: '12 500', unite: 'places/an', description: 'Coût annuel: 18 k€/place' },
+  { label: 'Km de pistes cyclables', valeur: '450', unite: 'km', description: 'Coût moyen: 0,5 M€/km' },
+  { label: 'Logements sociaux', valeur: '1 320', unite: 'logements', description: 'Coût production: 170 k€/logement' },
 ];
 
 export default function DettePage() {

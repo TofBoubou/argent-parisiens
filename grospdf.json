@@ -1,0 +1,408 @@
+{
+  "fichier_source": "CA_BG_2024_TOME_3.pdf",
+  "reference_deliberation": "2025 DFA 24",
+  "objet": "Compte Administratif 2024 - Budget Général - Compte sur chiffres et annexes - TOME 3",
+  "direction": "Direction des Finances et des Achats",
+  "contenu_tome_3": [
+    "Recettes grevées d'affectation spéciale",
+    "Engagements donnés et reçus",
+    "Concours attribués à des tiers",
+    "État du personnel"
+  ],
+  "unite": "€",
+
+  "synthese_execution_budget_2024": {
+    "section_investissement": {
+      "recettes_nettes": 2520717108.81,
+      "depenses_nettes": 2257455561.55,
+      "resultat_exercice": 263261547.26
+    },
+    "section_fonctionnement": {
+      "recettes_nettes": 9710634607.08,
+      "depenses_nettes": 9941773827.57,
+      "resultat_exercice": -231139220.49
+    },
+    "total": {
+      "recettes_nettes": 12231351715.89,
+      "depenses_nettes": 12199229389.12,
+      "resultat_exercice": 32122326.77
+    }
+  },
+
+  "resultat_cloture_2024": {
+    "section_fonctionnement": {
+      "type": "déficit",
+      "montant": -120658423.36
+    },
+    "section_investissement": {
+      "type": "déficit",
+      "montant": -67243397.33
+    }
+  },
+
+  "etat_personnel_B9": {
+    "date_reference": "2024-12-31",
+    "emplois_budgetaires": {
+      "temps_complet": 53122.00,
+      "temps_non_complet": 1197.00,
+      "total": 54319.00
+    },
+    "effectifs_pourvus_etpt": {
+      "agents_titulaires": 44219.25,
+      "agents_non_titulaires": 4891.08,
+      "total": 49110.33
+    },
+    "filieres": {
+      "emplois_fonctionnels": {
+        "emplois_budgetaires": 64.00,
+        "etpt_pourvus": 48.68,
+        "detail": {
+          "directeur_general_services": {"budgetaires": 20.00, "etpt": 15.84},
+          "directeur_general_adjoint": {"budgetaires": 44.00, "etpt": 32.84}
+        }
+      },
+      "filiere_administrative": {
+        "emplois_budgetaires": 8560.50,
+        "etpt_pourvus": 8293.95,
+        "principaux_grades": {
+          "adjoint_administratif": {"budgetaires": 3802.00, "etpt": 3750.69},
+          "attache_administrations_parisiennes": {"budgetaires": 1821.50, "etpt": 1884.51},
+          "secretaire_administratif": {"budgetaires": 2097.00, "etpt": 1948.52}
+        }
+      },
+      "filiere_technique": {
+        "emplois_budgetaires": 18358.00,
+        "etpt_pourvus": 16930.23,
+        "principaux_grades": {
+          "adjoint_technique": {"budgetaires": 6016.00, "etpt": 5772.77},
+          "eboueur": {"budgetaires": 5196.00, "etpt": 4920.25},
+          "ingenieur": {"budgetaires": 1049.50, "etpt": 1056.20},
+          "technicien_superieur": {"budgetaires": 1316.50, "etpt": 1207.74}
+        }
+      },
+      "filiere_sociale": {
+        "emplois_budgetaires": 4491.00,
+        "etpt_pourvus": 4227.45,
+        "principaux_grades": {
+          "agent_specialise_ecoles_maternelles": {"budgetaires": 2028.00, "etpt": 1956.88},
+          "educateur_jeunes_enfants": {"budgetaires": 967.00, "etpt": 941.78},
+          "assistant_socio_educatif": {"budgetaires": 676.00, "etpt": 599.25}
+        }
+      },
+      "filiere_medico_sociale": {
+        "emplois_budgetaires": 11143.00,
+        "etpt_pourvus": 9373.97,
+        "principaux_grades": {
+          "auxiliaire_puericulture": {"budgetaires": 4110.00, "etpt": 3499.44},
+          "agent_petite_enfance": {"budgetaires": 2336.50, "etpt": 1817.46},
+          "agent_technique_ecoles": {"budgetaires": 2386.00, "etpt": 2301.70}
+        }
+      },
+      "filiere_culturelle": {
+        "emplois_budgetaires": 3282.50,
+        "etpt_pourvus": 2805.71,
+        "principaux_grades": {
+          "agent_accueil_surveillance": {"budgetaires": 1245.00, "etpt": 1093.09},
+          "professeur_ville_paris": {"budgetaires": 705.50, "etpt": 684.67},
+          "professeur_enseignement_artistique": {"budgetaires": 631.00, "etpt": 613.75}
+        }
+      },
+      "filiere_animation": {
+        "emplois_budgetaires": 3831.00,
+        "etpt_pourvus": 3349.85,
+        "principaux_grades": {
+          "adjoint_animation_action_sportive": {"budgetaires": 2320.00, "etpt": 2031.63},
+          "animateur_administrations_parisiennes": {"budgetaires": 762.00, "etpt": 755.31}
+        }
+      },
+      "filiere_police": {
+        "emplois_budgetaires": 1602.00,
+        "etpt_pourvus": 1730.76,
+        "principaux_grades": {
+          "agent_police_municipale": {"budgetaires": 1434.00, "etpt": 1524.33},
+          "chef_service_police_municipale": {"budgetaires": 135.00, "etpt": 187.43}
+        }
+      },
+      "filiere_sportive": {
+        "emplois_budgetaires": 509.00,
+        "etpt_pourvus": 454.90,
+        "principaux_grades": {
+          "educateur_activites_physiques_sportives": {"budgetaires": 392.00, "etpt": 390.50},
+          "conseiller_activites_physiques_sportives": {"budgetaires": 82.00, "etpt": 64.40}
+        }
+      },
+      "emplois_non_cites": {
+        "emplois_budgetaires": 2643.00,
+        "etpt_pourvus": 1815.82
+      }
+    }
+  },
+
+  "engagements_hors_bilan_B7": {
+    "engagements_donnes_B7_8": {
+      "total": {
+        "dette_capital_origine": 9265116521.88,
+        "dette_capital_31_12_N": 5710426560.45,
+        "annuites_versees_exercice": 2430760928.74
+      },
+      "detail_comptes": {
+        "8017_subventions_verser_annuites": 0.00,
+        "8018_autres_engagements_donnes": 9265116521.88
+      },
+      "au_profit_organismes_publics": {
+        "dette_capital_origine": 4034826409.14,
+        "dette_capital_31_12_N": 2960393361.70,
+        "annuites_versees_exercice": 1869633492.17
+      }
+    },
+    "engagements_recus_B7_9": {
+      "total": {
+        "creance_capital_origine": 3100268047.81,
+        "creance_capital_31_12_N": 1972495923.99,
+        "annuites_recues_exercice": 1050915056.50
+      },
+      "detail_comptes": {
+        "8026_redevance_credit_bail_recevoir": 0.00,
+        "8027_subventions_recevoir_annuites": 0.00,
+        "8028_autres_engagements_recus": 3100268047.81
+      },
+      "a_exception_entreprises": {
+        "creance_capital_origine": 1914768097.54,
+        "creance_capital_31_12_N": 1256003317.13,
+        "annuites_recues_exercice": 496920265.64
+      },
+      "engagements_entreprises": {
+        "creance_capital_origine": 1185499950.27,
+        "creance_capital_31_12_N": 716492606.86,
+        "annuites_recues_exercice": 553994790.86
+      }
+    }
+  },
+
+  "recettes_grevees_affectation_speciale_B7_7": {
+    "tableau_recapitulatif_exemples": [
+      {
+        "libelle": "Taxe de séjour",
+        "restes_employer_01_01": 0.00,
+        "montant_recettes": 118799537.58,
+        "montant_depenses": 118799537.58,
+        "restes_employer_31_12": 0.00
+      },
+      {
+        "libelle": "Réhabilitation et modernisation du terrain Montholon - Partenariat avec ASICS",
+        "restes_employer_01_01": 0.00,
+        "montant_recettes": 22000.00,
+        "montant_depenses": 22000.00,
+        "restes_employer_31_12": 0.00
+      },
+      {
+        "libelle": "Taxe d'aménagement - part départementale",
+        "restes_employer_01_01": 0.00,
+        "montant_recettes": 1223923.76,
+        "montant_depenses": 1211684.53,
+        "restes_employer_31_12": 12239.23
+      }
+    ]
+  },
+
+  "engagements_donnes_principaux": {
+    "logement_social": {
+      "programme_34000_logements": {
+        "organisme": "Bailleurs sociaux (CASVP, Paris Habitat, RIVP, etc.)",
+        "dette_origine_totale": 989168900.00,
+        "annee_debut": 2007
+      }
+    },
+    "contributions_organismes_publics_annuelles_2025": [
+      {
+        "organisme": "Brigade des Sapeurs-Pompiers de Paris",
+        "objet": "Contribution annuelle aux frais de fonctionnement",
+        "montant_annuel": 113053984.00
+      },
+      {
+        "organisme": "Préfecture de Police de Paris",
+        "objet": "Contribution annuelle aux frais de fonctionnement",
+        "montant_annuel": 152512054.00
+      },
+      {
+        "organisme": "CASVP",
+        "objet": "Contribution annuelle aux allocations",
+        "montant_annuel": 206905337.00
+      },
+      {
+        "organisme": "CASVP",
+        "objet": "Contribution annuelle aux frais de fonctionnement",
+        "montant_annuel": 207022663.00
+      },
+      {
+        "organisme": "Caisses des écoles 17 arrondissements",
+        "objet": "Subvention de fonctionnement",
+        "montant_annuel": 132362000.00
+      },
+      {
+        "organisme": "Région Île-de-France",
+        "objet": "Participation financière travaux entretien CMR",
+        "montants_annuels_exercices": {
+          "2018": 4637030.42,
+          "2019": 3647784.36,
+          "2020": 8670000.00,
+          "2021": 10164000.00,
+          "2022": 5982806.97,
+          "2023": 1172790.11,
+          "2024": 6200703.91,
+          "2025": 6318210.32
+        }
+      }
+    ],
+    "philharmonie_paris": {
+      "objet": "Emprunt Philharmonie - Remboursement intérêts",
+      "duree_annees": 15,
+      "dette_origine": 70834348.39,
+      "dette_capital_31_12_N": 6757429.65,
+      "annuite_versee_2024": 3220185.25
+    },
+    "zac_participations": [
+      {
+        "zac": "Saint Vincent de Paul",
+        "organisme": "SPL PARIS & MÉTROPOLE AMÉNAGEMENT",
+        "duree_annees": 10,
+        "participation_origine": 46093451.20,
+        "capital_31_12_N": 25132399.91
+      },
+      {
+        "zac": "Bercy-Charenton",
+        "organisme": "SPLA SEMAPA",
+        "duree_annees": 14,
+        "participation_origine": 210426000.00,
+        "capital_31_12_N": 252511200.00
+      },
+      {
+        "zac": "Porte de Montreuil",
+        "organisme": "SPLA SEMAPA",
+        "duree_annees": 11,
+        "participation_origine": 124879744.18,
+        "capital_31_12_N": 137724200.00
+      },
+      {
+        "zac": "Gare des Mines Fillettes",
+        "organisme": "SPL PARIS & MÉTROPOLE AMÉNAGEMENT",
+        "duree_annees": 11,
+        "participation_origine": 53058000.00,
+        "capital_31_12_N": 46295800.00
+      },
+      {
+        "zac": "Chapelle-Charbon",
+        "organisme": "SPL PARIS & MÉTROPOLE AMÉNAGEMENT",
+        "duree_annees": 7,
+        "participation_origine": 39487000.00,
+        "capital_31_12_N": 28010000.00
+      }
+    ]
+  },
+
+  "engagements_recus_principaux": {
+    "aide_a_la_pierre": {
+      "2017": {
+        "organisme": "Préfecture de Région IDF",
+        "creance_origine": 363680595.43,
+        "capital_31_12_N": 0.00,
+        "annuite_recue_2024": 20691150.00
+      },
+      "2023_habitat_prive": {
+        "organisme": "ANAH",
+        "creance_origine": 350800000.00,
+        "capital_31_12_N": 321365888.00,
+        "annuite_recue_2024": 1434112.00
+      }
+    },
+    "distribution_energie_annuel": {
+      "chaleur_cpcu": {
+        "depuis": 1927,
+        "duree_annees": 97,
+        "montant_annuel": 7387140.00
+      },
+      "electricite_enedis_edf": {
+        "depuis": 1955,
+        "duree_annees": 70,
+        "montant_annuel": 3300000.00
+      },
+      "enedis_edf_2025": {
+        "depuis": 2025,
+        "duree_annees": 25,
+        "montant_annuel": 34080000.00
+      }
+    },
+    "redevances_occupation_domaine_public": {
+      "sfr_telecom": {"montant_annuel": 5031009.00, "duree_annees": 10},
+      "ratp_bus": {"montant_annuel": 2725000.00, "duree_annees": 2}
+    }
+  },
+
+  "sommaire_tome_3": {
+    "informations_generales": {
+      "page_debut": 6,
+      "contenu": [
+        "Informations statistiques, fiscales et financières",
+        "Modalités de vote du budget",
+        "Exécution du budget - Résultats",
+        "Exécution du budget - RAR Dépenses et Recettes"
+      ]
+    },
+    "presentation_generale": {
+      "page_debut": 13,
+      "contenu": [
+        "Vue d'ensemble - Exécution du budget",
+        "Ventilation des opérations réelles et d'ordre",
+        "Récapitulation par groupes fonctionnels",
+        "Equilibre financier - Investissement et Fonctionnement",
+        "Balance générale - Dépenses et Recettes"
+      ]
+    },
+    "annexes_patrimoniales": {
+      "B1_etat_dette": {"page": 267},
+      "B2_methodes_amortissements": {"page": 284},
+      "B3_etat_provisions": {"page": 287},
+      "B4_charges_transferees": {"page": 289},
+      "B5_comptes_tiers": {"page": 290},
+      "B6_prets": {"page": 304},
+      "B7_engagements": {
+        "B7_1_synthetique_donnes": {"page": 306},
+        "B7_2_synthetique_recus": {"page": 307},
+        "B7_3_emprunts_garantis": {"page": 308},
+        "B7_4_ratio_endettement": {"page": 840},
+        "B7_7_recettes_affectation_speciale": {"page": 841},
+        "B7_8_autres_engagements_donnes": {"page": 858},
+        "B7_9_autres_engagements_recus": {"page": 886}
+      },
+      "B8_concours_tiers": {"page": 904},
+      "B9_etat_personnel": {"page": 1067},
+      "B10_organismes_engagement_financier": {"page": 1267},
+      "B11_organismes_regroupement": {"page": 1318},
+      "B12_variation_patrimoine": {"page_entrees": 1321, "page_sorties": 1480},
+      "B13_operations_cessions": {"page": 1570},
+      "B14_travaux_regie": {"page": 1571}
+    },
+    "annexes_budgetaires": {
+      "C1_equilibre_budgetaire": {"page": 1573},
+      "C2_situation_AP_AE": {"page": 1578},
+      "C3_transition_ecologique": {"page": 1625}
+    },
+    "autres_elements": {
+      "D1_services_tva": {"page": 1633},
+      "D3_variation_patrimoine": {"page": 1787},
+      "D5_credits_communautaires": {"page": 1789},
+      "D6_formation_elus": {"page": 1792},
+      "D10_presentation_agregee": {"page": 1798},
+      "D11_decisions_taux": {"page": 1801},
+      "D12_repartition_teom": {"page": 1802}
+    },
+    "arrete_signatures": {"page": 1806}
+  },
+
+  "references_autres_tomes": {
+    "tome_1": "Adoption du CA - Sections Investissement et Fonctionnement détaillées par chapitre",
+    "tome_2": "Présentation croisée et annexes patrimoniales (B1 à B6)",
+    "tome_4": "Annexes budgétaires (C2 situation AP/AE)",
+    "tome_5": "Autres annexes (E1 à E4) - État spécial territoire, cessions, logement social, DSP"
+  }
+}
