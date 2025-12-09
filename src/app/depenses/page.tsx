@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { DonutChart, BarChartHorizontal, ChiffreCard } from '@/components/charts';
+import Link from 'next/link';
 import InfoTooltip from '@/components/InfoTooltip';
 
 // Données des dépenses de fonctionnement
