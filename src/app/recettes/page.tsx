@@ -325,7 +325,7 @@ export default function RecettesPage() {
               Paris vs les autres grandes villes
             </h2>
             <p className="text-gray-600">
-              Comparaison des taux d'imposition 2024 - Paris a les taux les plus bas sur toutes les taxes
+              Comparaison des taux d'imposition 2024
             </p>
           </motion.div>
 
@@ -674,13 +674,6 @@ export default function RecettesPage() {
           >
             <h2 className="text-2xl font-bold mb-6">En résumé</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-              <div className="bg-white/10 rounded-xl p-5">
-                <div className="text-accent text-xl font-bold mb-2">Taux les plus bas</div>
-                <div className="text-sm">
-                  Sur les 5 principales taxes, Paris a les taux les plus faibles
-                  des grandes métropoles françaises.
-                </div>
-              </div>
               <div className="bg-white/10 rounded-xl p-5">
                 <div className="text-accent text-xl font-bold mb-2">-350 M€ de risque</div>
                 <div className="text-sm">

@@ -226,7 +226,7 @@ export default function InvestissementsPage() {
               Les <span className="text-accent">investissements</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              2 milliards € de nouveaux projets pour transformer Paris
+              2 milliards € de nouveaux projets
             </p>
           </motion.div>
 
@@ -385,12 +385,6 @@ export default function InvestissementsPage() {
               ))}
             </div>
 
-            <div className="mt-6 p-4 bg-blue-50 rounded-xl border-l-4 border-blue-500">
-              <p className="text-sm text-gray-700">
-                Maintenir un rythme soutenu de production de logements sociaux
-                malgré la tension du marché immobilier et la hausse des coûts de construction.
-              </p>
-            </div>
           </motion.div>
         </div>
       </section>
@@ -537,7 +531,7 @@ export default function InvestissementsPage() {
               Budget participatif : 83,8 M€
             </h2>
             <p className="text-gray-600 mb-8">
-              Les Parisiens décident directement de l'utilisation de ces crédits
+              Crédits alloués au budget participatif
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -662,7 +656,7 @@ export default function InvestissementsPage() {
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-blue-400">
                 <h3 className="font-bold text-primary mb-2">Budget participatif</h3>
                 <p className="text-sm text-gray-600">
-                  121 projets votés par les Parisiens pour 79,6 M€ en 2024.
+                  121 projets pour 79,6 M€ en 2024.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-blue-300">
