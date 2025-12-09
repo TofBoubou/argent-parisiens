@@ -15,6 +15,7 @@ interface BarChartHorizontalProps {
   maxValue?: number;
   unit?: string;
   showPercentage?: boolean;
+  ariaLabel?: string;
 }
 
 const formatNumber = (num: number) => {
@@ -28,6 +29,7 @@ export default function BarChartHorizontal({
   maxValue,
   unit = 'M€',
   showPercentage = false,
+  ariaLabel,
 }: BarChartHorizontalProps) {
   const max = maxValue ?? Math.max(...data.map((d) => d.value)) * 1.1;
 
@@ -37,6 +39,8 @@ export default function BarChartHorizontal({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       className="bg-white rounded-xl p-6 shadow-sm"
+      role="img"
+      aria-label={ariaLabel || `Graphique en barres : ${title || 'Comparaison des valeurs'}`}
     >
       {title && (
         <div className="mb-6">

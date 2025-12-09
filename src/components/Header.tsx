@@ -209,7 +209,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors relative ${
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors relative focus:outline-none focus:ring-2 focus:ring-white/50 ${
                     isActive
                       ? 'text-white'
                       : 'text-gray-300 hover:text-white hover:bg-white/10'
@@ -231,8 +231,10 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="md:hidden p-2 text-gray-300 hover:text-white"
+            className="md:hidden p-2 text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+            aria-expanded={mobileMenuOpen}
           >
             <svg
               className="w-6 h-6"

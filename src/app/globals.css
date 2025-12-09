@@ -34,3 +34,30 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #a1a1a1;
 }
+
+/* Focus visible pour accessibilité clavier */
+:focus-visible {
+  outline: 2px solid #0D1B4C;
+  outline-offset: 2px;
+}
+
+/* Dans les zones sombres (header/footer), focus blanc */
+.bg-primary :focus-visible {
+  outline-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Skip link pour navigation clavier */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #0D1B4C;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}

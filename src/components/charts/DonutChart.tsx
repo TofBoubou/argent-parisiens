@@ -14,6 +14,7 @@ interface DonutChartProps {
   total?: number;
   totalLabel?: string;
   height?: number;
+  ariaLabel?: string;
 }
 
 const formatNumber = (num: number) => {
@@ -27,6 +28,7 @@ export default function DonutChart({
   total,
   totalLabel = 'M€',
   height = 300,
+  ariaLabel,
 }: DonutChartProps) {
   const dataSum = data.reduce((sum, item) => sum + item.value, 0);
   const displayTotal = total ?? dataSum;
@@ -62,7 +64,12 @@ export default function DonutChart({
       )}
 
       <div className="flex flex-col lg:flex-row items-center gap-6">
-        <div className="relative" style={{ width: height, height }}>
+        <div
+          className="relative"
+          style={{ width: height, height }}
+          role="img"
+          aria-label={ariaLabel || `Graphique : ${title || 'Répartition'} - Total ${formatNumber(displayTotal)} ${totalLabel}`}
+        >
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
               <Pie
