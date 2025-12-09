@@ -28,7 +28,24 @@ export default function DonutChart({
   totalLabel = 'Total',
   height = 300,
 }: DonutChartProps) {
-  const calculatedTotal = total ?? data.reduce((sum, item) => sum + item.value, 0);
+  const dataSum = data.reduce((sum, item) => sum + item.value, 0);
+  const displayTotal = total ?? dataSum;
+
+  // Si un total est fourni et différent de la somme des données,
+  // les valeurs sont des pourcentages qu'il faut convertir en montants
+  const isPercentageData = total !== undefined && Math.abs(dataSum - 100) < 1;
+
+  // Convertir les données si ce sont des pourcentages
+  const displayData = isPercentageData
+    ? data.map(item => ({
+        ...item,
+        value: (item.value / 100) * total,
+        percentage: item.value
+      }))
+    : data.map(item => ({
+        ...item,
+        percentage: (item.value / displayTotal) * 100
+      }));
 
   return (
     <motion.div
@@ -49,7 +66,7 @@ export default function DonutChart({
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
               <Pie
-                data={data}
+                data={displayData}
                 cx="50%"
                 cy="50%"
                 innerRadius="60%"
@@ -57,7 +74,7 @@ export default function DonutChart({
                 paddingAngle={2}
                 dataKey="value"
               >
-                {data.map((entry, index) => (
+                {displayData.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.color} />
                 ))}
               </Pie>
@@ -80,7 +97,7 @@ export default function DonutChart({
           {/* Center text */}
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
             <span className="text-2xl font-bold text-primary">
-              {formatNumber(calculatedTotal)}
+              {formatNumber(displayTotal)}
             </span>
             <span className="text-sm text-gray-500">{totalLabel}</span>
           </div>
@@ -89,7 +106,7 @@ export default function DonutChart({
         {/* Legend - vertical layout to avoid truncation */}
         <div className="flex-1 w-full">
           <div className="grid grid-cols-1 gap-2">
-            {data.map((item, index) => (
+            {displayData.map((item, index) => (
               <div key={index} className="flex items-start gap-2 py-1">
                 <div
                   className="w-3 h-3 rounded-full flex-shrink-0 mt-1"
@@ -100,7 +117,7 @@ export default function DonutChart({
                   <div className="text-sm font-semibold text-primary">
                     {formatNumber(item.value)} M€
                     <span className="text-gray-400 font-normal ml-1">
-                      ({((item.value / calculatedTotal) * 100).toFixed(1)}%)
+                      ({item.percentage.toFixed(1)}%)
                     </span>
                   </div>
                 </div>
