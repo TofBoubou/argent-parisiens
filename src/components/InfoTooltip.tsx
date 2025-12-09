@@ -11,9 +11,9 @@ const glossaire: Record<string, string> = {
 
   'attributions de compensation': "Quand l'État ou la Métropole récupère un impôt qui allait à Paris, ils doivent compenser. C'est comme un \"loyer\" versé à Paris pour les impôts qu'on lui a retirés. 1,8 Md€ par an.",
 
-  'tfpb': "L'impôt des propriétaires. Calculé sur la valeur locative de votre bien × le taux voté par Paris (20,5 %). Rapporte 1,85 Md€ à la Ville, mais les bases sont très élevées à Paris.",
+  'tfpb': "L'impôt des propriétaires. Calculé sur la valeur locative de votre bien × le taux voté par Paris (20,5 %, parmi les plus bas de France). Rapporte 1,85 Md€ à la Ville.",
 
-  'taxe foncière': "L'impôt des propriétaires. Calculé sur la valeur locative de votre bien × le taux voté par Paris (20,5 %). Rapporte 1,85 Md€ à la Ville, mais les bases sont très élevées à Paris.",
+  'taxe foncière': "L'impôt des propriétaires. Calculé sur la valeur locative de votre bien × le taux voté par Paris (20,5 %, parmi les plus bas de France). Rapporte 1,85 Md€ à la Ville.",
 
   'thrs': "Taxe d'habitation sur les résidences secondaires. Supprimée pour les résidences principales, elle reste due par les propriétaires de pied-à-terre parisiens. Majorée de 60 % à Paris.",
 
@@ -128,7 +128,7 @@ const glossaire: Record<string, string> = {
 
   'provisions': "Argent mis de côté pour les mauvaises surprises : procès perdus, factures impayées. 27 M€ provisionnés en 2025 \"au cas où\".",
 
-  'virement à l\'investissement': "Quand le fonctionnement dégage un excédent, on peut le transférer vers l'investissement. 128 M€ en 2025, contre 79 M€ en 2024. Reste très insuffisant face aux besoins.",
+  'virement à l\'investissement': "Quand le fonctionnement dégage un excédent, on peut le transférer vers l'investissement. 128 M€ en 2025, contre 79 M€ en 2024. Signe de bonne gestion.",
 
   // Termes supplémentaires courants
   'syctom': "Le syndicat qui traite les déchets de Paris et 84 communes voisines. Incinération, recyclage, valorisation. Paris lui verse 119 M€/an.",
