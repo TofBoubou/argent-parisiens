@@ -218,7 +218,7 @@ export default function DonneesTechniquesPage() {
                     <td className="px-4 py-3">Total recettes fonctionnement</td>
                     <td className="px-4 py-3 text-right">9 898,6 M€</td>
                     <td className="px-4 py-3 text-right text-primary">9 905,7 M€</td>
-                    <td className="px-4 py-3 text-right text-green-600">+0,1%</td>
+                    <td className="px-4 py-3 text-right text-green-600">+0,1 %</td>
                   </tr>
                 </tfoot>
               </table>
@@ -273,7 +273,7 @@ export default function DonneesTechniquesPage() {
                     <td className="px-4 py-3">Total dépenses fonctionnement</td>
                     <td className="px-4 py-3 text-right">9 898,6 M€</td>
                     <td className="px-4 py-3 text-right text-primary">9 905,7 M€</td>
-                    <td className="px-4 py-3 text-right text-red-600">+0,1%</td>
+                    <td className="px-4 py-3 text-right text-red-600">+0,1 %</td>
                   </tr>
                 </tfoot>
               </table>
@@ -456,8 +456,8 @@ export default function DonneesTechniquesPage() {
 
                 <div className="mt-6 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-500">
                   <p className="text-sm text-gray-700">
-                    89% du besoin de financement est couvert par l'emprunt.
-                    L'autofinancement (127,7 M€) ne représente que 11% des moyens.
+                    89 % du besoin de financement est couvert par l'emprunt.
+                    L'autofinancement (127,7 M€) ne représente que 11 % des moyens.
                   </p>
                 </div>
               </div>

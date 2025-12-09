@@ -61,3 +61,13 @@ body {
 .skip-link:focus {
   top: 0;
 }
+
+/* Chiffres tabulaires pour alignement */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Alignement des chiffres dans les tableaux */
+table td.text-right {
+  font-variant-numeric: tabular-nums;
+}

@@ -121,14 +121,14 @@ export default function DettePage() {
                 224,5<span className="text-lg ml-1">M€</span>
               </div>
               <div className="text-gray-400 text-sm mt-1">Intérêts annuels</div>
-              <div className="text-red-400 text-xs mt-2">+5,4% vs 2024</div>
+              <div className="text-red-400 text-xs mt-2">+5,4 % vs 2024</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
               <div className="text-2xl md:text-3xl font-bold">
                 994<span className="text-lg ml-1">M€</span>
               </div>
               <div className="text-gray-400 text-sm mt-1">Nouvel emprunt</div>
-              <div className="text-red-400 text-xs mt-2">+3,3% vs 2024</div>
+              <div className="text-red-400 text-xs mt-2">+3,3 % vs 2024</div>
             </div>
           </motion.div>
         </div>
@@ -188,7 +188,7 @@ export default function DettePage() {
 
               <div className="mt-6 p-4 bg-red-50 border-l-4 border-accent rounded-r-lg">
                 <p className="text-sm text-gray-700">
-                  <span className="font-bold text-accent">+59% en 6 ans</span> : la dette est passée de 5,9 milliards € en 2019 à 9,4 milliards € fin 2025, soit une augmentation de 3,5 milliards d'euros.
+                  <span className="font-bold text-accent">+59 % en 6 ans</span> : la dette est passée de 5,9 Md€ en 2019 à 9,4 Md€ fin 2025, soit une augmentation de 3,5 Md€.
                 </p>
               </div>
             </div>
@@ -221,7 +221,7 @@ export default function DettePage() {
                   <h3 className="font-bold text-primary mb-2">Dette bancaire et obligataire</h3>
                   <div className="text-3xl font-bold text-gray-800">9 292 M€</div>
                   <p className="text-sm text-gray-600 mt-2">
-                    99,3% de la dette totale. Emprunts contractés auprès de banques et via l'émission d'obligations sur les marchés.
+                    99,3 % de la dette totale. Emprunts contractés auprès de banques et via l'émission d'obligations sur les marchés.
                   </p>
                 </div>
 
@@ -361,7 +361,7 @@ export default function DettePage() {
 
                 <div className="mt-4 grid grid-cols-2 gap-4 text-center">
                   <div className="p-3 bg-gray-50 rounded-lg">
-                    <div className="text-2xl font-bold text-primary">+58%</div>
+                    <div className="text-2xl font-bold text-primary">+58 %</div>
                     <div className="text-xs text-gray-600">depuis 2022</div>
                   </div>
                   <div className="p-3 bg-gray-50 rounded-lg">

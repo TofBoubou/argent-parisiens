@@ -644,7 +644,7 @@ export default function InvestissementsPage() {
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-primary">
                 <h3 className="font-bold text-primary mb-2">Logement prioritaire</h3>
                 <p className="text-sm text-gray-600">
-                  55% des investissements vont à l'aménagement et l'habitat, soit 1,1 Md€.
+                  55 % des investissements vont à l'aménagement et l'habitat, soit 1,1 Md€.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-blue-600">

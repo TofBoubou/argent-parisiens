@@ -56,7 +56,7 @@ const politiques = [
     description: 'Administration, informatique, RH, immobilier, états spéciaux d\'arrondissement, budget participatif',
     keyFacts: [
       { label: 'Etats spéciaux arrondissement', value: '173 M€', detail: 'Fonctionnement équipements de proximité' },
-      { label: 'Budget participatif', value: '80 M€', detail: '25% du budget d\'investissement décidé par les Parisiens' },
+      { label: 'Budget participatif', value: '80 M€', detail: '25 % du budget d\'investissement décidé par les Parisiens' },
       { label: 'Informatique', value: '50 M€', detail: 'Projets SI, cybersécurité, maintenance' },
       { label: 'Réaménagement Tour Eiffel', value: '18 M€', detail: 'Travaux de modernisation du site' },
       { label: 'Concessions', value: '185 M€', detail: 'Recettes affichage, télécom, parkings' },
@@ -110,7 +110,7 @@ const politiques = [
       { nom: 'Extension RER E Éole vers l\'ouest', montant: 23.7 },
       { nom: 'Travaux ligne 14', montant: 11.9 },
       { nom: 'Prolongement T3b porte Maillot', montant: 9.5 },
-      { nom: 'Plan Vélo 100% cyclable', montant: 25.0 },
+      { nom: 'Plan Vélo 100 % cyclable', montant: 25.0 },
       { nom: 'Entretien boulevard périphérique', montant: 12.7 },
     ],
     detailPostes: [
@@ -615,7 +615,7 @@ export default function PolitiquesPage() {
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-primary">
                 <h3 className="font-bold text-primary mb-2">Social en tête</h3>
                 <p className="text-sm text-gray-600">
-                  La santé et l'action sociale représentent 29% du budget, mais l'État ne compense pas ses transferts.
+                  La santé et l'action sociale représentent 29 % du budget, mais l'État ne compense pas ses transferts.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-blue-600">

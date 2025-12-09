@@ -8,21 +8,21 @@ const chiffresCles = [
     valeur: '9,8',
     unite: 'Md€',
     label: 'Recettes',
-    variation: '+0,2%',
+    variation: '+0,2 %',
     positif: true
   },
   {
     valeur: '9,3',
     unite: 'Md€',
     label: 'Dépenses',
-    variation: '+0,1%',
+    variation: '+0,1 %',
     positif: false
   },
   {
     valeur: '9,4',
     unite: 'Md€',
     label: 'Dette totale',
-    variation: '+8%',
+    variation: '+8 %',
     positif: false
   },
   {
@@ -49,12 +49,12 @@ const politiques = [
 const alertes = [
   {
     titre: 'Dette en hausse',
-    description: 'La dette atteindra 9,4 milliards € fin 2025, soit +682 M€ en un an.',
+    description: 'La dette atteindra 9,4 Md€ fin 2025, soit +682 M€ en un an.',
     lien: '/dette',
   },
   {
     titre: 'Masse salariale',
-    description: '2,9 milliards € pour le personnel, +20% depuis 2018.',
+    description: '2,9 Md€ pour le personnel, +20 % depuis 2018.',
     lien: '/depenses',
   },
   {
@@ -83,7 +83,7 @@ export default function Home() {
               Où va l'argent des <span className="text-accent">Parisiens</span> ?
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-              Découvrez comment la Ville de Paris gère près de 10 milliards d'euros
+              Découvrez comment la Ville de Paris gère près de 10 Md€
               de votre argent chaque année.
             </p>
           </motion.div>

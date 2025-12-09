@@ -7,7 +7,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 // Données des recettes de fonctionnement
 const recettesFonctionnement = {
   total: 9839.5,
-  variation: '+0,2%',
+  variation: '+0,2 %',
   repartition: [
     { name: 'Fiscalité directe', value: 2191.0, color: '#0D1B4C' },
     { name: 'Fiscalité indirecte & TVA', value: 2981.8, color: '#dc2626' },
@@ -97,7 +97,7 @@ const evolutionFiscaliteImmobiliere = [
 // Impacts PLF 2025
 const impactsPLF2025 = [
   {
-    mesure: 'Fonds de réserve (prélèvement 2%)',
+    mesure: 'Fonds de réserve (prélèvement 2 %)',
     risque: 160,
     description: 'Collectivités dont le budget > 40 M€'
   },
@@ -126,7 +126,7 @@ const impactsPLF2025 = [
 // Amendements possibles
 const amendementsPossibles = [
   {
-    mesure: 'Majoration THRS de 60% à 100%',
+    mesure: 'Majoration THRS de 60 % à 100 %',
     impact: 60,
     type: 'recette',
     description: 'Augmentation taxe résidences secondaires',
@@ -210,10 +210,10 @@ export default function RecettesPage() {
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold">9,84</div>
               <div className="text-sm text-gray-400">Md€ de recettes</div>
-              <div className="text-xs text-green-400 mt-1">+0,2% vs 2024</div>
+              <div className="text-xs text-green-400 mt-1">+0,2 % vs 2024</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
-              <div className="text-2xl md:text-3xl font-bold">61%</div>
+              <div className="text-2xl md:text-3xl font-bold">61 %</div>
               <div className="text-sm text-gray-400">Fiscalité</div>
               <div className="text-xs text-gray-500 mt-1">directe + indirecte</div>
             </div>
@@ -270,7 +270,7 @@ export default function RecettesPage() {
               Fiscalité directe
             </h2>
             <p className="text-gray-600">
-              2,19 Md€ issus des impôts locaux (+1,2% vs 2024)
+              2,19 Md€ issus des impôts locaux (+1,2 % vs 2024)
             </p>
           </motion.div>
 
@@ -289,7 +289,7 @@ export default function RecettesPage() {
                 label="Taxe foncière (TFPB)"
                 variation="+14,6 M€ vs 2024"
                 variationPositive={false}
-                description="Indexation des bases : +1,5% (inflation nov 2023 à nov 2024)"
+                description="Indexation des bases : +1,5 % (inflation nov 2023 à nov 2024)"
               />
               <ChiffreCard
                 value="335,5"
@@ -297,13 +297,13 @@ export default function RecettesPage() {
                 label="Taxe habitation résidences secondaires"
                 variation="+11,8 M€ vs 2024"
                 variationPositive={false}
-                description="Majoration de 60% sur les résidences secondaires"
+                description="Majoration de 60 % sur les résidences secondaires"
               />
               <ChiffreCard
                 value="4,3"
                 unit="M€"
                 label="IFER (réseaux)"
-                variation="+12,4%"
+                variation="+12,4 %"
                 variationPositive={true}
                 description="Transformateurs, stations radio, installations gazières"
               />
@@ -426,7 +426,7 @@ export default function RecettesPage() {
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm">
-                <div className="text-2xl font-bold text-red-600">-24%</div>
+                <div className="text-2xl font-bold text-red-600">-24 %</div>
                 <div className="text-sm text-gray-600 mt-1">vs pic 2023</div>
                 <p className="text-xs text-gray-500 mt-2">
                   Impact du ralentissement du marché immobilier parisien
@@ -489,7 +489,7 @@ export default function RecettesPage() {
                 <div className="text-3xl font-bold text-red-600">-{totalImpactPLF} M€</div>
                 <div className="text-sm text-gray-600 mt-1">Impact total estimé</div>
                 <p className="text-xs text-gray-500 mt-3">
-                  Soit environ 3,5% des recettes de fonctionnement
+                  Soit environ 3,5 % des recettes de fonctionnement
                 </p>
               </div>
 

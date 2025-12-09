@@ -107,12 +107,12 @@ export default function DepensesPage() {
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold">9,27</div>
               <div className="text-sm text-gray-400">Md€ de dépenses</div>
-              <div className="text-xs text-red-400 mt-1">+0,1% vs 2024</div>
+              <div className="text-xs text-red-400 mt-1">+0,1 % vs 2024</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold">2,89</div>
               <div className="text-sm text-gray-400">Md€ masse salariale</div>
-              <div className="text-xs text-red-400 mt-1">+2,4%</div>
+              <div className="text-xs text-red-400 mt-1">+2,4 %</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold">1,6</div>
@@ -167,7 +167,7 @@ export default function DepensesPage() {
               Masse salariale
             </h2>
             <p className="text-gray-600">
-              2,89 Md€ pour le personnel (+2,4% vs 2024, +20% depuis 2018)
+              2,89 Md€ pour le personnel (+2,4 % vs 2024, +20 % depuis 2018)
             </p>
           </motion.div>
 
@@ -186,10 +186,10 @@ export default function DepensesPage() {
                 label="Masse salariale 2025"
                 variation="+67,3 M€ vs 2024"
                 variationPositive={false}
-                description="31% du budget total de fonctionnement"
+                description="31 % du budget total de fonctionnement"
               />
               <ChiffreCard
-                value="+20%"
+                value="+20 %"
                 label="Hausse depuis 2018"
                 description="De 2 396 M€ en 2018 à 2 885 M€ en 2025"
                 accent
@@ -240,7 +240,7 @@ export default function DepensesPage() {
 
             <div className="space-y-4">
               <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-red-500">
-                <div className="text-3xl font-bold text-red-600">20%</div>
+                <div className="text-3xl font-bold text-red-600">20 %</div>
                 <div className="text-lg font-semibold text-primary mt-2">
                   de la péréquation nationale
                 </div>
@@ -251,7 +251,7 @@ export default function DepensesPage() {
               </div>
 
               <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-red-500">
-                <div className="text-3xl font-bold text-red-600">50%</div>
+                <div className="text-3xl font-bold text-red-600">50 %</div>
                 <div className="text-lg font-semibold text-primary mt-2">
                   de la péréquation régionale IDF
                 </div>
@@ -307,7 +307,7 @@ export default function DepensesPage() {
               Dépenses de gestion par domaine
             </h2>
             <p className="text-gray-600">
-              4,55 Md€ de dépenses hors masse salariale (+1,3%)
+              4,55 Md€ de dépenses hors masse salariale (+1,3 %)
             </p>
           </motion.div>
 
@@ -485,7 +485,7 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold mb-6">En résumé</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div className="bg-white/10 rounded-xl p-5">
-                <div className="text-accent text-xl font-bold mb-2">+20%</div>
+                <div className="text-accent text-xl font-bold mb-2">+20 %</div>
                 <div className="text-sm">
                   de masse salariale en 7 ans, avec 950 créations de postes en 2025
                   et une progression continue depuis 2018.
@@ -495,7 +495,7 @@ export default function DepensesPage() {
                 <div className="text-accent text-xl font-bold mb-2">1,6 Md€</div>
                 <div className="text-sm">
                   reversé aux autres collectivités au titre de la péréquation.
-                  Paris contribue à 20% du national et 50% du régional.
+                  Paris contribue à 20 % du national et 50 % du régional.
                 </div>
               </div>
               <div className="bg-white/10 rounded-xl p-5">

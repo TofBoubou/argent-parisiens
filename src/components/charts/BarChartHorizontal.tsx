@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { formatNumber, formatMillions, formatPercent } from '@/utils/formatNumber';
 
 interface BarChartHorizontalProps {
   data: {
@@ -17,10 +18,6 @@ interface BarChartHorizontalProps {
   showPercentage?: boolean;
   ariaLabel?: string;
 }
-
-const formatNumber = (num: number) => {
-  return num.toLocaleString('fr-FR', { maximumFractionDigits: 2 });
-};
 
 export default function BarChartHorizontal({
   data,
@@ -73,13 +70,13 @@ export default function BarChartHorizontal({
                 )}
               </div>
               <span
-                className={`text-sm font-semibold ml-2 ${
+                className={`text-sm font-semibold ml-2 tabular-nums ${
                   item.highlight ? 'text-primary' : 'text-gray-600'
                 }`}
               >
                 {showPercentage
-                  ? `${formatNumber(item.value)} %`
-                  : `${formatNumber(item.value)} ${unit}`}
+                  ? formatPercent(item.value)
+                  : unit === 'M€' ? formatMillions(item.value) : `${formatNumber(item.value)} ${unit}`}
               </span>
             </div>
             <div className="h-6 bg-gray-100 rounded-full overflow-hidden">

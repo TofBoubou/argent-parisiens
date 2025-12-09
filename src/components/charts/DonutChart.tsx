@@ -2,6 +2,7 @@
 
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 import { motion } from 'framer-motion';
+import { formatNumber, formatMillions, formatPercent } from '@/utils/formatNumber';
 
 interface DonutChartProps {
   data: {
@@ -16,10 +17,6 @@ interface DonutChartProps {
   height?: number;
   ariaLabel?: string;
 }
-
-const formatNumber = (num: number) => {
-  return num.toLocaleString('fr-FR', { maximumFractionDigits: 1 });
-};
 
 export default function DonutChart({
   data,
@@ -86,7 +83,7 @@ export default function DonutChart({
                 ))}
               </Pie>
               <Tooltip
-                formatter={(value: number, name: string) => [`${formatNumber(value)} M€`, name]}
+                formatter={(value: number, name: string) => [formatMillions(value), name]}
                 contentStyle={{
                   backgroundColor: 'white',
                   border: '1px solid #e5e7eb',
@@ -122,9 +119,9 @@ export default function DonutChart({
                 <div className="flex-1">
                   <div className="text-sm text-gray-700 leading-tight">{item.name}</div>
                   <div className="text-sm font-semibold text-primary">
-                    {formatNumber(item.value)} M€
+                    {formatMillions(item.value)}
                     <span className="text-gray-400 font-normal ml-1">
-                      ({item.percentage.toFixed(1)}%)
+                      ({formatNumber(item.percentage, 1)} %)
                     </span>
                   </div>
                 </div>
