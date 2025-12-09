@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { DonutChart, BarChartHorizontal } from '@/components/charts';
 import Link from 'next/link';
+import InfoTooltip from '@/components/InfoTooltip';
 
 // Données enrichies des 9 politiques publiques
 const politiques = [
@@ -511,7 +512,20 @@ export default function PolitiquesPage() {
                                   <div className="text-lg font-bold" style={{ color: politique.color }}>
                                     {fact.value}
                                   </div>
-                                  <div className="text-sm font-medium text-primary">{fact.label}</div>
+                                  <div className="text-sm font-medium text-primary">
+                                    {fact.label === 'RSA et insertion' ? <><InfoTooltip terme="RSA">RSA</InfoTooltip> et insertion</> :
+                                     fact.label === 'Contribution IDFM' ? <>Contribution <InfoTooltip terme="IDFM">IDFM</InfoTooltip></> :
+                                     fact.label === 'Contribution SYCTOM' ? <>Contribution <InfoTooltip terme="SYCTOM">SYCTOM</InfoTooltip></> :
+                                     fact.label === 'TEOM perçue' ? <><InfoTooltip terme="TEOM">TEOM</InfoTooltip> perçue</> :
+                                     fact.label === 'Personnes âgées' ? <>Personnes âgées (<InfoTooltip terme="APA">APA</InfoTooltip>)</> :
+                                     fact.label === 'Handicap' ? <>Handicap (<InfoTooltip terme="PCH">PCH</InfoTooltip>)</> :
+                                     fact.label === 'Budget participatif' ? <InfoTooltip terme="Budget participatif">{fact.label}</InfoTooltip> :
+                                     fact.label === 'Etats spéciaux arrondissement' ? <InfoTooltip terme="ESA">{fact.label}</InfoTooltip> :
+                                     fact.label === 'Préfecture de Police' ? fact.label :
+                                     fact.label === 'Brigade pompiers (BSPP)' ? <>Brigade pompiers (<InfoTooltip terme="BSPP">BSPP</InfoTooltip>)</> :
+                                     fact.label === 'ESPCI' ? <InfoTooltip terme="ESPCI">{fact.label}</InfoTooltip> :
+                                     fact.label}
+                                  </div>
                                   <div className="text-xs text-gray-500 mt-1">{fact.detail}</div>
                                 </div>
                               ))}
@@ -621,7 +635,7 @@ export default function PolitiquesPage() {
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-blue-600">
                 <h3 className="font-bold text-primary mb-2">Transports : Paris paie</h3>
                 <p className="text-sm text-gray-600">
-                  472 M€ versés à IDFM sans contrôle sur les décisions. Le stationnement finance les transports.
+                  472 M€ versés à <InfoTooltip terme="IDFM">IDFM</InfoTooltip> sans contrôle sur les décisions. Le stationnement finance les transports.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-blue-400">
@@ -633,7 +647,7 @@ export default function PolitiquesPage() {
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-blue-300">
                 <h3 className="font-bold text-primary mb-2">Environnement : recettes</h3>
                 <p className="text-sm text-gray-600">
-                  La TEOM rapporte 573 M€, plus que les dépenses environnementales. La taxe finance d'autres politiques.
+                  La <InfoTooltip terme="TEOM">TEOM</InfoTooltip> rapporte 573 M€, plus que les dépenses environnementales. La taxe finance d'autres politiques.
                 </p>
               </div>
             </div>

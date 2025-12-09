@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { DonutChart, BarChartHorizontal } from '@/components/charts';
 import Link from 'next/link';
+import InfoTooltip from '@/components/InfoTooltip';
 
 // Participations aux autres budgets - dégradé bleu → rouge → jaune
 const participations = [
@@ -153,7 +154,12 @@ export default function DonneesTechniquesPage() {
                       <div className="flex items-center gap-3">
                         <div className="w-3 h-8 rounded-full" style={{ backgroundColor: p.color }} />
                         <div>
-                          <div className="font-medium text-primary">{p.name}</div>
+                          <div className="font-medium text-primary">
+                            {p.name.includes('IDFM') ? <><InfoTooltip terme="IDFM">IDFM</InfoTooltip> (transports)</> :
+                             p.name.includes('CASVP') ? <><InfoTooltip terme="CASVP">CASVP</InfoTooltip> (action sociale)</> :
+                             p.name.includes('SYCTOM') ? <><InfoTooltip terme="SYCTOM">SYCTOM</InfoTooltip> (déchets)</> :
+                             p.name}
+                          </div>
                           <div className="text-xs text-gray-500">BP 2024 : {p.bp2024.toFixed(1)} M€</div>
                         </div>
                       </div>
@@ -291,7 +297,7 @@ export default function DonneesTechniquesPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Opérations d'ordre
+              <InfoTooltip terme="Opérations d'ordre">Opérations d'ordre</InfoTooltip>
             </h2>
             <p className="text-gray-600 mb-8">
               Mouvements équilibrés entre sections (sans impact sur la trésorerie)
@@ -316,7 +322,7 @@ export default function DonneesTechniquesPage() {
 
               {/* Virement à l'investissement */}
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h3 className="font-bold text-primary mb-4">Virement à l'investissement</h3>
+                <h3 className="font-bold text-primary mb-4"><InfoTooltip terme="Virement à l'investissement">Virement à l'investissement</InfoTooltip></h3>
                 <p className="text-sm text-gray-600 mb-4">{operationsOrdre.virementInvestissement.description}</p>
                 <div className="text-center py-4">
                   <div className="text-4xl font-bold text-primary mb-2">
@@ -359,7 +365,7 @@ export default function DonneesTechniquesPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Amortissements et provisions
+              <InfoTooltip terme="Amortissements">Amortissements</InfoTooltip> et <InfoTooltip terme="Provisions">provisions</InfoTooltip>
             </h2>
             <p className="text-gray-600 mb-8">
               498,1 M€ d'écritures de fonctionnement vers investissement

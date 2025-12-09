@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { DonutChart, BarChartHorizontal, ChiffreCard } from '@/components/charts';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
+import InfoTooltip from '@/components/InfoTooltip';
 
 // Données des recettes de fonctionnement
 const recettesFonctionnement = {
@@ -267,7 +268,7 @@ export default function RecettesPage() {
             className="mb-8"
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Fiscalité directe
+              <InfoTooltip terme="Fiscalité directe">Fiscalité directe</InfoTooltip>
             </h2>
             <p className="text-gray-600">
               2,19 Md€ issus des impôts locaux (+1,2 % vs 2024)
@@ -283,30 +284,39 @@ export default function RecettesPage() {
             />
 
             <div className="space-y-4">
-              <ChiffreCard
-                value="1 851"
-                unit="M€"
-                label="Taxe foncière (TFPB)"
-                variation="+14,6 M€ vs 2024"
-                variationPositive={false}
-                description="Indexation des bases : +1,5 % (inflation nov 2023 à nov 2024)"
-              />
-              <ChiffreCard
-                value="335,5"
-                unit="M€"
-                label="Taxe habitation résidences secondaires"
-                variation="+11,8 M€ vs 2024"
-                variationPositive={false}
-                description="Majoration de 60 % sur les résidences secondaires"
-              />
-              <ChiffreCard
-                value="4,3"
-                unit="M€"
-                label="IFER (réseaux)"
-                variation="+12,4 %"
-                variationPositive={true}
-                description="Transformateurs, stations radio, installations gazières"
-              />
+              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-primary">
+                <div className="flex items-baseline gap-1">
+                  <span className="text-3xl font-bold text-primary">1 851</span>
+                  <span className="text-lg text-gray-600">M€</span>
+                </div>
+                <div className="font-medium text-gray-800 mt-1">
+                  <InfoTooltip terme="TFPB">Taxe foncière (TFPB)</InfoTooltip>
+                </div>
+                <div className="text-xs text-red-500 mt-1">+14,6 M€ vs 2024</div>
+                <p className="text-sm text-gray-500 mt-2">Indexation des bases : +1,5 % (inflation nov 2023 à nov 2024)</p>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-primary">
+                <div className="flex items-baseline gap-1">
+                  <span className="text-3xl font-bold text-primary">335,5</span>
+                  <span className="text-lg text-gray-600">M€</span>
+                </div>
+                <div className="font-medium text-gray-800 mt-1">
+                  <InfoTooltip terme="THRS">Taxe habitation résidences secondaires</InfoTooltip>
+                </div>
+                <div className="text-xs text-red-500 mt-1">+11,8 M€ vs 2024</div>
+                <p className="text-sm text-gray-500 mt-2">Majoration de 60 % sur les résidences secondaires</p>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-primary">
+                <div className="flex items-baseline gap-1">
+                  <span className="text-3xl font-bold text-primary">4,3</span>
+                  <span className="text-lg text-gray-600">M€</span>
+                </div>
+                <div className="font-medium text-gray-800 mt-1">
+                  <InfoTooltip terme="IFER">IFER (réseaux)</InfoTooltip>
+                </div>
+                <div className="text-xs text-green-500 mt-1">+12,4 %</div>
+                <p className="text-sm text-gray-500 mt-2">Transformateurs, stations radio, installations gazières</p>
+              </div>
             </div>
           </div>
         </div>
@@ -347,20 +357,32 @@ export default function RecettesPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <BarChartHorizontal
-              data={comparaisonTauxComplete.cfe.data}
-              title="CFE (entreprises)"
-              subtitle="Taux en %"
-              maxValue={40}
-              showPercentage
-            />
-            <BarChartHorizontal
-              data={comparaisonTauxComplete.teom.data}
-              title="TEOM (ordures)"
-              subtitle="Taux en %"
-              maxValue={20}
-              showPercentage
-            />
+            <div>
+              <div className="mb-2 flex items-center gap-1">
+                <span className="font-bold text-primary">
+                  <InfoTooltip terme="CFE">CFE (entreprises)</InfoTooltip>
+                </span>
+              </div>
+              <BarChartHorizontal
+                data={comparaisonTauxComplete.cfe.data}
+                subtitle="Taux en %"
+                maxValue={40}
+                showPercentage
+              />
+            </div>
+            <div>
+              <div className="mb-2 flex items-center gap-1">
+                <span className="font-bold text-primary">
+                  <InfoTooltip terme="TEOM">TEOM (ordures)</InfoTooltip>
+                </span>
+              </div>
+              <BarChartHorizontal
+                data={comparaisonTauxComplete.teom.data}
+                subtitle="Taux en %"
+                maxValue={20}
+                showPercentage
+              />
+            </div>
             <BarChartHorizontal
               data={comparaisonTauxComplete.tfpnb.data}
               title="TFPNB (non bâti)"
@@ -386,7 +408,7 @@ export default function RecettesPage() {
               Évolution de la fiscalité immobilière
             </h2>
             <p className="text-gray-600">
-              Droits de mutation (DMTO) - Forte volatilité liée au marché immobilier
+              <InfoTooltip terme="DMTO">Droits de mutation (DMTO)</InfoTooltip> - Forte volatilité liée au marché immobilier
             </p>
           </motion.div>
 
@@ -453,7 +475,7 @@ export default function RecettesPage() {
             className="mb-8"
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Risques liés au PLF 2025
+              Risques liés au <InfoTooltip terme="PLF">PLF 2025</InfoTooltip>
             </h2>
             <p className="text-gray-600">
               Mesures gouvernementales menaçant les finances de Paris : 300 à 350 M€ de risque
@@ -556,7 +578,7 @@ export default function RecettesPage() {
           >
             <p className="text-sm text-amber-800">
               <strong>Perte de pouvoir fiscal :</strong> Depuis 2010, Paris a perdu 2 Md€
-              de pouvoir de taux (CFE transférée à la MGP en 2025, suppression de la CVAE,
+              de pouvoir de taux (<InfoTooltip terme="CFE">CFE</InfoTooltip> transférée à la <InfoTooltip terme="MGP">MGP</InfoTooltip> en 2025, suppression de la <InfoTooltip terme="CVAE">CVAE</InfoTooltip>,
               de la taxe d'habitation sur résidences principales...). Ces recettes sont
               compensées par des fractions de TVA, sur lesquelles la Ville n'a aucun contrôle.
             </p>
@@ -592,7 +614,7 @@ export default function RecettesPage() {
               <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-red-500">
                 <div className="text-4xl font-bold text-red-600">0 €</div>
                 <div className="text-lg font-semibold text-primary mt-2">
-                  Dotation Globale de Fonctionnement (DGF)
+                  <InfoTooltip terme="DGF">Dotation Globale de Fonctionnement (DGF)</InfoTooltip>
                 </div>
                 <p className="text-gray-600 text-sm mt-2">
                   Pour la 4ème année consécutive, Paris ne perçoit aucune DGF.
@@ -603,7 +625,7 @@ export default function RecettesPage() {
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <div className="text-2xl font-bold text-primary">1 842 M€</div>
                 <div className="text-sm text-gray-600 mt-1">
-                  Attributions de compensation (MGP + Région)
+                  <InfoTooltip terme="Attributions de compensation">Attributions de compensation</InfoTooltip> (<InfoTooltip terme="MGP">MGP</InfoTooltip> + Région)
                 </div>
                 <p className="text-gray-500 text-xs mt-2">
                   Compensations des transferts de fiscalité vers la Métropole
@@ -655,9 +677,9 @@ export default function RecettesPage() {
             <div className="bg-white rounded-xl p-5 shadow-sm">
               <h4 className="font-semibold text-primary mb-2">Santé/Social : 321,4 M€</h4>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li>Compensations RSA (TICPE, FMDI) : 266,6 M€</li>
+                <li>Compensations <InfoTooltip terme="RSA">RSA</InfoTooltip> (<InfoTooltip terme="TICPE">TICPE</InfoTooltip>, FMDI) : 266,6 M€</li>
                 <li>Participations petite enfance : 224,5 M€</li>
-                <li>Dotations APA/PCH : 46,5 M€</li>
+                <li>Dotations <InfoTooltip terme="APA">APA</InfoTooltip>/<InfoTooltip terme="PCH">PCH</InfoTooltip> : 46,5 M€</li>
               </ul>
             </div>
           </motion.div>

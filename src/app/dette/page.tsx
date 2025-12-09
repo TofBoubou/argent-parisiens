@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ChiffreCard, BarChartHorizontal, DonutChart } from '@/components/charts';
 import Link from 'next/link';
+import InfoTooltip from '@/components/InfoTooltip';
 import {
   LineChart,
   Line,
@@ -146,7 +147,7 @@ export default function DettePage() {
               Une dette qui explose
             </h2>
             <p className="text-gray-600 mb-8">
-              Évolution de l'encours total de la dette depuis 2019 (en M€)
+              Évolution de l'<InfoTooltip terme="Encours de dette">encours total de la dette</InfoTooltip> depuis 2019 (en M€)
             </p>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -218,7 +219,7 @@ export default function DettePage() {
 
               <div className="space-y-4">
                 <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-primary">
-                  <h3 className="font-bold text-primary mb-2">Dette bancaire et obligataire</h3>
+                  <h3 className="font-bold text-primary mb-2"><InfoTooltip terme="Dette obligataire">Dette bancaire et obligataire</InfoTooltip></h3>
                   <div className="text-3xl font-bold text-gray-800">9 292 M€</div>
                   <p className="text-sm text-gray-600 mt-2">
                     99,3 % de la dette totale. Emprunts contractés auprès de banques et via l'émission d'obligations sur les marchés.
@@ -258,10 +259,10 @@ export default function DettePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Durée de désendettement
+              <InfoTooltip terme="Durée de désendettement">Durée de désendettement</InfoTooltip>
             </h2>
             <p className="text-gray-600 mb-8">
-              Nombre d'années nécessaires pour rembourser la dette avec l'épargne brute actuelle
+              Nombre d'années nécessaires pour rembourser la dette avec l'<InfoTooltip terme="Épargne brute">épargne brute</InfoTooltip> actuelle
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -313,7 +314,7 @@ export default function DettePage() {
                     </div>
                     <div className="text-center">÷</div>
                     <div className="flex justify-between items-center p-2 bg-gray-50 rounded">
-                      <span>Épargne brute annuelle</span>
+                      <span><InfoTooltip terme="Épargne brute">Épargne brute</InfoTooltip> annuelle</span>
                       <span className="font-bold">571 M€</span>
                     </div>
                     <div className="text-center">=</div>
@@ -384,7 +385,7 @@ export default function DettePage() {
                   </div>
                   <hr className="border-white/20" />
                   <div>
-                    <div className="text-gray-400 text-sm">Total annuité</div>
+                    <div className="text-gray-400 text-sm">Total <InfoTooltip terme="Annuité">annuité</InfoTooltip></div>
                     <div className="text-2xl font-bold">532,6 M€</div>
                   </div>
                 </div>
@@ -438,7 +439,7 @@ export default function DettePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              L'épargne brute : la capacité à investir
+              L'<InfoTooltip terme="Épargne brute">épargne brute</InfoTooltip> : la capacité à investir
             </h2>
             <p className="text-gray-600 mb-8">
               Différence entre recettes et dépenses de fonctionnement (en M€)

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { DonutChart, BarChartHorizontal } from '@/components/charts';
 import Link from 'next/link';
+import InfoTooltip from '@/components/InfoTooltip';
 
 // Synthèse des nouvelles AP
 const syntheseAP = {
@@ -281,7 +282,7 @@ export default function InvestissementsPage() {
               Types d'investissements
             </h2>
             <p className="text-gray-600 mb-8">
-              Répartition des 2,05 Md€ de nouvelles autorisations de programme
+              Répartition des 2,05 Md€ de nouvelles <InfoTooltip terme="Autorisations de programme">autorisations de programme</InfoTooltip>
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -339,10 +340,7 @@ export default function InvestissementsPage() {
                 {repartitionFonction.slice(0, 5).map((f, i) => (
                   <div key={i} className="bg-white rounded-xl p-4 shadow-sm border-l-4" style={{ borderColor: f.color }}>
                     <div className="flex justify-between items-center">
-                      <div>
-                        <div className="font-semibold text-primary">{f.label}</div>
-                        <div className="text-xs text-gray-500">Fonction {f.code}</div>
-                      </div>
+                      <div className="font-semibold text-primary">{f.label}</div>
                       <div className="text-2xl font-bold text-primary">{f.value.toLocaleString('fr-FR')} M€</div>
                     </div>
                   </div>
@@ -398,7 +396,7 @@ export default function InvestissementsPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Opérations foncières et ZAC
+              Opérations foncières et <InfoTooltip terme="ZAC">ZAC</InfoTooltip>
             </h2>
             <p className="text-gray-600 mb-8">
               Acquisitions et aménagements urbains
@@ -423,7 +421,7 @@ export default function InvestissementsPage() {
               </div>
 
               <div>
-                <h3 className="font-bold text-primary mb-4">Principales ZAC</h3>
+                <h3 className="font-bold text-primary mb-4">Principales <InfoTooltip terme="ZAC">ZAC</InfoTooltip></h3>
                 <div className="space-y-3">
                   {operationsFoncieres.zac.map((zac, i) => (
                     <div key={i} className="bg-white rounded-xl p-4 shadow-sm flex justify-between items-center">
@@ -528,7 +526,7 @@ export default function InvestissementsPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Budget participatif : 83,8 M€
+              <InfoTooltip terme="Budget participatif">Budget participatif</InfoTooltip> : 83,8 M€
             </h2>
             <p className="text-gray-600 mb-8">
               Crédits alloués au budget participatif
@@ -604,7 +602,7 @@ export default function InvestissementsPage() {
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
-              <h3 className="font-bold text-primary mb-4">Stock par fonction</h3>
+              <h3 className="font-bold text-primary mb-4">Stock par domaine</h3>
               <div className="space-y-3">
                 {stockAP.parFonction.slice(0, 6).map((f, i) => (
                   <div key={i} className="flex items-center gap-4">

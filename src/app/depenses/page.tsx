@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { DonutChart, BarChartHorizontal, ChiffreCard } from '@/components/charts';
+import InfoTooltip from '@/components/InfoTooltip';
 
 // Données des dépenses de fonctionnement
 const depensesFonctionnement = {
@@ -26,13 +27,13 @@ const evolutionMasseSalariale = [
   { label: 'BP 2025', value: 2885.0, highlight: true },
 ];
 
-// Péréquation détaillée
+// Péréquation détaillée - les labels seront enrichis avec InfoTooltip dans le JSX
 const perequation = [
-  { label: 'FNGIR (figé depuis 2011)', value: 898.2, color: '#dc2626' },
-  { label: 'Fonds DMTO', value: 214.2, color: '#ef4444' },
-  { label: 'FSRIF (solidarité IDF)', value: 208.1, color: '#f87171' },
-  { label: 'FPIC (national)', value: 199.6, color: '#fca5a5' },
-  { label: 'FSDRIF (départemental)', value: 30.0, color: '#fecaca' },
+  { label: 'FNGIR', sublabel: '(figé depuis 2011)', value: 898.2, color: '#dc2626' },
+  { label: 'Fonds DMTO', sublabel: '', value: 214.2, color: '#ef4444' },
+  { label: 'FSRIF', sublabel: '(solidarité IDF)', value: 208.1, color: '#f87171' },
+  { label: 'FPIC', sublabel: '(national)', value: 199.6, color: '#fca5a5' },
+  { label: 'FSDRIF', sublabel: '(départemental)', value: 30.0, color: '#fecaca' },
 ];
 
 // Dépenses de gestion par fonction - dégradé bleu → rouge → jaune
@@ -66,7 +67,7 @@ const jo2024 = {
   investissement: {
     total: 399.5,
     detail: [
-      { label: 'Contribution SOLIDEO', value: 165.0 },
+      { label: 'Contribution SOLIDEO', value: 165.0, hasTooltip: true },
       { label: 'Arena Porte de la Chapelle', value: 142.3 },
       { label: 'Autres sites olympiques', value: 47.3 },
       { label: 'Sites entraînement', value: 26.4 },
@@ -164,7 +165,7 @@ export default function DepensesPage() {
             className="mb-8"
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Masse salariale
+              <InfoTooltip terme="Masse salariale">Masse salariale</InfoTooltip>
             </h2>
             <p className="text-gray-600">
               2,89 Md€ pour le personnel (+2,4 % vs 2024, +20 % depuis 2018)
@@ -223,7 +224,7 @@ export default function DepensesPage() {
             className="mb-8"
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Péréquation : ce que Paris reverse
+              <InfoTooltip terme="Péréquation">Péréquation</InfoTooltip> : ce que Paris reverse
             </h2>
             <p className="text-gray-600">
               1,6 Md€ redistribué aux autres collectivités
@@ -231,12 +232,23 @@ export default function DepensesPage() {
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <BarChartHorizontal
-              data={perequation}
-              title="Détail de la péréquation"
-              subtitle="En M€"
-              maxValue={1000}
-            />
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <h3 className="font-bold text-primary mb-4">Détail de la péréquation</h3>
+              <div className="space-y-3">
+                {perequation.map((item, index) => (
+                  <div key={index} className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-8 rounded-full" style={{ backgroundColor: item.color }} />
+                      <span className="text-gray-700">
+                        <InfoTooltip terme={item.label}>{item.label}</InfoTooltip>
+                        {item.sublabel && <span className="text-gray-500 text-sm"> {item.sublabel}</span>}
+                      </span>
+                    </div>
+                    <span className="font-bold text-primary">{item.value.toLocaleString('fr-FR')} M€</span>
+                  </div>
+                ))}
+              </div>
+            </div>
 
             <div className="space-y-4">
               <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-red-500">
@@ -327,7 +339,7 @@ export default function DepensesPage() {
               <h4 className="font-semibold text-primary mb-2">Santé/Social : 2 051 M€</h4>
               <p className="text-xs text-gray-500 mb-2">+86,5 M€ vs 2024</p>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li>• RSA : 461 M€</li>
+                <li>• <InfoTooltip terme="RSA">RSA</InfoTooltip> : 461 M€</li>
                 <li>• Aide sociale enfance : 380 M€</li>
                 <li>• Handicap : 299 M€</li>
                 <li>• Personnes âgées : 236 M€</li>
@@ -337,7 +349,7 @@ export default function DepensesPage() {
               <h4 className="font-semibold text-primary mb-2">Transports : 645 M€</h4>
               <p className="text-xs text-gray-500 mb-2">+34,7 M€ vs 2024</p>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li>• Contribution IDFM : 472 M€</li>
+                <li>• Contribution <InfoTooltip terme="IDFM">IDFM</InfoTooltip> : 472 M€</li>
                 <li>• Voirie : 103 M€</li>
                 <li>• Vélib'/transports : 34 M€</li>
                 <li>• Aides jeunes : 22,5 M€</li>
@@ -391,14 +403,18 @@ export default function DepensesPage() {
               <div className="space-y-3">
                 {jo2024.investissement.detail.map((item, index) => (
                   <div key={index} className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">{item.label}</span>
+                    <span className="text-sm text-gray-600">
+                      {item.label.includes('SOLIDEO') ? (
+                        <>Contribution <InfoTooltip terme="SOLIDEO">SOLIDEO</InfoTooltip></>
+                      ) : item.label}
+                    </span>
                     <span className="font-semibold text-primary">{item.value} M€</span>
                   </div>
                 ))}
               </div>
               <div className="border-t mt-4 pt-4">
                 <div className="text-sm text-gray-500">
-                  Reversement SOLIDEO : 109,7 M€
+                  Reversement <InfoTooltip terme="SOLIDEO">SOLIDEO</InfoTooltip> : 109,7 M€
                 </div>
               </div>
             </div>
