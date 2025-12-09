@@ -392,12 +392,12 @@ export default function PolitiquesPage() {
               Répartition du budget consolidé par politique publique (en M€)
             </p>
 
-            <div className="grid lg:grid-cols-2 gap-8">
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="grid lg:grid-cols-2 gap-8 overflow-hidden">
+              <div className="bg-white rounded-xl p-6 shadow-sm overflow-hidden">
                 <DonutChart data={chartData} height={350} />
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white rounded-xl p-6 shadow-sm overflow-hidden">
                 <BarChartHorizontal
                   data={politiques.map(p => ({
                     label: p.nom,

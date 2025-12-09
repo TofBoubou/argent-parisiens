@@ -20,6 +20,12 @@ body {
   max-width: 100vw;
 }
 
+/* Empêcher tout débordement horizontal */
+section, main, .max-w-7xl {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

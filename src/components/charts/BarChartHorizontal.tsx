@@ -35,7 +35,7 @@ export default function BarChartHorizontal({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white rounded-xl p-6 shadow-sm"
+      className="bg-white rounded-xl p-6 shadow-sm overflow-hidden w-full max-w-full"
       role="img"
       aria-label={ariaLabel || `Graphique en barres : ${title || 'Comparaison des valeurs'}`}
     >
