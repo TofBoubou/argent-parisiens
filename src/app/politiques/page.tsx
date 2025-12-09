@@ -530,12 +530,11 @@ export default function PolitiquesPage() {
                             </div>
 
                             {/* Alert */}
-                            <div className="bg-amber-50 rounded-lg p-4 border-l-4 border-amber-500">
-                              <div className="flex items-start gap-2">
-                                <span className="text-amber-600 font-bold">!</span>
+                            {politique.alert && (
+                              <div className="bg-amber-50 rounded-lg p-4 border-l-4 border-amber-500">
                                 <p className="text-sm text-gray-700">{politique.alert}</p>
                               </div>
-                            </div>
+                            )}
                           </div>
                         </motion.div>
                       )}
