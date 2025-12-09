@@ -87,8 +87,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-6 pt-6 text-center text-gray-400 text-xs">
-          <p>© 2025 - L'argent des Parisiens - Municipales Paris 2026</p>
+        <div className="border-t border-white/10 mt-6 pt-6 text-center">
+          <p className="text-white font-medium text-sm mb-1">
+            Site de campagne de Sarah Knafo
+          </p>
+          <p className="text-gray-400 text-xs">
+            © 2025 - L'argent des Parisiens - Municipales Paris 2026
+          </p>
         </div>
       </div>
     </footer>

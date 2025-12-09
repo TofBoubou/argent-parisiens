@@ -132,6 +132,9 @@ export default function Header() {
             <span className="text-white font-bold text-lg md:text-xl">
               L'argent des Parisiens
             </span>
+            <span className="hidden sm:inline-block bg-accent text-white text-xs font-semibold px-2 py-0.5 rounded">
+              Knafo 2026
+            </span>
           </Link>
 
           {/* Search Bar - Desktop */}

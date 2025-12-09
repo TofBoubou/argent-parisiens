@@ -82,9 +82,12 @@ export default function Home() {
             <h1 className="text-3xl md:text-5xl font-bold mb-6">
               Où va l'argent des <span className="text-accent">Parisiens</span> ?
             </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-4">
               Découvrez comment la Ville de Paris gère près de 10 Md€
               de votre argent chaque année.
+            </p>
+            <p className="text-accent font-semibold">
+              Un projet porté par Sarah Knafo - Municipales 2026
             </p>
           </motion.div>
 
