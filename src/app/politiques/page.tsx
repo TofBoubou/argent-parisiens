@@ -399,7 +399,7 @@ export default function PolitiquesPage() {
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <BarChartHorizontal
                   data={politiques.map(p => ({
-                    label: p.nom.split(' ').slice(0, 2).join(' '),
+                    label: p.nom,
                     value: p.budget,
                     color: p.color,
                   }))}
