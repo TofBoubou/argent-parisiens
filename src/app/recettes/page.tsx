@@ -125,28 +125,6 @@ const impactsPLF2025 = [
   },
 ];
 
-// Amendements possibles
-const amendementsPossibles = [
-  {
-    mesure: 'Majoration THRS de 60 % à 100 %',
-    impact: 60,
-    type: 'recette',
-    description: 'Augmentation taxe résidences secondaires',
-  },
-  {
-    mesure: 'Déliaison THRS / Taxe foncière',
-    impact: 16,
-    type: 'recette',
-    description: 'Par point de majoration supplémentaire',
-  },
-  {
-    mesure: 'Relèvement DMTO départementaux',
-    impact: 0.5,
-    type: 'taux',
-    description: '+0,5 point sur droits de mutation',
-  },
-];
-
 // Dotations et compensations
 const dotationsCompensations = [
   { label: 'TSCA (assurances)', value: 92.0 },
@@ -531,58 +509,6 @@ export default function RecettesPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Amendements possibles */}
-      <section className="py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-8"
-          >
-            <h2 className="text-2xl font-bold text-primary mb-2">
-              Leviers fiscaux possibles
-            </h2>
-            <p className="text-gray-600">
-              Amendements et mesures envisageables pour augmenter les recettes
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {amendementsPossibles.map((amendement, index) => (
-              <motion.div
-                key={amendement.mesure}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-xl p-6 shadow-sm border-t-4 border-green-500"
-              >
-                <h3 className="font-bold text-primary mb-2">{amendement.mesure}</h3>
-                <div className="text-2xl font-bold text-green-600 mb-2">
-                  +{amendement.impact} {amendement.type === 'taux' ? 'pt' : 'M€'}
-                </div>
-                <p className="text-sm text-gray-600">{amendement.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-100"
-          >
-            <p className="text-sm text-amber-800">
-              <strong>Perte de pouvoir fiscal :</strong> Depuis 2010, Paris a perdu 2 Md€
-              de pouvoir de taux (<InfoTooltip terme="CFE">CFE</InfoTooltip> transférée à la <InfoTooltip terme="MGP">MGP</InfoTooltip> en 2025, suppression de la <InfoTooltip terme="CVAE">CVAE</InfoTooltip>,
-              de la taxe d'habitation sur résidences principales...). Ces recettes sont
-              compensées par des fractions de TVA, sur lesquelles la Ville n'a aucun contrôle.
-            </p>
-          </motion.div>
         </div>
       </section>
 
