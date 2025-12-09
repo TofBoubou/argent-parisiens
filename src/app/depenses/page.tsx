@@ -75,18 +75,6 @@ const jo2024 = {
   },
 };
 
-// Créations de postes
-const creationsPostes = {
-  total: 950,
-  soldeNet: 344.5,
-  priorites: [
-    { label: 'Police municipale', value: 'Montée en puissance' },
-    { label: 'Déprécarisation agents', value: 'Priorité sociale' },
-    { label: 'Solidarité populations fragiles', value: 'Renforcement' },
-    { label: 'Qualité espace public', value: 'Entretien' },
-  ],
-};
-
 export default function DepensesPage() {
   return (
     <div>
