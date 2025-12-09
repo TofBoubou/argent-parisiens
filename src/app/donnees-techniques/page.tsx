@@ -12,6 +12,7 @@ const participations = [
   { name: 'Préfecture de Police', value: 256.4, bp2024: 252.4, color: '#dc2626' },
   { name: 'Caisses des écoles', value: 132.4, bp2024: 112.0, color: '#ef4444' },
   { name: 'SYCTOM (déchets)', value: 119.0, bp2024: 114.8, color: '#f87171' },
+  { name: 'BSPP (pompiers)', value: 113.1, bp2024: 109.0, color: '#b91c1c' },
   { name: 'Crèches associatives', value: 72.0, bp2024: 65.0, color: '#d97706' },
   { name: 'Paris Musées', value: 58.5, bp2024: 56.2, color: '#f59e0b' },
   { name: 'Dotation collèges', value: 38.1, bp2024: 37.7, color: '#fbbf24' },
@@ -127,7 +128,7 @@ export default function DonneesTechniquesPage() {
               Participations aux autres budgets
             </h2>
             <p className="text-gray-600 mb-8">
-              1,68 Md€ versés par Paris à d'autres organismes en 2025
+              1,79 Md€ versés par Paris à d'autres organismes en 2025
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -158,6 +159,7 @@ export default function DonneesTechniquesPage() {
                             {p.name.includes('IDFM') ? <><InfoTooltip terme="IDFM">IDFM</InfoTooltip> (transports)</> :
                              p.name.includes('CASVP') ? <><InfoTooltip terme="CASVP">CASVP</InfoTooltip> (action sociale)</> :
                              p.name.includes('SYCTOM') ? <><InfoTooltip terme="SYCTOM">SYCTOM</InfoTooltip> (déchets)</> :
+                             p.name.includes('BSPP') ? <><InfoTooltip terme="BSPP">BSPP</InfoTooltip> (pompiers)</> :
                              p.name}
                           </div>
                           <div className="text-xs text-gray-500">BP 2024 : {p.bp2024.toFixed(1)} M€</div>

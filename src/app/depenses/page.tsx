@@ -16,6 +16,18 @@ const depensesFonctionnement = {
   ],
 };
 
+// Effectifs par filière (CA 2024 - ETPT pourvus)
+const effectifsParFiliere = [
+  { label: 'Technique', value: 16930, detail: 'dont 4 920 éboueurs', color: '#0D1B4C' },
+  { label: 'Médico-sociale', value: 9374, detail: 'dont 3 500 auxiliaires puériculture', color: '#1e3a8a' },
+  { label: 'Administrative', value: 8294, detail: 'adjoints, attachés, secrétaires', color: '#dc2626' },
+  { label: 'Sociale', value: 4227, detail: 'dont 1 957 ASEM (écoles maternelles)', color: '#ef4444' },
+  { label: 'Animation', value: 3350, detail: 'animateurs, adjoints animation', color: '#d97706' },
+  { label: 'Culturelle', value: 2806, detail: 'agents accueil, professeurs', color: '#f59e0b' },
+  { label: 'Police municipale', value: 1731, detail: 'agents et chefs de service', color: '#3b82f6' },
+  { label: 'Sportive', value: 455, detail: 'éducateurs sportifs', color: '#fbbf24' },
+];
+
 // Évolution masse salariale
 const evolutionMasseSalariale = [
   { label: 'CA 2018', value: 2395.7 },
@@ -215,8 +227,59 @@ export default function DepensesPage() {
         </div>
       </section>
 
-      {/* Péréquation */}
+      {/* Effectifs par filière */}
       <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-8"
+          >
+            <h2 className="text-2xl font-bold text-primary mb-2">
+              Qui sont les 49 110 agents ?
+            </h2>
+            <p className="text-gray-600">
+              Répartition des effectifs par filière (compte administratif 2024)
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {effectifsParFiliere.map((filiere, index) => (
+              <motion.div
+                key={filiere.label}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-white rounded-xl p-4 shadow-sm border-l-4"
+                style={{ borderColor: filiere.color }}
+              >
+                <div className="text-2xl font-bold text-primary">
+                  {filiere.value.toLocaleString('fr-FR')}
+                </div>
+                <div className="font-medium text-gray-800">{filiere.label}</div>
+                <div className="text-xs text-gray-500 mt-1">{filiere.detail}</div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-100"
+          >
+            <p className="text-sm text-blue-800">
+              <strong>54 319 emplois budgétaires</strong> pour 49 110 équivalents temps plein pourvus.
+              La différence correspond aux postes vacants et temps partiels.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Péréquation */}
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
