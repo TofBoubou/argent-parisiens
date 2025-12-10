@@ -191,8 +191,8 @@ export default function DonneesTechniquesPage() {
               Ventilation des 9,9 Md€ de recettes
             </p>
 
-            <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-              <table className="w-full">
+            <div className="bg-white rounded-xl shadow-sm overflow-x-auto">
+              <table className="w-full min-w-[500px]">
                 <thead className="bg-primary text-white">
                   <tr>
                     <th className="px-4 py-3 text-left">Catégorie</th>
@@ -246,8 +246,8 @@ export default function DonneesTechniquesPage() {
               Ventilation des 9,9 Md€ de dépenses
             </p>
 
-            <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-              <table className="w-full">
+            <div className="bg-white rounded-xl shadow-sm overflow-x-auto">
+              <table className="w-full min-w-[500px]">
                 <thead className="bg-primary text-white">
                   <tr>
                     <th className="px-4 py-3 text-left">Catégorie</th>
