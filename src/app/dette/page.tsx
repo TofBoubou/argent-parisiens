@@ -213,7 +213,7 @@ export default function DettePage() {
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white rounded-xl p-6 shadow-sm flex justify-center">
                 <DonutChart data={compositionDette} height={300} />
               </div>
 

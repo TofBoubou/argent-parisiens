@@ -393,7 +393,7 @@ export default function PolitiquesPage() {
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8 overflow-hidden">
-              <div className="bg-white rounded-xl p-6 shadow-sm overflow-hidden">
+              <div className="bg-white rounded-xl p-6 shadow-sm overflow-hidden flex justify-center">
                 <DonutChart data={chartData} height={350} />
               </div>
 
@@ -483,7 +483,7 @@ export default function PolitiquesPage() {
                             <div className="grid lg:grid-cols-2 gap-6 mb-6">
                               <div>
                                 <h4 className="font-semibold text-primary mb-3">Répartition interne (hors masse salariale)</h4>
-                                <div className="bg-gray-50 rounded-lg p-4">
+                                <div className="bg-gray-50 rounded-lg p-4 flex justify-center">
                                   <DonutChart data={politique.repartition} total={politique.budget} totalLabel="M€" height={200} />
                                 </div>
                               </div>

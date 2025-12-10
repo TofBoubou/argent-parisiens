@@ -288,12 +288,16 @@ export default function InvestissementsPage() {
             <div className="grid lg:grid-cols-2 gap-8">
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <h3 className="font-bold text-primary mb-4">Par type d'opération</h3>
-                <DonutChart data={syntheseAP.parType} height={280} />
+                <div className="flex justify-center">
+                  <DonutChart data={syntheseAP.parType} height={280} />
+                </div>
               </div>
 
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <h3 className="font-bold text-primary mb-4">Par localisation</h3>
-                <DonutChart data={syntheseAP.parLocalisation} height={280} />
+                <div className="flex justify-center">
+                  <DonutChart data={syntheseAP.parLocalisation} height={280} />
+                </div>
               </div>
             </div>
 
@@ -533,7 +537,7 @@ export default function InvestissementsPage() {
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white rounded-xl p-6 shadow-sm flex flex-col">
                 <h3 className="font-bold text-primary mb-4">Campagne 2024</h3>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center p-4 bg-gray-50 rounded-lg">

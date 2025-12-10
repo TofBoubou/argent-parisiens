@@ -131,7 +131,7 @@ export default function DonneesTechniquesPage() {
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white rounded-xl p-6 shadow-sm flex justify-center">
                 <DonutChart
                   data={participations.map(p => ({ name: p.name.split(' ')[0], value: p.value, color: p.color }))}
                   height={350}
@@ -372,7 +372,7 @@ export default function DonneesTechniquesPage() {
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white rounded-xl p-6 shadow-sm flex justify-center">
                 <DonutChart data={amortissementsProvisions} height={280} />
               </div>
 
