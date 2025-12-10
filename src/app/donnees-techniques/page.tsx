@@ -133,7 +133,7 @@ export default function DonneesTechniquesPage() {
             <div className="grid lg:grid-cols-2 gap-8">
               <DonutChart
                 data={participations.map(p => ({ name: p.name.split(' ')[0], value: p.value, color: p.color }))}
-                height={350}
+                height={280}
               />
 
               <div className="space-y-3">
