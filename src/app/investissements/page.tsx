@@ -66,7 +66,6 @@ const grandsProjets = [
   {
     arrondissement: '18e',
     projets: [
-      { nom: 'Esplanade Notre-Dame (travaux abords)', montant: 42.2 },
       { nom: 'Restructuration cuisine centrale Riquet', montant: 9.7 },
       { nom: 'Création centre de santé', montant: 2.8 },
       { nom: 'Création atelier propreté', montant: 2.5 },
@@ -93,7 +92,6 @@ const grandsProjets = [
     arrondissement: '13e',
     projets: [
       { nom: 'ZAC Paris Rive Gauche (voirie)', montant: 23.5 },
-      { nom: 'Parc ZAC Python-Duvernois', montant: 3.4 },
       { nom: 'Extension square Clara Zetkin', montant: 1.3 },
       { nom: 'Rue Nationale', montant: 1.3 },
       { nom: 'Local services espaces verts', montant: 1.0 },
@@ -112,13 +110,12 @@ const grandsProjets = [
     projets: [
       { nom: 'Parc ZAC Python-Duvernois', montant: 3.4 },
       { nom: 'Rénovation columbarium Père-Lachaise', montant: 2.0 },
-      { nom: 'Rénovation Maison de l\'Air', montant: 1.0 },
     ],
   },
   {
     arrondissement: '17e',
     projets: [
-      { nom: 'ZAC Clichy-Batignolles', montant: 4.3 },
+      { nom: 'ZAC Clichy-Batignolles', montant: 4.0 },
     ],
   },
   {
@@ -145,6 +142,7 @@ const grandsProjets = [
   {
     arrondissement: 'Paris Centre',
     projets: [
+      { nom: 'Esplanade Notre-Dame (travaux abords)', montant: 42.2 },
       { nom: 'Travaux Pavillon de l\'Arsenal', montant: 10.2 },
       { nom: 'Travaux Forum des Halles', montant: 3.7 },
       { nom: 'Restauration façade Saint-Leu-Saint-Gilles', montant: 2.5 },
@@ -200,7 +198,7 @@ const operationsFoncieres = {
   zac: [
     { nom: 'ZAC Paris Rive Gauche', montant: 23.5, arrondissement: '13e' },
     { nom: 'ZAC Saint-Vincent-de-Paul', montant: 12.9, arrondissement: '14e' },
-    { nom: 'ZAC Clichy-Batignolles', montant: 4.3, arrondissement: '17e' },
+    { nom: 'ZAC Clichy-Batignolles', montant: 4.0, arrondissement: '17e' },
     { nom: 'ZAC Python-Duvernois', montant: 3.4, arrondissement: '20e' },
     { nom: 'ZAC Bédier-Oudiné', montant: 1.3, arrondissement: '13e' },
     { nom: 'ZAC Bargue-Procession', montant: 0.5, arrondissement: '15e' },

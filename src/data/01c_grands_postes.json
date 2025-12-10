@@ -105,7 +105,7 @@
       "donnees": [
         {"annee": "CA 2022", "charges_personnel": 2543.8, "depenses_gestion": 4123.0, "perequation": 1081.1, "charges_financieres": 142.1},
         {"annee": "CA 2023", "charges_personnel": 2637.3, "depenses_gestion": 4302.5, "perequation": 1644.8, "charges_financieres": 171.0},
-        {"annee": "BP 2024", "charges_personnel": 2817.7, "depenses_gestion": 4497.6, "perequation": 1729.1, "charges_financieres": 213.0},
+        {"annee": "BP 2024", "charges_personnel": 2817.7, "depenses_gestion": 4497.6, "perequation": 1728.1, "charges_financieres": 213.0},
         {"annee": "BP 2025", "charges_personnel": 2885.0, "depenses_gestion": 4554.0, "perequation": 1604.7, "charges_financieres": 224.5}
       ]
     },

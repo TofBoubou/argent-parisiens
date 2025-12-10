@@ -141,10 +141,12 @@ const recettesGestion = [
   { label: 'Transports', value: 472.7, color: '#0D1B4C' },
   { label: 'Santé et action sociale', value: 321.4, color: '#dc2626' },
   { label: 'Services généraux', value: 232.2, color: '#d97706' },
-  { label: 'Culture et sports', value: 156.9, color: '#3b82f6' },
   { label: 'Environnement', value: 152.6, color: '#ef4444' },
-  { label: 'Enseignement', value: 89.7, color: '#f59e0b' },
-  { label: 'Autres', value: 78.6, color: '#60a5fa' },
+  { label: 'Culture et sports', value: 119.3, color: '#3b82f6' },
+  { label: 'Action économique', value: 73.9, color: '#f59e0b' },
+  { label: 'Enseignement', value: 70.5, color: '#fbbf24' },
+  { label: 'Aménagement', value: 60.2, color: '#60a5fa' },
+  { label: 'Sécurité', value: 1.3, color: '#94a3b8' },
 ];
 
 // Chronologie des réformes fiscales
@@ -193,7 +195,7 @@ export default function RecettesPage() {
               <div className="text-xs text-green-400 mt-1">+0,2 % vs 2024</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
-              <div className="text-2xl md:text-3xl font-bold">61 %</div>
+              <div className="text-2xl md:text-3xl font-bold">53 %</div>
               <div className="text-sm text-gray-400">Fiscalité</div>
               <div className="text-xs text-gray-500 mt-1">directe + indirecte</div>
             </div>

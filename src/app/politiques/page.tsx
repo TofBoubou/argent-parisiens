@@ -50,17 +50,17 @@ const politiques = [
   {
     code: '0',
     nom: 'Services généraux',
-    budget: 1833,
+    budget: 1107,
     color: '#dc2626',
     bgColor: 'bg-[#dc2626]',
     chartColor: '#dc2626',
     description: 'Administration, informatique, RH, immobilier, états spéciaux d\'arrondissement, budget participatif',
     keyFacts: [
-      { label: 'Etats spéciaux arrondissement', value: '173 M€', detail: 'Fonctionnement équipements de proximité' },
+      { label: 'Etats spéciaux arrondissement', value: '167 M€', detail: 'Fonctionnement équipements de proximité' },
       { label: 'Budget participatif', value: '80 M€', detail: '25 % du budget d\'investissement décidé par les Parisiens' },
-      { label: 'Informatique', value: '50 M€', detail: 'Projets SI, cybersécurité, maintenance' },
+      { label: 'Informatique', value: '36 M€', detail: 'Projets SI, cybersécurité, maintenance' },
       { label: 'Réaménagement Tour Eiffel', value: '18 M€', detail: 'Travaux de modernisation du site' },
-      { label: 'Concessions', value: '185 M€', detail: 'Recettes affichage, télécom, parkings' },
+      { label: 'Gestion immobilière', value: '71 M€', detail: 'Loyers et charges locaux administratifs' },
     ],
     alert: 'Loyers et charges immobilières : 71 M€ pour les locaux administratifs',
     postes: '+26 créations de postes en 2025',
@@ -121,7 +121,7 @@ const politiques = [
   {
     code: '7',
     nom: 'Environnement',
-    budget: 635,
+    budget: 917,
     color: '#1e3a8a',
     bgColor: 'bg-[#1e3a8a]',
     chartColor: '#1e3a8a',
@@ -129,7 +129,7 @@ const politiques = [
     keyFacts: [
       { label: 'Contribution SYCTOM', value: '119 M€', detail: 'Traitement et valorisation des déchets' },
       { label: 'Collecte déchets', value: '110 M€', detail: 'Ordures ménagères, tri, corbeilles' },
-      { label: 'Propreté urbaine', value: '50 M€', detail: 'Nettoiement, sanisettes, graffitis' },
+      { label: 'Propreté urbaine', value: '69 M€', detail: 'Nettoiement, sanisettes, graffitis' },
       { label: 'TEOM perçue', value: '573 M€', detail: 'Taxe d\'enlèvement des ordures ménagères' },
       { label: 'Nouvelles sanisettes', value: '21 M€', detail: 'Acquisition et modernisation' },
     ],
@@ -158,7 +158,7 @@ const politiques = [
   {
     code: '3',
     nom: 'Culture, sports, loisirs',
-    budget: 564,
+    budget: 792,
     color: '#ef4444',
     bgColor: 'bg-[#ef4444]',
     chartColor: '#ef4444',
@@ -177,7 +177,7 @@ const politiques = [
       { name: 'Sports', value: 21.5, color: '#dc2626' },
       { name: 'Jeunesse loisirs', value: 7.0, color: '#d97706' },
       { name: 'Vie sociale', value: 1.5, color: '#ef4444' },
-      { name: 'Services communs', value: 0.9, color: '#f59e0b' },
+      { name: 'Services communs', value: 0.8, color: '#f59e0b' },
     ],
     projets: [
       { nom: 'Contribution Solideo (solde JOP)', montant: 27.2 },
@@ -195,7 +195,7 @@ const politiques = [
   {
     code: '2',
     nom: 'Enseignement',
-    budget: 510,
+    budget: 977,
     color: '#f59e0b',
     bgColor: 'bg-[#f59e0b]',
     chartColor: '#f59e0b',
@@ -231,7 +231,7 @@ const politiques = [
   {
     code: '5',
     nom: 'Aménagement et habitat',
-    budget: 391,
+    budget: 1052,
     color: '#3b82f6',
     bgColor: 'bg-[#3b82f6]',
     chartColor: '#3b82f6',
@@ -251,7 +251,7 @@ const politiques = [
       { name: 'Espaces verts', value: 18.6, color: '#d97706' },
       { name: 'Habitat logement', value: 16.4, color: '#ef4444' },
       { name: 'Services communs', value: 7.1, color: '#f59e0b' },
-      { name: 'Politique ville', value: 5.4, color: '#fbbf24' },
+      { name: 'Politique ville', value: 5.1, color: '#fbbf24' },
     ],
     projets: [
       { nom: 'Acquisitions foncières logement social', montant: 200.0 },
@@ -269,14 +269,14 @@ const politiques = [
   {
     code: '1',
     nom: 'Sécurité',
-    budget: 330,
+    budget: 505,
     color: '#f87171',
     bgColor: 'bg-[#f87171]',
     chartColor: '#f87171',
     description: 'Police municipale, préfecture de police, pompiers de Paris (BSPP)',
     keyFacts: [
       { label: 'Préfecture de Police', value: '148 M€', detail: 'Budget spécial PP' },
-      { label: 'Brigade pompiers (BSPP)', value: '119 M€', detail: 'Contribution fonctionnement + investissement' },
+      { label: 'Brigade pompiers (BSPP)', value: '109 M€', detail: 'Contribution fonctionnement + investissement' },
       { label: 'Police municipale', value: '21 M€', detail: 'Surveillance, prévention' },
       { label: 'Vidéoprotection', value: '2 M€', detail: 'Extension du réseau' },
       { label: 'Agents recrutés', value: '+455', detail: 'Créations de postes' },
@@ -304,7 +304,7 @@ const politiques = [
   {
     code: '6',
     nom: 'Action économique',
-    budget: 112,
+    budget: 77,
     color: '#fbbf24',
     bgColor: 'bg-[#fbbf24]',
     chartColor: '#fbbf24',
@@ -312,7 +312,7 @@ const politiques = [
     keyFacts: [
       { label: 'Taxe de séjour', value: '135 M€', detail: '-50 M€ vs 2024 (fin effet JO)' },
       { label: 'Insertion emploi', value: '14 M€', detail: 'Mission locale, formation' },
-      { label: 'Tumo Paris', value: '6 M€', detail: 'École création numérique' },
+      { label: 'Tumo Paris', value: '5,5 M€', detail: 'École création numérique' },
       { label: 'Compte foncier commerces', value: '8 M€', detail: 'Préemption locaux commerciaux' },
       { label: 'Office du tourisme', value: '4 M€', detail: 'Subvention OTCP' },
     ],

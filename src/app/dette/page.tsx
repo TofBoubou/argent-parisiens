@@ -17,12 +17,8 @@ import {
   ComposedChart,
 } from 'recharts';
 
-// Évolution de la dette
+// Évolution de la dette (encours au 31/12)
 const evolutionDette = [
-  { annee: '2019', dette: 5900, label: '5,9 Md€' },
-  { annee: '2020', dette: 6500, label: '6,5 Md€' },
-  { annee: '2021', dette: 7200, label: '7,2 Md€' },
-  { annee: '2022', dette: 7500, label: '7,5 Md€' },
   { annee: '2023', dette: 8043, label: '8,0 Md€' },
   { annee: '2024', dette: 8675, label: '8,7 Md€' },
   { annee: '2025', dette: 9357, label: '9,4 Md€' },
@@ -42,10 +38,6 @@ const evolutionEpargneBrute = [
 
 // Durée de désendettement
 const evolutionDuree = [
-  { annee: '2020', duree: 9.3 },
-  { annee: '2021', duree: 12.5 },
-  { annee: '2022', duree: 12.9 },
-  { annee: '2023', duree: 10.6 },
   { annee: '2024', duree: 15.3 },
   { annee: '2025', duree: 16.4 },
 ];
@@ -189,7 +181,7 @@ export default function DettePage() {
 
               <div className="mt-6 p-4 bg-red-50 border-l-4 border-accent rounded-r-lg">
                 <p className="text-sm text-gray-700">
-                  <span className="font-bold text-accent">+59 % en 6 ans</span> : la dette est passée de 5,9 Md€ en 2019 à 9,4 Md€ fin 2025, soit une augmentation de 3,5 Md€.
+                  <span className="font-bold text-accent">+16 % en 2 ans</span> : la dette est passée de 8,0 Md€ fin 2023 à 9,4 Md€ fin 2025, soit une augmentation de 1,3 Md€.
                 </p>
               </div>
             </div>

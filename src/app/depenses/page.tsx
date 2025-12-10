@@ -16,26 +16,10 @@ const depensesFonctionnement = {
   ],
 };
 
-// Effectifs par filière (CA 2024 - ETPT pourvus)
-const effectifsParFiliere = [
-  { label: 'Technique', value: 16930, detail: 'dont 4 920 éboueurs', color: '#0D1B4C' },
-  { label: 'Médico-sociale', value: 9374, detail: 'dont 3 500 auxiliaires puériculture', color: '#1e3a8a' },
-  { label: 'Administrative', value: 8294, detail: 'adjoints, attachés, secrétaires', color: '#dc2626' },
-  { label: 'Sociale', value: 4227, detail: 'dont 1 957 ASEM (écoles maternelles)', color: '#ef4444' },
-  { label: 'Animation', value: 3350, detail: 'animateurs, adjoints animation', color: '#d97706' },
-  { label: 'Culturelle', value: 2806, detail: 'agents accueil, professeurs', color: '#f59e0b' },
-  { label: 'Police municipale', value: 1731, detail: 'agents et chefs de service', color: '#3b82f6' },
-  { label: 'Sportive', value: 455, detail: 'éducateurs sportifs', color: '#fbbf24' },
-];
-
 // Évolution masse salariale
 const evolutionMasseSalariale = [
-  { label: 'CA 2018', value: 2395.7 },
-  { label: 'CA 2019', value: 2423.5 },
-  { label: 'CA 2020', value: 2452.2 },
-  { label: 'CA 2021', value: 2479.5 },
   { label: 'CA 2022', value: 2543.8 },
-  { label: 'CA 2023', value: 2637.2 },
+  { label: 'CA 2023', value: 2637.3 },
   { label: 'BP 2024', value: 2817.7 },
   { label: 'BP 2025', value: 2885.0, highlight: true },
 ];
@@ -53,13 +37,13 @@ const perequation = [
 const depensesGestion = [
   { label: 'Santé et action sociale', value: 2051.2, color: '#0D1B4C' },
   { label: 'Transports', value: 644.6, color: '#dc2626' },
-  { label: 'Services généraux', value: 467.0, color: '#d97706' },
-  { label: 'Environnement', value: 425.3, color: '#1e3a8a' },
+  { label: 'Services généraux', value: 466.5, color: '#d97706' },
+  { label: 'Environnement', value: 424.7, color: '#1e3a8a' },
   { label: 'Enseignement', value: 286.9, color: '#ef4444' },
-  { label: 'Sécurité', value: 280.0, color: '#f59e0b' },
+  { label: 'Sécurité', value: 280.4, color: '#f59e0b' },
   { label: 'Culture et sports', value: 262.8, color: '#3b82f6' },
-  { label: 'Aménagement', value: 89.6, color: '#f87171' },
-  { label: 'Action économique', value: 46.6, color: '#fbbf24' },
+  { label: 'Aménagement', value: 96.2, color: '#f87171' },
+  { label: 'Action économique', value: 40.7, color: '#fbbf24' },
 ];
 
 // JO 2024
@@ -181,7 +165,7 @@ export default function DepensesPage() {
               <InfoTooltip terme="Masse salariale">Masse salariale</InfoTooltip>
             </h2>
             <p className="text-gray-600">
-              2,89 Md€ pour le personnel (+2,4 % vs 2024, +20 % depuis 2018)
+              2,89 Md€ pour le personnel (+2,4 % vs 2024)
             </p>
           </motion.div>
 
@@ -203,9 +187,9 @@ export default function DepensesPage() {
                 description="31 % du budget total de fonctionnement"
               />
               <ChiffreCard
-                value="+20 %"
-                label="Hausse depuis 2018"
-                description="De 2 396 M€ en 2018 à 2 885 M€ en 2025"
+                value="+13 %"
+                label="Hausse depuis 2022"
+                description="De 2 544 M€ en 2022 à 2 885 M€ en 2025"
                 accent
               />
               <div className="bg-white rounded-xl p-5 shadow-sm">
@@ -224,57 +208,6 @@ export default function DepensesPage() {
             </div>
           </div>
 
-        </div>
-      </section>
-
-      {/* Effectifs par filière */}
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-8"
-          >
-            <h2 className="text-2xl font-bold text-primary mb-2">
-              Qui sont les 49 110 agents ?
-            </h2>
-            <p className="text-gray-600">
-              Répartition des effectifs par filière (compte administratif 2024)
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {effectifsParFiliere.map((filiere, index) => (
-              <motion.div
-                key={filiere.label}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-                className="bg-white rounded-xl p-4 shadow-sm border-l-4"
-                style={{ borderColor: filiere.color }}
-              >
-                <div className="text-2xl font-bold text-primary">
-                  {filiere.value.toLocaleString('fr-FR')}
-                </div>
-                <div className="font-medium text-gray-800">{filiere.label}</div>
-                <div className="text-xs text-gray-500 mt-1">{filiere.detail}</div>
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-100"
-          >
-            <p className="text-sm text-blue-800">
-              <strong>54 319 emplois budgétaires</strong> pour 49 110 équivalents temps plein pourvus.
-              La différence correspond aux postes vacants et temps partiels.
-            </p>
-          </motion.div>
         </div>
       </section>
 
@@ -601,10 +534,10 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold mb-6">En résumé</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div className="bg-white/10 rounded-xl p-5">
-                <div className="text-accent text-xl font-bold mb-2">+20 %</div>
+                <div className="text-accent text-xl font-bold mb-2">+13 %</div>
                 <div className="text-sm">
-                  de masse salariale en 7 ans, avec 950 créations de postes en 2025
-                  et une progression continue depuis 2018.
+                  de masse salariale en 3 ans, avec 950 créations de postes en 2025
+                  et une progression continue depuis 2022.
                 </div>
               </div>
               <div className="bg-white/10 rounded-xl p-5">
