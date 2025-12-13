@@ -2,140 +2,140 @@
 
 import { useState, useRef, useEffect } from 'react';
 
-// Dictionnaire des termes avec leurs explications - Version simplifiée pour tous
+// Dictionnaire des termes budgétaires
 const glossaire: Record<string, string> = {
-  // Page Recettes
-  'fiscalité directe': "Les impôts que vous payez directement à Paris chaque année : la taxe foncière si vous êtes propriétaire, ou la taxe d'habitation si vous avez une résidence secondaire.",
+  // === RECETTES ===
+  'fiscalité directe': "Impôts versés directement par les contribuables parisiens à la Ville : taxe foncière (propriétaires) et taxe d'habitation sur les résidences secondaires. Ces recettes représentent 2,19 Md€, soit 22 % des ressources.",
 
-  'fiscalité indirecte': "Des taxes que vous payez sans forcément le savoir, cachées dans le prix des choses : par exemple quand vous achetez un appartement ou via la TVA.",
+  'fiscalité indirecte': "Taxes prélevées lors de transactions ou de consommations : droits de mutation immobilière, TVA reversée par l'État, taxe sur les contrats d'assurance. Ces recettes dépendent fortement de la conjoncture économique.",
 
-  'attributions de compensation': "Quand l'État prend un impôt qui revenait à Paris, il doit rendre l'équivalent. C'est un peu comme un remboursement obligatoire. Paris reçoit 1,8 milliard € par an.",
+  'attributions de compensation': "Compensations financières versées à Paris lorsque l'État ou la Métropole du Grand Paris lui retire une compétence fiscale. Ce mécanisme garantit la neutralité budgétaire des transferts. Montant : 1,84 Md€/an.",
 
-  'tfpb': "La taxe foncière : l'impôt que paient les propriétaires d'appartements ou de maisons à Paris. Elle rapporte 1,85 milliard € à la Ville chaque année.",
+  'tfpb': "Taxe Foncière sur les Propriétés Bâties. Impôt annuel calculé sur la valeur locative cadastrale des biens immobiliers. Le taux parisien (20,5 %) reste parmi les plus bas des grandes villes françaises. Rendement : 1,85 Md€.",
 
-  'taxe foncière': "L'impôt annuel que paient tous les propriétaires d'appartements ou de maisons à Paris. Elle rapporte 1,85 milliard € à la Ville.",
+  'taxe foncière': "Impôt annuel dû par les propriétaires, calculé sur la valeur locative cadastrale du bien. À Paris, le taux de 20,5 % est inférieur à celui de Lyon (31,9 %), Marseille (43,5 %) ou Bordeaux (47,3 %). Rendement : 1,85 Md€.",
 
-  'thrs': "Une taxe pour ceux qui ont un appartement à Paris mais n'y habitent pas (résidence secondaire ou pied-à-terre). Elle est majorée de 60 % à Paris.",
+  'thrs': "Taxe d'Habitation sur les Résidences Secondaires. Maintenue après la suppression de la taxe d'habitation sur les résidences principales. Majorée de 60 % à Paris pour lutter contre la sous-occupation des logements. Rendement : 335 M€.",
 
-  'ifer': "Une taxe payée par Orange, EDF, Engie... pour leurs antennes, câbles et installations dans Paris.",
+  'ifer': "Imposition Forfaitaire sur les Entreprises de Réseaux. Taxe acquittée par les opérateurs de télécommunications, d'énergie et de transport pour leurs infrastructures implantées sur le territoire parisien.",
 
-  'cfe': "Un impôt que payaient les entreprises à Paris. Depuis 2025, cet argent va à la Métropole du Grand Paris, pas à la Ville.",
+  'cfe': "Cotisation Foncière des Entreprises. Impôt local assis sur la valeur locative des locaux professionnels. Transférée à la Métropole du Grand Paris depuis 2016, Paris perçoit une attribution de compensation en contrepartie.",
 
-  'teom': "La « taxe poubelle » : elle paie le ramassage et le traitement de vos ordures. Vous la payez avec votre taxe foncière.",
+  'teom': "Taxe d'Enlèvement des Ordures Ménagères. Prélevée avec la taxe foncière, elle finance la collecte et le traitement des déchets. À Paris : 573 M€ collectés, reversés au SYCTOM et aux services municipaux.",
 
-  'dmto': "Une partie des « frais de notaire » quand vous achetez un appartement. Sur un achat de 500 000 €, environ 22 500 € vont à Paris.",
+  'dmto': "Droits de Mutation à Titre Onéreux. Taxe perçue lors des ventes immobilières, communément incluse dans les « frais de notaire ». Le taux est de 4,5 % du prix de vente. Recette très sensible au marché immobilier : 1,3 Md€ prévu en 2025 (-24 %).",
 
-  'droits de mutation': "Une partie des « frais de notaire » quand vous achetez un appartement. Sur un achat de 500 000 €, environ 22 500 € vont à Paris.",
+  'droits de mutation': "Taxe perçue lors des transactions immobilières (4,5 % du prix de vente). Recette volatile car directement liée au volume et aux prix des ventes. La baisse du marché immobilier entraîne une chute de 24 % en 2025.",
 
-  'tsca': "Une petite taxe prélevée sur vos assurances (auto, habitation...). L'État en reverse une partie à Paris.",
+  'tsca': "Taxe Spéciale sur les Conventions d'Assurance. Prélèvement sur les primes d'assurance (automobile, habitation, santé...). L'État en reverse une fraction aux collectivités territoriales. Part parisienne : 92 M€.",
 
-  'dgd': "De l'argent que l'État donne à Paris pour gérer certains services à sa place, comme les collèges.",
+  'dgd': "Dotation Générale de Décentralisation. Compensation versée par l'État pour les compétences transférées aux collectivités (collèges, action sociale...). Paris perçoit 15,8 M€ au titre de diverses compétences exercées.",
 
-  'ticpe': "La taxe sur l'essence et le diesel. Une partie sert à financer le RSA.",
+  'ticpe': "Taxe Intérieure de Consommation sur les Produits Énergétiques. Taxe sur les carburants dont une fraction finance le RSA. Cette ressource diminue structurellement avec la transition énergétique.",
 
-  'dgf': "L'aide principale que l'État verse aux villes. Mais Paris est considérée « trop riche » : elle ne reçoit plus rien depuis 4 ans.",
+  'dgf': "Dotation Globale de Fonctionnement. Principale dotation de l'État aux collectivités. Paris n'en perçoit plus depuis 2021 : ses indicateurs de richesse fiscale dépassent les seuils d'éligibilité. Montant : 0 €.",
 
-  'fctva': "Quand Paris construit une école ou rénove une rue, elle paie la TVA. L'État lui en rembourse une partie après.",
+  'fctva': "Fonds de Compensation pour la TVA. Remboursement partiel de la TVA acquittée par les collectivités sur leurs dépenses d'investissement. Versé avec un décalage de deux ans. Montant attendu : 10 M€.",
 
-  'plf': "Le budget de l'État pour l'année prochaine. Il peut contenir des mauvaises nouvelles pour Paris : moins d'aides, plus de prélèvements...",
+  'plf': "Projet de Loi de Finances. Budget annuel de l'État soumis au Parlement. Les mesures du PLF 2025 représentent un risque de 350 M€ pour Paris : hausse des prélèvements, gel des dotations, contribution au redressement des finances publiques.",
 
-  'cnracl': "La caisse de retraite des employés de la Ville. Paris cotise pour que ses agents aient une retraite.",
+  'cnracl': "Caisse Nationale de Retraites des Agents des Collectivités Locales. Régime de retraite des fonctionnaires territoriaux. La hausse du taux de cotisation employeur (+4 points en 2025) représente une charge supplémentaire de 45 M€ pour Paris.",
 
-  'mgp': "La Métropole du Grand Paris : un regroupement de 131 villes autour de Paris qui gère certains sujets ensemble.",
+  'mgp': "Métropole du Grand Paris. Établissement public regroupant Paris et 130 communes. Elle perçoit la CFE et reverse des attributions de compensation. La gouvernance partagée limite l'autonomie fiscale de Paris.",
 
-  'métropole du grand paris': "Un regroupement de 131 villes autour de Paris qui gère certains sujets en commun et récupère certains impôts.",
+  'métropole du grand paris': "Intercommunalité regroupant Paris et 130 communes (7 millions d'habitants). Elle exerce des compétences en matière d'aménagement, de logement et d'environnement, et perçoit une partie de la fiscalité économique.",
 
-  'cvae': "Un ancien impôt sur les entreprises que Paris a perdu. Il a été remplacé par une part de TVA sur laquelle Paris n'a aucun contrôle.",
+  'cvae': "Cotisation sur la Valeur Ajoutée des Entreprises. Impôt sur les entreprises supprimé progressivement depuis 2021. Paris a perdu cette recette dynamique, remplacée par une fraction de TVA nationale moins favorable.",
 
-  // Page Dépenses
-  'masse salariale': "Tout ce que Paris dépense pour payer ses employés : salaires, primes, cotisations retraite... 2,89 milliards € pour environ 55 000 personnes.",
+  // === DÉPENSES ===
+  'masse salariale': "Ensemble des rémunérations et charges sociales des agents municipaux : traitements, primes, cotisations retraite et sécurité sociale. Paris emploie environ 55 000 agents pour un coût total de 2,89 Md€, soit 31 % du budget de fonctionnement.",
 
-  'péréquation': "Un système de solidarité : Paris, considérée comme « riche », doit donner 1,6 milliard € par an aux villes plus pauvres de France.",
+  'péréquation': "Mécanisme de redistribution entre collectivités. Les territoires considérés comme « riches » contribuent au financement des territoires moins favorisés. Paris verse 1,6 Md€/an (20 % du total national), un montant qui augmente chaque année.",
 
-  'fngir': "Une somme fixe de 898 millions € que Paris doit verser chaque année depuis 2011. Le montant ne baisse jamais, même si Paris a des difficultés.",
+  'fngir': "Fonds National de Garantie Individuelle des Ressources. Prélèvement institué en 2011 lors de la réforme de la taxe professionnelle. Paris verse 898 M€/an, un montant figé qui ne tient pas compte de l'évolution de ses charges.",
 
-  'fsrif': "Un pot commun entre les villes d'Île-de-France. Paris en paie la moitié à elle seule (208 millions €) pour aider les villes plus pauvres de la région.",
+  'fsrif': "Fonds de Solidarité des communes de la Région Île-de-France. Mécanisme régional de péréquation horizontale. Paris contribue à hauteur de 208 M€, soit 50 % du fonds total, au bénéfice des communes franciliennes moins favorisées.",
 
-  'fpic': "Une cagnotte nationale où les territoires riches donnent pour les territoires pauvres. Paris y met 200 millions € par an.",
+  'fpic': "Fonds national de Péréquation des ressources Intercommunales et Communales. Dispositif national de solidarité entre intercommunalités. Contribution parisienne : 200 M€/an, prélevés sur les recettes fiscales.",
 
-  'fsdrif': "Paris donne 30 millions € par an aux départements voisins (Seine-Saint-Denis, Val-de-Marne...) qui ont moins de moyens.",
+  'fsdrif': "Fonds de Solidarité des Départements de la Région Île-de-France. Péréquation entre les départements franciliens. Paris (unique ville-département de France) verse 30 M€ aux départements voisins.",
 
-  'rsa': "Le Revenu de Solidarité Active : l'aide pour les personnes sans revenus. Paris le verse mais l'État ne rembourse pas tout. Il manque 177 millions € par an.",
+  'rsa': "Revenu de Solidarité Active. Allocation versée aux personnes sans ressources, financée par les départements. Paris verse 461 M€/an mais ne reçoit que 284 M€ de compensation de l'État. Reste à charge : 177 M€.",
 
-  'casvp': "Le Centre d'Action Sociale : l'organisme qui aide les personnes âgées, handicapées ou en difficulté à Paris. Budget : 420 millions €.",
+  'casvp': "Centre d'Action Sociale de la Ville de Paris. Établissement public qui gère l'aide sociale : accompagnement des personnes âgées, hébergement d'urgence, insertion professionnelle. Budget : 420 M€ financés par la Ville.",
 
-  'idfm': "L'organisme qui gère le métro, les bus et le RER en Île-de-France. Paris lui verse 472 millions € par an.",
+  'idfm': "Île-de-France Mobilités. Autorité organisatrice des transports en commun franciliens (métro, bus, RER, tramway). Paris verse une contribution annuelle de 472 M€ mais dispose d'un pouvoir de décision limité au sein de l'instance.",
 
-  'île-de-france mobilités': "L'organisme qui gère le métro, les bus et le RER. Paris paie 472 millions € par an mais n'a pas beaucoup de pouvoir sur les décisions.",
+  'île-de-france mobilités': "Autorité organisatrice des transports en Île-de-France. Gère le réseau RATP, les lignes SNCF et les bus. Paris contribue à hauteur de 472 M€/an au financement du réseau mais ne représente qu'une voix parmi les collectivités membres.",
 
-  'solideo': "La société qui a construit les installations des JO 2024 (piscines, stades...). Paris lui a donné 165 millions €.",
+  'solideo': "Société de Livraison des Ouvrages Olympiques. Établissement public chargé de construire les infrastructures pérennes des JO 2024. Paris a contribué à hauteur de 165 M€. Le « trop-perçu » de 109,7 M€ est en cours de reversement.",
 
-  // Page Dette
-  'encours de dette': "Le total de ce que Paris doit encore rembourser. C'est comme le capital restant dû sur un prêt immobilier. Montant : 9,4 milliards €.",
+  // === DETTE ===
+  'encours de dette': "Montant total du capital restant à rembourser sur l'ensemble des emprunts contractés. L'encours de Paris atteint 9,4 Md€ fin 2025, un niveau historique qui a doublé en dix ans.",
 
-  'épargne brute': "L'argent qui reste à Paris une fois toutes les dépenses courantes payées. C'est avec ça qu'elle peut investir ou rembourser ses dettes. Seulement 571 millions € en 2025.",
+  'épargne brute': "Différence entre les recettes et les dépenses de fonctionnement. Elle mesure la capacité d'autofinancement de la collectivité : sa marge pour investir et rembourser la dette. Paris dispose de 571 M€ en 2025, un niveau insuffisant au regard de son endettement.",
 
-  'durée de désendettement': "Le nombre d'années qu'il faudrait à Paris pour rembourser toute sa dette si elle y consacrait toute son épargne. Actuellement : 16,4 ans. Au-delà de 12 ans, c'est inquiétant.",
+  'durée de désendettement': "Indicateur clé de soutenabilité financière : nombre d'années nécessaires pour rembourser la dette en y consacrant la totalité de l'épargne brute. Paris atteint 16,4 ans en 2025, bien au-delà du seuil d'alerte de 12 ans fixé par les experts.",
 
-  'annuité': "Ce que Paris rembourse chaque année sur sa dette : le capital emprunté + les intérêts. Ça fait 533 millions €, soit 1,5 million € par jour.",
+  'annuité': "Somme remboursée chaque année au titre de la dette : capital amorti + intérêts. L'annuité 2025 s'élève à 533 M€ (308 M€ de capital, 224 M€ d'intérêts), soit 1,5 M€ par jour qui ne financent aucun service public.",
 
-  'dette obligataire': "Paris emprunte de l'argent en vendant des « obligations » à des investisseurs, au lieu de passer par une banque. C'est 99 % de sa dette.",
+  'dette obligataire': "Mode de financement par émission d'obligations sur les marchés financiers. Les investisseurs institutionnels souscrivent ces titres, Paris rembourse capital et intérêts selon un échéancier défini. Ce mode représente 99 % de la dette parisienne.",
 
-  // Page Investissements
-  'ap': "Une enveloppe budgétaire pour un grand projet sur plusieurs années. Exemple : « Cette école coûtera 20 millions € sur 4 ans ».",
+  // === INVESTISSEMENTS ===
+  'ap': "Autorisation de Programme. Engagement pluriannuel sur le coût total d'une opération d'investissement. Permet de lancer des projets dont la réalisation s'étale sur plusieurs exercices budgétaires.",
 
-  'autorisation de programme': "Une enveloppe budgétaire pour un grand projet sur plusieurs années. Exemple : « Cette école coûtera 20 millions € sur 4 ans ».",
+  'autorisation de programme': "Engagement financier pluriannuel correspondant au coût total prévisionnel d'un projet d'investissement. Constitue le plafond des dépenses pouvant être engagées sur l'opération.",
 
-  'autorisations de programme': "Des enveloppes budgétaires pour de grands projets sur plusieurs années. Paris a 8,6 milliards € de projets en cours.",
+  'autorisations de programme': "Enveloppes pluriannuelles couvrant le coût global des projets d'investissement. Le stock d'AP représente les engagements de la Ville sur les chantiers en cours et à venir : 8,6 Md€ à Paris.",
 
-  'cp': "L'argent réellement dépensé cette année sur un projet. C'est la différence entre la promesse (l'enveloppe) et le chèque signé.",
+  'cp': "Crédits de Paiement. Dotation budgétaire annuelle permettant de régler les dépenses exigibles sur un exercice. Contrairement à l'AP (engagement total), le CP correspond au décaissement effectif de l'année.",
 
-  'crédits de paiement': "L'argent réellement dépensé cette année sur un projet. C'est la différence entre la promesse (l'enveloppe) et le chèque signé.",
+  'crédits de paiement': "Crédits budgétaires ouverts chaque année pour régler les factures des investissements. Les CP constituent la limite supérieure des dépenses d'investissement pouvant être mandatées sur l'exercice.",
 
-  'zac': "Un quartier entier construit ou rénové par la Ville : logements, écoles, parcs... Exemples : Paris Rive Gauche (13e), Clichy-Batignolles (17e).",
+  'zac': "Zone d'Aménagement Concerté. Procédure d'urbanisme permettant à la collectivité d'aménager un quartier de manière globale : voirie, équipements publics, logements, espaces verts. Exemples : Paris Rive Gauche (13e), Clichy-Batignolles (17e).",
 
-  'zone d\'aménagement concerté': "Un quartier entier construit ou rénové par la Ville : logements, écoles, parcs... Exemples : Paris Rive Gauche, Clichy-Batignolles.",
+  'zone d\'aménagement concerté': "Opération d'aménagement urbain conduite par la collectivité sur un périmètre défini. La Ville maîtrise l'ensemble du projet : acquisitions foncières, équipements, cessions aux promoteurs. Durée moyenne : 15 à 25 ans.",
 
-  'budget participatif': "C'est vous qui décidez ! Les Parisiens votent pour des projets, et la Ville les réalise. 121 projets retenus en 2024 pour 80 millions €.",
+  'budget participatif': "Dispositif de démocratie directe permettant aux Parisiens de proposer et voter des projets d'investissement. Doté de 83,8 M€ (5 % du budget d'investissement), il a permis de réaliser 121 projets en 2024.",
 
-  // Page Politiques
-  'apa': "L'Allocation Personnalisée d'Autonomie : une aide financière pour les personnes âgées qui ont besoin d'assistance au quotidien (aide à domicile, maison de retraite...).",
+  // === POLITIQUES PUBLIQUES ===
+  'apa': "Allocation Personnalisée d'Autonomie. Prestation départementale destinée aux personnes âgées en perte d'autonomie pour financer une aide à domicile ou un hébergement en établissement. Paris verse 145 M€, partiellement compensés par l'État.",
 
-  'pch': "La Prestation de Compensation du Handicap : une aide pour les personnes handicapées (aménagement du logement, fauteuil roulant, aide à domicile...).",
+  'pch': "Prestation de Compensation du Handicap. Aide financière versée par le département pour couvrir les besoins liés au handicap : aménagement du logement, auxiliaire de vie, appareillage. Paris assume une part significative du financement.",
 
-  'mna': "Des jeunes migrants arrivés seuls en France, sans leurs parents. Paris doit les loger et s'occuper d'eux jusqu'à leurs 18 ans (parfois 21 ans).",
+  'mna': "Mineurs Non Accompagnés. Jeunes étrangers arrivés en France sans représentant légal. Leur prise en charge (hébergement, scolarisation, accompagnement) relève de la compétence départementale jusqu'à leur majorité, voire 21 ans. Coût en forte hausse.",
 
-  'mineurs non accompagnés': "Des jeunes migrants arrivés seuls en France, sans leurs parents. Paris doit les loger et s'occuper d'eux jusqu'à leurs 18 ans.",
+  'mineurs non accompagnés': "Jeunes migrants isolés de moins de 18 ans. Paris, en tant que département, a l'obligation légale de les héberger et de les accompagner. Cette compétence représente une charge croissante insuffisamment compensée par l'État.",
 
-  'pmi': "La Protection Maternelle et Infantile : des consultations gratuites pour les femmes enceintes et les enfants de 0 à 6 ans (vaccins, suivi médical...).",
+  'pmi': "Protection Maternelle et Infantile. Service départemental de prévention sanitaire : consultations prénatales, suivi des nourrissons, vaccinations, bilans de santé en école maternelle. Accès gratuit pour toutes les familles.",
 
-  'espci': "Une grande école de sciences à Paris, spécialisée en physique et chimie. 6 prix Nobel y ont travaillé ! Paris la finance.",
+  'espci': "École Supérieure de Physique et de Chimie Industrielles de la Ville de Paris. Grande école d'ingénieurs fondée en 1882. Six prix Nobel y ont travaillé (Pierre et Marie Curie, Frédéric Joliot...). Paris la finance à hauteur de 13 M€/an.",
 
-  'bspp': "Les pompiers de Paris. Ce sont des militaires. Paris paie 119 millions € par an, mais c'est le préfet qui les dirige, pas le maire.",
+  'bspp': "Brigade de Sapeurs-Pompiers de Paris. Unité militaire assurant les secours dans Paris et les départements limitrophes. Paris contribue à hauteur de 119 M€/an mais n'exerce aucun commandement opérationnel, dévolu au préfet de police.",
 
-  'brigade de sapeurs-pompiers': "Les pompiers de Paris. Ce sont des militaires. Paris paie 119 millions € par an, mais c'est le préfet qui les dirige, pas le maire.",
+  'brigade de sapeurs-pompiers': "Corps militaire de 8 500 hommes assurant les secours à Paris et en petite couronne. Particularité française : Paris finance (119 M€/an) mais c'est le préfet de police, représentant de l'État, qui commande les opérations.",
 
-  'esa': "Le budget que chaque mairie d'arrondissement gère elle-même : entretien des écoles, petits parcs, animations locales...",
+  'esa': "État Spécial d'Arrondissement. Enveloppe budgétaire déléguée à chaque mairie d'arrondissement pour gérer les équipements de proximité : entretien des écoles, espaces verts, animations locales. Dotation totale : 173 M€ pour les 17 arrondissements.",
 
-  'états spéciaux d\'arrondissement': "Le budget que chaque mairie d'arrondissement gère elle-même : entretien des écoles, petits parcs, animations locales...",
+  'états spéciaux d\'arrondissement': "Budgets de proximité gérés par les maires d'arrondissement. Couvrent l'entretien courant des équipements locaux et les animations de quartier. La répartition tient compte de la population et des besoins spécifiques de chaque territoire.",
 
-  // Page Données techniques
-  'opérations d\'ordre': "Des écritures comptables où l'argent ne bouge pas vraiment : ce qui sort d'un compte rentre dans un autre. C'est de la technique comptable.",
+  // === TECHNIQUE COMPTABLE ===
+  'opérations d\'ordre': "Écritures comptables internes qui n'entraînent aucun mouvement de trésorerie. Elles traduisent des flux entre sections budgétaires (fonctionnement/investissement) ou constatent des charges calculées comme les amortissements.",
 
-  'amortissement': "Chaque année, on note qu'un bâtiment ou un équipement vieillit et perd de la valeur. C'est comme la décote d'une voiture.",
+  'amortissement': "Constatation comptable de la dépréciation des immobilisations dans le temps. Chaque année, une fraction de la valeur des bâtiments et équipements est inscrite en charge, reflétant leur usure et obsolescence.",
 
-  'amortissements': "Chaque année, on note que les bâtiments et équipements vieillissent et perdent de la valeur. C'est comme la décote d'une voiture.",
+  'amortissements': "Charges calculées traduisant la perte de valeur du patrimoine immobilisé. Cette technique comptable permet de constituer des ressources pour le renouvellement des équipements. Montant 2025 : 463 M€.",
 
-  'provisions': "De l'argent mis de côté pour les imprévus : un procès perdu, une facture impayée, une mauvaise surprise...",
+  'provisions': "Sommes mises en réserve pour couvrir des risques probables : contentieux en cours, créances douteuses, garanties d'emprunt. La provision anticipe une charge future dont le montant ou l'échéance restent incertains.",
 
-  'virement à l\'investissement': "Quand il reste de l'argent après les dépenses courantes, on peut le transférer pour construire ou rénover des équipements.",
+  'virement à l\'investissement': "Transfert de l'excédent de fonctionnement vers la section d'investissement. Cette ressource interne permet de financer des équipements sans recourir à l'emprunt. Montant 2025 : 128 M€.",
 
-  // Termes supplémentaires courants
-  'syctom': "L'organisme qui s'occupe des poubelles de Paris et de 84 villes voisines : tri, recyclage, incinération...",
+  // === AUTRES ===
+  'syctom': "Syndicat mixte Central de Traitement des Ordures Ménagères. Établissement public regroupant Paris et 84 communes pour le traitement des déchets : incinération, tri, valorisation énergétique. Contribution parisienne : 119 M€/an.",
 
-  'cojop': "Le Comité d'Organisation des Jeux Olympiques Paris 2024 : la structure qui a organisé les JO et les Paralympiques.",
+  'cojop': "Comité d'Organisation des Jeux Olympiques et Paralympiques Paris 2024. Structure privée ayant piloté l'organisation de l'événement sportif. Distinct de la SOLIDEO (infrastructures), le COJOP gérait les compétitions et la billetterie.",
 
-  'tfpnb': "Une taxe sur les terrains vides (sans construction). Très rare à Paris car il y a peu de terrains non bâtis.",
+  'tfpnb': "Taxe Foncière sur les Propriétés Non Bâties. Impôt sur les terrains nus : jardins, parkings non couverts, friches. Rendement marginal à Paris compte tenu de la densité urbaine et de la rareté des espaces non construits.",
 };
 
 interface InfoTooltipProps {
