@@ -487,8 +487,9 @@ export default function DettePage() {
                   <Area
                     type="monotone"
                     dataKey="montant"
-                    stroke="#10B981"
+                    stroke="none"
                     fill="url(#epargneGradient)"
+                    tooltipType="none"
                   />
                   <Line
                     type="monotone"
