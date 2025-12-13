@@ -368,7 +368,7 @@ export default function PolitiquesPage() {
               Budget 2025
             </p>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Les 9 <span className="text-accent">politiques publiques</span>
+              Les 9 <span className="text-accent">politiques publiques</span> de Paris
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Comment les {(totalBudget / 1000).toFixed(1)} Md€ du budget sont répartis entre les domaines d'action
