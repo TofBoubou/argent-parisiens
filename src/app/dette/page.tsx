@@ -44,8 +44,14 @@ const evolutionEpargneBrute = [
   { annee: '2025', montant: 571.3 },
 ];
 
-// Durée de désendettement
+// Durée de désendettement (Dette / Épargne brute)
 const evolutionDuree = [
+  { annee: '2018', duree: 9.4 },
+  { annee: '2019', duree: 8.8 },
+  { annee: '2020', duree: 329.5, hors_echelle: true }, // Covid : épargne brute effondrée à 20 M€
+  { annee: '2021', duree: 15.7 },
+  { annee: '2022', duree: 13.3 },
+  { annee: '2023', duree: 10.6 },
   { annee: '2024', duree: 15.3 },
   { annee: '2025', duree: 16.4 },
 ];
@@ -270,13 +276,13 @@ export default function DettePage() {
               <InfoTooltip terme="Durée de désendettement">Durée de désendettement</InfoTooltip>
             </h2>
             <p className="text-gray-600 mb-8">
-              Nombre d'années nécessaires pour rembourser la dette avec l'<InfoTooltip terme="Épargne brute">épargne brute</InfoTooltip> actuelle
+              Nombre d'années nécessaires pour rembourser la dette avec l'<InfoTooltip terme="Épargne brute">épargne brute</InfoTooltip> — Évolution depuis 2018
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <ResponsiveContainer width="100%" height={280}>
-                  <ComposedChart data={evolutionDuree}>
+                <ResponsiveContainer width="100%" height={320}>
+                  <ComposedChart data={evolutionDuree.filter(d => !d.hors_echelle)}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
                     <XAxis dataKey="annee" tick={{ fill: '#6B7280' }} />
                     <YAxis
@@ -285,10 +291,10 @@ export default function DettePage() {
                       tickFormatter={(v) => `${v} ans`}
                     />
                     <Tooltip
-                      formatter={(value: number) => [`${value} ans`, 'Durée']}
+                      formatter={(value: number) => [`${value.toFixed(1)} ans`, 'Durée']}
                       contentStyle={{ backgroundColor: '#0D1B4C', color: 'white', border: 'none', borderRadius: '8px' }}
                     />
-                    <ReferenceLine y={12} stroke="#10B981" strokeDasharray="5 5" label={{ value: 'Seuil de vigilance', fill: '#10B981', fontSize: 12 }} />
+                    <ReferenceLine y={12} stroke="#10B981" strokeDasharray="5 5" label={{ value: 'Seuil d\'alerte (12 ans)', fill: '#10B981', fontSize: 12 }} />
                     <Line
                       type="monotone"
                       dataKey="duree"
@@ -298,6 +304,11 @@ export default function DettePage() {
                     />
                   </ComposedChart>
                 </ResponsiveContainer>
+                <div className="mt-4 p-3 bg-red-50 border-l-4 border-red-500 rounded-r-lg">
+                  <p className="text-xs text-gray-700">
+                    <span className="font-bold text-red-600">2020 hors échelle : 329 ans</span> — L'épargne brute s'est effondrée à 20 M€ (contre 670 M€ en 2019) à cause du Covid.
+                  </p>
+                </div>
               </div>
 
               <div className="space-y-4">
