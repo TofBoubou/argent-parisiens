@@ -135,7 +135,7 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-              Les 9 politiques publiques
+              Les 9 politiques publiques de Paris
             </h2>
             <p className="text-gray-600">
               Répartition du budget par domaine d'action (en M€)
