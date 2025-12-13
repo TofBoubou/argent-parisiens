@@ -149,28 +149,54 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
   const [position, setPosition] = useState<'top' | 'bottom'>(forcePosition || 'bottom');
   const tooltipRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   const explication = glossaire[terme.toLowerCase()];
 
+  // Fonction de calcul de position optimale
+  const calculatePosition = () => {
+    if (forcePosition || !triggerRef.current) return;
+
+    const triggerRect = triggerRef.current.getBoundingClientRect();
+    const spaceBelow = window.innerHeight - triggerRect.bottom;
+    const spaceAbove = triggerRect.top;
+
+    // Si le tooltip est déjà rendu, utiliser sa hauteur réelle
+    const tooltipHeight = contentRef.current?.offsetHeight || 280;
+    const requiredSpace = tooltipHeight + 16; // 16px de marge
+
+    if (spaceBelow < requiredSpace && spaceAbove > spaceBelow) {
+      setPosition('top');
+    } else {
+      setPosition('bottom');
+    }
+  };
+
+  // Calcul initial et recalcul quand le tooltip est rendu
   useEffect(() => {
     if (forcePosition) {
       setPosition(forcePosition);
       return;
     }
-    if (isOpen && triggerRef.current) {
-      const rect = triggerRef.current.getBoundingClientRect();
-      const spaceBelow = window.innerHeight - rect.bottom;
-      const spaceAbove = rect.top;
-
-      // Seuil de 280px pour accommoder les définitions plus longues
-      // Le tooltip a une hauteur max de 250px + padding + marge
-      if (spaceBelow < 280 && spaceAbove > spaceBelow) {
-        setPosition('top');
-      } else {
-        setPosition('bottom');
-      }
+    if (isOpen) {
+      // Calcul initial
+      calculatePosition();
+      // Recalcul après le rendu du tooltip (pour avoir la hauteur réelle)
+      requestAnimationFrame(() => {
+        calculatePosition();
+      });
     }
   }, [isOpen, forcePosition]);
+
+  // Recalculer la position au scroll
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleScroll = () => calculatePosition();
+    window.addEventListener('scroll', handleScroll, true);
+
+    return () => window.removeEventListener('scroll', handleScroll, true);
+  }, [isOpen]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -212,6 +238,7 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
 
       {isOpen && (
         <div
+          ref={contentRef}
           className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-gray-200 rounded-lg shadow-lg max-h-[250px] overflow-y-auto ${
             position === 'top'
               ? 'bottom-full mb-2'
