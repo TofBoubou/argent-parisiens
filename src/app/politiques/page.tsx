@@ -448,7 +448,7 @@ export default function PolitiquesPage() {
                         <div
                           className={`w-12 h-12 rounded-lg ${politique.bgColor} flex items-center justify-center text-white font-bold text-lg`}
                         >
-                          {politique.code}
+                          {parseInt(politique.code) + 1}
                         </div>
                         <div>
                           <h3 className="font-bold text-primary text-lg">{politique.nom}</h3>
