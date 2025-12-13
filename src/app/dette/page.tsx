@@ -17,11 +17,19 @@ import {
   ComposedChart,
 } from 'recharts';
 
-// Évolution de la dette (encours au 31/12)
+// Évolution de la dette (encours au 31/12) - Sources CRC Île-de-France
 const evolutionDette = [
-  { annee: '2023', dette: 8043, label: '8,0 Md€' },
-  { annee: '2024', dette: 8675, label: '8,7 Md€' },
-  { annee: '2025', dette: 9357, label: '9,4 Md€' },
+  { annee: '2015', dette: 4665, label: '4,67 Md€', variation: null },
+  { annee: '2016', dette: 5184, label: '5,18 Md€', variation: 519 },
+  { annee: '2017', dette: 5741, label: '5,74 Md€', variation: 557 },
+  { annee: '2018', dette: 5942, label: '5,94 Md€', variation: 201 },
+  { annee: '2019', dette: 5880, label: '5,88 Md€', variation: -62 },
+  { annee: '2020', dette: 6622, label: '6,62 Md€', variation: 742 },
+  { annee: '2021', dette: 7183, label: '7,18 Md€', variation: 561 },
+  { annee: '2022', dette: 7715, label: '7,72 Md€', variation: 531 },
+  { annee: '2023', dette: 8043, label: '8,04 Md€', variation: 328 },
+  { annee: '2024', dette: 8701, label: '8,70 Md€', variation: 658 },
+  { annee: '2025', dette: 9357, label: '9,36 Md€', variation: 656 },
 ];
 
 // Évolution de l'épargne brute
@@ -139,17 +147,17 @@ export default function DettePage() {
               Une dette qui explose
             </h2>
             <p className="text-gray-600 mb-8">
-              Évolution de l'<InfoTooltip terme="Encours de dette">encours total de la dette</InfoTooltip> depuis 2019 (en M€)
+              Évolution de l'<InfoTooltip terme="Encours de dette">encours total de la dette</InfoTooltip> depuis 2015 (en Md€) — Sources : CRC Île-de-France
             </p>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
-              <ResponsiveContainer width="100%" height={350}>
+              <ResponsiveContainer width="100%" height={400}>
                 <ComposedChart data={evolutionDette}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
                   <XAxis dataKey="annee" tick={{ fill: '#6B7280' }} />
                   <YAxis
                     tick={{ fill: '#6B7280' }}
-                    domain={[5000, 10000]}
+                    domain={[4000, 10000]}
                     tickFormatter={(v) => `${(v / 1000).toFixed(1)} Md€`}
                   />
                   <Tooltip
@@ -179,10 +187,17 @@ export default function DettePage() {
                 </ComposedChart>
               </ResponsiveContainer>
 
-              <div className="mt-6 p-4 bg-red-50 border-l-4 border-accent rounded-r-lg">
-                <p className="text-sm text-gray-700">
-                  <span className="font-bold text-accent">+16 % en 2 ans</span> : la dette est passée de 8,0 Md€ fin 2023 à 9,4 Md€ fin 2025, soit une augmentation de 1,3 Md€.
-                </p>
+              <div className="mt-6 grid md:grid-cols-2 gap-4">
+                <div className="p-4 bg-red-50 border-l-4 border-accent rounded-r-lg">
+                  <p className="text-sm text-gray-700">
+                    <span className="font-bold text-accent">+4,7 Md€ en 10 ans (+101 %)</span> : la dette est passée de 4,67 Md€ fin 2015 à 9,36 Md€ fin 2025. Elle a plus que doublé sous la mandature Hidalgo.
+                  </p>
+                </div>
+                <div className="p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r-lg">
+                  <p className="text-sm text-gray-700">
+                    <span className="font-bold text-amber-700">Seule baisse en 2019</span> : la dette a diminué de 62 M€ cette année-là, avant de repartir fortement à la hausse dès 2020 (année Covid : +742 M€).
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
