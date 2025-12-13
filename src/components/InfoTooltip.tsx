@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useLayoutEffect } from 'react';
 
 // Dictionnaire des termes budgétaires
 const glossaire: Record<string, string> = {
@@ -147,41 +147,62 @@ interface InfoTooltipProps {
 export default function InfoTooltip({ terme, children, forcePosition }: InfoTooltipProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [position, setPosition] = useState<'top' | 'bottom'>(forcePosition || 'bottom');
+  const [horizontalOffset, setHorizontalOffset] = useState(0);
+  const [isPositioned, setIsPositioned] = useState(false);
   const tooltipRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   const explication = glossaire[terme.toLowerCase()];
 
-  // Fonction de calcul de position optimale
+  // Fonction de calcul de position optimale (verticale ET horizontale)
   const calculatePosition = () => {
-    if (forcePosition || !triggerRef.current) return;
+    if (!triggerRef.current || !contentRef.current) return;
 
     const triggerRect = triggerRef.current.getBoundingClientRect();
-    const spaceBelow = window.innerHeight - triggerRect.bottom;
-    const spaceAbove = triggerRect.top;
+    const tooltipRect = contentRef.current.getBoundingClientRect();
+    const tooltipHeight = tooltipRect.height;
+    const tooltipWidth = tooltipRect.width;
 
-    // Si le tooltip est déjà rendu, utiliser sa hauteur réelle
-    const tooltipHeight = contentRef.current?.offsetHeight || 280;
-    const requiredSpace = tooltipHeight + 16; // 16px de marge
+    // === Position verticale ===
+    if (!forcePosition) {
+      const spaceBelow = window.innerHeight - triggerRect.bottom;
+      const spaceAbove = triggerRect.top;
+      const requiredSpace = tooltipHeight + 16;
 
-    if (spaceBelow < requiredSpace && spaceAbove > spaceBelow) {
-      setPosition('top');
-    } else {
-      setPosition('bottom');
+      if (spaceBelow < requiredSpace && spaceAbove > spaceBelow) {
+        setPosition('top');
+      } else {
+        setPosition('bottom');
+      }
     }
+
+    // === Position horizontale ===
+    // Le tooltip est centré par défaut (left-1/2 -translate-x-1/2)
+    // On calcule si ça déborde à gauche ou à droite
+    const triggerCenterX = triggerRect.left + triggerRect.width / 2;
+    const tooltipLeft = triggerCenterX - tooltipWidth / 2;
+    const tooltipRight = triggerCenterX + tooltipWidth / 2;
+    const margin = 8; // Marge minimum avec le bord de l'écran
+
+    let offset = 0;
+    if (tooltipLeft < margin) {
+      // Déborde à gauche : décaler vers la droite
+      offset = margin - tooltipLeft;
+    } else if (tooltipRight > window.innerWidth - margin) {
+      // Déborde à droite : décaler vers la gauche
+      offset = (window.innerWidth - margin) - tooltipRight;
+    }
+    setHorizontalOffset(offset);
+    setIsPositioned(true);
   };
 
-  // Calcul initial et recalcul quand le tooltip est rendu
-  useEffect(() => {
-    if (forcePosition) {
-      setPosition(forcePosition);
-      return;
-    }
+  // Utiliser useLayoutEffect pour calculer AVANT le paint du navigateur
+  useLayoutEffect(() => {
     if (isOpen) {
-      // Calcul initial
-      calculatePosition();
-      // Recalcul après le rendu du tooltip (pour avoir la hauteur réelle)
+      // Reset pour nouveau calcul
+      setIsPositioned(false);
+      // Attendre que le DOM soit mis à jour
       requestAnimationFrame(() => {
         calculatePosition();
       });
@@ -192,10 +213,18 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
   useEffect(() => {
     if (!isOpen) return;
 
-    const handleScroll = () => calculatePosition();
+    const handleScroll = () => {
+      requestAnimationFrame(() => {
+        calculatePosition();
+      });
+    };
     window.addEventListener('scroll', handleScroll, true);
+    window.addEventListener('resize', handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll, true);
+    return () => {
+      window.removeEventListener('scroll', handleScroll, true);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, [isOpen]);
 
   useEffect(() => {
@@ -239,22 +268,24 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
       {isOpen && (
         <div
           ref={contentRef}
-          className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-gray-200 rounded-lg shadow-lg max-h-[250px] overflow-y-auto ${
+          className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-gray-200 rounded-lg shadow-lg max-h-[250px] overflow-y-auto transition-opacity duration-100 ${
             position === 'top'
               ? 'bottom-full mb-2'
               : 'top-full mt-2'
-          } left-1/2 -translate-x-1/2`}
+          } left-1/2 ${isPositioned ? 'opacity-100' : 'opacity-0'}`}
+          style={{ transform: `translateX(calc(-50% + ${horizontalOffset}px))` }}
           role="tooltip"
         >
           <div className="font-semibold text-primary mb-1 capitalize">{terme}</div>
           <p className="text-gray-600 leading-relaxed">{explication}</p>
-          {/* Flèche */}
+          {/* Flèche - reste centrée sur le bouton trigger */}
           <div
-            className={`absolute left-1/2 -translate-x-1/2 w-2 h-2 bg-white border-gray-200 transform rotate-45 ${
+            className={`absolute w-2 h-2 bg-white border-gray-200 transform rotate-45 ${
               position === 'top'
                 ? 'bottom-[-5px] border-r border-b'
                 : 'top-[-5px] border-l border-t'
             }`}
+            style={{ left: `calc(50% - ${horizontalOffset}px)`, transform: 'translateX(-50%) rotate(45deg)' }}
           />
         </div>
       )}
