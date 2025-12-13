@@ -157,20 +157,20 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
 
   // Fonction de calcul de position optimale (verticale ET horizontale)
   const calculatePosition = () => {
-    if (!triggerRef.current || !contentRef.current) return;
+    if (!triggerRef.current) return;
 
     const triggerRect = triggerRef.current.getBoundingClientRect();
-    const tooltipRect = contentRef.current.getBoundingClientRect();
-    const tooltipHeight = tooltipRect.height;
-    const tooltipWidth = tooltipRect.width;
+    // Utiliser la hauteur MAX du tooltip (250px) + padding (24px) + marge (16px)
+    const maxTooltipHeight = 290;
+    const tooltipWidth = 320; // w-80 = 20rem = 320px
 
     // === Position verticale ===
     if (!forcePosition) {
       const spaceBelow = window.innerHeight - triggerRect.bottom;
       const spaceAbove = triggerRect.top;
-      const requiredSpace = tooltipHeight + 16;
 
-      if (spaceBelow < requiredSpace && spaceAbove > spaceBelow) {
+      // Si pas assez de place en dessous, afficher au-dessus
+      if (spaceBelow < maxTooltipHeight && spaceAbove > spaceBelow) {
         setPosition('top');
       } else {
         setPosition('bottom');
@@ -178,52 +178,41 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
     }
 
     // === Position horizontale ===
-    // Le tooltip est centré par défaut (left-1/2 -translate-x-1/2)
-    // On calcule si ça déborde à gauche ou à droite
     const triggerCenterX = triggerRect.left + triggerRect.width / 2;
     const tooltipLeft = triggerCenterX - tooltipWidth / 2;
     const tooltipRight = triggerCenterX + tooltipWidth / 2;
-    const margin = 8; // Marge minimum avec le bord de l'écran
+    const margin = 8;
 
     let offset = 0;
     if (tooltipLeft < margin) {
-      // Déborde à gauche : décaler vers la droite
       offset = margin - tooltipLeft;
     } else if (tooltipRight > window.innerWidth - margin) {
-      // Déborde à droite : décaler vers la gauche
       offset = (window.innerWidth - margin) - tooltipRight;
     }
     setHorizontalOffset(offset);
     setIsPositioned(true);
   };
 
-  // Utiliser useLayoutEffect pour calculer AVANT le paint du navigateur
+  // Calculer la position dès l'ouverture
   useLayoutEffect(() => {
     if (isOpen) {
-      // Reset pour nouveau calcul
+      calculatePosition();
+    } else {
       setIsPositioned(false);
-      // Attendre que le DOM soit mis à jour
-      requestAnimationFrame(() => {
-        calculatePosition();
-      });
     }
   }, [isOpen, forcePosition]);
 
-  // Recalculer la position au scroll
+  // Recalculer la position au scroll/resize
   useEffect(() => {
     if (!isOpen) return;
 
-    const handleScroll = () => {
-      requestAnimationFrame(() => {
-        calculatePosition();
-      });
-    };
-    window.addEventListener('scroll', handleScroll, true);
-    window.addEventListener('resize', handleScroll);
+    const handleUpdate = () => calculatePosition();
+    window.addEventListener('scroll', handleUpdate, true);
+    window.addEventListener('resize', handleUpdate);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll, true);
-      window.removeEventListener('resize', handleScroll);
+      window.removeEventListener('scroll', handleUpdate, true);
+      window.removeEventListener('resize', handleUpdate);
     };
   }, [isOpen]);
 
@@ -268,11 +257,11 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
       {isOpen && (
         <div
           ref={contentRef}
-          className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-gray-200 rounded-lg shadow-lg max-h-[250px] overflow-y-auto transition-opacity duration-100 ${
+          className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-gray-200 rounded-lg shadow-lg max-h-[250px] overflow-y-auto ${
             position === 'top'
               ? 'bottom-full mb-2'
               : 'top-full mt-2'
-          } left-1/2 ${isPositioned ? 'opacity-100' : 'opacity-0'}`}
+          } left-1/2`}
           style={{ transform: `translateX(calc(-50% + ${horizontalOffset}px))` }}
           role="tooltip"
         >
