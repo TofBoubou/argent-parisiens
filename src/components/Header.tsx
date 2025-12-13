@@ -15,6 +15,14 @@ const navigation = [
   { name: 'Technique', href: '/donnees-techniques' },
 ];
 
+// Fonction pour normaliser une chaîne (enlever les accents pour la recherche)
+const normalizeString = (str: string): string => {
+  return str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+};
+
 // Index de recherche avec mots-clés par page
 const searchIndex = [
   // Pages principales
@@ -77,13 +85,13 @@ export default function Header() {
   const searchRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Filtrer les résultats de recherche
+  // Filtrer les résultats de recherche (tolérant aux accents)
   const searchResults = searchQuery.length > 1
     ? searchIndex.filter(item => {
-        const query = searchQuery.toLowerCase();
+        const query = normalizeString(searchQuery);
         return (
-          item.name.toLowerCase().includes(query) ||
-          item.keywords.some(kw => kw.toLowerCase().includes(query))
+          normalizeString(item.name).includes(query) ||
+          item.keywords.some(kw => normalizeString(kw).includes(query))
         );
       }).slice(0, 6)
     : [];
