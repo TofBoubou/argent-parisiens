@@ -162,8 +162,9 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
       const spaceBelow = window.innerHeight - rect.bottom;
       const spaceAbove = rect.top;
 
-      // Si moins de 200px en dessous, afficher au-dessus
-      if (spaceBelow < 200 && spaceAbove > spaceBelow) {
+      // Seuil de 280px pour accommoder les définitions plus longues
+      // Le tooltip a une hauteur max de 250px + padding + marge
+      if (spaceBelow < 280 && spaceAbove > spaceBelow) {
         setPosition('top');
       } else {
         setPosition('bottom');
@@ -211,7 +212,7 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
 
       {isOpen && (
         <div
-          className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-gray-200 rounded-lg shadow-lg ${
+          className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-gray-200 rounded-lg shadow-lg max-h-[250px] overflow-y-auto ${
             position === 'top'
               ? 'bottom-full mb-2'
               : 'top-full mt-2'
