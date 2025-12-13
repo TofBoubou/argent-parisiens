@@ -173,8 +173,9 @@ export default function DettePage() {
                   <Area
                     type="monotone"
                     dataKey="dette"
-                    stroke="#E30613"
+                    stroke="none"
                     fill="url(#detteGradient)"
+                    tooltipType="none"
                   />
                   <Line
                     type="monotone"
