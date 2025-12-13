@@ -19,7 +19,7 @@ const politiques = [
     keyFacts: [
       { label: 'RSA et insertion', value: '461 M€', detail: 'Allocation et insertion' },
       { label: 'Petite enfance', value: '476 M€', detail: 'Crèches municipales et associatives' },
-      { label: 'Aide sociale enfance', value: '380 M€', detail: '+46 M€ vs 2024, MNA et structures d\'accueil' },
+      { label: 'Aide sociale enfance', value: '380 M€', detail: '+46 M€ vs 2024, mineurs non accompagnés (MNA) et structures' },
       { label: 'Personnes âgées', value: '236 M€', detail: 'APA, hébergement, prévention' },
       { label: 'Handicap', value: '299 M€', detail: 'PCH, hébergement, aide à domicile' },
     ],
@@ -27,7 +27,7 @@ const politiques = [
     postes: '+102 créations de postes en 2025',
     repartition: [
       { name: 'RSA', value: 22.5, color: '#0D1B4C' },
-      { name: 'CASVP et interventions', value: 22.2, color: '#dc2626' },
+      { name: 'Centre d\'action sociale (CASVP)', value: 22.2, color: '#dc2626' },
       { name: 'Aide sociale enfance', value: 18.5, color: '#d97706' },
       { name: 'Handicap', value: 14.6, color: '#1e3a8a' },
       { name: 'Personnes âgées', value: 11.5, color: '#ef4444' },
@@ -42,8 +42,8 @@ const politiques = [
       { nom: 'Subventions crèches associatives', montant: 3.9 },
     ],
     detailPostes: [
-      { direction: 'Direction familles petite enfance', postes: 39, motif: 'Crèche Davout 20e et renforts PMI' },
-      { direction: 'Direction solidarités', postes: 52, motif: 'CRIP, MNA, équipe mobile prévention' },
+      { direction: 'Direction familles petite enfance', postes: 39, motif: 'Crèche Davout 20e et protection maternelle (PMI)' },
+      { direction: 'Direction solidarités', postes: 52, motif: 'Cellule enfance en danger, mineurs non accompagnés' },
       { direction: 'Direction santé publique', postes: 11, motif: 'Offre de soins et 1000 premiers jours' },
     ],
   },
@@ -56,7 +56,7 @@ const politiques = [
     chartColor: '#dc2626',
     description: 'Administration, informatique, RH, immobilier, états spéciaux d\'arrondissement, budget participatif',
     keyFacts: [
-      { label: 'Etats spéciaux arrondissement', value: '167 M€', detail: 'Fonctionnement équipements de proximité' },
+      { label: 'États spéciaux arrondissements (ESA)', value: '167 M€', detail: 'Fonctionnement équipements de proximité' },
       { label: 'Budget participatif', value: '80 M€', detail: '25 % du budget d\'investissement décidé par les Parisiens' },
       { label: 'Informatique', value: '36 M€', detail: 'Projets SI, cybersécurité, maintenance' },
       { label: 'Réaménagement Tour Eiffel', value: '18 M€', detail: 'Travaux de modernisation du site' },
@@ -78,8 +78,8 @@ const politiques = [
     ],
     detailPostes: [
       { direction: 'Direction démocratie et territoires', postes: 9, motif: 'Accueil MVAC, urgence sociale' },
-      { direction: 'Direction systèmes information', postes: 4, motif: 'Cybersécurité et AMOA' },
-      { direction: 'Direction ressources humaines', postes: 4, motif: 'Plan égalité, SIRH' },
+      { direction: 'Direction systèmes information', postes: 4, motif: 'Cybersécurité et assistance projets' },
+      { direction: 'Direction ressources humaines', postes: 4, motif: 'Plan égalité, système d\'information RH' },
     ],
   },
   {
@@ -225,7 +225,7 @@ const politiques = [
     ],
     detailPostes: [
       { direction: 'Direction affaires scolaires', postes: 209, motif: 'Déprécarisation animateurs et agents techniques' },
-      { direction: 'Direction affaires scolaires', postes: 3, motif: 'Réseau EI FEL' },
+      { direction: 'Direction affaires scolaires', postes: 3, motif: 'Réseau école inclusive et français langue étrangère' },
     ],
   },
   {
@@ -297,7 +297,7 @@ const politiques = [
       { nom: 'Travaux d\'office immeubles en péril', montant: 1.0 },
     ],
     detailPostes: [
-      { direction: 'Direction police municipale', postes: 398, motif: '120 policiers, 55 chefs de service, 220 ASVP' },
+      { direction: 'Direction police municipale', postes: 398, motif: '120 policiers, 55 chefs de service, 220 agents voie publique' },
       { direction: 'Direction police municipale', postes: 50, motif: 'Déprécarisation agents points écoles' },
     ],
   },
@@ -319,7 +319,7 @@ const politiques = [
     alert: 'Désengagement Région IDF et État : la Ville doit compenser pour la Mission locale',
     postes: '+2 créations de postes en 2025',
     repartition: [
-      { name: 'Insertion et ESS', value: 35.0, color: '#0D1B4C' },
+      { name: 'Insertion et économie solidaire', value: 35.0, color: '#0D1B4C' },
       { name: 'Recherche innovation', value: 17.5, color: '#dc2626' },
       { name: 'Commerce artisanat', value: 15.3, color: '#d97706' },
       { name: 'Tourisme', value: 10.3, color: '#ef4444' },
@@ -330,7 +330,7 @@ const politiques = [
       { nom: 'Compte foncier commerces', montant: 8.0 },
       { nom: 'Tumo Paris', montant: 5.5 },
       { nom: 'Agriculture et alimentation durables', montant: 4.0 },
-      { nom: 'Insertion économique et ESS', montant: 3.9 },
+      { nom: 'Insertion et économie sociale et solidaire', montant: 3.9 },
       { nom: 'Modernisation marchés', montant: 3.5 },
     ],
     detailPostes: [
@@ -520,7 +520,7 @@ export default function PolitiquesPage() {
                                      fact.label === 'Personnes âgées' ? <>Personnes âgées (<InfoTooltip terme="APA">APA</InfoTooltip>)</> :
                                      fact.label === 'Handicap' ? <>Handicap (<InfoTooltip terme="PCH">PCH</InfoTooltip>)</> :
                                      fact.label === 'Budget participatif' ? <InfoTooltip terme="Budget participatif">{fact.label}</InfoTooltip> :
-                                     fact.label === 'Etats spéciaux arrondissement' ? <InfoTooltip terme="ESA">{fact.label}</InfoTooltip> :
+                                     fact.label === 'États spéciaux arrondissements (ESA)' ? <InfoTooltip terme="ESA">{fact.label}</InfoTooltip> :
                                      fact.label === 'Préfecture de Police' ? fact.label :
                                      fact.label === 'Brigade pompiers (BSPP)' ? <>Brigade pompiers (<InfoTooltip terme="BSPP">BSPP</InfoTooltip>)</> :
                                      fact.label === 'ESPCI' ? <InfoTooltip terme="ESPCI">{fact.label}</InfoTooltip> :

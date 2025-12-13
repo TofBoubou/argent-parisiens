@@ -11,8 +11,8 @@ const syntheseAP = {
   total: 2047.1,
   recettes: 462.5,
   parType: [
-    { name: 'AP Plan', value: 1437.9, pct: 70.2, color: '#0D1B4C' },
-    { name: 'AP Projet', value: 418.6, pct: 20.4, color: '#dc2626' },
+    { name: 'Autorisations pluriannuelles', value: 1437.9, pct: 70.2, color: '#0D1B4C' },
+    { name: 'Autorisations par projet', value: 418.6, pct: 20.4, color: '#dc2626' },
     { name: 'Investissement local', value: 106.8, pct: 5.2, color: '#d97706' },
     { name: 'Budget participatif', value: 83.8, pct: 4.1, color: '#3b82f6' },
   ],

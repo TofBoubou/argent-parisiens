@@ -22,9 +22,9 @@ const recettesCategories = [
   { label: 'Fiscalité et compensations', bp2024: 7988.7, bp2025: 7950.2 },
   { label: 'Produits d\'exploitation', bp2024: 1194.0, bp2025: 1220.5 },
   { label: 'Dotations et participations', bp2024: 356.5, bp2025: 372.0 },
-  { label: 'Insertion (RSA)', bp2024: 265.7, bp2025: 266.6 },
+  { label: 'Insertion (allocations RSA)', bp2024: 265.7, bp2025: 266.6 },
   { label: 'Reprises provisions', bp2024: 36.6, bp2025: 50.4 },
-  { label: 'Autonomie (APA)', bp2024: 26.6, bp2025: 26.7 },
+  { label: 'Autonomie (allocation personnes âgées)', bp2024: 26.6, bp2025: 26.7 },
   { label: 'Produits financiers', bp2024: 25.0, bp2025: 13.9 },
 ];
 
@@ -34,9 +34,9 @@ const depensesCategories = [
   { label: 'Dépenses de gestion', bp2024: 2128.9, bp2025: 2113.1 },
   { label: 'Atténuation de produits', bp2024: 1919.6, bp2025: 1771.8 },
   { label: 'Participations autres budgets', bp2024: 1626.5, bp2025: 1682.0 },
-  { label: 'RSA', bp2024: 468.1, bp2025: 475.2 },
+  { label: 'RSA (allocation insertion)', bp2024: 468.1, bp2025: 475.2 },
   { label: 'Charges financières', bp2024: 213.0, bp2025: 224.5 },
-  { label: 'APA', bp2024: 137.6, bp2025: 145.1 },
+  { label: 'APA (allocation personnes âgées)', bp2024: 137.6, bp2025: 145.1 },
 ];
 
 // Opérations d'ordre
@@ -60,7 +60,7 @@ const operationsOrdre = {
       { label: 'Intégration biens gratuits', value: 40.0 },
       { label: 'Loyers capitalisés', value: 25.0 },
       { label: 'Primes émission dette', value: 7.0 },
-      { label: 'Investissements ESA', value: 6.0 },
+      { label: 'Investissements arrondissements (ESA)', value: 6.0 },
     ],
   },
 };

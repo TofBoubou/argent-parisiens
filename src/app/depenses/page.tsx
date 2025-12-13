@@ -26,11 +26,11 @@ const evolutionMasseSalariale = [
 
 // Péréquation détaillée - les labels seront enrichis avec InfoTooltip dans le JSX
 const perequation = [
-  { label: 'FNGIR', sublabel: '(figé depuis 2011)', value: 898.2, color: '#dc2626' },
-  { label: 'Fonds DMTO', sublabel: '', value: 214.2, color: '#ef4444' },
-  { label: 'FSRIF', sublabel: '(solidarité IDF)', value: 208.1, color: '#f87171' },
-  { label: 'FPIC', sublabel: '(national)', value: 199.6, color: '#fca5a5' },
-  { label: 'FSDRIF', sublabel: '(départemental)', value: 30.0, color: '#fecaca' },
+  { label: 'FNGIR', sublabel: '(garantie ressources, figé depuis 2011)', value: 898.2, color: '#dc2626' },
+  { label: 'Fonds DMTO', sublabel: '(droits de mutation)', value: 214.2, color: '#ef4444' },
+  { label: 'FSRIF', sublabel: '(solidarité région Île-de-France)', value: 208.1, color: '#f87171' },
+  { label: 'FPIC', sublabel: '(péréquation intercommunale)', value: 199.6, color: '#fca5a5' },
+  { label: 'FSDRIF', sublabel: '(solidarité départements IDF)', value: 30.0, color: '#fecaca' },
 ];
 
 // Dépenses de gestion par fonction - dégradé bleu → rouge → jaune
@@ -52,7 +52,7 @@ const jo2024 = {
     total: 94.8,
     detail: [
       { label: 'Célébrations', value: 33.6 },
-      { label: 'Contribution COJOP paralympiques', value: 15.6 },
+      { label: 'Contribution au Comité d\'organisation (paralympiques)', value: 15.6 },
       { label: 'Programme Héritage', value: 10.1 },
       { label: 'Préparation et accueil', value: 7.5 },
       { label: 'Gestion abords sites', value: 7.3 },

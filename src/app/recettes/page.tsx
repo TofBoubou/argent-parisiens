@@ -109,7 +109,7 @@ const impactsPLF2025 = [
     description: 'Moindre dynamique que prévu par l\'État'
   },
   {
-    mesure: 'Hausse cotisation CNRACL (+4 pts)',
+    mesure: 'Hausse cotisation retraite agents (CNRACL +4 pts)',
     risque: 45,
     description: 'Fin de la compensation 2024'
   },
@@ -119,7 +119,7 @@ const impactsPLF2025 = [
     description: 'Paris déjà 1er contributeur national'
   },
   {
-    mesure: 'Réduction enveloppe FCTVA',
+    mesure: 'Réduction remboursement TVA (FCTVA)',
     risque: 20,
     description: '-800 M€ au niveau national'
   },
@@ -127,12 +127,12 @@ const impactsPLF2025 = [
 
 // Dotations et compensations
 const dotationsCompensations = [
-  { label: 'TSCA (assurances)', value: 92.0 },
-  { label: 'Compensations exonérations', value: 34.0 },
-  { label: 'DGD (décentralisation)', value: 15.8 },
-  { label: 'TICPE', value: 15.6 },
-  { label: 'DCP (péréquation)', value: 10.8 },
-  { label: 'FCTVA voirie/bâtiments', value: 10.0 },
+  { label: 'Taxe sur les assurances (TSCA)', value: 92.0 },
+  { label: 'Compensations d\'exonérations fiscales', value: 34.0 },
+  { label: 'Dotation décentralisation (DGD)', value: 15.8 },
+  { label: 'Taxe carburants (TICPE)', value: 15.6 },
+  { label: 'Dotation péréquation (DCP)', value: 10.8 },
+  { label: 'Remboursement TVA (FCTVA)', value: 10.0 },
   { label: 'Autres', value: 2.3 },
 ];
 
@@ -152,10 +152,10 @@ const recettesGestion = [
 // Chronologie des réformes fiscales
 const reformesFiscales = [
   { annee: 2010, reforme: 'Suppression taxe professionnelle' },
-  { annee: 2016, reforme: 'Transfert CVAE communale à MGP' },
-  { annee: 2017, reforme: 'Transfert CVAE départementale à Région' },
-  { annee: 2023, reforme: 'Suppression intégrale CVAE' },
-  { annee: 2025, reforme: 'Transfert CFE à la MGP' },
+  { annee: 2016, reforme: 'Transfert cotisation entreprises (CVAE) à la Métropole' },
+  { annee: 2017, reforme: 'Transfert CVAE départementale à la Région' },
+  { annee: 2023, reforme: 'Suppression totale de la CVAE' },
+  { annee: 2025, reforme: 'Transfert cotisation foncière (CFE) à la Métropole' },
 ];
 
 export default function RecettesPage() {
@@ -605,7 +605,7 @@ export default function RecettesPage() {
             <div className="bg-white rounded-xl p-5 shadow-sm">
               <h4 className="font-semibold text-primary mb-2">Santé/Social : 321,4 M€</h4>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li>Compensations <InfoTooltip terme="RSA" forcePosition="top">RSA</InfoTooltip> (<InfoTooltip terme="TICPE" forcePosition="top">TICPE</InfoTooltip>, FMDI) : 266,6 M€</li>
+                <li>Compensations <InfoTooltip terme="RSA" forcePosition="top">RSA</InfoTooltip> (taxe carburants, fonds insertion) : 266,6 M€</li>
                 <li>Participations petite enfance : 224,5 M€</li>
                 <li>Dotations <InfoTooltip terme="APA" forcePosition="top">APA</InfoTooltip>/<InfoTooltip terme="PCH" forcePosition="top">PCH</InfoTooltip> : 46,5 M€</li>
               </ul>
