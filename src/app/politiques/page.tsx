@@ -6,47 +6,8 @@ import { DonutChart, BarChartHorizontal } from '@/components/charts';
 import Link from 'next/link';
 import InfoTooltip from '@/components/InfoTooltip';
 
-// Données enrichies des 9 politiques publiques
+// Données enrichies des 9 politiques publiques (classées par code M14 : 0 à 8)
 const politiques = [
-  {
-    code: '4',
-    nom: 'Santé et action sociale',
-    budget: 2722,
-    color: '#0D1B4C',
-    bgColor: 'bg-[#0D1B4C]',
-    chartColor: '#0D1B4C',
-    description: 'RSA, crèches, aide aux personnes âgées et handicapées, aide sociale à l\'enfance',
-    keyFacts: [
-      { label: 'RSA et insertion', value: '461 M€', detail: 'Allocation et insertion' },
-      { label: 'Petite enfance', value: '476 M€', detail: 'Crèches municipales et associatives' },
-      { label: 'Aide sociale enfance', value: '380 M€', detail: '+46 M€ vs 2024, mineurs non accompagnés (MNA) et structures' },
-      { label: 'Personnes âgées', value: '236 M€', detail: 'APA, hébergement, prévention' },
-      { label: 'Handicap', value: '299 M€', detail: 'PCH, hébergement, aide à domicile' },
-    ],
-    alert: 'Sous-compensation de l\'État : 177 M€ de reste à charge pour Paris, dette sociale cumulée de 1,7 Md€ depuis 2014',
-    postes: '+102 créations de postes en 2025',
-    repartition: [
-      { name: 'RSA', value: 22.5, color: '#0D1B4C' },
-      { name: 'Centre d\'action sociale (CASVP)', value: 22.2, color: '#dc2626' },
-      { name: 'Aide sociale enfance', value: 18.5, color: '#d97706' },
-      { name: 'Handicap', value: 14.6, color: '#1e3a8a' },
-      { name: 'Personnes âgées', value: 11.5, color: '#ef4444' },
-      { name: 'Crèches', value: 6.6, color: '#f59e0b' },
-      { name: 'Autres', value: 4.1, color: '#fbbf24' },
-    ],
-    projets: [
-      { nom: 'Crèche ZAC Gare de Lyon-Daumesnil (12e)', montant: 3.5 },
-      { nom: 'Restructuration EHPAD Jardin des Plantes (5e)', montant: 3.4 },
-      { nom: 'Extension centres de santé', montant: 3.4 },
-      { nom: 'Mise en accessibilité équipements', montant: 19.9 },
-      { nom: 'Subventions crèches associatives', montant: 3.9 },
-    ],
-    detailPostes: [
-      { direction: 'Direction familles petite enfance', postes: 39, motif: 'Crèche Davout 20e et protection maternelle (PMI)' },
-      { direction: 'Direction solidarités', postes: 52, motif: 'Cellule enfance en danger, mineurs non accompagnés' },
-      { direction: 'Direction santé publique', postes: 11, motif: 'Offre de soins et 1000 premiers jours' },
-    ],
-  },
   {
     code: '0',
     nom: 'Services généraux',
@@ -190,6 +151,45 @@ const politiques = [
     detailPostes: [
       { direction: 'Direction jeunesse et sports', postes: 28, motif: 'Piscine Belliard et terrain Amandiers' },
       { direction: 'Direction affaires culturelles', postes: 21, motif: 'Nouveaux équipements et déprécarisation' },
+    ],
+  },
+  {
+    code: '4',
+    nom: 'Santé et action sociale',
+    budget: 2722,
+    color: '#0D1B4C',
+    bgColor: 'bg-[#0D1B4C]',
+    chartColor: '#0D1B4C',
+    description: 'RSA, crèches, aide aux personnes âgées et handicapées, aide sociale à l\'enfance',
+    keyFacts: [
+      { label: 'RSA et insertion', value: '461 M€', detail: 'Allocation et insertion' },
+      { label: 'Petite enfance', value: '476 M€', detail: 'Crèches municipales et associatives' },
+      { label: 'Aide sociale enfance', value: '380 M€', detail: '+46 M€ vs 2024, mineurs non accompagnés (MNA) et structures' },
+      { label: 'Personnes âgées', value: '236 M€', detail: 'APA, hébergement, prévention' },
+      { label: 'Handicap', value: '299 M€', detail: 'PCH, hébergement, aide à domicile' },
+    ],
+    alert: 'Sous-compensation de l\'État : 177 M€ de reste à charge pour Paris, dette sociale cumulée de 1,7 Md€ depuis 2014',
+    postes: '+102 créations de postes en 2025',
+    repartition: [
+      { name: 'RSA', value: 22.5, color: '#0D1B4C' },
+      { name: 'Centre d\'action sociale (CASVP)', value: 22.2, color: '#dc2626' },
+      { name: 'Aide sociale enfance', value: 18.5, color: '#d97706' },
+      { name: 'Handicap', value: 14.6, color: '#1e3a8a' },
+      { name: 'Personnes âgées', value: 11.5, color: '#ef4444' },
+      { name: 'Crèches', value: 6.6, color: '#f59e0b' },
+      { name: 'Autres', value: 4.1, color: '#fbbf24' },
+    ],
+    projets: [
+      { nom: 'Crèche ZAC Gare de Lyon-Daumesnil (12e)', montant: 3.5 },
+      { nom: 'Restructuration EHPAD Jardin des Plantes (5e)', montant: 3.4 },
+      { nom: 'Extension centres de santé', montant: 3.4 },
+      { nom: 'Mise en accessibilité équipements', montant: 19.9 },
+      { nom: 'Subventions crèches associatives', montant: 3.9 },
+    ],
+    detailPostes: [
+      { direction: 'Direction familles petite enfance', postes: 39, motif: 'Crèche Davout 20e et protection maternelle (PMI)' },
+      { direction: 'Direction solidarités', postes: 52, motif: 'Cellule enfance en danger, mineurs non accompagnés' },
+      { direction: 'Direction santé publique', postes: 11, motif: 'Offre de soins et 1000 premiers jours' },
     ],
   },
   {
@@ -337,7 +337,7 @@ const politiques = [
       { direction: 'Direction attractivité emploi', postes: 2, motif: 'IA/esport et résilience (contrats projets)' },
     ],
   },
-];
+].sort((a, b) => parseInt(a.code) - parseInt(b.code));
 
 // Données pour le graphique global
 const chartData = politiques.map(p => ({
