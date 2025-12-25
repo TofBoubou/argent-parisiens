@@ -133,15 +133,20 @@ export default function Header() {
 
   return (
     <header className="bg-primary sticky top-0 z-50 shadow-lg">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <img
-              src="/logo-sk.svg"
-              alt="Sarah Knafo"
-              className="h-8 w-auto"
-            />
+      <nav className="flex items-center h-16 px-4 sm:px-6 lg:px-8">
+        {/* Logo SK à gauche */}
+        <a href="https://sarahknafo.fr" target="_blank" rel="noopener noreferrer" className="mr-4 flex-shrink-0">
+          <img
+            src="/logo-sk.svg"
+            alt="Sarah Knafo"
+            className="h-8 w-auto hover:opacity-80 transition-opacity"
+          />
+        </a>
+
+        {/* Contenu centré */}
+        <div className="flex-1 flex items-center justify-between max-w-7xl mx-auto">
+          {/* Titre */}
+          <Link href="/" className="flex items-center">
             <span className="text-yellow font-bold text-lg md:text-xl font-display">
               L'argent des Parisiens
             </span>
@@ -272,6 +277,7 @@ export default function Header() {
               )}
             </svg>
           </button>
+        </div>
         </div>
 
         {/* Mobile Navigation */}

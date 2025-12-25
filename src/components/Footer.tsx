@@ -1,18 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-primary text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        {/* Logo Une ville heureuse */}
-        <div className="flex justify-center mb-4">
-          <a href="https://sarahknafo.fr" target="_blank" rel="noopener noreferrer">
-            <img
-              src="/logo-ville-heureuse.svg"
-              alt="Sarah Knafo - Une ville heureuse"
-              className="h-16 w-auto hover:opacity-80 transition-opacity"
-            />
-          </a>
-        </div>
-
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-cream/70">
           {/* Copyright et sources */}
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-1">
