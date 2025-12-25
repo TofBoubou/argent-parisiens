@@ -210,14 +210,14 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-1 ml-6">
             {navigation.map((item) => {
               const isActive = pathname === item.href;
               return (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors relative focus:outline-none focus:ring-2 focus:ring-yellow/50 ${
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors relative focus:outline-none focus:ring-2 focus:ring-yellow/50 whitespace-nowrap ${
                     isActive
                       ? 'text-yellow'
                       : 'text-cream/80 hover:text-yellow hover:bg-cream/10'

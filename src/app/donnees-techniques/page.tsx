@@ -8,13 +8,13 @@ import InfoTooltip from '@/components/InfoTooltip';
 // Participations aux autres budgets - dégradé bleu → rouge → jaune
 const participations = [
   { name: 'IDFM (transports)', value: 472.2, bp2024: 441.4, color: '#22496A' },
-  { name: 'CASVP (action sociale)', value: 419.6, bp2024: 430.1, color: '#22496A' },
-  { name: 'Préfecture de Police', value: 256.4, bp2024: 252.4, color: '#E1386E' },
-  { name: 'Caisses des écoles', value: 132.4, bp2024: 112.0, color: '#E1386E' },
+  { name: 'CASVP (action sociale)', value: 419.6, bp2024: 430.1, color: '#E1386E' },
+  { name: 'Préfecture de Police', value: 256.4, bp2024: 252.4, color: '#FBCD41' },
+  { name: 'Caisses des écoles', value: 132.4, bp2024: 112.0, color: '#22496A' },
   { name: 'SYCTOM (déchets)', value: 119.0, bp2024: 114.8, color: '#E1386E' },
   { name: 'Crèches associatives', value: 72.0, bp2024: 65.0, color: '#FBCD41' },
-  { name: 'Paris Musées', value: 58.5, bp2024: 56.2, color: '#FBCD41' },
-  { name: 'Dotation collèges', value: 38.1, bp2024: 37.7, color: '#FBCD41' },
+  { name: 'Paris Musées', value: 58.5, bp2024: 56.2, color: '#22496A' },
+  { name: 'Dotation collèges', value: 38.1, bp2024: 37.7, color: '#E1386E' },
 ];
 
 // Recettes de fonctionnement
@@ -68,10 +68,10 @@ const operationsOrdre = {
 // Amortissements et provisions - dégradé bleu → rouge → jaune
 const amortissementsProvisions = [
   { name: 'Amortissements immobilisations', value: 463.0, color: '#22496A' },
-  { name: 'Provisions risques (contentieux)', value: 19.0, color: '#22496A' },
-  { name: 'Provisions créances douteuses', value: 8.0, color: '#E1386E' },
-  { name: 'Complément prix cessions', value: 4.1, color: '#E1386E' },
-  { name: 'Primes remboursement obligations', value: 3.5, color: '#FBCD41' },
+  { name: 'Provisions risques (contentieux)', value: 19.0, color: '#E1386E' },
+  { name: 'Provisions créances douteuses', value: 8.0, color: '#FBCD41' },
+  { name: 'Complément prix cessions', value: 4.1, color: '#22496A' },
+  { name: 'Primes remboursement obligations', value: 3.5, color: '#E1386E' },
   { name: 'Provisions participations', value: 0.5, color: '#FBCD41' },
 ];
 

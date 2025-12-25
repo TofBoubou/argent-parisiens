@@ -579,11 +579,11 @@ export default function PolitiquesPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 { nom: 'Sécurité', postes: 454, color: '#22496A', detail: 'Police municipale et ASVP' },
-                { nom: 'Enseignement', postes: 212, color: '#22496A', detail: 'Déprécarisation animateurs' },
-                { nom: 'Santé et action sociale', postes: 102, color: '#22496A', detail: 'Crèches, solidarités' },
+                { nom: 'Enseignement', postes: 212, color: '#E1386E', detail: 'Déprécarisation animateurs' },
+                { nom: 'Santé et action sociale', postes: 102, color: '#FBCD41', detail: 'Crèches, solidarités' },
                 { nom: 'Culture, sports', postes: 70, color: '#22496A', detail: 'Nouveaux équipements' },
-                { nom: 'Aménagement', postes: 37, color: '#22496A', detail: 'Espaces verts' },
-                { nom: 'Environnement', postes: 35, color: '#22496A', detail: 'Équipes propreté' },
+                { nom: 'Aménagement', postes: 37, color: '#E1386E', detail: 'Espaces verts' },
+                { nom: 'Environnement', postes: 35, color: '#FBCD41', detail: 'Équipes propreté' },
               ].map((item, index) => (
                 <motion.div
                   key={item.nom}

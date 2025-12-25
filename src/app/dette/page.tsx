@@ -59,9 +59,9 @@ const evolutionDuree = [
 // Composition de la dette
 const compositionDette = [
   { name: 'Dette bancaire et obligataire', value: 9292, color: '#22496A' },
-  { name: 'Contrat performance énergétique', value: 14.6, color: '#22496A' },
-  { name: 'Échéancier Philharmonie', value: 41.8, color: '#22496A' },
-  { name: 'Autres dettes', value: 8.4, color: '#22496A' },
+  { name: 'Contrat performance énergétique', value: 14.6, color: '#E1386E' },
+  { name: 'Échéancier Philharmonie', value: 41.8, color: '#FBCD41' },
+  { name: 'Autres dettes', value: 8.4, color: '#E1386E' },
 ];
 
 // Charges financières
@@ -113,28 +113,28 @@ export default function DettePage() {
               <div className="text-2xl md:text-3xl font-bold text-yellow">
                 9,4<span className="text-lg ml-1">Md€</span>
               </div>
-              <div className="text-primary/60 text-sm mt-1">Dette totale</div>
+              <div className="text-cream/70 text-sm mt-1">Dette totale</div>
               <div className="text-accent/80 text-xs mt-2">+682 M€ en 1 an</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow">
                 16,4<span className="text-lg ml-1">ans</span>
               </div>
-              <div className="text-primary/60 text-sm mt-1">Pour rembourser</div>
+              <div className="text-cream/70 text-sm mt-1">Pour rembourser</div>
               <div className="text-accent/80 text-xs mt-2">+1,1 an vs 2024</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow">
                 224,5<span className="text-lg ml-1">M€</span>
               </div>
-              <div className="text-primary/60 text-sm mt-1">Intérêts annuels</div>
+              <div className="text-cream/70 text-sm mt-1">Intérêts annuels</div>
               <div className="text-accent/80 text-xs mt-2">+5,4 % vs 2024</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow">
                 994<span className="text-lg ml-1">M€</span>
               </div>
-              <div className="text-primary/60 text-sm mt-1">Nouvel emprunt</div>
+              <div className="text-cream/70 text-sm mt-1">Nouvel emprunt</div>
               <div className="text-accent/80 text-xs mt-2">+3,3 % vs 2024</div>
             </div>
           </motion.div>

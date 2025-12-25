@@ -10,9 +10,9 @@ const depensesFonctionnement = {
   total: 9268.2,
   repartition: [
     { name: 'Masse salariale', value: 2885.0, color: '#22496A' },
-    { name: 'Dépenses de gestion', value: 4554.0, color: '#22496A' },
-    { name: 'Péréquation & reversements', value: 1604.7, color: '#E1386E' },
-    { name: 'Charges financières', value: 224.5, color: '#FBCD41' },
+    { name: 'Dépenses de gestion', value: 4554.0, color: '#E1386E' },
+    { name: 'Péréquation & reversements', value: 1604.7, color: '#FBCD41' },
+    { name: 'Charges financières', value: 224.5, color: '#22496A' },
   ],
 };
 
@@ -26,10 +26,10 @@ const evolutionMasseSalariale = [
 
 // Péréquation détaillée - les labels seront enrichis avec InfoTooltip dans le JSX
 const perequation = [
-  { label: 'FNGIR', sublabel: '(garantie ressources, figé depuis 2011)', value: 898.2, color: '#E1386E' },
+  { label: 'FNGIR', sublabel: '(garantie ressources, figé depuis 2011)', value: 898.2, color: '#22496A' },
   { label: 'Fonds DMTO', sublabel: '(droits de mutation)', value: 214.2, color: '#E1386E' },
-  { label: 'FSRIF', sublabel: '(solidarité région Île-de-France)', value: 208.1, color: '#E1386E' },
-  { label: 'FPIC', sublabel: '(péréquation intercommunale)', value: 199.6, color: '#E1386E' },
+  { label: 'FSRIF', sublabel: '(solidarité région Île-de-France)', value: 208.1, color: '#FBCD41' },
+  { label: 'FPIC', sublabel: '(péréquation intercommunale)', value: 199.6, color: '#22496A' },
   { label: 'FSDRIF', sublabel: '(solidarité départements IDF)', value: 30.0, color: '#E1386E' },
 ];
 

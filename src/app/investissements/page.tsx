@@ -240,28 +240,28 @@ export default function InvestissementsPage() {
               <div className="text-2xl md:text-3xl font-bold text-yellow">
                 2,05<span className="text-lg ml-1">Md€</span>
               </div>
-              <div className="text-primary/60 text-sm mt-1">Nouvelles AP</div>
+              <div className="text-cream/70 text-sm mt-1">Nouvelles AP</div>
               <div className="text-xs text-cream/50 mt-2">Autorisations de programme</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow">
                 8,6<span className="text-lg ml-1">Md€</span>
               </div>
-              <div className="text-primary/60 text-sm mt-1">Stock total AP</div>
+              <div className="text-cream/70 text-sm mt-1">Stock total AP</div>
               <div className="text-xs text-cream/50 mt-2">Projets en cours</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow">
                 121<span className="text-lg ml-1">projets</span>
               </div>
-              <div className="text-primary/60 text-sm mt-1">Budget participatif</div>
+              <div className="text-cream/70 text-sm mt-1">Budget participatif</div>
               <div className="text-xs text-cream/50 mt-2">Campagne 2024</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow">
                 500<span className="text-lg ml-1">M€</span>
               </div>
-              <div className="text-primary/60 text-sm mt-1">Logement social</div>
+              <div className="text-cream/70 text-sm mt-1">Logement social</div>
               <div className="text-xs text-cream/50 mt-2">Subventions</div>
             </div>
           </motion.div>
