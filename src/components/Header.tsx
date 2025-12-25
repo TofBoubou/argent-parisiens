@@ -133,23 +133,25 @@ export default function Header() {
 
   return (
     <header className="bg-primary sticky top-0 z-50 shadow-lg">
-      <nav className="px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center h-16">
-          {/* Logo SK à gauche */}
-          <a href="https://sarahknafo.fr" target="_blank" rel="noopener noreferrer" className="mr-4 flex-shrink-0">
-            <img
-              src="/logo-sk.svg"
-              alt="Sarah Knafo"
-              className="h-8 w-auto hover:opacity-80 transition-opacity"
-            />
-          </a>
+      <div className="flex items-center">
+        {/* Logo SK à l'extrême gauche */}
+        <a href="https://sarahknafo.fr" target="_blank" rel="noopener noreferrer" className="pl-4 flex-shrink-0">
+          <img
+            src="/logo-sk.svg"
+            alt="Sarah Knafo"
+            className="h-8 w-auto hover:opacity-80 transition-opacity"
+          />
+        </a>
 
-          {/* Titre */}
-          <Link href="/" className="flex items-center mr-auto">
-            <span className="text-yellow font-bold text-lg md:text-xl font-display">
-              L'argent des Parisiens
-            </span>
-          </Link>
+        {/* Contenu centré */}
+        <nav className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            {/* Titre */}
+            <Link href="/" className="flex items-center">
+              <span className="text-yellow font-bold text-lg md:text-xl font-display">
+                L'argent des Parisiens
+              </span>
+            </Link>
 
           {/* Search Bar - Desktop */}
           <div ref={searchRef} className="hidden md:block relative">
@@ -361,7 +363,8 @@ export default function Header() {
             </motion.div>
           )}
         </AnimatePresence>
-      </nav>
+        </nav>
+      </div>
     </header>
   );
 }
