@@ -31,7 +31,7 @@ export default function ChiffreCard({
       className={`rounded-xl p-5 ${
         accent
           ? 'bg-primary text-white'
-          : 'bg-white border border-gray-100 shadow-sm'
+          : 'bg-white border border-primary/10 shadow-sm'
       }`}
     >
       {icon && <div className="text-2xl mb-2">{icon}</div>}
@@ -40,22 +40,22 @@ export default function ChiffreCard({
       >
         {typeof value === 'number' ? value.toLocaleString('fr-FR') : value}
         {unit && (
-          <span className={`text-lg ml-1 ${accent ? 'text-gray-300' : 'text-gray-500'}`}>
+          <span className={`text-lg ml-1 ${accent ? 'text-primary/50' : 'text-primary/70'}`}>
             {unit}
           </span>
         )}
       </div>
-      <div className={`text-sm mt-1 ${accent ? 'text-gray-300' : 'text-gray-500'}`}>
+      <div className={`text-sm mt-1 ${accent ? 'text-primary/50' : 'text-primary/70'}`}>
         {label}
       </div>
       {variation && (
         <div
           className={`text-xs mt-2 font-medium ${
             variationPositive
-              ? 'text-green-500'
+              ? 'text-yellow'
               : accent
-              ? 'text-red-300'
-              : 'text-red-500'
+              ? 'text-accent/70'
+              : 'text-accent'
           }`}
         >
           {variation}
@@ -63,7 +63,7 @@ export default function ChiffreCard({
       )}
       {description && (
         <p
-          className={`text-xs mt-2 ${accent ? 'text-gray-400' : 'text-gray-400'}`}
+          className={`text-xs mt-2 ${accent ? 'text-primary/60' : 'text-primary/60'}`}
         >
           {description}
         </p>

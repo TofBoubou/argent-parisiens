@@ -11,29 +11,29 @@ const syntheseAP = {
   total: 2047.1,
   recettes: 462.5,
   parType: [
-    { name: 'Autorisations pluriannuelles', value: 1437.9, pct: 70.2, color: '#0D1B4C' },
-    { name: 'Autorisations par projet', value: 418.6, pct: 20.4, color: '#dc2626' },
-    { name: 'Investissement local', value: 106.8, pct: 5.2, color: '#d97706' },
-    { name: 'Budget participatif', value: 83.8, pct: 4.1, color: '#3b82f6' },
+    { name: 'Autorisations pluriannuelles', value: 1437.9, pct: 70.2, color: '#22496A' },
+    { name: 'Autorisations par projet', value: 418.6, pct: 20.4, color: '#E1386E' },
+    { name: 'Investissement local', value: 106.8, pct: 5.2, color: '#FBCD41' },
+    { name: 'Budget participatif', value: 83.8, pct: 4.1, color: '#22496A' },
   ],
   parLocalisation: [
-    { name: 'Non localisés', value: 1192.3, pct: 58.2, color: '#0D1B4C' },
-    { name: 'Localisables', value: 615.3, pct: 30.1, color: '#dc2626' },
-    { name: '17 arrondissements', value: 239.5, pct: 11.7, color: '#f59e0b' },
+    { name: 'Non localisés', value: 1192.3, pct: 58.2, color: '#22496A' },
+    { name: 'Localisables', value: 615.3, pct: 30.1, color: '#E1386E' },
+    { name: '17 arrondissements', value: 239.5, pct: 11.7, color: '#FBCD41' },
   ],
 };
 
 // Répartition par fonction
 const repartitionFonction = [
-  { code: 5, label: 'Aménagement et habitat', value: 1133.7, color: '#0D1B4C' },
-  { code: 0, label: 'Services généraux', value: 408.3, color: '#dc2626' },
-  { code: 3, label: 'Culture, sports, loisirs', value: 183.9, color: '#d97706' },
-  { code: 2, label: 'Enseignement', value: 117.9, color: '#1e3a8a' },
-  { code: 7, label: 'Environnement', value: 71.1, color: '#ef4444' },
-  { code: 8, label: 'Transports', value: 59.7, color: '#f59e0b' },
-  { code: 4, label: 'Santé et action sociale', value: 48.6, color: '#3b82f6' },
-  { code: 1, label: 'Sécurité', value: 17.6, color: '#f87171' },
-  { code: 6, label: 'Action économique', value: 6.2, color: '#fbbf24' },
+  { code: 5, label: 'Aménagement et habitat', value: 1133.7, color: '#22496A' },
+  { code: 0, label: 'Services généraux', value: 408.3, color: '#E1386E' },
+  { code: 3, label: 'Culture, sports, loisirs', value: 183.9, color: '#FBCD41' },
+  { code: 2, label: 'Enseignement', value: 117.9, color: '#22496A' },
+  { code: 7, label: 'Environnement', value: 71.1, color: '#E1386E' },
+  { code: 8, label: 'Transports', value: 59.7, color: '#FBCD41' },
+  { code: 4, label: 'Santé et action sociale', value: 48.6, color: '#22496A' },
+  { code: 1, label: 'Sécurité', value: 17.6, color: '#E1386E' },
+  { code: 6, label: 'Action économique', value: 6.2, color: '#FBCD41' },
 ];
 
 // Stock des AP
@@ -163,15 +163,15 @@ const budgetParticipatif = {
   },
   ecoles: 4.2,
   parDirection: [
-    { label: 'Affaires scolaires', value: 19.7, color: '#0D1B4C' },
-    { label: 'Jeunesse et sports', value: 17.1, color: '#dc2626' },
-    { label: 'Affaires culturelles', value: 14.6, color: '#d97706' },
-    { label: 'Espaces verts', value: 13.0, color: '#1e3a8a' },
-    { label: 'Petite enfance', value: 5.3, color: '#ef4444' },
-    { label: 'Voirie', value: 4.0, color: '#f59e0b' },
-    { label: 'Démocratie locale', value: 3.4, color: '#3b82f6' },
-    { label: 'Solidarités', value: 2.7, color: '#f87171' },
-    { label: 'Autres', value: 4.0, color: '#fbbf24' },
+    { label: 'Affaires scolaires', value: 19.7, color: '#22496A' },
+    { label: 'Jeunesse et sports', value: 17.1, color: '#E1386E' },
+    { label: 'Affaires culturelles', value: 14.6, color: '#FBCD41' },
+    { label: 'Espaces verts', value: 13.0, color: '#22496A' },
+    { label: 'Petite enfance', value: 5.3, color: '#E1386E' },
+    { label: 'Voirie', value: 4.0, color: '#FBCD41' },
+    { label: 'Démocratie locale', value: 3.4, color: '#22496A' },
+    { label: 'Solidarités', value: 2.7, color: '#E1386E' },
+    { label: 'Autres', value: 4.0, color: '#FBCD41' },
   ],
 };
 
@@ -218,13 +218,13 @@ export default function InvestissementsPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center"
           >
-            <p className="text-gray-400 uppercase tracking-wide text-sm mb-2">
+            <p className="text-yellow uppercase tracking-wide text-sm font-medium mb-2">
               Budget 2025
             </p>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               Les <span className="text-accent">investissements</span>
             </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-cream/80 max-w-2xl mx-auto">
               2 Md€ de nouveaux projets
             </p>
           </motion.div>
@@ -237,39 +237,39 @@ export default function InvestissementsPage() {
             className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12"
           >
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
-              <div className="text-2xl md:text-3xl font-bold">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">
                 2,05<span className="text-lg ml-1">Md€</span>
               </div>
-              <div className="text-gray-400 text-sm mt-1">Nouvelles AP</div>
-              <div className="text-xs text-gray-500 mt-2">Autorisations de programme</div>
+              <div className="text-primary/60 text-sm mt-1">Nouvelles AP</div>
+              <div className="text-xs text-cream/50 mt-2">Autorisations de programme</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
-              <div className="text-2xl md:text-3xl font-bold">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">
                 8,6<span className="text-lg ml-1">Md€</span>
               </div>
-              <div className="text-gray-400 text-sm mt-1">Stock total AP</div>
-              <div className="text-xs text-gray-500 mt-2">Projets en cours</div>
+              <div className="text-primary/60 text-sm mt-1">Stock total AP</div>
+              <div className="text-xs text-cream/50 mt-2">Projets en cours</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
-              <div className="text-2xl md:text-3xl font-bold">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">
                 121<span className="text-lg ml-1">projets</span>
               </div>
-              <div className="text-gray-400 text-sm mt-1">Budget participatif</div>
-              <div className="text-xs text-gray-500 mt-2">Campagne 2024</div>
+              <div className="text-primary/60 text-sm mt-1">Budget participatif</div>
+              <div className="text-xs text-cream/50 mt-2">Campagne 2024</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
-              <div className="text-2xl md:text-3xl font-bold">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">
                 500<span className="text-lg ml-1">M€</span>
               </div>
-              <div className="text-gray-400 text-sm mt-1">Logement social</div>
-              <div className="text-xs text-gray-500 mt-2">Subventions</div>
+              <div className="text-primary/60 text-sm mt-1">Logement social</div>
+              <div className="text-xs text-cream/50 mt-2">Subventions</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Répartition par type */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -279,7 +279,7 @@ export default function InvestissementsPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Types d'investissements
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Répartition des 2,05 Md€ de nouvelles <InfoTooltip terme="Autorisations de programme">autorisations de programme</InfoTooltip>
             </p>
 
@@ -303,8 +303,8 @@ export default function InvestissementsPage() {
               {syntheseAP.parType.map((type, i) => (
                 <div key={i} className="bg-white rounded-xl p-4 shadow-sm">
                   <div className="text-2xl font-bold text-primary">{type.value.toLocaleString('fr-FR')} M€</div>
-                  <div className="text-sm text-gray-600">{type.name}</div>
-                  <div className="text-xs text-gray-400">{type.pct}% du total</div>
+                  <div className="text-sm text-primary/80">{type.name}</div>
+                  <div className="text-xs text-primary/60">{type.pct}% du total</div>
                 </div>
               ))}
             </div>
@@ -323,7 +323,7 @@ export default function InvestissementsPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Investissements par politique
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Répartition des nouvelles autorisations de programme 2025
             </p>
 
@@ -354,7 +354,7 @@ export default function InvestissementsPage() {
       </section>
 
       {/* Logement et habitat */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -364,7 +364,7 @@ export default function InvestissementsPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Logement et habitat : 665,6 M€
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Le plus gros poste d'investissement de la Ville
             </p>
 
@@ -379,8 +379,8 @@ export default function InvestissementsPage() {
                   className="bg-white rounded-xl p-5 shadow-sm"
                 >
                   <div className="text-2xl font-bold text-primary">{item.value.toLocaleString('fr-FR')} M€</div>
-                  <div className="font-medium text-gray-800 mt-1">{item.label}</div>
-                  <div className="text-xs text-gray-500 mt-2">{item.desc}</div>
+                  <div className="font-medium text-primary mt-1">{item.label}</div>
+                  <div className="text-xs text-cream/50 mt-2">{item.desc}</div>
                 </motion.div>
               ))}
             </div>
@@ -400,7 +400,7 @@ export default function InvestissementsPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Opérations foncières et <InfoTooltip terme="ZAC">ZAC</InfoTooltip>
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Acquisitions et aménagements urbains
             </p>
 
@@ -413,7 +413,7 @@ export default function InvestissementsPage() {
                       <div className="flex justify-between items-start">
                         <div>
                           <div className="font-semibold text-primary">{cf.label}</div>
-                          <div className="text-xs text-gray-500">{cf.desc}</div>
+                          <div className="text-xs text-cream/50">{cf.desc}</div>
                         </div>
                         <div className="text-xl font-bold text-primary">{cf.value} M€</div>
                       </div>
@@ -429,7 +429,7 @@ export default function InvestissementsPage() {
                     <div key={i} className="bg-white rounded-xl p-4 shadow-sm flex justify-between items-center">
                       <div>
                         <div className="font-semibold text-primary">{zac.nom}</div>
-                        <div className="text-xs text-gray-500">{zac.arrondissement}</div>
+                        <div className="text-xs text-cream/50">{zac.arrondissement}</div>
                       </div>
                       <div className="text-lg font-bold text-primary">{zac.montant} M€</div>
                     </div>
@@ -442,7 +442,7 @@ export default function InvestissementsPage() {
       </section>
 
       {/* Grands projets par arrondissement */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -452,7 +452,7 @@ export default function InvestissementsPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Projets par arrondissement
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Cliquez sur un arrondissement pour voir les projets
             </p>
 
@@ -464,7 +464,7 @@ export default function InvestissementsPage() {
                   className={`p-3 rounded-lg text-sm font-medium transition-all ${
                     selectedArr === arr.arrondissement
                       ? 'bg-primary text-white shadow-md'
-                      : 'bg-white text-primary hover:bg-gray-100 hover:shadow-md shadow-sm'
+                      : 'bg-white text-primary hover:bg-cream hover:shadow-md shadow-sm'
                   }`}
                 >
                   {arr.arrondissement}
@@ -490,15 +490,15 @@ export default function InvestissementsPage() {
                       ?.projets.map((projet, i) => (
                         <div
                           key={i}
-                          className="flex justify-between items-center p-3 bg-gray-50 rounded-lg"
+                          className="flex justify-between items-center p-3 bg-cream rounded-lg"
                         >
-                          <span className="text-gray-700">{projet.nom}</span>
+                          <span className="text-primary">{projet.nom}</span>
                           <span className="font-bold text-primary">{projet.montant} M€</span>
                         </div>
                       ))}
                   </div>
                   <div className="mt-4 pt-4 border-t flex justify-between items-center">
-                    <span className="font-medium text-gray-600">Total arrondissement</span>
+                    <span className="font-medium text-primary/80">Total arrondissement</span>
                     <span className="text-xl font-bold text-primary">
                       {grandsProjets
                         .find((a) => a.arrondissement === selectedArr)
@@ -511,7 +511,7 @@ export default function InvestissementsPage() {
             </AnimatePresence>
 
             {!selectedArr && (
-              <div className="bg-white rounded-xl p-6 shadow-sm text-center text-gray-500">
+              <div className="bg-white rounded-xl p-6 shadow-sm text-center text-primary/70">
                 Sélectionnez un arrondissement pour voir ses projets
               </div>
             )}
@@ -530,7 +530,7 @@ export default function InvestissementsPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               <InfoTooltip terme="Budget participatif">Budget participatif</InfoTooltip> : 83,8 M€
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Crédits alloués au budget participatif
             </p>
 
@@ -538,13 +538,13 @@ export default function InvestissementsPage() {
               <div className="bg-white rounded-xl p-6 shadow-sm flex flex-col">
                 <h3 className="font-bold text-primary mb-4">Campagne 2024</h3>
                 <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <div className="text-center p-4 bg-cream rounded-lg">
                     <div className="text-3xl font-bold text-primary">{budgetParticipatif.campagne2024.projetsRetenus}</div>
-                    <div className="text-sm text-gray-600">projets retenus</div>
+                    <div className="text-sm text-primary/80">projets retenus</div>
                   </div>
-                  <div className="text-center p-4 bg-gray-50 rounded-lg">
+                  <div className="text-center p-4 bg-cream rounded-lg">
                     <div className="text-3xl font-bold text-primary">{budgetParticipatif.campagne2024.montant} M€</div>
-                    <div className="text-sm text-gray-600">montant total</div>
+                    <div className="text-sm text-primary/80">montant total</div>
                   </div>
                 </div>
                 <div className="flex justify-between text-sm">
@@ -574,7 +574,7 @@ export default function InvestissementsPage() {
       </section>
 
       {/* Stock des AP */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -584,21 +584,21 @@ export default function InvestissementsPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Stock des autorisations de programme
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               8,6 Md€ de projets en cours d'exécution
             </p>
 
             <div className="grid md:grid-cols-3 gap-4 mb-8">
               <div className="bg-white rounded-xl p-5 shadow-sm text-center">
-                <div className="text-sm text-gray-500 mb-2">Stock avant BP 2025</div>
+                <div className="text-sm text-primary/70 mb-2">Stock avant BP 2025</div>
                 <div className="text-3xl font-bold text-primary">{stockAP.avantBP2025.toLocaleString('fr-FR')} M€</div>
               </div>
               <div className="bg-primary text-white rounded-xl p-5 shadow-sm text-center">
-                <div className="text-sm text-gray-300 mb-2">Nouveaux BP 2025</div>
+                <div className="text-sm text-primary/50 mb-2">Nouveaux BP 2025</div>
                 <div className="text-3xl font-bold">+{stockAP.mouvementsBP2025.toLocaleString('fr-FR')} M€</div>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm text-center border-2 border-primary">
-                <div className="text-sm text-gray-500 mb-2">Stock après BP 2025</div>
+                <div className="text-sm text-primary/70 mb-2">Stock après BP 2025</div>
                 <div className="text-3xl font-bold text-primary">{stockAP.apresBP2025.toLocaleString('fr-FR')} M€</div>
               </div>
             </div>
@@ -610,10 +610,10 @@ export default function InvestissementsPage() {
                   <div key={i} className="flex items-center gap-4">
                     <div className="flex-1">
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium text-gray-700">{f.label}</span>
+                        <span className="text-sm font-medium text-primary">{f.label}</span>
                         <span className="text-sm font-bold text-primary">{f.stock.toLocaleString('fr-FR')} M€</span>
                       </div>
-                      <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div className="w-full bg-cream/80 rounded-full h-2">
                         <div
                           className="bg-primary h-2 rounded-full"
                           style={{ width: `${(f.stock / stockAP.apresBP2025) * 100}%` }}
@@ -643,25 +643,25 @@ export default function InvestissementsPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-primary">
                 <h3 className="font-bold text-primary mb-2">Logement prioritaire</h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-primary/80">
                   55 % des investissements vont à l'aménagement et l'habitat, soit 1,1 Md€.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-blue-600">
                 <h3 className="font-bold text-primary mb-2">8,6 Md€ en cours</h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-primary/80">
                   Un stock record d'autorisations de programme représentant 5 ans de travaux.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-blue-400">
                 <h3 className="font-bold text-primary mb-2">Budget participatif</h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-primary/80">
                   121 projets pour 79,6 M€ en 2024.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-blue-300">
                 <h3 className="font-bold text-primary mb-2">Comptes fonciers</h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-primary/80">
                   229 M€ pour acquérir du foncier : logement, équipements, commerces.
                 </p>
               </div>
@@ -684,13 +684,13 @@ export default function InvestissementsPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/recettes"
-                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-cream transition-colors"
               >
                 Les recettes
               </Link>
               <Link
                 href="/depenses"
-                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors"
+                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-[#E1386E] transition-colors"
               >
                 Les dépenses
               </Link>

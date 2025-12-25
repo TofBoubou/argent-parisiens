@@ -58,10 +58,10 @@ const evolutionDuree = [
 
 // Composition de la dette
 const compositionDette = [
-  { name: 'Dette bancaire et obligataire', value: 9292, color: '#0D1B4C' },
-  { name: 'Contrat performance énergétique', value: 14.6, color: '#3B82F6' },
-  { name: 'Échéancier Philharmonie', value: 41.8, color: '#6366F1' },
-  { name: 'Autres dettes', value: 8.4, color: '#94A3B8' },
+  { name: 'Dette bancaire et obligataire', value: 9292, color: '#22496A' },
+  { name: 'Contrat performance énergétique', value: 14.6, color: '#22496A' },
+  { name: 'Échéancier Philharmonie', value: 41.8, color: '#22496A' },
+  { name: 'Autres dettes', value: 8.4, color: '#22496A' },
 ];
 
 // Charges financières
@@ -91,13 +91,13 @@ export default function DettePage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center"
           >
-            <p className="text-gray-400 uppercase tracking-wide text-sm mb-2">
+            <p className="text-yellow uppercase tracking-wide text-sm font-medium mb-2">
               Budget 2025
             </p>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               La dette de <span className="text-accent">Paris</span>
             </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-cream/80 max-w-2xl mx-auto">
               Une dette qui atteint des niveaux historiques et pèse sur les générations futures
             </p>
           </motion.div>
@@ -110,39 +110,39 @@ export default function DettePage() {
             className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12"
           >
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
-              <div className="text-2xl md:text-3xl font-bold">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">
                 9,4<span className="text-lg ml-1">Md€</span>
               </div>
-              <div className="text-gray-400 text-sm mt-1">Dette totale</div>
-              <div className="text-red-400 text-xs mt-2">+682 M€ en 1 an</div>
+              <div className="text-primary/60 text-sm mt-1">Dette totale</div>
+              <div className="text-accent/80 text-xs mt-2">+682 M€ en 1 an</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
-              <div className="text-2xl md:text-3xl font-bold">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">
                 16,4<span className="text-lg ml-1">ans</span>
               </div>
-              <div className="text-gray-400 text-sm mt-1">Pour rembourser</div>
-              <div className="text-red-400 text-xs mt-2">+1,1 an vs 2024</div>
+              <div className="text-primary/60 text-sm mt-1">Pour rembourser</div>
+              <div className="text-accent/80 text-xs mt-2">+1,1 an vs 2024</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
-              <div className="text-2xl md:text-3xl font-bold">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">
                 224,5<span className="text-lg ml-1">M€</span>
               </div>
-              <div className="text-gray-400 text-sm mt-1">Intérêts annuels</div>
-              <div className="text-red-400 text-xs mt-2">+5,4 % vs 2024</div>
+              <div className="text-primary/60 text-sm mt-1">Intérêts annuels</div>
+              <div className="text-accent/80 text-xs mt-2">+5,4 % vs 2024</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
-              <div className="text-2xl md:text-3xl font-bold">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">
                 994<span className="text-lg ml-1">M€</span>
               </div>
-              <div className="text-gray-400 text-sm mt-1">Nouvel emprunt</div>
-              <div className="text-red-400 text-xs mt-2">+3,3 % vs 2024</div>
+              <div className="text-primary/60 text-sm mt-1">Nouvel emprunt</div>
+              <div className="text-accent/80 text-xs mt-2">+3,3 % vs 2024</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Évolution de la dette */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -152,28 +152,28 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Une dette qui explose
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Évolution de l'<InfoTooltip terme="Encours de dette">encours total de la dette</InfoTooltip> depuis 2015 (en Md€) — Sources : CRC Île-de-France
             </p>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <ResponsiveContainer width="100%" height={400}>
                 <ComposedChart data={evolutionDette}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
-                  <XAxis dataKey="annee" tick={{ fill: '#6B7280' }} />
+                  <CartesianGrid strokeDasharray="3 3" stroke="#22496A" />
+                  <XAxis dataKey="annee" tick={{ fill: '#22496A' }} />
                   <YAxis
-                    tick={{ fill: '#6B7280' }}
+                    tick={{ fill: '#22496A' }}
                     domain={[4000, 10000]}
                     tickFormatter={(v) => `${(v / 1000).toFixed(1)} Md€`}
                   />
                   <Tooltip
                     formatter={(value: number) => [`${(value / 1000).toFixed(2)} Md€`, 'Dette']}
-                    contentStyle={{ backgroundColor: '#0D1B4C', color: 'white', border: 'none', borderRadius: '8px' }}
+                    contentStyle={{ backgroundColor: '#22496A', color: 'white', border: 'none', borderRadius: '8px' }}
                   />
                   <defs>
                     <linearGradient id="detteGradient" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#E30613" stopOpacity={0.3} />
-                      <stop offset="95%" stopColor="#E30613" stopOpacity={0} />
+                      <stop offset="5%" stopColor="#E1386E" stopOpacity={0.3} />
+                      <stop offset="95%" stopColor="#E1386E" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                   <Area
@@ -186,23 +186,23 @@ export default function DettePage() {
                   <Line
                     type="monotone"
                     dataKey="dette"
-                    stroke="#E30613"
+                    stroke="#E1386E"
                     strokeWidth={3}
-                    dot={{ fill: '#E30613', strokeWidth: 2 }}
+                    dot={{ fill: '#E1386E', strokeWidth: 2 }}
                     activeDot={{ r: 8 }}
                   />
                 </ComposedChart>
               </ResponsiveContainer>
 
               <div className="mt-6 grid md:grid-cols-2 gap-4">
-                <div className="p-4 bg-red-50 border-l-4 border-accent rounded-r-lg">
-                  <p className="text-sm text-gray-700">
+                <div className="p-4 bg-accent/10 border-l-4 border-accent rounded-r-lg">
+                  <p className="text-sm text-primary">
                     <span className="font-bold text-accent">+4,7 Md€ en 10 ans (+101 %)</span> : la dette est passée de 4,67 Md€ fin 2015 à 9,36 Md€ fin 2025. Elle a plus que doublé sous la mandature Hidalgo.
                   </p>
                 </div>
                 <div className="p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r-lg">
-                  <p className="text-sm text-gray-700">
-                    <span className="font-bold text-amber-700">Seule baisse en 2019</span> : la dette a diminué de 62 M€ cette année-là, avant de repartir fortement à la hausse dès 2020 (année Covid : +742 M€).
+                  <p className="text-sm text-primary">
+                    <span className="font-bold text-yellow">Seule baisse en 2019</span> : la dette a diminué de 62 M€ cette année-là, avant de repartir fortement à la hausse dès 2020 (année Covid : +742 M€).
                   </p>
                 </div>
               </div>
@@ -222,7 +222,7 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Composition de la dette
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Répartition de l'encours total de 9,36 Md€ fin 2025
             </p>
 
@@ -234,16 +234,16 @@ export default function DettePage() {
               <div className="space-y-4">
                 <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-primary">
                   <h3 className="font-bold text-primary mb-2"><InfoTooltip terme="Dette obligataire">Dette bancaire et obligataire</InfoTooltip></h3>
-                  <div className="text-3xl font-bold text-gray-800">9 292 M€</div>
-                  <p className="text-sm text-gray-600 mt-2">
+                  <div className="text-3xl font-bold text-primary">9 292 M€</div>
+                  <p className="text-sm text-primary/80 mt-2">
                     99,3 % de la dette totale. Emprunts contractés auprès de banques et via l'émission d'obligations sur les marchés.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-blue-500">
                   <h3 className="font-bold text-primary mb-2">Autres dettes</h3>
-                  <div className="text-2xl font-bold text-gray-800">64,8 M€</div>
-                  <div className="text-sm text-gray-600 mt-2 space-y-1">
+                  <div className="text-2xl font-bold text-primary">64,8 M€</div>
+                  <div className="text-sm text-primary/80 mt-2 space-y-1">
                     <div className="flex justify-between">
                       <span>Échéancier Philharmonie</span>
                       <span className="font-medium">41,8 M€</span>
@@ -265,7 +265,7 @@ export default function DettePage() {
       </section>
 
       {/* Durée de désendettement */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -275,7 +275,7 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               <InfoTooltip terme="Durée de désendettement">Durée de désendettement</InfoTooltip>
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Nombre d'années nécessaires pour rembourser la dette avec l'<InfoTooltip terme="Épargne brute">épargne brute</InfoTooltip> — Évolution depuis 2018
             </p>
 
@@ -283,30 +283,30 @@ export default function DettePage() {
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <ResponsiveContainer width="100%" height={320}>
                   <ComposedChart data={evolutionDuree.filter(d => !d.hors_echelle)}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
-                    <XAxis dataKey="annee" tick={{ fill: '#6B7280' }} />
+                    <CartesianGrid strokeDasharray="3 3" stroke="#22496A" />
+                    <XAxis dataKey="annee" tick={{ fill: '#22496A' }} />
                     <YAxis
-                      tick={{ fill: '#6B7280' }}
+                      tick={{ fill: '#22496A' }}
                       domain={[0, 20]}
                       tickFormatter={(v) => `${v} ans`}
                     />
                     <Tooltip
                       formatter={(value: number) => [`${value.toFixed(1)} ans`, 'Durée']}
-                      contentStyle={{ backgroundColor: '#0D1B4C', color: 'white', border: 'none', borderRadius: '8px' }}
+                      contentStyle={{ backgroundColor: '#22496A', color: 'white', border: 'none', borderRadius: '8px' }}
                     />
-                    <ReferenceLine y={12} stroke="#10B981" strokeDasharray="5 5" label={{ value: 'Seuil d\'alerte (12 ans)', fill: '#10B981', fontSize: 12 }} />
+                    <ReferenceLine y={12} stroke="#FBCD41" strokeDasharray="5 5" label={{ value: 'Seuil d\'alerte (12 ans)', fill: '#FBCD41', fontSize: 12 }} />
                     <Line
                       type="monotone"
                       dataKey="duree"
-                      stroke="#E30613"
+                      stroke="#E1386E"
                       strokeWidth={3}
-                      dot={{ fill: '#E30613', strokeWidth: 2 }}
+                      dot={{ fill: '#E1386E', strokeWidth: 2 }}
                     />
                   </ComposedChart>
                 </ResponsiveContainer>
-                <div className="mt-4 p-3 bg-red-50 border-l-4 border-red-500 rounded-r-lg">
-                  <p className="text-xs text-gray-700">
-                    <span className="font-bold text-red-600">2020 hors échelle : 329 ans</span> — L'épargne brute s'est effondrée à 20 M€ (contre 670 M€ en 2019) à cause du Covid.
+                <div className="mt-4 p-3 bg-accent/10 border-l-4 border-accent rounded-r-lg">
+                  <p className="text-xs text-primary">
+                    <span className="font-bold text-accent">2020 hors échelle : 329 ans</span> — L'épargne brute s'est effondrée à 20 M€ (contre 670 M€ en 2019) à cause du Covid.
                   </p>
                 </div>
               </div>
@@ -314,30 +314,30 @@ export default function DettePage() {
               <div className="space-y-4">
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
                       <span className="text-2xl font-bold text-accent">!</span>
                     </div>
                     <div>
                       <div className="text-3xl font-bold text-accent">16,4 ans</div>
-                      <div className="text-sm text-gray-600">pour rembourser en 2025</div>
+                      <div className="text-sm text-primary/80">pour rembourser en 2025</div>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <h4 className="font-medium text-primary mb-3">Comment c'est calculé ?</h4>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <div className="flex justify-between items-center p-2 bg-gray-50 rounded">
+                  <div className="space-y-2 text-sm text-primary/80">
+                    <div className="flex justify-between items-center p-2 bg-cream rounded">
                       <span>Dette totale</span>
                       <span className="font-bold">9 357 M€</span>
                     </div>
                     <div className="text-center">÷</div>
-                    <div className="flex justify-between items-center p-2 bg-gray-50 rounded">
+                    <div className="flex justify-between items-center p-2 bg-cream rounded">
                       <span><InfoTooltip terme="Épargne brute">Épargne brute</InfoTooltip> annuelle</span>
                       <span className="font-bold">571 M€</span>
                     </div>
                     <div className="text-center">=</div>
-                    <div className="flex justify-between items-center p-2 bg-red-50 rounded">
+                    <div className="flex justify-between items-center p-2 bg-accent/10 rounded">
                       <span>Durée de désendettement</span>
                       <span className="font-bold text-accent">16,4 ans</span>
                     </div>
@@ -345,7 +345,7 @@ export default function DettePage() {
                 </div>
 
                 <div className="bg-amber-50 rounded-xl p-4 border-l-4 border-amber-500">
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-primary">
                     <span className="font-bold">Seuil d'alerte :</span> Au-delà de 12 ans, une collectivité est considérée en situation financière dégradée.
                   </p>
                 </div>
@@ -366,7 +366,7 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Le coût de la dette
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Évolution des intérêts payés chaque année (en M€)
             </p>
 
@@ -380,13 +380,13 @@ export default function DettePage() {
                 />
 
                 <div className="mt-4 grid grid-cols-2 gap-4 text-center">
-                  <div className="p-3 bg-gray-50 rounded-lg">
+                  <div className="p-3 bg-cream rounded-lg">
                     <div className="text-2xl font-bold text-primary">+58 %</div>
-                    <div className="text-xs text-gray-600">depuis 2022</div>
+                    <div className="text-xs text-primary/80">depuis 2022</div>
                   </div>
-                  <div className="p-3 bg-gray-50 rounded-lg">
+                  <div className="p-3 bg-cream rounded-lg">
                     <div className="text-2xl font-bold text-primary">615 K€</div>
-                    <div className="text-xs text-gray-600">d'intérêts par jour</div>
+                    <div className="text-xs text-primary/80">d'intérêts par jour</div>
                   </div>
                 </div>
               </div>
@@ -395,16 +395,16 @@ export default function DettePage() {
                 <h3 className="font-bold text-lg mb-4">Remboursement 2025</h3>
                 <div className="space-y-4">
                   <div>
-                    <div className="text-gray-400 text-sm">Capital remboursé</div>
+                    <div className="text-primary/60 text-sm">Capital remboursé</div>
                     <div className="text-2xl font-bold">308,1 M€</div>
                   </div>
                   <div>
-                    <div className="text-gray-400 text-sm">Intérêts payés</div>
+                    <div className="text-primary/60 text-sm">Intérêts payés</div>
                     <div className="text-2xl font-bold text-accent">224,5 M€</div>
                   </div>
                   <hr className="border-white/20" />
                   <div>
-                    <div className="text-gray-400 text-sm">Total <InfoTooltip terme="Annuité">annuité</InfoTooltip></div>
+                    <div className="text-primary/60 text-sm">Total <InfoTooltip terme="Annuité">annuité</InfoTooltip></div>
                     <div className="text-2xl font-bold">532,6 M€</div>
                   </div>
                 </div>
@@ -415,7 +415,7 @@ export default function DettePage() {
       </section>
 
       {/* Équivalences */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -425,7 +425,7 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               224,5 M€ d'intérêts, c'est...
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Ce que Paris pourrait financer chaque année avec le montant des intérêts de la dette
             </p>
 
@@ -441,7 +441,7 @@ export default function DettePage() {
                 >
                   <div className="text-3xl font-bold text-accent">{equiv.valeur}</div>
                   <div className="text-sm font-medium text-primary mt-1">{equiv.unite}</div>
-                  <div className="text-xs text-gray-500 mt-2">{equiv.description}</div>
+                  <div className="text-xs text-cream/50 mt-2">{equiv.description}</div>
                 </motion.div>
               ))}
             </div>
@@ -460,28 +460,28 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               L'<InfoTooltip terme="Épargne brute">épargne brute</InfoTooltip> : la capacité à investir
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Différence entre recettes et dépenses de fonctionnement (en M€)
             </p>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <ResponsiveContainer width="100%" height={300}>
                 <ComposedChart data={evolutionEpargneBrute}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
-                  <XAxis dataKey="annee" tick={{ fill: '#6B7280' }} />
+                  <CartesianGrid strokeDasharray="3 3" stroke="#22496A" />
+                  <XAxis dataKey="annee" tick={{ fill: '#22496A' }} />
                   <YAxis
-                    tick={{ fill: '#6B7280' }}
+                    tick={{ fill: '#22496A' }}
                     domain={[0, 800]}
                     tickFormatter={(v) => `${v} M€`}
                   />
                   <Tooltip
                     formatter={(value: number) => [`${value.toFixed(1)} M€`, 'Épargne brute']}
-                    contentStyle={{ backgroundColor: '#0D1B4C', color: 'white', border: 'none', borderRadius: '8px' }}
+                    contentStyle={{ backgroundColor: '#22496A', color: 'white', border: 'none', borderRadius: '8px' }}
                   />
                   <defs>
                     <linearGradient id="epargneGradient" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#10B981" stopOpacity={0.3} />
-                      <stop offset="95%" stopColor="#10B981" stopOpacity={0} />
+                      <stop offset="5%" stopColor="#FBCD41" stopOpacity={0.3} />
+                      <stop offset="95%" stopColor="#FBCD41" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                   <Area
@@ -494,28 +494,28 @@ export default function DettePage() {
                   <Line
                     type="monotone"
                     dataKey="montant"
-                    stroke="#10B981"
+                    stroke="#FBCD41"
                     strokeWidth={3}
-                    dot={{ fill: '#10B981', strokeWidth: 2 }}
+                    dot={{ fill: '#FBCD41', strokeWidth: 2 }}
                   />
                 </ComposedChart>
               </ResponsiveContainer>
 
               <div className="mt-6 grid md:grid-cols-3 gap-4">
-                <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
-                  <div className="text-sm font-medium text-gray-700">2020 : Année Covid</div>
-                  <div className="text-xl font-bold text-red-600">20,1 M€</div>
-                  <div className="text-xs text-gray-600">Effondrement des recettes</div>
+                <div className="p-4 bg-accent/10 rounded-lg border-l-4 border-accent">
+                  <div className="text-sm font-medium text-primary">2020 : Année Covid</div>
+                  <div className="text-xl font-bold text-accent">20,1 M€</div>
+                  <div className="text-xs text-primary/80">Effondrement des recettes</div>
                 </div>
-                <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-                  <div className="text-sm font-medium text-gray-700">2023 : Rebond</div>
-                  <div className="text-xl font-bold text-green-600">758,4 M€</div>
-                  <div className="text-xs text-gray-600">Recettes exceptionnelles</div>
+                <div className="p-4 bg-yellow/10 rounded-lg border-l-4 border-yellow">
+                  <div className="text-sm font-medium text-primary">2023 : Rebond</div>
+                  <div className="text-xl font-bold text-yellow">758,4 M€</div>
+                  <div className="text-xs text-primary/80">Recettes exceptionnelles</div>
                 </div>
                 <div className="p-4 bg-amber-50 rounded-lg border-l-4 border-amber-500">
-                  <div className="text-sm font-medium text-gray-700">2025 : Stagnation</div>
-                  <div className="text-xl font-bold text-amber-600">571,3 M€</div>
-                  <div className="text-xs text-gray-600">Fin des effets JO</div>
+                  <div className="text-sm font-medium text-primary">2025 : Stagnation</div>
+                  <div className="text-xl font-bold text-yellow">571,3 M€</div>
+                  <div className="text-xs text-primary/80">Fin des effets JO</div>
                 </div>
               </div>
             </div>
@@ -524,7 +524,7 @@ export default function DettePage() {
       </section>
 
       {/* Bilan emprunts */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -534,36 +534,36 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Le cycle de l'endettement
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Comparaison entre remboursements et nouveaux emprunts en 2025
             </p>
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-sm text-center">
-                <div className="text-sm text-gray-500 mb-2">Capital remboursé</div>
-                <div className="text-4xl font-bold text-green-600">308 M€</div>
-                <div className="mt-3 w-full bg-gray-200 rounded-full h-3">
-                  <div className="bg-green-500 h-3 rounded-full" style={{ width: '31%' }}></div>
+                <div className="text-sm text-primary/70 mb-2">Capital remboursé</div>
+                <div className="text-4xl font-bold text-yellow">308 M€</div>
+                <div className="mt-3 w-full bg-cream/80 rounded-full h-3">
+                  <div className="bg-yellow/100 h-3 rounded-full" style={{ width: '31%' }}></div>
                 </div>
               </div>
 
               <div className="bg-white rounded-xl p-6 shadow-sm text-center flex flex-col justify-center">
-                <div className="text-sm text-gray-500 mb-2">Nouvel emprunt</div>
-                <div className="text-4xl font-bold text-red-600">994 M€</div>
-                <div className="mt-3 w-full bg-gray-200 rounded-full h-3">
-                  <div className="bg-red-500 h-3 rounded-full" style={{ width: '100%' }}></div>
+                <div className="text-sm text-primary/70 mb-2">Nouvel emprunt</div>
+                <div className="text-4xl font-bold text-accent">994 M€</div>
+                <div className="mt-3 w-full bg-cream/80 rounded-full h-3">
+                  <div className="bg-accent/100 h-3 rounded-full" style={{ width: '100%' }}></div>
                 </div>
               </div>
 
               <div className="bg-primary text-white rounded-xl p-6 shadow-sm text-center flex flex-col justify-center">
-                <div className="text-sm text-gray-400 mb-2">Endettement net</div>
+                <div className="text-sm text-cream/70 mb-2">Endettement net</div>
                 <div className="text-4xl font-bold text-accent">+686 M€</div>
-                <div className="text-sm text-gray-400 mt-2">de dette supplémentaire</div>
+                <div className="text-sm text-cream/70 mt-2">de dette supplémentaire</div>
               </div>
             </div>
 
             <div className="mt-6 bg-white rounded-xl p-5 shadow-sm border-l-4 border-accent">
-              <p className="text-gray-700">
+              <p className="text-primary">
                 <span className="font-bold">Cercle vicieux :</span> Paris emprunte chaque année plus de 3 fois ce qu'elle rembourse.
                 En 2025, la Ville rembourse 308 M€ mais emprunte 994 M€,
                 creusant ainsi la dette de 686 M€ supplémentaires.
@@ -588,25 +588,25 @@ export default function DettePage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-accent">
                 <h3 className="font-bold text-primary mb-2">Dette record</h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-primary/80">
                   9,4 Md€ fin 2025, un niveau jamais atteint dans l'histoire de Paris.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-accent">
                 <h3 className="font-bold text-primary mb-2">Remboursement lointain</h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-primary/80">
                   16,4 ans pour rembourser, bien au-delà du seuil d'alerte de 12 ans.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-accent">
                 <h3 className="font-bold text-primary mb-2">Intérêts croissants</h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-primary/80">
                   224,5 M€ d'intérêts en 2025, soit 615 000 € par jour qui ne servent pas les Parisiens.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border-t-4 border-accent">
                 <h3 className="font-bold text-primary mb-2">Spirale d'endettement</h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-primary/80">
                   Paris emprunte 994 M€ pour rembourser 308 M€ : la dette ne fait que croître.
                 </p>
               </div>
@@ -629,13 +629,13 @@ export default function DettePage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/recettes"
-                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-cream transition-colors"
               >
                 Les recettes
               </Link>
               <Link
                 href="/depenses"
-                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors"
+                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-[#E1386E] transition-colors"
               >
                 Les dépenses
               </Link>

@@ -35,15 +35,15 @@ const chiffresCles = [
 ];
 
 const politiques = [
-  { code: '4', nom: 'Santé et action sociale', montant: 2722, color: 'bg-[#0D1B4C]' },
-  { code: '5', nom: 'Aménagement et habitat', montant: 1052, color: 'bg-[#3b82f6]' },
-  { code: '2', nom: 'Enseignement', montant: 977, color: 'bg-[#f59e0b]' },
-  { code: '7', nom: 'Environnement', montant: 917, color: 'bg-[#1e3a8a]' },
-  { code: '8', nom: 'Transports', montant: 868, color: 'bg-[#d97706]' },
-  { code: '3', nom: 'Culture, sports, loisirs', montant: 792, color: 'bg-[#ef4444]' },
-  { code: '1', nom: 'Sécurité', montant: 505, color: 'bg-[#f87171]' },
-  { code: '0', nom: 'Services généraux', montant: 1107, color: 'bg-[#dc2626]' },
-  { code: '6', nom: 'Action économique', montant: 77, color: 'bg-[#fbbf24]' },
+  { code: '4', nom: 'Santé et action sociale', montant: 2722, color: 'bg-[#22496A]' },
+  { code: '5', nom: 'Aménagement et habitat', montant: 1052, color: 'bg-[#22496A]' },
+  { code: '2', nom: 'Enseignement', montant: 977, color: 'bg-[#FBCD41]' },
+  { code: '7', nom: 'Environnement', montant: 917, color: 'bg-[#22496A]' },
+  { code: '8', nom: 'Transports', montant: 868, color: 'bg-[#E1386E]' },
+  { code: '3', nom: 'Culture, sports, loisirs', montant: 792, color: 'bg-[#E1386E]' },
+  { code: '1', nom: 'Sécurité', montant: 505, color: 'bg-[#E1386E]' },
+  { code: '0', nom: 'Services généraux', montant: 1107, color: 'bg-[#E1386E]' },
+  { code: '6', nom: 'Action économique', montant: 77, color: 'bg-[#FBCD41]' },
 ];
 
 const alertes = [
@@ -81,13 +81,13 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <p className="text-gray-400 uppercase tracking-wide text-sm mb-4">
+            <p className="text-yellow uppercase tracking-wide text-sm mb-4 font-medium">
               Budget Primitif 2025
             </p>
-            <h1 className="text-3xl md:text-5xl font-bold mb-6">
-              Où va l'argent des <span className="text-accent">Parisiens</span> ?
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 font-display">
+              Où va l'argent des <span className="text-yellow">Parisiens</span> ?
             </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-4">
+            <p className="text-xl text-cream/80 max-w-2xl mx-auto mb-4">
               Découvrez comment la Ville de Paris gère près de 10 Md€
               de votre argent chaque année.
             </p>
@@ -109,14 +109,14 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-6 text-center"
+                className="bg-cream/10 backdrop-blur rounded-xl p-4 md:p-6 text-center border border-yellow/20"
               >
-                <div className="text-2xl md:text-4xl font-bold">
+                <div className="text-2xl md:text-4xl font-bold text-yellow">
                   {chiffre.valeur}
-                  <span className="text-lg md:text-xl ml-1">{chiffre.unite}</span>
+                  <span className="text-lg md:text-xl ml-1 text-cream">{chiffre.unite}</span>
                 </div>
-                <div className="text-gray-400 text-sm mt-1">{chiffre.label}</div>
-                <div className={`text-xs mt-2 ${chiffre.positif ? 'text-green-400' : 'text-red-400'}`}>
+                <div className="text-cream/70 text-sm mt-1">{chiffre.label}</div>
+                <div className={`text-xs mt-2 ${chiffre.positif ? 'text-yellow' : 'text-accent/80'}`}>
                   {chiffre.variation}
                 </div>
               </motion.div>
@@ -126,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* Les 9 politiques */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -137,7 +137,7 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
               Les 9 politiques publiques de Paris
             </h2>
-            <p className="text-gray-600">
+            <p className="text-primary/80">
               Répartition du budget par domaine d'action (en M€)
             </p>
           </motion.div>
@@ -152,12 +152,12 @@ export default function Home() {
                 transition={{ delay: index * 0.05 }}
               >
                 <Link href="/politiques" className="block">
-                  <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all border border-gray-100">
+                  <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all border border-primary/10">
                     <div className="flex items-center gap-3">
                       <div className={`w-3 h-12 rounded-full ${politique.color}`} />
                       <div className="flex-1">
                         <div className="font-semibold text-primary">{politique.nom}</div>
-                        <div className="text-2xl font-bold text-gray-800">
+                        <div className="text-2xl font-bold text-primary">
                           {politique.montant.toLocaleString('fr-FR')} M€
                         </div>
                       </div>
@@ -194,7 +194,7 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
               Points d'attention
             </h2>
-            <p className="text-gray-600">
+            <p className="text-primary/80">
               Les chiffres qui interpellent dans ce budget
             </p>
           </motion.div>
@@ -211,7 +211,7 @@ export default function Home() {
                 <Link href={alerte.lien} className="block h-full">
                   <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all border-l-4 border-accent h-full">
                     <h3 className="font-bold text-lg text-primary mb-2">{alerte.titre}</h3>
-                    <p className="text-gray-600 text-sm">{alerte.description}</p>
+                    <p className="text-primary/80 text-sm">{alerte.description}</p>
                   </div>
                 </Link>
               </motion.div>
@@ -234,13 +234,13 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/recettes"
-                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-cream transition-colors"
               >
                 D'où vient l'argent ?
               </Link>
               <Link
                 href="/depenses"
-                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors"
+                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-[#E1386E] transition-colors"
               >
                 Où va l'argent ?
               </Link>

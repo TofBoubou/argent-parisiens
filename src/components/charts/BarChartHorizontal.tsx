@@ -42,7 +42,7 @@ export default function BarChartHorizontal({
       {title && (
         <div className="mb-6">
           <h3 className="text-lg font-bold text-primary">{title}</h3>
-          {subtitle && <p className="text-sm text-gray-500">{subtitle}</p>}
+          {subtitle && <p className="text-sm text-primary/70">{subtitle}</p>}
         </div>
       )}
 
@@ -60,18 +60,18 @@ export default function BarChartHorizontal({
               <div className="flex-1 min-w-0">
                 <span
                   className={`text-sm ${
-                    item.highlight ? 'font-bold text-primary' : 'text-gray-700'
+                    item.highlight ? 'font-bold text-primary' : 'text-primary'
                   }`}
                 >
                   {item.label}
                 </span>
                 {item.subLabel && (
-                  <span className="text-xs text-gray-400 ml-2">{item.subLabel}</span>
+                  <span className="text-xs text-primary/60 ml-2">{item.subLabel}</span>
                 )}
               </div>
               <span
                 className={`text-sm font-semibold ml-2 tabular-nums ${
-                  item.highlight ? 'text-primary' : 'text-gray-600'
+                  item.highlight ? 'text-primary' : 'text-primary/80'
                 }`}
               >
                 {showPercentage
@@ -79,7 +79,7 @@ export default function BarChartHorizontal({
                   : unit === 'M€' ? formatMillions(item.value) : `${formatNumber(item.value)} ${unit}`}
               </span>
             </div>
-            <div className="h-6 bg-gray-100 rounded-full overflow-hidden">
+            <div className="h-6 bg-cream rounded-full overflow-hidden">
               <motion.div
                 initial={{ width: 0 }}
                 whileInView={{ width: `${(item.value / max) * 100}%` }}

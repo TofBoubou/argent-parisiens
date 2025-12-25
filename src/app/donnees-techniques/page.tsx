@@ -7,14 +7,14 @@ import InfoTooltip from '@/components/InfoTooltip';
 
 // Participations aux autres budgets - dégradé bleu → rouge → jaune
 const participations = [
-  { name: 'IDFM (transports)', value: 472.2, bp2024: 441.4, color: '#0D1B4C' },
-  { name: 'CASVP (action sociale)', value: 419.6, bp2024: 430.1, color: '#1e3a8a' },
-  { name: 'Préfecture de Police', value: 256.4, bp2024: 252.4, color: '#dc2626' },
-  { name: 'Caisses des écoles', value: 132.4, bp2024: 112.0, color: '#ef4444' },
-  { name: 'SYCTOM (déchets)', value: 119.0, bp2024: 114.8, color: '#f87171' },
-  { name: 'Crèches associatives', value: 72.0, bp2024: 65.0, color: '#d97706' },
-  { name: 'Paris Musées', value: 58.5, bp2024: 56.2, color: '#f59e0b' },
-  { name: 'Dotation collèges', value: 38.1, bp2024: 37.7, color: '#fbbf24' },
+  { name: 'IDFM (transports)', value: 472.2, bp2024: 441.4, color: '#22496A' },
+  { name: 'CASVP (action sociale)', value: 419.6, bp2024: 430.1, color: '#22496A' },
+  { name: 'Préfecture de Police', value: 256.4, bp2024: 252.4, color: '#E1386E' },
+  { name: 'Caisses des écoles', value: 132.4, bp2024: 112.0, color: '#E1386E' },
+  { name: 'SYCTOM (déchets)', value: 119.0, bp2024: 114.8, color: '#E1386E' },
+  { name: 'Crèches associatives', value: 72.0, bp2024: 65.0, color: '#FBCD41' },
+  { name: 'Paris Musées', value: 58.5, bp2024: 56.2, color: '#FBCD41' },
+  { name: 'Dotation collèges', value: 38.1, bp2024: 37.7, color: '#FBCD41' },
 ];
 
 // Recettes de fonctionnement
@@ -67,12 +67,12 @@ const operationsOrdre = {
 
 // Amortissements et provisions - dégradé bleu → rouge → jaune
 const amortissementsProvisions = [
-  { name: 'Amortissements immobilisations', value: 463.0, color: '#0D1B4C' },
-  { name: 'Provisions risques (contentieux)', value: 19.0, color: '#1e3a8a' },
-  { name: 'Provisions créances douteuses', value: 8.0, color: '#dc2626' },
-  { name: 'Complément prix cessions', value: 4.1, color: '#ef4444' },
-  { name: 'Primes remboursement obligations', value: 3.5, color: '#d97706' },
-  { name: 'Provisions participations', value: 0.5, color: '#f59e0b' },
+  { name: 'Amortissements immobilisations', value: 463.0, color: '#22496A' },
+  { name: 'Provisions risques (contentieux)', value: 19.0, color: '#22496A' },
+  { name: 'Provisions créances douteuses', value: 8.0, color: '#E1386E' },
+  { name: 'Complément prix cessions', value: 4.1, color: '#E1386E' },
+  { name: 'Primes remboursement obligations', value: 3.5, color: '#FBCD41' },
+  { name: 'Provisions participations', value: 0.5, color: '#FBCD41' },
 ];
 
 // Besoin de financement
@@ -102,13 +102,13 @@ export default function DonneesTechniquesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center"
           >
-            <p className="text-gray-400 uppercase tracking-wide text-sm mb-2">
+            <p className="text-yellow uppercase tracking-wide text-sm font-medium mb-2">
               Budget 2025
             </p>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               Données <span className="text-accent">techniques</span>
             </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-cream/80 max-w-2xl mx-auto">
               Récapitulatif par chapitre budgétaire et opérations d'ordre
             </p>
           </motion.div>
@@ -116,7 +116,7 @@ export default function DonneesTechniquesPage() {
       </section>
 
       {/* Participations aux autres budgets */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -126,7 +126,7 @@ export default function DonneesTechniquesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Participations aux autres budgets
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               1,68 Md€ versés par Paris à d'autres organismes en 2025
             </p>
 
@@ -158,12 +158,12 @@ export default function DonneesTechniquesPage() {
                              p.name.includes('SYCTOM') ? <><InfoTooltip terme="SYCTOM">SYCTOM</InfoTooltip> (déchets)</> :
                              p.name}
                           </div>
-                          <div className="text-xs text-gray-500">BP 2024 : {p.bp2024.toFixed(1)} M€</div>
+                          <div className="text-xs text-cream/50">BP 2024 : {p.bp2024.toFixed(1)} M€</div>
                         </div>
                       </div>
                       <div className="text-right">
                         <div className="font-bold text-lg" style={{ color: p.color }}>{p.value.toFixed(1)} M€</div>
-                        <div className={`text-xs ${isPositive ? 'text-red-500' : 'text-green-500'}`}>
+                        <div className={`text-xs ${isPositive ? 'text-accent' : 'text-yellow'}`}>
                           {isPositive ? '+' : ''}{variation}%
                         </div>
                       </div>
@@ -187,7 +187,7 @@ export default function DonneesTechniquesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Recettes de fonctionnement par catégorie
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Ventilation des 9,9 Md€ de recettes
             </p>
 
@@ -206,23 +206,23 @@ export default function DonneesTechniquesPage() {
                     const variation = ((row.bp2025 - row.bp2024) / row.bp2024 * 100).toFixed(1);
                     const isPositive = row.bp2025 > row.bp2024;
                     return (
-                      <tr key={row.label} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
+                      <tr key={row.label} className={index % 2 === 0 ? 'bg-cream' : ''}>
                         <td className="px-4 py-3">{row.label}</td>
                         <td className="px-4 py-3 text-right font-medium">{row.bp2024.toFixed(1)} M€</td>
                         <td className="px-4 py-3 text-right font-bold text-primary">{row.bp2025.toFixed(1)} M€</td>
-                        <td className={`px-4 py-3 text-right font-medium ${isPositive ? 'text-green-600' : 'text-red-600'}`}>
+                        <td className={`px-4 py-3 text-right font-medium ${isPositive ? 'text-yellow' : 'text-accent'}`}>
                           {isPositive ? '+' : ''}{variation}%
                         </td>
                       </tr>
                     );
                   })}
                 </tbody>
-                <tfoot className="bg-gray-100 font-bold">
+                <tfoot className="bg-cream font-bold">
                   <tr>
                     <td className="px-4 py-3">Total recettes fonctionnement</td>
                     <td className="px-4 py-3 text-right">9 898,6 M€</td>
                     <td className="px-4 py-3 text-right text-primary">9 905,7 M€</td>
-                    <td className="px-4 py-3 text-right text-green-600">+0,1 %</td>
+                    <td className="px-4 py-3 text-right text-yellow">+0,1 %</td>
                   </tr>
                 </tfoot>
               </table>
@@ -232,7 +232,7 @@ export default function DonneesTechniquesPage() {
       </section>
 
       {/* Récapitulatif - Dépenses */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -242,7 +242,7 @@ export default function DonneesTechniquesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Dépenses de fonctionnement par catégorie
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Ventilation des 9,9 Md€ de dépenses
             </p>
 
@@ -261,23 +261,23 @@ export default function DonneesTechniquesPage() {
                     const variation = ((row.bp2025 - row.bp2024) / row.bp2024 * 100).toFixed(1);
                     const isNegative = row.bp2025 < row.bp2024;
                     return (
-                      <tr key={row.label} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
+                      <tr key={row.label} className={index % 2 === 0 ? 'bg-cream' : ''}>
                         <td className="px-4 py-3">{row.label}</td>
                         <td className="px-4 py-3 text-right font-medium">{row.bp2024.toFixed(1)} M€</td>
                         <td className="px-4 py-3 text-right font-bold text-primary">{row.bp2025.toFixed(1)} M€</td>
-                        <td className={`px-4 py-3 text-right font-medium ${isNegative ? 'text-green-600' : 'text-red-600'}`}>
+                        <td className={`px-4 py-3 text-right font-medium ${isNegative ? 'text-yellow' : 'text-accent'}`}>
                           {!isNegative ? '+' : ''}{variation}%
                         </td>
                       </tr>
                     );
                   })}
                 </tbody>
-                <tfoot className="bg-gray-100 font-bold">
+                <tfoot className="bg-cream font-bold">
                   <tr>
                     <td className="px-4 py-3">Total dépenses fonctionnement</td>
                     <td className="px-4 py-3 text-right">9 898,6 M€</td>
                     <td className="px-4 py-3 text-right text-primary">9 905,7 M€</td>
-                    <td className="px-4 py-3 text-right text-red-600">+0,1 %</td>
+                    <td className="px-4 py-3 text-right text-accent">+0,1 %</td>
                   </tr>
                 </tfoot>
               </table>
@@ -297,7 +297,7 @@ export default function DonneesTechniquesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               <InfoTooltip terme="Opérations d'ordre">Opérations d'ordre</InfoTooltip>
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Mouvements équilibrés entre sections (sans impact sur la trésorerie)
             </p>
 
@@ -305,13 +305,13 @@ export default function DonneesTechniquesPage() {
               {/* Transferts entre sections */}
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <h3 className="font-bold text-primary mb-4">Transferts entre sections</h3>
-                <p className="text-sm text-gray-600 mb-4">{operationsOrdre.transfertsSections.description}</p>
+                <p className="text-sm text-primary/80 mb-4">{operationsOrdre.transfertsSections.description}</p>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center bg-gray-50 rounded-lg p-3">
+                  <div className="flex justify-between items-center bg-cream rounded-lg p-3">
                     <span className="text-sm">Fonctionnement vers Invest.</span>
                     <span className="font-bold text-primary">{operationsOrdre.transfertsSections.fonctionnementDepenses} M€</span>
                   </div>
-                  <div className="flex justify-between items-center bg-gray-50 rounded-lg p-3">
+                  <div className="flex justify-between items-center bg-cream rounded-lg p-3">
                     <span className="text-sm">Invest. vers Fonctionnement</span>
                     <span className="font-bold text-primary">{operationsOrdre.transfertsSections.investissementDepenses} M€</span>
                   </div>
@@ -321,15 +321,15 @@ export default function DonneesTechniquesPage() {
               {/* Virement à l'investissement */}
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <h3 className="font-bold text-primary mb-4"><InfoTooltip terme="Virement à l'investissement">Virement à l'investissement</InfoTooltip></h3>
-                <p className="text-sm text-gray-600 mb-4">{operationsOrdre.virementInvestissement.description}</p>
+                <p className="text-sm text-primary/80 mb-4">{operationsOrdre.virementInvestissement.description}</p>
                 <div className="text-center py-4">
                   <div className="text-4xl font-bold text-primary mb-2">
                     {operationsOrdre.virementInvestissement.montant} M€
                   </div>
-                  <div className="text-sm text-green-600">
+                  <div className="text-sm text-yellow">
                     +{((operationsOrdre.virementInvestissement.montant - operationsOrdre.virementInvestissement.bp2024) / operationsOrdre.virementInvestissement.bp2024 * 100).toFixed(0)}% vs 2024
                   </div>
-                  <div className="text-xs text-gray-500 mt-2">
+                  <div className="text-xs text-cream/50 mt-2">
                     BP 2024 : {operationsOrdre.virementInvestissement.bp2024} M€
                   </div>
                 </div>
@@ -338,12 +338,12 @@ export default function DonneesTechniquesPage() {
               {/* Opérations patrimoniales */}
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <h3 className="font-bold text-primary mb-4">Opérations patrimoniales</h3>
-                <p className="text-sm text-gray-600 mb-2">Mouvements internes à l'investissement</p>
+                <p className="text-sm text-primary/80 mb-2">Mouvements internes à l'investissement</p>
                 <div className="text-2xl font-bold text-primary mb-4">{operationsOrdre.operationsPatrimoniales.montant} M€</div>
                 <div className="space-y-2">
                   {operationsOrdre.operationsPatrimoniales.details.map((d, i) => (
                     <div key={i} className="flex justify-between text-sm">
-                      <span className="text-gray-600">{d.label}</span>
+                      <span className="text-primary/80">{d.label}</span>
                       <span className="font-medium">{d.value} M€</span>
                     </div>
                   ))}
@@ -355,7 +355,7 @@ export default function DonneesTechniquesPage() {
       </section>
 
       {/* Amortissements et provisions */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -365,7 +365,7 @@ export default function DonneesTechniquesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               <InfoTooltip terme="Amortissements">Amortissements</InfoTooltip> et <InfoTooltip terme="Provisions">provisions</InfoTooltip>
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               498,1 M€ d'écritures de fonctionnement vers investissement
             </p>
 
@@ -384,7 +384,7 @@ export default function DonneesTechniquesPage() {
                   >
                     <div className="flex items-center gap-3">
                       <div className="w-3 h-8 rounded-full" style={{ backgroundColor: item.color }} />
-                      <span className="text-gray-700">{item.name}</span>
+                      <span className="text-primary">{item.name}</span>
                     </div>
                     <span className="font-bold text-lg" style={{ color: item.color }}>{item.value} M€</span>
                   </motion.div>
@@ -406,7 +406,7 @@ export default function DonneesTechniquesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Besoin et moyens de financement
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Comment Paris finance ses investissements en 2025
             </p>
 
@@ -416,20 +416,20 @@ export default function DonneesTechniquesPage() {
                 <h3 className="font-bold text-primary text-lg mb-4">Besoin de financement</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b">
-                    <span className="text-gray-600">Opérations réelles (hors emprunt)</span>
+                    <span className="text-primary/80">Opérations réelles (hors emprunt)</span>
                     <span className="font-medium">{financementData.besoin.operationsReelles.toFixed(1)} M€</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b pl-4">
-                    <span className="text-sm text-gray-500">dont mouvements non financiers</span>
+                    <span className="text-sm text-primary/70">dont mouvements non financiers</span>
                     <span className="text-sm">{financementData.besoin.mouvementsNonFinanciers.toFixed(1)} M€</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b pl-4">
-                    <span className="text-sm text-gray-500">dont mouvements financiers</span>
+                    <span className="text-sm text-primary/70">dont mouvements financiers</span>
                     <span className="text-sm">{financementData.besoin.mouvementsFinanciers.toFixed(1)} M€</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">
-                    <span className="text-gray-600">Opérations d'ordre (hors virement)</span>
-                    <span className="font-medium text-green-600">{financementData.besoin.operationsOrdre.toFixed(1)} M€</span>
+                    <span className="text-primary/80">Opérations d'ordre (hors virement)</span>
+                    <span className="font-medium text-yellow">{financementData.besoin.operationsOrdre.toFixed(1)} M€</span>
                   </div>
                   <div className="flex justify-between items-center py-3 bg-primary/10 rounded-lg px-3 mt-2">
                     <span className="font-bold text-primary">Total besoin de financement</span>
@@ -443,11 +443,11 @@ export default function DonneesTechniquesPage() {
                 <h3 className="font-bold text-primary text-lg mb-4">Moyens de financement</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b">
-                    <span className="text-gray-600">Virement section fonctionnement</span>
+                    <span className="text-primary/80">Virement section fonctionnement</span>
                     <span className="font-medium">{financementData.moyens.virementFonctionnement.toFixed(1)} M€</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">
-                    <span className="text-gray-600">Autorisation d'emprunt</span>
+                    <span className="text-primary/80">Autorisation d'emprunt</span>
                     <span className="font-medium">{financementData.moyens.autorisationEmprunt.toFixed(1)} M€</span>
                   </div>
                   <div className="flex justify-between items-center py-3 bg-primary/10 rounded-lg px-3 mt-2">
@@ -457,7 +457,7 @@ export default function DonneesTechniquesPage() {
                 </div>
 
                 <div className="mt-6 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-500">
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-primary">
                     89 % du besoin de financement est couvert par l'emprunt.
                     L'autofinancement (127,7 M€) ne représente que 11 % des moyens.
                   </p>
@@ -482,13 +482,13 @@ export default function DonneesTechniquesPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/recettes"
-                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-cream transition-colors"
               >
                 Les recettes
               </Link>
               <Link
                 href="/depenses"
-                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors"
+                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-[#E1386E] transition-colors"
               >
                 Les dépenses
               </Link>

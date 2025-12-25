@@ -56,7 +56,7 @@ export default function DonutChart({
       {title && (
         <div className="mb-4">
           <h3 className="text-lg font-bold text-primary">{title}</h3>
-          {subtitle && <p className="text-sm text-gray-500">{subtitle}</p>}
+          {subtitle && <p className="text-sm text-primary/70">{subtitle}</p>}
         </div>
       )}
 
@@ -86,13 +86,13 @@ export default function DonutChart({
                 formatter={(value: number, name: string) => [formatMillions(value), name]}
                 contentStyle={{
                   backgroundColor: 'white',
-                  border: '1px solid #e5e7eb',
+                  border: '1px solid #22496A',
                   borderRadius: '8px',
-                  color: '#0D1B4C',
+                  color: '#22496A',
                   boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
                 }}
                 labelStyle={{
-                  color: '#0D1B4C',
+                  color: '#22496A',
                   fontWeight: 'bold',
                 }}
               />
@@ -103,7 +103,7 @@ export default function DonutChart({
             <span className="text-2xl font-bold text-primary">
               {formatNumber(displayTotal)}
             </span>
-            <span className="text-sm text-gray-500">{totalLabel}</span>
+            <span className="text-sm text-primary/70">{totalLabel}</span>
           </div>
         </div>
 
@@ -117,10 +117,10 @@ export default function DonutChart({
                   style={{ backgroundColor: item.color }}
                 />
                 <div className="flex-1">
-                  <div className="text-sm text-gray-700 leading-tight">{item.name}</div>
+                  <div className="text-sm text-primary leading-tight">{item.name}</div>
                   <div className="text-sm font-semibold text-primary">
                     {formatMillions(item.value)}
-                    <span className="text-gray-400 font-normal ml-1">
+                    <span className="text-primary/60 font-normal ml-1">
                       ({formatNumber(item.percentage, 1)} %)
                     </span>
                   </div>

@@ -137,7 +137,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-white font-bold text-lg md:text-xl">
+            <span className="text-yellow font-bold text-lg md:text-xl font-display">
               L'argent des Parisiens
             </span>
           </Link>
@@ -156,10 +156,10 @@ export default function Header() {
                 }}
                 onFocus={() => setSearchOpen(true)}
                 onKeyDown={handleKeyDown}
-                className="w-48 lg:w-64 px-4 py-1.5 pl-9 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-white/30 focus:bg-white/15 transition-all"
+                className="w-48 lg:w-64 px-4 py-1.5 pl-9 rounded-lg bg-cream/10 border border-yellow/30 text-white placeholder-cream/70 text-sm focus:outline-none focus:ring-2 focus:ring-yellow/50 focus:bg-cream/15 transition-all"
               />
               <svg
-                className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-primary/60"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -180,7 +180,7 @@ export default function Header() {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50"
+                  className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-primary/20 overflow-hidden z-50"
                 >
                   {searchResults.map((result, index) => (
                     <Link
@@ -193,12 +193,12 @@ export default function Header() {
                       className={`block px-4 py-2.5 text-sm transition-colors ${
                         index === selectedIndex
                           ? 'bg-primary text-white'
-                          : 'text-gray-700 hover:bg-gray-100'
+                          : 'text-primary hover:bg-cream'
                       }`}
                     >
                       <div className="font-medium">{result.name}</div>
                       <div className={`text-xs mt-0.5 ${
-                        index === selectedIndex ? 'text-gray-300' : 'text-gray-400'
+                        index === selectedIndex ? 'text-primary/50' : 'text-primary/60'
                       }`}>
                         {result.keywords.slice(0, 3).join(', ')}
                       </div>
@@ -217,17 +217,17 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors relative focus:outline-none focus:ring-2 focus:ring-white/50 ${
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors relative focus:outline-none focus:ring-2 focus:ring-yellow/50 ${
                     isActive
-                      ? 'text-white'
-                      : 'text-gray-300 hover:text-white hover:bg-white/10'
+                      ? 'text-yellow'
+                      : 'text-cream/80 hover:text-yellow hover:bg-cream/10'
                   }`}
                 >
                   {item.name}
                   {isActive && (
                     <motion.div
                       layoutId="activeTab"
-                      className="absolute inset-0 bg-white/20 rounded-md"
+                      className="absolute inset-0 bg-yellow/20 rounded-md"
                       transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                     />
                   )}
@@ -239,7 +239,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="md:hidden p-2 text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 rounded"
+            className="md:hidden p-2 text-cream hover:text-yellow focus:outline-none focus:ring-2 focus:ring-yellow/50 rounded"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
             aria-expanded={mobileMenuOpen}
@@ -291,10 +291,10 @@ export default function Header() {
                         setSearchOpen(true);
                       }}
                       onKeyDown={handleKeyDown}
-                      className="w-full px-4 py-2 pl-9 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-white/30"
+                      className="w-full px-4 py-2 pl-9 rounded-lg bg-cream/10 border border-yellow/30 text-white placeholder-cream/70 text-sm focus:outline-none focus:ring-2 focus:ring-yellow/50"
                     />
                     <svg
-                      className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+                      className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-primary/60"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -321,7 +321,7 @@ export default function Header() {
                           className={`block px-4 py-2.5 text-sm ${
                             index === selectedIndex
                               ? 'bg-primary text-white'
-                              : 'text-gray-700'
+                              : 'text-primary'
                           }`}
                         >
                           {result.name}
@@ -340,8 +340,8 @@ export default function Header() {
                       onClick={() => setMobileMenuOpen(false)}
                       className={`block px-4 py-2 rounded-md text-base font-medium ${
                         isActive
-                          ? 'bg-white/20 text-white'
-                          : 'text-gray-300 hover:bg-white/10 hover:text-white'
+                          ? 'bg-yellow/20 text-yellow'
+                          : 'text-cream/80 hover:bg-yellow/10 hover:text-yellow'
                       }`}
                     >
                       {item.name}

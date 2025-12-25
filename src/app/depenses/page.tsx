@@ -9,10 +9,10 @@ import InfoTooltip from '@/components/InfoTooltip';
 const depensesFonctionnement = {
   total: 9268.2,
   repartition: [
-    { name: 'Masse salariale', value: 2885.0, color: '#0D1B4C' },
-    { name: 'Dépenses de gestion', value: 4554.0, color: '#1e3a8a' },
-    { name: 'Péréquation & reversements', value: 1604.7, color: '#dc2626' },
-    { name: 'Charges financières', value: 224.5, color: '#f59e0b' },
+    { name: 'Masse salariale', value: 2885.0, color: '#22496A' },
+    { name: 'Dépenses de gestion', value: 4554.0, color: '#22496A' },
+    { name: 'Péréquation & reversements', value: 1604.7, color: '#E1386E' },
+    { name: 'Charges financières', value: 224.5, color: '#FBCD41' },
   ],
 };
 
@@ -26,24 +26,24 @@ const evolutionMasseSalariale = [
 
 // Péréquation détaillée - les labels seront enrichis avec InfoTooltip dans le JSX
 const perequation = [
-  { label: 'FNGIR', sublabel: '(garantie ressources, figé depuis 2011)', value: 898.2, color: '#dc2626' },
-  { label: 'Fonds DMTO', sublabel: '(droits de mutation)', value: 214.2, color: '#ef4444' },
-  { label: 'FSRIF', sublabel: '(solidarité région Île-de-France)', value: 208.1, color: '#f87171' },
-  { label: 'FPIC', sublabel: '(péréquation intercommunale)', value: 199.6, color: '#fca5a5' },
-  { label: 'FSDRIF', sublabel: '(solidarité départements IDF)', value: 30.0, color: '#fecaca' },
+  { label: 'FNGIR', sublabel: '(garantie ressources, figé depuis 2011)', value: 898.2, color: '#E1386E' },
+  { label: 'Fonds DMTO', sublabel: '(droits de mutation)', value: 214.2, color: '#E1386E' },
+  { label: 'FSRIF', sublabel: '(solidarité région Île-de-France)', value: 208.1, color: '#E1386E' },
+  { label: 'FPIC', sublabel: '(péréquation intercommunale)', value: 199.6, color: '#E1386E' },
+  { label: 'FSDRIF', sublabel: '(solidarité départements IDF)', value: 30.0, color: '#E1386E' },
 ];
 
 // Dépenses de gestion par fonction - dégradé bleu → rouge → jaune
 const depensesGestion = [
-  { label: 'Santé et action sociale', value: 2051.2, color: '#0D1B4C' },
-  { label: 'Transports', value: 644.6, color: '#dc2626' },
-  { label: 'Services généraux', value: 466.5, color: '#d97706' },
-  { label: 'Environnement', value: 424.7, color: '#1e3a8a' },
-  { label: 'Enseignement', value: 286.9, color: '#ef4444' },
-  { label: 'Sécurité', value: 280.4, color: '#f59e0b' },
-  { label: 'Culture et sports', value: 262.8, color: '#3b82f6' },
-  { label: 'Aménagement', value: 96.2, color: '#f87171' },
-  { label: 'Action économique', value: 40.7, color: '#fbbf24' },
+  { label: 'Santé et action sociale', value: 2051.2, color: '#22496A' },
+  { label: 'Transports', value: 644.6, color: '#E1386E' },
+  { label: 'Services généraux', value: 466.5, color: '#FBCD41' },
+  { label: 'Environnement', value: 424.7, color: '#22496A' },
+  { label: 'Enseignement', value: 286.9, color: '#E1386E' },
+  { label: 'Sécurité', value: 280.4, color: '#FBCD41' },
+  { label: 'Culture et sports', value: 262.8, color: '#22496A' },
+  { label: 'Aménagement', value: 96.2, color: '#E1386E' },
+  { label: 'Action économique', value: 40.7, color: '#FBCD41' },
 ];
 
 // JO 2024
@@ -84,13 +84,13 @@ export default function DepensesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center"
           >
-            <p className="text-gray-400 uppercase tracking-wide text-sm mb-2">
+            <p className="text-yellow uppercase tracking-wide text-sm font-medium mb-2">
               Budget 2025
             </p>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               Où va l'argent ?
             </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-cream/80 max-w-2xl mx-auto">
               Les dépenses de fonctionnement de la Ville de Paris
             </p>
           </motion.div>
@@ -102,32 +102,32 @@ export default function DepensesPage() {
             transition={{ delay: 0.2 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10"
           >
-            <div className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
-              <div className="text-2xl md:text-3xl font-bold">9,27</div>
-              <div className="text-sm text-gray-400">Md€ de dépenses</div>
-              <div className="text-xs text-red-400 mt-1">+0,1 % vs 2024</div>
+            <div className="bg-cream/10 backdrop-blur rounded-xl p-4 text-center border border-yellow/20">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">9,27</div>
+              <div className="text-sm text-cream/70">Md€ de dépenses</div>
+              <div className="text-xs text-accent mt-1">+0,1 % vs 2024</div>
             </div>
-            <div className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
-              <div className="text-2xl md:text-3xl font-bold">2,89</div>
-              <div className="text-sm text-gray-400">Md€ masse salariale</div>
-              <div className="text-xs text-red-400 mt-1">+2,4 %</div>
+            <div className="bg-cream/10 backdrop-blur rounded-xl p-4 text-center border border-yellow/20">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">2,89</div>
+              <div className="text-sm text-cream/70">Md€ masse salariale</div>
+              <div className="text-xs text-accent mt-1">+2,4 %</div>
             </div>
-            <div className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
-              <div className="text-2xl md:text-3xl font-bold">1,6</div>
-              <div className="text-sm text-gray-400">Md€ péréquation</div>
-              <div className="text-xs text-gray-500 mt-1">reversé aux autres</div>
+            <div className="bg-cream/10 backdrop-blur rounded-xl p-4 text-center border border-yellow/20">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">1,6</div>
+              <div className="text-sm text-cream/70">Md€ péréquation</div>
+              <div className="text-xs text-cream/50 mt-1">reversé aux autres</div>
             </div>
-            <div className="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
-              <div className="text-2xl md:text-3xl font-bold">225</div>
-              <div className="text-sm text-gray-400">M€ intérêts dette</div>
-              <div className="text-xs text-red-400 mt-1">+11,5 M€</div>
+            <div className="bg-cream/10 backdrop-blur rounded-xl p-4 text-center border border-yellow/20">
+              <div className="text-2xl md:text-3xl font-bold text-yellow">225</div>
+              <div className="text-sm text-cream/70">M€ intérêts dette</div>
+              <div className="text-xs text-accent mt-1">+11,5 M€</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Vue globale */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -138,7 +138,7 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Répartition des dépenses
             </h2>
-            <p className="text-gray-600">
+            <p className="text-primary/80">
               Dépenses réelles de fonctionnement - BP 2025
             </p>
           </motion.div>
@@ -164,7 +164,7 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               <InfoTooltip terme="Masse salariale">Masse salariale</InfoTooltip>
             </h2>
-            <p className="text-gray-600">
+            <p className="text-primary/80">
               2,89 Md€ pour le personnel (+2,4 % vs 2024)
             </p>
           </motion.div>
@@ -197,11 +197,11 @@ export default function DepensesPage() {
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <div className="text-2xl font-bold text-primary">950</div>
-                    <div className="text-gray-500">postes créés</div>
+                    <div className="text-primary/70">postes créés</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-accent">+344,5</div>
-                    <div className="text-gray-500">solde net</div>
+                    <div className="text-primary/70">solde net</div>
                   </div>
                 </div>
               </div>
@@ -223,7 +223,7 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               <InfoTooltip terme="Péréquation">Péréquation</InfoTooltip> : ce que Paris reverse
             </h2>
-            <p className="text-gray-600">
+            <p className="text-primary/80">
               1,6 Md€ redistribué aux autres collectivités
             </p>
           </motion.div>
@@ -236,9 +236,9 @@ export default function DepensesPage() {
                   <div key={index} className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <div className="w-3 h-8 rounded-full" style={{ backgroundColor: item.color }} />
-                      <span className="text-gray-700">
+                      <span className="text-primary">
                         <InfoTooltip terme={item.label}>{item.label}</InfoTooltip>
-                        {item.sublabel && <span className="text-gray-500 text-sm"> {item.sublabel}</span>}
+                        {item.sublabel && <span className="text-primary/70 text-sm"> {item.sublabel}</span>}
                       </span>
                     </div>
                     <span className="font-bold text-primary">{item.value.toLocaleString('fr-FR')} M€</span>
@@ -248,23 +248,23 @@ export default function DepensesPage() {
             </div>
 
             <div className="space-y-4">
-              <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-red-500">
-                <div className="text-3xl font-bold text-red-600">20 %</div>
+              <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-accent">
+                <div className="text-3xl font-bold text-accent">20 %</div>
                 <div className="text-lg font-semibold text-primary mt-2">
                   de la péréquation nationale
                 </div>
-                <p className="text-gray-600 text-sm mt-2">
+                <p className="text-primary/80 text-sm mt-2">
                   Paris contribue à plus d'un cinquième de la péréquation nationale
                   entre collectivités.
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-red-500">
-                <div className="text-3xl font-bold text-red-600">50 %</div>
+              <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-accent">
+                <div className="text-3xl font-bold text-accent">50 %</div>
                 <div className="text-lg font-semibold text-primary mt-2">
                   de la péréquation régionale IDF
                 </div>
-                <p className="text-gray-600 text-sm mt-2">
+                <p className="text-primary/80 text-sm mt-2">
                   Paris finance à elle seule la moitié de la solidarité
                   entre communes d'Île-de-France.
                 </p>
@@ -272,17 +272,17 @@ export default function DepensesPage() {
 
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-gray-600">Dotations reçues de l'État</span>
+                  <span className="text-primary/80">Dotations reçues de l'État</span>
                   <span className="font-semibold text-primary">546,8 M€</span>
                 </div>
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-gray-600">Péréquation versée</span>
-                  <span className="font-semibold text-red-600">-651,9 M€</span>
+                  <span className="text-primary/80">Péréquation versée</span>
+                  <span className="font-semibold text-accent">-651,9 M€</span>
                 </div>
                 <div className="border-t pt-2 mt-2">
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-primary">Solde</span>
-                    <span className="font-bold text-red-600">-104,9 M€</span>
+                    <span className="font-bold text-accent">-104,9 M€</span>
                   </div>
                 </div>
               </div>
@@ -293,9 +293,9 @@ export default function DepensesPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-6 p-4 bg-red-50 rounded-xl border border-red-100"
+            className="mt-6 p-4 bg-accent/10 rounded-xl border border-accent/30"
           >
-            <p className="text-sm text-red-800">
+            <p className="text-sm text-accent">
               <strong>Effet ciseau :</strong> Paris donne plus qu'elle ne reçoit. Ce déséquilibre
               dégrade l'équilibre budgétaire et réduit les marges d'autofinancement de la Ville.
             </p>
@@ -315,7 +315,7 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Dépenses de gestion par domaine
             </h2>
-            <p className="text-gray-600">
+            <p className="text-primary/80">
               4,55 Md€ de dépenses hors masse salariale (+1,3 %)
             </p>
           </motion.div>
@@ -334,8 +334,8 @@ export default function DepensesPage() {
           >
             <div className="bg-white rounded-xl p-5 shadow-sm">
               <h4 className="font-semibold text-primary mb-2">Santé/Social : 2 051 M€</h4>
-              <p className="text-xs text-gray-500 mb-2">+86,5 M€ vs 2024</p>
-              <ul className="text-sm text-gray-600 space-y-1">
+              <p className="text-xs text-cream/50 mb-2">+86,5 M€ vs 2024</p>
+              <ul className="text-sm text-primary/80 space-y-1">
                 <li>• <InfoTooltip terme="RSA">RSA</InfoTooltip> : 461 M€</li>
                 <li>• Aide sociale enfance : 380 M€</li>
                 <li>• Handicap : 299 M€</li>
@@ -344,8 +344,8 @@ export default function DepensesPage() {
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
               <h4 className="font-semibold text-primary mb-2">Transports : 645 M€</h4>
-              <p className="text-xs text-gray-500 mb-2">+34,7 M€ vs 2024</p>
-              <ul className="text-sm text-gray-600 space-y-1">
+              <p className="text-xs text-cream/50 mb-2">+34,7 M€ vs 2024</p>
+              <ul className="text-sm text-primary/80 space-y-1">
                 <li>• Contribution <InfoTooltip terme="IDFM">IDFM</InfoTooltip> : 472 M€</li>
                 <li>• Voirie : 103 M€</li>
                 <li>• Vélib'/transports : 34 M€</li>
@@ -354,8 +354,8 @@ export default function DepensesPage() {
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
               <h4 className="font-semibold text-primary mb-2">Culture/Sports : 263 M€</h4>
-              <p className="text-xs text-red-500 mb-2">-88,1 M€ vs 2024</p>
-              <ul className="text-sm text-gray-600 space-y-1">
+              <p className="text-xs text-accent mb-2">-88,1 M€ vs 2024</p>
+              <ul className="text-sm text-primary/80 space-y-1">
                 <li>• Baisse post-JO 2024</li>
                 <li>• Fin des dépenses exceptionnelles</li>
                 <li>• Retour au niveau normal</li>
@@ -366,7 +366,7 @@ export default function DepensesPage() {
       </section>
 
       {/* JO 2024 */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -377,7 +377,7 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               JO Paris 2024 : la facture
             </h2>
-            <p className="text-gray-600">
+            <p className="text-primary/80">
               Bilan des dépenses 2018-2025
             </p>
           </motion.div>
@@ -388,7 +388,7 @@ export default function DepensesPage() {
               <div className="space-y-3">
                 {jo2024.fonctionnement.detail.map((item, index) => (
                   <div key={index} className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">{item.label}</span>
+                    <span className="text-sm text-primary/80">{item.label}</span>
                     <span className="font-semibold text-primary">{item.value} M€</span>
                   </div>
                 ))}
@@ -400,7 +400,7 @@ export default function DepensesPage() {
               <div className="space-y-3">
                 {jo2024.investissement.detail.map((item, index) => (
                   <div key={index} className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">
+                    <span className="text-sm text-primary/80">
                       {item.label.includes('SOLIDEO') ? (
                         <>Contribution <InfoTooltip terme="SOLIDEO">SOLIDEO</InfoTooltip></>
                       ) : item.label}
@@ -410,7 +410,7 @@ export default function DepensesPage() {
                 ))}
               </div>
               <div className="border-t mt-4 pt-4">
-                <div className="text-sm text-gray-500">
+                <div className="text-sm text-primary/70">
                   Reversement <InfoTooltip terme="SOLIDEO">SOLIDEO</InfoTooltip> : 109,7 M€
                 </div>
               </div>
@@ -457,7 +457,7 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Charges financières
             </h2>
-            <p className="text-gray-600">
+            <p className="text-primary/80">
               224,5 M€ d'intérêts de la dette (+11,5 M€)
             </p>
           </motion.div>
@@ -488,7 +488,7 @@ export default function DepensesPage() {
       </section>
 
       {/* Bilan réel 2024 */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -496,27 +496,27 @@ export default function DepensesPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-primary mb-2">Bilan réel 2024</h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-primary/80 mb-8">
               Ce que Paris a vraiment dépensé (compte administratif 2024)
             </p>
 
             <div className="grid md:grid-cols-4 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-sm text-center">
-                <div className="text-sm text-gray-500 mb-2">Recettes réelles</div>
-                <div className="text-3xl font-bold text-green-600">9,71 Md€</div>
+                <div className="text-sm text-primary/70 mb-2">Recettes réelles</div>
+                <div className="text-3xl font-bold text-yellow">9,71 Md€</div>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm text-center">
-                <div className="text-sm text-gray-500 mb-2">Dépenses réelles</div>
-                <div className="text-3xl font-bold text-red-600">9,94 Md€</div>
+                <div className="text-sm text-primary/70 mb-2">Dépenses réelles</div>
+                <div className="text-3xl font-bold text-accent">9,94 Md€</div>
               </div>
               <div className="bg-primary text-white rounded-xl p-6 shadow-sm text-center">
-                <div className="text-sm text-gray-300 mb-2">Déficit fonctionnement</div>
+                <div className="text-sm text-primary/50 mb-2">Déficit fonctionnement</div>
                 <div className="text-3xl font-bold text-accent">-231 M€</div>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm text-center border-2 border-amber-400">
-                <div className="text-sm text-gray-500 mb-2">Certification des comptes</div>
-                <div className="text-xl font-bold text-amber-600">5 réserves</div>
-                <div className="text-xs text-gray-500 mt-1">Le commissaire aux comptes a émis des doutes</div>
+                <div className="text-sm text-primary/70 mb-2">Certification des comptes</div>
+                <div className="text-xl font-bold text-yellow">5 réserves</div>
+                <div className="text-xs text-cream/50 mt-1">Le commissaire aux comptes a émis des doutes</div>
               </div>
             </div>
           </motion.div>
@@ -562,13 +562,13 @@ export default function DepensesPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/recettes"
-                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                className="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-cream transition-colors"
               >
                 Les recettes
               </Link>
               <Link
                 href="/dette"
-                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors"
+                className="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-[#E1386E] transition-colors"
               >
                 La dette
               </Link>

@@ -2,9 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Polices Charte Graphique Sarah Knafo Paris */
+@font-face {
+  font-family: 'Puffin Display';
+  src: url('/fonts/PuffinDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Puffin Display';
+  src: url('/fonts/PuffinDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Puffin Display';
+  src: url('/fonts/PuffinDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Puffin Display';
+  src: url('/fonts/PuffinDisplay-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Puffin Display';
+  src: url('/fonts/PuffinDisplay-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Variable Concept';
+  src: url('/fonts/MyriadVariableConcept.woff2') format('woff2'),
+       url('/fonts/MyriadVariableConcept.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --primary: #0D1B4C;
-  --accent: #E30613;
+  /* Charte graphique Sarah Knafo Paris */
+  --primary: #22496A;       /* Bleu Paris */
+  --accent: #E1386E;        /* Rose Framboise */
+  --cream: #FCEFD0;         /* Crème Vanille */
+  --yellow: #FBCD41;        /* Jaune Soleil */
 }
 
 html {
@@ -13,11 +66,12 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-family: 'Puffin Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   max-width: 100vw;
+  background-color: var(--cream);
 }
 
 /* Empêcher tout débordement horizontal */
@@ -31,27 +85,27 @@ section, main {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--cream);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
+  background: var(--primary);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a1a1a1;
+  background: #22496A;
 }
 
 /* Focus visible pour accessibilité clavier */
 :focus-visible {
-  outline: 2px solid #0D1B4C;
+  outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
 
 /* Dans les zones sombres (header/footer), focus blanc */
 .bg-primary :focus-visible {
-  outline-color: rgba(255, 255, 255, 0.7);
+  outline-color: var(--yellow);
 }
 
 /* Skip link pour navigation clavier */
@@ -59,7 +113,7 @@ section, main {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #0D1B4C;
+  background: var(--primary);
   color: white;
   padding: 8px 16px;
   z-index: 100;
@@ -79,3 +133,18 @@ section, main {
 table td.text-right {
   font-variant-numeric: tabular-nums;
 }
+
+/* Styles pour les titres avec la police display - Charte: Puffin Display Black Italic */
+h1, h2, h3 {
+  font-family: 'Puffin Display', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Sous-titres avec Myriad Variable Concept */
+h4, h5, h6, .subtitle {
+  font-family: 'Myriad Variable Concept', sans-serif;
+  font-weight: 600;
+  font-stretch: condensed;
+}
+

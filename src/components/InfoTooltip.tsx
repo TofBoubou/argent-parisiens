@@ -248,7 +248,7 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
         }}
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={() => setIsOpen(false)}
-        className="ml-0.5 inline-flex items-center justify-center w-4 h-4 text-[10px] font-bold text-gray-400 hover:text-primary bg-gray-100 hover:bg-gray-200 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50"
+        className="ml-0.5 inline-flex items-center justify-center w-4 h-4 text-[10px] font-bold text-primary/60 hover:text-primary bg-cream hover:bg-cream/80 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50"
         aria-label={`En savoir plus sur ${terme}`}
       >
         i
@@ -257,7 +257,7 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
       {isOpen && (
         <div
           ref={contentRef}
-          className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-gray-200 rounded-lg shadow-lg max-h-[250px] overflow-y-auto ${
+          className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-primary/20 rounded-lg shadow-lg max-h-[250px] overflow-y-auto ${
             position === 'top'
               ? 'bottom-full mb-2'
               : 'top-full mt-2'
@@ -266,10 +266,10 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
           role="tooltip"
         >
           <div className="font-semibold text-primary mb-1 capitalize">{terme}</div>
-          <p className="text-gray-600 leading-relaxed">{explication}</p>
+          <p className="text-primary/80 leading-relaxed">{explication}</p>
           {/* Flèche - reste centrée sur le bouton trigger */}
           <div
-            className={`absolute w-2 h-2 bg-white border-gray-200 transform rotate-45 ${
+            className={`absolute w-2 h-2 bg-white border-primary/20 transform rotate-45 ${
               position === 'top'
                 ? 'bottom-[-5px] border-r border-b'
                 : 'top-[-5px] border-l border-t'

@@ -9,9 +9,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0D1B4C",
-        accent: "#E30613",
-        "primary-light": "#1a2d6b",
+        // Charte graphique Sarah Knafo Paris - 4 couleurs officielles uniquement
+        primary: "#22496A",      // Bleu Paris
+        accent: "#E1386E",       // Rose Framboise
+        cream: "#FCEFD0",        // Crème Vanille
+        yellow: "#FBCD41",       // Jaune Soleil
+      },
+      fontFamily: {
+        display: ['Puffin Display', 'sans-serif'],
+        sans: ['Puffin Display', 'sans-serif'],
+        subtitle: ['Myriad Variable Concept', 'sans-serif'],
       },
     },
   },
