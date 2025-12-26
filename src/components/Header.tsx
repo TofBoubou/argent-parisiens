@@ -147,10 +147,15 @@ export default function Header() {
         <nav className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Titre */}
-            <Link href="/" className="flex items-center flex-shrink-0 group">
-              <span className="whitespace-nowrap font-display-title text-xl md:text-2xl tracking-tight italic">
-                <span className="text-cream">L'argent des </span>
-                <span className="text-yellow group-hover:text-rose transition-colors">Parisiens</span>
+            <Link href="/" className="flex items-center flex-shrink-0 group relative">
+              <span className="whitespace-nowrap font-display-title text-2xl md:text-3xl tracking-tight">
+                <span className="text-cream/90 group-hover:text-cream transition-colors duration-300">L'</span>
+                <span className="text-yellow drop-shadow-[0_0_10px_rgba(251,205,65,0.5)] group-hover:drop-shadow-[0_0_20px_rgba(251,205,65,0.8)] transition-all duration-300">argent</span>
+                <span className="text-cream/90 group-hover:text-cream transition-colors duration-300"> des </span>
+                <span className="relative">
+                  <span className="text-rose group-hover:text-yellow transition-colors duration-300">Parisiens</span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow group-hover:w-full transition-all duration-500"></span>
+                </span>
               </span>
             </Link>
 
