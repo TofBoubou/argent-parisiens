@@ -135,7 +135,7 @@ export default function Header() {
     <header className="bg-primary sticky top-0 z-50 shadow-lg">
       <div className="flex items-center">
         {/* Logo SK à l'extrême gauche */}
-        <a href="https://sarahknafo.fr" target="_blank" rel="noopener noreferrer" className="pl-4 flex-shrink-0">
+        <a href="https://sarahpourparis.fr" target="_blank" rel="noopener noreferrer" className="pl-4 flex-shrink-0">
           <img
             src="/logo-sk.svg"
             alt="Sarah Knafo"
