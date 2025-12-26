@@ -135,7 +135,7 @@ table td.text-right {
 }
 
 /* Styles pour les titres avec la police display - Charte: Puffin Display Black Italic */
-h1, h2, h3 {
+h1, h2, h3, .font-display-title {
   font-family: 'Puffin Display', sans-serif;
   font-weight: 900;
   font-style: italic;

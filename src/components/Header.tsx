@@ -147,9 +147,10 @@ export default function Header() {
         <nav className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Titre */}
-            <Link href="/" className="flex items-center flex-shrink-0">
-              <span className="text-yellow font-bold text-lg md:text-xl font-display whitespace-nowrap">
-                L'argent des Parisiens
+            <Link href="/" className="flex items-center flex-shrink-0 group">
+              <span className="whitespace-nowrap font-display-title text-xl md:text-2xl tracking-tight italic">
+                <span className="text-cream">L'argent des </span>
+                <span className="text-yellow group-hover:text-rose transition-colors">Parisiens</span>
               </span>
             </Link>
 
