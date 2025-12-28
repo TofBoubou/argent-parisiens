@@ -160,7 +160,7 @@ export default function Header() {
             </Link>
 
           {/* Search Bar - Desktop */}
-          <div ref={searchRef} className="hidden md:block relative">
+          <div ref={searchRef} className="hidden md:block relative ml-8">
             <div className="relative">
               <input
                 ref={inputRef}
