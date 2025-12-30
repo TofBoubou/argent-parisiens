@@ -134,8 +134,8 @@ export default function Header() {
   return (
     <header className="bg-primary sticky top-0 z-50 shadow-lg">
       <div className="flex items-center">
-        {/* Logo SK à l'extrême gauche */}
-        <a href="https://sarahpourparis.fr" target="_blank" rel="noopener noreferrer" className="pl-4 flex-shrink-0">
+        {/* Logo SK à l'extrême gauche - caché sur mobile */}
+        <a href="https://sarahpourparis.fr" target="_blank" rel="noopener noreferrer" className="pl-4 flex-shrink-0 hidden sm:block">
           <img
             src="/logo-sk.svg"
             alt="Sarah Knafo"
@@ -365,6 +365,23 @@ export default function Header() {
                     </Link>
                   );
                 })}
+
+                {/* Logo SK dans le menu mobile */}
+                <div className="px-4 pt-4 mt-2 border-t border-cream/20">
+                  <a
+                    href="https://sarahpourparis.fr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-cream/80 hover:text-yellow transition-colors"
+                  >
+                    <img
+                      src="/logo-sk.svg"
+                      alt="Sarah Knafo"
+                      className="h-6 w-auto"
+                    />
+                    <span className="text-sm">sarahpourparis.fr</span>
+                  </a>
+                </div>
               </div>
             </motion.div>
           )}
