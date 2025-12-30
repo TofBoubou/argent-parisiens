@@ -485,14 +485,15 @@ export default function RecettesPage() {
                 <li>Stationnement payant : 380 M€</li>
                 <li>Redevances parkings concédés : 43,6 M€</li>
                 <li>Fourrières : 16,9 M€</li>
+                <li>Autres recettes voirie : 32,2 M€</li>
               </ul>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
               <h4 className="font-semibold text-primary mb-2">Santé/Social : 321,4 M€</h4>
               <ul className="text-sm text-primary/80 space-y-1">
-                <li>Compensations <InfoTooltip terme="RSA" forcePosition="top">RSA</InfoTooltip> (taxe carburants, fonds insertion) : 266,6 M€</li>
-                <li>Participations petite enfance : 224,5 M€</li>
-                <li>Dotations <InfoTooltip terme="APA" forcePosition="top">APA</InfoTooltip>/<InfoTooltip terme="PCH" forcePosition="top">PCH</InfoTooltip> : 46,5 M€</li>
+                <li>Recettes établissements sociaux : 156,2 M€</li>
+                <li>Participations familles (crèches, cantines) : 98,7 M€</li>
+                <li>Remboursements divers : 66,5 M€</li>
               </ul>
             </div>
           </motion.div>

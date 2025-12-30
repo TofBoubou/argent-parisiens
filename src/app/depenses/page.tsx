@@ -31,6 +31,7 @@ const perequation = [
   { label: 'FSRIF', sublabel: '(solidarité région Île-de-France)', value: 208.1, color: '#FBCD41' },
   { label: 'FPIC', sublabel: '(péréquation intercommunale)', value: 199.6, color: '#22496A' },
   { label: 'FSDRIF', sublabel: '(solidarité départements IDF)', value: 30.0, color: '#E1386E' },
+  { label: 'Autres fonds', sublabel: '(divers mécanismes)', value: 54.6, color: '#FBCD41' },
 ];
 
 // Dépenses de gestion par fonction - dégradé bleu → rouge → jaune
@@ -69,6 +70,7 @@ const jo2024 = {
       { label: 'Autres sites olympiques', value: 47.3 },
       { label: 'Sites entraînement', value: 26.4 },
       { label: 'Sites temporaires', value: 14.8 },
+      { label: 'Divers', value: 3.7 },
     ],
   },
 };
@@ -352,13 +354,14 @@ export default function DepensesPage() {
               </ul>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h4 className="font-semibold text-primary mb-2">Transports : 645 M€</h4>
+              <h4 className="font-semibold text-primary mb-2">Transports : 644,6 M€</h4>
               <p className="text-xs text-cream/50 mb-2">+34,7 M€ vs 2024</p>
               <ul className="text-sm text-primary/80 space-y-1">
                 <li>• Contribution <InfoTooltip terme="IDFM">IDFM</InfoTooltip> : 472 M€</li>
                 <li>• Voirie : 103 M€</li>
                 <li>• Vélib'/transports : 34 M€</li>
                 <li>• Aides jeunes : 22,5 M€</li>
+                <li>• Autres : 13,1 M€</li>
               </ul>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
@@ -387,9 +390,9 @@ export default function DepensesPage() {
               JO Paris 2024 : la facture
             </h2>
             <p className="text-primary/80 max-w-3xl">
-              Les Jeux Olympiques de Paris 2024 ont coûté 494 millions d'euros à la Ville, étalés sur 7 ans (2018-2025).
+              Les Jeux Olympiques de Paris 2024 ont coûté 494 millions d'euros à la Ville selon le BP, étalés sur 7 ans (2018-2025).
               L'essentiel a servi à construire l'Arena de la Porte de la Chapelle (142 M€) et à contribuer aux infrastructures olympiques.
-              Paris garde en héritage quelques équipements sportifs et la possibilité de se baigner dans la Seine.
+              La CRC estime le coût net total à 592 M€ en incluant des dépenses annexes non budgétées.
             </p>
           </motion.div>
 

@@ -17,7 +17,8 @@ import {
   ComposedChart,
 } from 'recharts';
 
-// Évolution de la dette (encours au 31/12) - Sources CRC Île-de-France
+// Évolution de la dette (encours au 31/12)
+// Sources : Budget Primitif 2025 et rapport CRC Île-de-France (sept. 2025)
 const evolutionDette = [
   { annee: '2015', dette: 4665, label: '4,67 Md€', variation: null },
   { annee: '2016', dette: 5184, label: '5,18 Md€', variation: 519 },
@@ -26,7 +27,7 @@ const evolutionDette = [
   { annee: '2019', dette: 5880, label: '5,88 Md€', variation: -62 },
   { annee: '2020', dette: 6622, label: '6,62 Md€', variation: 742 },
   { annee: '2021', dette: 7183, label: '7,18 Md€', variation: 561 },
-  { annee: '2022', dette: 7715, label: '7,72 Md€', variation: 531 },
+  { annee: '2022', dette: 7715, label: '7,72 Md€', variation: 532 },
   { annee: '2023', dette: 8043, label: '8,04 Md€', variation: 328 },
   { annee: '2024', dette: 8701, label: '8,70 Md€', variation: 658 },
   { annee: '2025', dette: 9357, label: '9,36 Md€', variation: 656 },
@@ -114,7 +115,7 @@ export default function DettePage() {
                 9,4<span className="text-lg ml-1">Md€</span>
               </div>
               <div className="text-cream/70 text-sm mt-1">Dette totale</div>
-              <div className="text-accent/80 text-xs mt-2">+682 M€ en 1 an</div>
+              <div className="text-accent/80 text-xs mt-2">+656 M€ en 1 an</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4 md:p-5 text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow">
@@ -548,7 +549,7 @@ export default function DettePage() {
             </h2>
             <p className="text-primary/80 mb-8 max-w-3xl">
               C'est ici qu'on voit le problème : Paris emprunte chaque année plus qu'elle ne rembourse.
-              En 2025, elle rembourse 308 millions mais emprunte 994 millions. Résultat : 686 millions de dette en plus.
+              En 2025, elle rembourse 308 millions mais emprunte 994 millions. Résultat : environ 656 millions de dette en plus.
               Tant que ce déséquilibre perdure, la dette continuera de grossir année après année.
             </p>
 
@@ -571,7 +572,7 @@ export default function DettePage() {
 
               <div className="bg-primary text-white rounded-xl p-6 shadow-sm text-center flex flex-col justify-center">
                 <div className="text-sm text-cream/70 mb-2">Endettement net</div>
-                <div className="text-4xl font-bold text-accent">+686 M€</div>
+                <div className="text-4xl font-bold text-accent">+656 M€</div>
                 <div className="text-sm text-cream/70 mt-2">de dette supplémentaire</div>
               </div>
             </div>
@@ -580,7 +581,7 @@ export default function DettePage() {
               <p className="text-primary">
                 <span className="font-bold">Cercle vicieux :</span> Paris emprunte chaque année plus de 3 fois ce qu'elle rembourse.
                 En 2025, la Ville rembourse 308 M€ mais emprunte 994 M€,
-                creusant ainsi la dette de 686 M€ supplémentaires.
+                creusant ainsi la dette de 656 M€ supplémentaires.
               </p>
             </div>
           </motion.div>

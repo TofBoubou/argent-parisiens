@@ -54,7 +54,7 @@ const alertes = [
   },
   {
     titre: 'Dette en hausse',
-    description: 'La dette atteindra 9,4 Md€ fin 2025, soit +682 M€ en un an.',
+    description: 'La dette atteindra 9,4 Md€ fin 2025, soit +656 M€ en un an.',
     lien: '/dette',
   },
   {
