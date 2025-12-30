@@ -242,15 +242,17 @@ export default function DepensesPage() {
               <h3 className="font-bold text-primary mb-4">Détail de la péréquation</h3>
               <div className="space-y-3">
                 {perequation.map((item, index) => (
-                  <div key={index} className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="w-3 h-8 rounded-full" style={{ backgroundColor: item.color }} />
-                      <span className="text-primary">
-                        <InfoTooltip terme={item.label}>{item.label}</InfoTooltip>
-                        {item.sublabel && <span className="text-primary/70 text-sm"> {item.sublabel}</span>}
-                      </span>
+                  <div key={index} className="flex items-start sm:items-center justify-between gap-2">
+                    <div className="flex items-start sm:items-center gap-2 min-w-0 flex-1">
+                      <div className="w-3 h-8 rounded-full flex-shrink-0" style={{ backgroundColor: item.color }} />
+                      <div className="min-w-0">
+                        <span className="text-primary">
+                          <InfoTooltip terme={item.label}>{item.label}</InfoTooltip>
+                        </span>
+                        {item.sublabel && <span className="text-primary/70 text-xs sm:text-sm block sm:inline"> {item.sublabel}</span>}
+                      </div>
                     </div>
-                    <span className="font-bold text-primary">{item.value.toLocaleString('fr-FR')} M€</span>
+                    <span className="font-bold text-primary whitespace-nowrap flex-shrink-0">{item.value.toLocaleString('fr-FR')} M€</span>
                   </div>
                 ))}
               </div>

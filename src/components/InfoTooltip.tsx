@@ -146,52 +146,69 @@ interface InfoTooltipProps {
 
 export default function InfoTooltip({ terme, children, forcePosition }: InfoTooltipProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [tooltipStyle, setTooltipStyle] = useState<React.CSSProperties>({});
+  const [arrowStyle, setArrowStyle] = useState<React.CSSProperties>({});
   const [position, setPosition] = useState<'top' | 'bottom'>(forcePosition || 'bottom');
-  const [horizontalOffset, setHorizontalOffset] = useState(0);
   const [isPositioned, setIsPositioned] = useState(false);
   const tooltipRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
 
   const explication = glossaire[terme.toLowerCase()];
 
-  // Fonction de calcul de position optimale (verticale ET horizontale)
+  // Fonction de calcul de position avec coordonnées viewport fixes
   const calculatePosition = () => {
     if (!triggerRef.current) return;
 
     const triggerRect = triggerRef.current.getBoundingClientRect();
-    // Utiliser la hauteur MAX du tooltip (250px) + padding (24px) + marge (16px)
-    const maxTooltipHeight = 290;
-    // Largeur réelle du tooltip selon le breakpoint (w-64 < 400px, w-72 < 640px, w-80 >= 640px)
     const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    // Largeur du tooltip selon la taille d'écran
     const tooltipWidth = screenWidth < 400 ? 256 : screenWidth < 640 ? 288 : 320;
+    const maxTooltipHeight = 290;
+    const margin = 12;
 
     // === Position verticale ===
+    let verticalPos: 'top' | 'bottom' = forcePosition || 'bottom';
     if (!forcePosition) {
-      const spaceBelow = window.innerHeight - triggerRect.bottom;
+      const spaceBelow = screenHeight - triggerRect.bottom;
       const spaceAbove = triggerRect.top;
-
-      // Si pas assez de place en dessous, afficher au-dessus
       if (spaceBelow < maxTooltipHeight && spaceAbove > spaceBelow) {
-        setPosition('top');
-      } else {
-        setPosition('bottom');
+        verticalPos = 'top';
       }
     }
+    setPosition(verticalPos);
 
-    // === Position horizontale ===
+    // === Position horizontale (centrée sur le trigger, avec contraintes écran) ===
     const triggerCenterX = triggerRect.left + triggerRect.width / 2;
-    const tooltipLeft = triggerCenterX - tooltipWidth / 2;
-    const tooltipRight = triggerCenterX + tooltipWidth / 2;
-    const margin = 12; // Marge de sécurité plus grande sur mobile
+    let tooltipLeft = triggerCenterX - tooltipWidth / 2;
 
-    let offset = 0;
+    // Contraindre aux bords de l'écran
     if (tooltipLeft < margin) {
-      offset = margin - tooltipLeft;
-    } else if (tooltipRight > screenWidth - margin) {
-      offset = (screenWidth - margin) - tooltipRight;
+      tooltipLeft = margin;
+    } else if (tooltipLeft + tooltipWidth > screenWidth - margin) {
+      tooltipLeft = screenWidth - margin - tooltipWidth;
     }
-    setHorizontalOffset(offset);
+
+    // Calcul de la position Y
+    const tooltipTop = verticalPos === 'top'
+      ? triggerRect.top - 8 // 8px de marge au-dessus
+      : triggerRect.bottom + 8; // 8px de marge en-dessous
+
+    // Position de la flèche (centrée sur le trigger)
+    const arrowLeft = triggerCenterX - tooltipLeft;
+
+    setTooltipStyle({
+      position: 'fixed',
+      left: tooltipLeft,
+      ...(verticalPos === 'top' ? { bottom: screenHeight - triggerRect.top + 8 } : { top: tooltipTop }),
+      width: tooltipWidth,
+    });
+
+    setArrowStyle({
+      left: Math.max(12, Math.min(arrowLeft, tooltipWidth - 12)),
+    });
+
     setIsPositioned(true);
   };
 
@@ -258,28 +275,24 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
 
       {isOpen && (
         <div
-          ref={contentRef}
-          className={`absolute z-50 w-64 min-[400px]:w-72 sm:w-80 p-3 text-sm bg-white border border-primary/20 rounded-lg shadow-xl max-h-[250px] overflow-y-auto ${
-            position === 'top'
-              ? 'bottom-full mb-2'
-              : 'top-full mt-2'
-          } left-1/2`}
+          className="z-[9999] p-3 text-sm bg-white border border-primary/20 rounded-lg shadow-xl max-h-[250px] overflow-y-auto"
           style={{
-            transform: `translateX(calc(-50% + ${horizontalOffset}px))`,
+            ...tooltipStyle,
             opacity: isPositioned ? 1 : 0,
+            transition: 'opacity 0.15s ease-in-out',
           }}
           role="tooltip"
         >
           <div className="font-semibold text-primary mb-1 capitalize">{terme}</div>
           <p className="text-primary/80 leading-relaxed">{explication}</p>
-          {/* Flèche - reste centrée sur le bouton trigger */}
+          {/* Flèche - positionnée sur le trigger */}
           <div
-            className={`absolute w-2 h-2 bg-white border-primary/20 transform rotate-45 ${
+            className={`absolute w-2 h-2 bg-white border-primary/20 rotate-45 ${
               position === 'top'
                 ? 'bottom-[-5px] border-r border-b'
                 : 'top-[-5px] border-l border-t'
             }`}
-            style={{ left: `calc(50% - ${horizontalOffset}px)`, transform: 'translateX(-50%) rotate(45deg)' }}
+            style={{ ...arrowStyle, transform: 'translateX(-50%)' }}
           />
         </div>
       )}
