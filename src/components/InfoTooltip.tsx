@@ -162,7 +162,9 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
     const triggerRect = triggerRef.current.getBoundingClientRect();
     // Utiliser la hauteur MAX du tooltip (250px) + padding (24px) + marge (16px)
     const maxTooltipHeight = 290;
-    const tooltipWidth = 320; // w-80 = 20rem = 320px
+    // Largeur réelle du tooltip selon le breakpoint (w-64 < 400px, w-72 < 640px, w-80 >= 640px)
+    const screenWidth = window.innerWidth;
+    const tooltipWidth = screenWidth < 400 ? 256 : screenWidth < 640 ? 288 : 320;
 
     // === Position verticale ===
     if (!forcePosition) {
@@ -181,13 +183,13 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
     const triggerCenterX = triggerRect.left + triggerRect.width / 2;
     const tooltipLeft = triggerCenterX - tooltipWidth / 2;
     const tooltipRight = triggerCenterX + tooltipWidth / 2;
-    const margin = 8;
+    const margin = 12; // Marge de sécurité plus grande sur mobile
 
     let offset = 0;
     if (tooltipLeft < margin) {
       offset = margin - tooltipLeft;
-    } else if (tooltipRight > window.innerWidth - margin) {
-      offset = (window.innerWidth - margin) - tooltipRight;
+    } else if (tooltipRight > screenWidth - margin) {
+      offset = (screenWidth - margin) - tooltipRight;
     }
     setHorizontalOffset(offset);
     setIsPositioned(true);
@@ -257,12 +259,15 @@ export default function InfoTooltip({ terme, children, forcePosition }: InfoTool
       {isOpen && (
         <div
           ref={contentRef}
-          className={`absolute z-50 w-72 sm:w-80 p-3 text-sm bg-white border border-primary/20 rounded-lg shadow-lg max-h-[250px] overflow-y-auto ${
+          className={`absolute z-50 w-64 min-[400px]:w-72 sm:w-80 p-3 text-sm bg-white border border-primary/20 rounded-lg shadow-xl max-h-[250px] overflow-y-auto ${
             position === 'top'
               ? 'bottom-full mb-2'
               : 'top-full mt-2'
           } left-1/2`}
-          style={{ transform: `translateX(calc(-50% + ${horizontalOffset}px))` }}
+          style={{
+            transform: `translateX(calc(-50% + ${horizontalOffset}px))`,
+            opacity: isPositioned ? 1 : 0,
+          }}
           role="tooltip"
         >
           <div className="font-semibold text-primary mb-1 capitalize">{terme}</div>
