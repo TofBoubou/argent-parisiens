@@ -138,8 +138,11 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Répartition des dépenses
             </h2>
-            <p className="text-primary/80">
-              Dépenses réelles de fonctionnement - BP 2025
+            <p className="text-primary/80 max-w-3xl mx-auto">
+              Chaque année, Paris dépense près de 9,3 milliards d'euros pour faire fonctionner la ville au quotidien.
+              Cet argent sert à payer les agents municipaux (éboueurs, agents de crèche, policiers...),
+              à financer les services publics et à reverser une partie aux autres collectivités moins riches.
+              Voici comment se répartit chaque euro dépensé.
             </p>
           </motion.div>
 
@@ -164,8 +167,10 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               <InfoTooltip terme="Masse salariale">Masse salariale</InfoTooltip>
             </h2>
-            <p className="text-primary/80">
-              2,89 Md€ pour le personnel (+2,4 % vs 2024)
+            <p className="text-primary/80 max-w-3xl">
+              La masse salariale, c'est l'argent versé chaque mois aux 55 000 agents de la Ville : leurs salaires, primes et cotisations retraite.
+              Ce sont les éboueurs, les agents de crèche, les bibliothécaires, les jardiniers, les policiers municipaux...
+              En 2025, Paris crée 950 nouveaux postes, ce qui fait augmenter cette dépense de 67 millions d'euros par rapport à 2024.
             </p>
           </motion.div>
 
@@ -223,8 +228,10 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               <InfoTooltip terme="Péréquation">Péréquation</InfoTooltip> : ce que Paris reverse
             </h2>
-            <p className="text-primary/80">
-              1,6 Md€ redistribué aux autres collectivités
+            <p className="text-primary/80 max-w-3xl">
+              La péréquation, c'est un système de solidarité imposé par l'État : les villes riches donnent de l'argent aux villes pauvres.
+              Paris est considérée comme riche, donc elle doit reverser 1,6 milliard d'euros par an aux autres collectivités.
+              Cet argent part directement dans les caisses d'autres communes et ne profite pas aux Parisiens.
             </p>
           </motion.div>
 
@@ -315,8 +322,10 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Dépenses de gestion par domaine
             </h2>
-            <p className="text-primary/80">
-              4,55 Md€ de dépenses hors masse salariale (+1,3 %)
+            <p className="text-primary/80 max-w-3xl">
+              En plus des salaires, Paris dépense 4,5 milliards pour faire tourner les services publics au quotidien.
+              Cet argent paie les fournisseurs, les aides sociales (RSA, handicap, personnes âgées), la contribution aux transports en commun,
+              l'entretien des rues et des parcs, les subventions aux associations. Le social représente à lui seul 2 milliards.
             </p>
           </motion.div>
 
@@ -377,8 +386,10 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               JO Paris 2024 : la facture
             </h2>
-            <p className="text-primary/80">
-              Bilan des dépenses 2018-2025
+            <p className="text-primary/80 max-w-3xl">
+              Les Jeux Olympiques de Paris 2024 ont coûté 494 millions d'euros à la Ville, étalés sur 7 ans (2018-2025).
+              L'essentiel a servi à construire l'Arena de la Porte de la Chapelle (142 M€) et à contribuer aux infrastructures olympiques.
+              Paris garde en héritage quelques équipements sportifs et la possibilité de se baigner dans la Seine.
             </p>
           </motion.div>
 
@@ -457,8 +468,10 @@ export default function DepensesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Charges financières
             </h2>
-            <p className="text-primary/80">
-              224,5 M€ d'intérêts de la dette (+11,5 M€)
+            <p className="text-primary/80 max-w-3xl">
+              Quand on emprunte de l'argent, il faut payer des intérêts à la banque. Paris paie 225 millions d'euros d'intérêts par an.
+              C'est de l'argent « perdu » : il ne finance aucun service public, il va directement dans les poches des prêteurs.
+              Cela représente 616 000 € par jour, soit l'équivalent de 1 000 places de crèche chaque mois.
             </p>
           </motion.div>
 
@@ -496,8 +509,10 @@ export default function DepensesPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-primary mb-2">Bilan réel 2024</h2>
-            <p className="text-primary/80 mb-8">
-              Ce que Paris a vraiment dépensé (compte administratif 2024)
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              En 2024, Paris a dépensé plus qu'elle n'a gagné : 9,94 milliards de dépenses pour 9,71 milliards de recettes.
+              Résultat : un déficit de 231 millions d'euros. Pour boucler son budget, la Ville a dû emprunter davantage.
+              De plus, le commissaire aux comptes a émis 5 réserves sur la fiabilité des comptes présentés.
             </p>
 
             <div className="grid md:grid-cols-4 gap-6">

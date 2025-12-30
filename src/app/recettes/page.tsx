@@ -171,8 +171,10 @@ export default function RecettesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Répartition des recettes
             </h2>
-            <p className="text-primary/80">
-              Recettes réelles de fonctionnement - BP 2025
+            <p className="text-primary/80 max-w-3xl mx-auto">
+              Pour financer ses dépenses, Paris dispose de 9,8 milliards d'euros de recettes chaque année.
+              Cet argent vient principalement des impôts (taxe foncière, taxes sur les ventes immobilières),
+              des compensations de l'État pour les impôts supprimés, et des recettes diverses (stationnement, cantines...).
             </p>
           </motion.div>
 
@@ -197,8 +199,10 @@ export default function RecettesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               <InfoTooltip terme="Fiscalité directe">Fiscalité directe</InfoTooltip>
             </h2>
-            <p className="text-primary/80">
-              2,19 Md€ issus des impôts locaux (+1,2 % vs 2024)
+            <p className="text-primary/80 max-w-3xl">
+              La fiscalité directe, ce sont les impôts que Paris collecte directement auprès des Parisiens.
+              L'essentiel vient de la taxe foncière, payée par tous les propriétaires d'appartements ou de commerces.
+              Cette taxe augmente automatiquement chaque année avec l'inflation (+1,5 % en 2025).
             </p>
           </motion.div>
 
@@ -261,8 +265,10 @@ export default function RecettesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Évolution de la fiscalité immobilière
             </h2>
-            <p className="text-primary/80">
-              <InfoTooltip terme="DMTO">Droits de mutation (DMTO)</InfoTooltip> - Forte volatilité liée au marché immobilier
+            <p className="text-primary/80 max-w-3xl">
+              À chaque vente d'appartement à Paris, l'acheteur paie des « frais de notaire » dont une partie revient à la Ville.
+              Ces <InfoTooltip terme="DMTO">droits de mutation (DMTO)</InfoTooltip> dépendent du nombre de ventes : quand le marché immobilier ralentit, les recettes chutent.
+              Depuis 2023, le marché est en berne et Paris perd 400 millions par rapport au pic.
             </p>
           </motion.div>
 
@@ -330,8 +336,10 @@ export default function RecettesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Risques liés au <InfoTooltip terme="PLF">PLF 2025</InfoTooltip>
             </h2>
-            <p className="text-primary/80">
-              Mesures gouvernementales menaçant les finances de Paris : 300 à 350 M€ de risque
+            <p className="text-primary/80 max-w-3xl">
+              Chaque année, le gouvernement vote une loi de finances qui impacte les recettes des villes.
+              En 2025, plusieurs mesures menacent Paris : prélèvements sur les réserves, gel des compensations, hausse des cotisations retraite...
+              Au total, Paris pourrait perdre jusqu'à 350 millions d'euros à cause de ces décisions nationales.
             </p>
           </motion.div>
 
@@ -399,8 +407,10 @@ export default function RecettesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Dotations et compensations de l'État
             </h2>
-            <p className="text-primary/80">
-              180,5 M€ de dotations (-3,5 M€ vs 2024)
+            <p className="text-primary/80 max-w-3xl">
+              Normalement, l'État verse de l'argent aux villes via la Dotation Globale de Fonctionnement (DGF).
+              Mais Paris ne touche plus rien depuis 4 ans : la Ville est jugée « trop riche » pour y avoir droit.
+              Paris ne reçoit que des compensations pour les impôts que l'État lui a supprimés au fil des ans.
             </p>
           </motion.div>
 
@@ -450,8 +460,10 @@ export default function RecettesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Recettes de gestion par domaine
             </h2>
-            <p className="text-primary/80">
-              1,5 Md€ de recettes liées à l'activité des services (+38,9 M€)
+            <p className="text-primary/80 max-w-3xl">
+              En plus des impôts, Paris gagne de l'argent grâce à ses propres activités.
+              Le stationnement payant rapporte 380 millions par an, les cantines et crèches génèrent des recettes,
+              et certaines aides sociales (RSA, handicap) sont partiellement remboursées par l'État ou la CAF.
             </p>
           </motion.div>
 

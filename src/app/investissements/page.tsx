@@ -279,8 +279,10 @@ export default function InvestissementsPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Types d'investissements
             </h2>
-            <p className="text-primary/80 mb-8">
-              Répartition des 2,05 Md€ de nouvelles <InfoTooltip terme="Autorisations de programme">autorisations de programme</InfoTooltip>
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              Contrairement aux dépenses courantes (salaires, factures), les investissements servent à construire ou rénover pour le long terme.
+              En 2025, Paris prévoit 2 milliards d'euros de nouveaux projets : écoles, logements sociaux, équipements sportifs, voirie...
+              Ces projets s'étalent sur plusieurs années grâce aux <InfoTooltip terme="Autorisations de programme">autorisations de programme</InfoTooltip>.
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -323,8 +325,10 @@ export default function InvestissementsPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Investissements par politique
             </h2>
-            <p className="text-primary/80 mb-8">
-              Répartition des nouvelles autorisations de programme 2025
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              Plus de la moitié des investissements (1,1 milliard) va au logement et à l'aménagement urbain.
+              Le reste finance les bâtiments municipaux, la culture, les équipements sportifs, l'environnement et les transports.
+              Ces choix reflètent les priorités politiques de la Ville.
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">

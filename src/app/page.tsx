@@ -137,8 +137,10 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
               Les 9 politiques publiques de Paris
             </h2>
-            <p className="text-primary/80">
-              Répartition du budget par domaine d'action (en M€)
+            <p className="text-primary/80 max-w-3xl mx-auto">
+              Le budget de Paris est divisé en 9 grands domaines. Le social (RSA, crèches, personnes âgées) représente près d'un tiers du total.
+              Viennent ensuite les services généraux (administration), le logement, l'enseignement et l'environnement.
+              Cliquez sur une politique pour en savoir plus.
             </p>
           </motion.div>
 
@@ -194,8 +196,10 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
               Points d'attention
             </h2>
-            <p className="text-primary/80">
-              Les chiffres qui interpellent dans ce budget
+            <p className="text-primary/80 max-w-3xl mx-auto">
+              Derrière les grands chiffres, certains indicateurs méritent attention.
+              Ils révèlent les tensions financières de Paris : déficit, dette croissante, masse salariale en hausse,
+              et une partie du budget qui échappe aux Parisiens via la péréquation versée aux autres collectivités.
             </p>
           </motion.div>
 

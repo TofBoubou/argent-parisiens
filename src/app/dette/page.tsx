@@ -152,8 +152,10 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Une dette qui explose
             </h2>
-            <p className="text-primary/80 mb-8">
-              Évolution de l'<InfoTooltip terme="Encours de dette">encours total de la dette</InfoTooltip> depuis 2015 (en Md€) — Sources : CRC Île-de-France
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              La dette, c'est l'argent que Paris a emprunté et qu'elle doit rembourser.
+              En 10 ans, elle a plus que doublé : de 4,7 milliards en 2015 à 9,4 milliards en 2025.
+              Chaque année, la Ville emprunte plus qu'elle ne rembourse, ce qui fait grossir la dette.
             </p>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -222,8 +224,10 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Composition de la dette
             </h2>
-            <p className="text-primary/80 mb-8">
-              Répartition de l'encours total de 9,36 Md€ fin 2025
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              La quasi-totalité de la dette (99 %) provient d'emprunts classiques auprès de banques ou sur les marchés financiers.
+              Paris emprunte pour financer ses gros investissements : écoles, logements sociaux, équipements sportifs...
+              Le reste correspond à des engagements spécifiques comme la participation à la Philharmonie.
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -275,8 +279,10 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               <InfoTooltip terme="Durée de désendettement">Durée de désendettement</InfoTooltip>
             </h2>
-            <p className="text-primary/80 mb-8">
-              Nombre d'années nécessaires pour rembourser la dette avec l'<InfoTooltip terme="Épargne brute">épargne brute</InfoTooltip> — Évolution depuis 2018
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              Ce chiffre indique combien d'années il faudrait pour rembourser toute la dette si Paris y consacrait toute son épargne.
+              En 2025, il faudrait 16,4 ans. C'est beaucoup trop : au-delà de 12 ans, les experts considèrent qu'une ville est en difficulté financière.
+              Plus ce chiffre augmente, plus la situation se dégrade.
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -366,8 +372,10 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Le coût de la dette
             </h2>
-            <p className="text-primary/80 mb-8">
-              Évolution des intérêts payés chaque année (en M€)
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              Quand on emprunte, il faut payer des intérêts en plus du remboursement. En 2025, Paris paiera 225 millions d'euros rien qu'en intérêts.
+              C'est de l'argent « perdu » qui ne finance aucun service pour les Parisiens : il va aux banques et aux investisseurs.
+              Ces intérêts ont augmenté de 58 % en 3 ans à cause de la hausse des taux et de la dette croissante.
             </p>
 
             <div className="grid lg:grid-cols-3 gap-6">
@@ -425,8 +433,10 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               224,5 M€ d'intérêts, c'est...
             </h2>
-            <p className="text-primary/80 mb-8">
-              Ce que Paris pourrait financer chaque année avec le montant des intérêts de la dette
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              Pour mieux comprendre ce que représentent 225 millions d'euros par an, voici ce que Paris pourrait financer à la place.
+              Chaque année, cet argent part en fumée au lieu de servir les Parisiens.
+              C'est le prix de l'endettement : moins d'écoles rénovées, moins de places de crèche, moins de logements.
             </p>
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -460,8 +470,10 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               L'<InfoTooltip terme="Épargne brute">épargne brute</InfoTooltip> : la capacité à investir
             </h2>
-            <p className="text-primary/80 mb-8">
-              Différence entre recettes et dépenses de fonctionnement (en M€)
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              L'épargne brute, c'est ce qu'il reste à Paris une fois les dépenses courantes payées.
+              C'est l'argent disponible pour investir (construire, rénover) et rembourser la dette.
+              Plus l'épargne est faible, plus Paris doit emprunter pour investir, ce qui alourdit encore la dette.
             </p>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -534,8 +546,10 @@ export default function DettePage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Le cycle de l'endettement
             </h2>
-            <p className="text-primary/80 mb-8">
-              Comparaison entre remboursements et nouveaux emprunts en 2025
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              C'est ici qu'on voit le problème : Paris emprunte chaque année plus qu'elle ne rembourse.
+              En 2025, elle rembourse 308 millions mais emprunte 994 millions. Résultat : 686 millions de dette en plus.
+              Tant que ce déséquilibre perdure, la dette continuera de grossir année après année.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6">

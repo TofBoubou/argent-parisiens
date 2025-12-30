@@ -388,8 +388,10 @@ export default function PolitiquesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Vue d'ensemble
             </h2>
-            <p className="text-primary/80 mb-8">
-              Répartition du budget consolidé par politique publique (en M€)
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              Le budget de Paris est divisé en 9 grandes politiques, numérotées de 0 à 8 selon la nomenclature comptable.
+              La plus grosse part va au social (RSA, crèches, personnes âgées). Viennent ensuite l'enseignement, l'environnement et les transports.
+              Cette répartition reflète les choix politiques de la municipalité et les compétences obligatoires de la Ville.
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8 overflow-hidden">
@@ -422,8 +424,10 @@ export default function PolitiquesPage() {
             <h2 className="text-2xl font-bold text-primary mb-2">
               Détail par politique
             </h2>
-            <p className="text-primary/80 mb-8">
-              Cliquez sur une politique pour voir le détail complet
+            <p className="text-primary/80 mb-8 max-w-3xl">
+              Chaque politique regroupe des dépenses de nature similaire : salaires des agents concernés, subventions, achats, travaux...
+              Cliquez sur une politique pour voir comment l'argent est réparti à l'intérieur, quels sont les projets d'investissement,
+              et combien de postes sont créés en 2025.
             </p>
 
             <div className="space-y-4">
