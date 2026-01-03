@@ -334,7 +334,7 @@ export default function RecettesPage() {
             className="mb-8"
           >
             <h2 className="text-2xl font-bold text-primary mb-2">
-              Risques liés au <InfoTooltip terme="PLF">PLF 2025</InfoTooltip>
+              Risques liés au <InfoTooltip terme="PLF">Projet de loi de finances 2025</InfoTooltip>
             </h2>
             <p className="text-primary/80 max-w-3xl">
               Chaque année, le gouvernement vote une loi de finances qui impacte les recettes des villes.
